@@ -9,72 +9,175 @@ const featuredProjects = projects.slice(0, 3);
 
 <Layout title="首页" description={profile.bio} page="home">
   <!-- Hero Section -->
-  <section class="max-w-5xl mx-auto px-6 py-24">
-    <div class="flex flex-col md:flex-row items-center gap-12">
-      <img 
-        src={profile.avatar} 
-        alt={profile.name} 
-        class="w-32 h-32 rounded-full object-cover shrink-0"
-        onerror={`this.onerror=null; this.textContent='${profile.avatarFallback}'`}
-      />
-      <div class="text-center md:text-left">
-        <h1 class="text-4xl font-bold mb-4">你好，我是 <span class="text-accent">{profile.name}</span></h1>
-        <p class="text-xl text-gray-400 mb-6">
+  <section class="max-w-5xl mx-auto px-6 pt-24 pb-16">
+    <div class="flex flex-col-reverse md:flex-row items-center gap-16 justify-between">
+      <div class="text-center md:text-left flex-1 relative z-10">
+        <h1 class="text-5xl md:text-6xl font-bold mb-6 tracking-tight text-white leading-tight">
+          你好，我是 <br class="hidden md:block" />
+          <span class="text-gradient mt-2 inline-block relative">
+            {profile.name}
+            <!-- Decorative dots around name -->
+            <span class="absolute -top-2 -right-4 w-2 h-2 rounded-full bg-accent animate-ping"></span>
+          </span>
+        </h1>
+        <p class="text-xl text-gray-300 mb-4 font-medium flex items-center justify-center md:justify-start gap-2">
+          <span class="w-8 h-px bg-accent/50 hidden md:block"></span>
           {profile.title}
         </p>
-        <p class="text-gray-500 max-w-xl">
+        <p class="text-gray-400 max-w-xl leading-relaxed mb-10 mx-auto md:mx-0">
           {profile.bio}
         </p>
+        <div class="flex flex-wrap items-center justify-center md:justify-start gap-4">
+          <a href="/projects" class="btn-primary flex items-center gap-2 group">
+            查看项目作品 
+            <span class="transition-transform group-hover:translate-x-1">→</span>
+          </a>
+          <a href="/about" class="btn-secondary">
+            关于我
+          </a>
+        </div>
+      </div>
+      
+      <div class="relative shrink-0 perspective-1000">
+        <!-- Background animated glow -->
+        <div class="absolute inset-0 bg-gradient-to-tr from-accent to-purple rounded-full blur-3xl opacity-40 animate-pulse"></div>
+        
+        <!-- Rotating dashed border -->
+        <div class="absolute -inset-4 border border-dashed border-accent/30 rounded-full animate-[spin_15s_linear_infinite]"></div>
+        <div class="absolute -inset-8 border border-dashed border-purple/20 rounded-full animate-[spin_20s_linear_infinite_reverse]"></div>
+        
+        <!-- Avatar container -->
+        <div class="relative w-56 h-56 md:w-72 md:h-72 rounded-full p-1.5 bg-gradient-to-br from-accent/50 to-purple/50 shadow-2xl transform transition-transform duration-500 hover:scale-105 hover:rotate-3">
+          <div class="w-full h-full rounded-full bg-card overflow-hidden">
+            <img 
+              src={profile.avatar} 
+              alt={profile.name} 
+              class="w-full h-full object-cover transition-transform duration-700 hover:scale-110"
+              onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';"
+            />
+            <div class="hidden w-full h-full items-center justify-center text-6xl font-bold text-gray-600 bg-dark">
+              {profile.avatarFallback}
+            </div>
+          </div>
+        </div>
+
+        <!-- Floating Badges -->
+        <div class="absolute -top-2 -right-6 bg-card/80 backdrop-blur-md border border-white/10 px-3 py-1.5 rounded-lg text-xs text-accent font-mono animate-[bounce_3s_ease-in-out_infinite] shadow-[0_0_10px_rgba(0,212,255,0.2)]">
+          <span class="mr-1">🤖</span> LLM
+        </div>
+        <div class="absolute -bottom-4 -left-4 bg-card/80 backdrop-blur-md border border-white/10 px-3 py-1.5 rounded-lg text-xs text-purple font-mono animate-[bounce_4s_ease-in-out_infinite_0.5s] shadow-[0_0_10px_rgba(168,85,247,0.2)]">
+          <span class="mr-1">🛸</span> Robotics
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Skills -->
-  <section class="max-w-5xl mx-auto px-6 py-12">
-    <h2 class="text-2xl font-bold mb-6 text-accent">技术栈</h2>
-    <div class="flex flex-wrap gap-3">
-      {profile.skillGroups.flatMap(g => g.skills).map(skill => (
-        <span class="px-4 py-2 bg-card rounded-lg text-gray-300 border border-gray-800 hover:border-accent transition-colors">
-          {skill}
-        </span>
+  <!-- Skills Bento Box -->
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <div class="flex items-center gap-4 mb-10">
+      <h2 class="text-3xl font-bold text-white">技术矩阵</h2>
+      <div class="h-px bg-white/10 flex-1"></div>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      {profile.skillGroups.map((group, index) => (
+        <div class={`glass-card p-8 ${index === 0 ? 'lg:col-span-2' : ''} ${index === 3 ? 'md:col-span-2 lg:col-span-1' : ''}`}>
+          <div class="flex items-center gap-3 mb-6">
+            <div class="w-10 h-10 rounded-lg bg-white/5 flex items-center justify-center text-xl border border-white/10">
+              {index === 0 ? '💻' : index === 1 ? '🤖' : index === 2 ? '🧠' : '🛠️'}
+            </div>
+            <h3 class="text-xl font-bold text-white">{group.name}</h3>
+          </div>
+          <div class="flex flex-wrap gap-2">
+            {group.skills.map(skill => (
+              <span class="px-3 py-1.5 bg-dark/50 rounded-md text-gray-300 text-sm border border-white/5 hover:border-accent/50 hover:text-accent transition-all hover:-translate-y-0.5 cursor-default shadow-sm">
+                {skill}
+              </span>
+            ))}
+          </div>
+        </div>
       ))}
     </div>
   </section>
 
-  <!-- Recent Projects -->
-  <section class="max-w-5xl mx-auto px-6 py-12">
-    <h2 class="text-2xl font-bold mb-6 text-accent">最新项目</h2>
+  <!-- Featured Projects -->
+  <section class="max-w-5xl mx-auto px-6 py-16 relative">
+    <div class="flex items-center justify-between mb-10">
+      <div class="flex items-center gap-4 flex-1">
+        <h2 class="text-3xl font-bold text-white">精选项目</h2>
+        <div class="h-px bg-white/10 flex-1 hidden sm:block mx-4"></div>
+      </div>
+      <a href="/projects" class="text-accent hover:text-white transition-colors flex items-center gap-2 text-sm font-medium group">
+        全部项目 <span class="text-lg transition-transform group-hover:translate-x-1">→</span>
+      </a>
+    </div>
+
     <div class="grid md:grid-cols-3 gap-6">
-      {featuredProjects.map(project => (
-        <a href={project.link} target={project.link.startsWith('http') ? '_blank' : '_self'} 
-           class="block p-6 bg-card rounded-xl border border-gray-800 hover:border-accent transition-all hover:scale-[1.02]">
-          <h3 class="text-xl font-bold mb-2 text-white">{project.title}</h3>
-          <p class="text-gray-400 text-sm mb-4">{project.desc}</p>
-          <div class="flex flex-wrap gap-2">
-            {project.tags.slice(0, 3).map(tag => (
-              <span class="text-xs px-2 py-1 bg-dark rounded text-gray-500">{tag}</span>
+      {featuredProjects.map((project, i) => (
+        <a 
+          href={project.link} 
+          target={project.link.startsWith('http') ? '_blank' : '_self'} 
+          rel={project.link.startsWith('http') ? 'noopener noreferrer' : ''}
+          class={`glass-card block p-6 group relative overflow-hidden ${i === 0 ? 'md:col-span-2 md:row-span-2 flex flex-col justify-between p-8' : ''}`}
+        >
+          <!-- Corner gradient highlight on hover -->
+          <div class="absolute -right-20 -top-20 w-40 h-40 bg-accent/20 blur-3xl rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+          
+          <div class="relative z-10">
+            <div class="flex items-start justify-between mb-4">
+              <h3 class={`font-bold text-white group-hover:text-accent transition-colors ${i === 0 ? 'text-3xl mb-4' : 'text-xl'}`}>
+                {project.title}
+              </h3>
+              <span class="shrink-0 text-xl opacity-0 -translate-x-4 group-hover:opacity-100 group-hover:translate-x-0 transition-all text-accent">↗</span>
+            </div>
+            <p class={`text-gray-400 mb-6 leading-relaxed ${i === 0 ? 'text-lg' : 'text-sm'}`}>
+              {project.desc}
+            </p>
+          </div>
+          
+          <div class="flex flex-wrap gap-2 mt-auto relative z-10">
+            {project.tags.slice(0, i === 0 ? 6 : 3).map(tag => (
+              <span class="text-xs px-2.5 py-1 bg-white/5 rounded text-gray-400 border border-white/5">
+                {tag}
+              </span>
             ))}
+            {project.tags.length > (i === 0 ? 6 : 3) && (
+              <span class="text-xs px-2.5 py-1 bg-transparent rounded text-gray-500">
+                +{project.tags.length - (i === 0 ? 6 : 3)}
+              </span>
+            )}
           </div>
         </a>
       ))}
     </div>
-    <div class="mt-8 text-center">
-      <a href="/projects" class="text-accent hover:underline">查看全部项目 →</a>
-    </div>
   </section>
 
-  <!-- Social Links -->
-  <section class="max-w-5xl mx-auto px-6 py-12">
-    <h2 class="text-2xl font-bold mb-6 text-accent">社交链接</h2>
-    <div class="flex flex-wrap gap-4">
+  <!-- Social Links & Contact CTA -->
+  <section class="max-w-4xl mx-auto px-6 py-20 text-center relative">
+    <div class="absolute inset-0 bg-gradient-to-b from-transparent via-accent/5 to-transparent blur-3xl -z-10 pointer-events-none"></div>
+    <h2 class="text-3xl font-bold mb-6 text-white">开启新的探索</h2>
+    <p class="text-gray-400 mb-10 max-w-2xl mx-auto leading-relaxed">
+      无论是学术交流、开源合作还是探索具身智能与大语言模型的更多可能性，都欢迎与我联系。
+    </p>
+    <div class="flex flex-wrap justify-center gap-4">
       {profile.social.github && (
-        <a href={profile.social.github} target="_blank" class="flex items-center gap-2 px-4 py-3 bg-card rounded-lg border border-gray-800 hover:border-accent transition-colors">
-          <span>🐙</span> <span>GitHub</span>
+        <a href={profile.social.github} target="_blank" rel="noopener noreferrer" class="btn-secondary flex items-center gap-3">
+          <span class="text-xl">🐙</span> <span>GitHub</span>
         </a>
       )}
       {profile.social.bilibili && (
-        <a href={profile.social.bilibili} target="_blank" class="flex items-center gap-2 px-4 py-3 bg-card rounded-lg border border-gray-800 hover:border-accent transition-colors">
-          <span>📺</span> <span>B站</span>
+        <a href={profile.social.bilibili} target="_blank" rel="noopener noreferrer" class="btn-secondary flex items-center gap-3">
+          <span class="text-xl">📺</span> <span>bilibili</span>
+        </a>
+      )}
+      {profile.social.csdn && (
+        <a href={profile.social.csdn} target="_blank" rel="noopener noreferrer" class="btn-secondary flex items-center gap-3">
+          <span class="text-xl">📝</span> <span>CSDN</span>
+        </a>
+      )}
+      {profile.social.email && (
+        <a href={profile.social.email} class="btn-primary flex items-center gap-3">
+          <span class="text-xl">✉️</span> <span>联系我</span>
         </a>
       )}
     </div>

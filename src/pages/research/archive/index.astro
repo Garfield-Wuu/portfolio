@@ -40,13 +40,13 @@ const archiveCanonical = 'https://www.garfield-wu.com/research/archive';
   ogDescription={archiveDesc}
   canonical={archiveCanonical}
   page="research">
-  <section class="max-w-5xl mx-auto px-6 py-16">
-    <div class="flex items-center justify-between mb-6">
+  <section class="max-w-5xl mx-auto px-6 pt-24 pb-16">
+    <div class="flex items-center justify-between mb-12">
       <div>
-        <h1 class="text-3xl font-bold text-accent">📦 研究归档</h1>
-        <p class="text-gray-400 mt-1">超过30天的历史资讯</p>
+        <h1 class="text-4xl font-bold text-white mb-2">研究归档</h1>
+        <p class="text-gray-400">超过30天的历史资讯</p>
       </div>
-      <a href="/research" class="text-sm px-3 py-1.5 rounded border border-gray-700 text-gray-400 hover:text-white hover:border-gray-500 transition-colors">
+      <a href="/research" class="text-sm px-4 py-2 rounded-lg border border-white/10 text-gray-300 hover:text-white hover:bg-white/5 transition-colors flex items-center gap-2">
         ← 返回首页
       </a>
     </div>
@@ -55,7 +55,7 @@ const archiveCanonical = 'https://www.garfield-wu.com/research/archive';
     {months.length > 0 ? (
       <>
         {/* Archive Stats */}
-        <div class="mb-8 p-4 bg-card/50 rounded-lg border border-gray-800">
+        <div class="mb-12 glass-card p-6">
           <p class="text-sm text-gray-400">
             📊 归档统计：<span class="text-white font-medium">{archivedNews.length}</span> 条历史资讯，跨越 <span class="text-white font-medium">{months.length}</span> 个月
             {months.length > 0 && <span> · 最近归档：<span class="text-white font-medium">{byMonth[months[0]]?.label}</span></span>}
@@ -75,7 +75,7 @@ const archiveCanonical = 'https://www.garfield-wu.com/research/archive';
                 <div class="space-y-3">
                   {group.items.map((news: any) => (
                     <a href={news.link} target="_blank" rel="noopener noreferrer"
-                      class="block p-5 bg-card rounded-xl border border-gray-800 hover:border-accent transition-all group">
+                      class="block glass-card p-6 group">
                       <div class="flex items-start justify-between gap-3 mb-2">
                         <h3 class="text-base font-bold text-white group-hover:text-accent transition-colors leading-tight flex-1">
                           {news.title}
@@ -116,11 +116,11 @@ const archiveCanonical = 'https://www.garfield-wu.com/research/archive';
     )}
 
     {/* Footer */}
-    <div class="mt-12 p-4 bg-card/50 rounded-lg border border-gray-800 text-center">
-      <p class="text-gray-500 text-sm">
+    <div class="mt-12 glass-card p-6 text-center">
+      <p class="text-gray-400 text-sm">
         📡 归档来源：每日行业简报自动归档
         <br/>
-        <span class="text-gray-600 text-xs">数据每日 08:45 自动更新 · <a href="/research" class="text-accent hover:underline">返回首页</a></span>
+        <span class="text-gray-500 text-xs mt-2 inline-block">数据每日 08:45 自动更新 · <a href="/research" class="text-accent hover:text-white transition-colors">返回首页</a></span>
       </p>
     </div>
   </section>

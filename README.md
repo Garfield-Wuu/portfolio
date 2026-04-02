@@ -4,26 +4,42 @@
 
 **网址：** https://www.garfield-wu.com
 
+**技术栈：** Astro 6 · Tailwind CSS 4 · TypeScript（静态站点，`npm run build` 输出至 `dist/`）
+
+---
+
+## 前端特性（近期）
+
+- 明暗主题切换（本地 `localStorage` 记忆，导航栏右侧）
+- 网格背景、毛玻璃卡片、滚动进场动效、桌面端鼠标光晕
+- 首页 Hero 分栏、技术矩阵（Bento）、精选项目主次布局
+- 页脚社交：GitHub、bilibili、CSDN
+
 ---
 
 ## 📂 项目结构
 
 ```
 /
+├── public/                      # 静态资源（头像、favicon 等）
 ├── src/
 │   ├── pages/
 │   │   ├── index.astro          # 首页
 │   │   ├── about.astro          # 关于
 │   │   ├── projects.astro       # 项目展示
-│   │   ├── research.astro      # 研究热点 (自动更新)
-│   │   └── research-archive.astro  # 研究归档
+│   │   └── research/
+│   │       ├── index.astro      # 研究热点（数据由脚本生成时写入 research.ts）
+│   │       └── archive/
+│   │           └── index.astro  # 研究归档
 │   ├── data/
-│   │   ├── profile.ts          # 个人资料
-│   │   ├── projects.ts         # 项目数据
-│   │   └── research.ts         # 研究热点数据 (自动生成)
-│   └── layouts/
-│       └── Layout.astro         # 页面布局
-├── scripts/                     # (位于 ~/clawd/scripts/)
+│   │   ├── profile.ts           # 个人资料与 SEO
+│   │   ├── projects.ts          # 项目数据
+│   │   ├── research.ts          # 研究热点数据（多为自动生成，勿手改）
+│   │   └── archive/             # 归档 JSON（若使用）
+│   ├── layouts/
+│   │   └── Layout.astro         # 全站布局与主题脚本
+│   └── styles/
+│       └── global.css           # Tailwind 与设计变量
 └── dist/                        # 构建输出
 ```
 
@@ -211,6 +227,13 @@ interface News {
 ---
 
 ## 📜 更新日志
+
+### 2026-04-03（UI）
+
+- ✅ 全站视觉重构：毛玻璃卡片、网格与光晕背景
+- ✅ 明暗主题切换、滚动进场与鼠标光晕（渐进增强）
+- ✅ 首页 Hero / 技术矩阵 / 精选项目布局优化
+- ✅ 页脚 bilibili 文案、CSDN 链接、移除 Built with Astro 文案
 
 ### 2026-04-03
 

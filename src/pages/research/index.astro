@@ -15,25 +15,30 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
   ogDescription="LLM+无人机+机器人领域最新研究进展，包含论文、开源项目、行业资讯。每日自动更新。"
   canonical="https://www.garfield-wu.com/research"
   page="research">
-  <section class="max-w-5xl mx-auto px-6 py-16">
-    <div class="flex items-center justify-between mb-4">
+  <section class="max-w-5xl mx-auto px-6 pt-24 pb-16">
+    <div class="flex items-center justify-between mb-12">
       <div>
-        <h1 class="text-3xl font-bold text-accent">研究热点</h1>
-        <p class="text-gray-400 mt-1">LLM + 无人机 + 机器人领域 · 每日更新</p>
+        <h1 class="text-4xl font-bold text-white mb-2">研究热点</h1>
+        <p class="text-gray-400">LLM + 无人机 + 机器人领域 · 每日更新</p>
       </div>
-      <a href="/research/archive" class="text-sm px-3 py-1.5 rounded border border-gray-700 text-gray-400 hover:text-white hover:border-gray-500 transition-colors">
-        📦 历史归档
+      <a href="/research/archive" class="text-sm px-4 py-2 rounded-lg border border-white/10 text-gray-300 hover:text-white hover:bg-white/5 transition-colors flex items-center gap-2">
+        <span>📦</span> 历史归档
       </a>
     </div>
 
     <!-- Trends -->
-    <div class="mb-10">
-      <h2 class="text-xl font-bold mb-4 text-accent">🔥 研究趋势</h2>
-      <div class="grid md:grid-cols-2 gap-3">
+    <div class="mb-16">
+      <div class="flex items-center gap-4 mb-6">
+        <h2 class="text-2xl font-bold text-white">🔥 研究趋势</h2>
+        <div class="h-px bg-white/10 flex-1"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-4">
         {trends.map(trend => (
-          <div class="p-4 bg-card rounded-lg border border-gray-800">
-            <h3 class="text-sm font-semibold text-white mb-1">{trend.icon} {trend.title}</h3>
-            <p class="text-gray-500 text-xs">{trend.description}</p>
+          <div class="glass-card p-6">
+            <h3 class="text-base font-semibold text-white mb-2 flex items-center gap-2">
+              <span class="text-xl">{trend.icon}</span> {trend.title}
+            </h3>
+            <p class="text-gray-400 text-sm leading-relaxed">{trend.description}</p>
           </div>
         ))}
       </div>
@@ -90,8 +95,8 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
         </h2>
         <div class="news-list space-y-3 mb-10">
           {recentNews.map((news, idx) => (
-            <a href={news.link} target="_blank" 
-              class="content-card block p-5 bg-card rounded-xl border border-gray-800 hover:border-accent transition-all group"
+            <a href={news.link} target="_blank" rel="noopener noreferrer"
+              class="content-card block glass-card p-6 group"
               data-title={news.title.toLowerCase()}
               data-tags="news"
               data-date={news.date}
@@ -123,8 +128,8 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
         </h2>
         <div class="papers-list space-y-3 mb-10">
           {recentPapers.map((paper, idx) => (
-            <a href={paper.link} target="_blank"
-              class="content-card block p-5 bg-card rounded-xl border border-gray-800 hover:border-accent transition-all group"
+            <a href={paper.link} target="_blank" rel="noopener noreferrer"
+              class="content-card block glass-card p-6 group"
               data-title={paper.title.toLowerCase()}
               data-tags={JSON.stringify(paper.tags).toLowerCase()}
               data-date={paper.date}
@@ -161,8 +166,8 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
         </h2>
         <div class="github-list grid md:grid-cols-2 gap-3 mb-10">
           {hotProjects.map((project, idx) => (
-            <a href={project.link} target="_blank"
-              class="content-card block p-5 bg-card rounded-xl border border-gray-800 hover:border-accent transition-all group"
+            <a href={project.link} target="_blank" rel="noopener noreferrer"
+              class="content-card block glass-card p-6 group"
               data-title={project.name.toLowerCase()}
               data-tags={JSON.stringify(project.tags).toLowerCase()}
               data-date=""
@@ -195,14 +200,14 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
     </div>
 
     <!-- Data Source -->
-    <div class="mt-8 p-4 bg-card/50 rounded-lg border border-gray-800 text-center">
-      <p class="text-gray-500 text-sm">
+    <div class="mt-12 glass-card p-6 text-center">
+      <p class="text-gray-400 text-sm">
         📡 数据来源：
-        <a href="https://arxiv.org" target="_blank" class="text-accent hover:underline">arXiv</a> ·
-        <a href="https://github.com" target="_blank" class="text-accent hover:underline">GitHub</a> ·
-        <a href="/research/archive" class="text-accent hover:underline">📦 历史归档</a>
+        <a href="https://arxiv.org" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-white transition-colors">arXiv</a> ·
+        <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="text-accent hover:text-white transition-colors">GitHub</a> ·
+        <a href="/research/archive" class="text-accent hover:text-white transition-colors">📦 历史归档</a>
         <br/>
-        <span class="text-gray-600 text-xs">研究方向：LLM + 无人机 + 具身智能 · 每日 08:45 自动更新</span>
+        <span class="text-gray-500 text-xs mt-2 inline-block">研究方向：LLM + 无人机 + 具身智能 · 每日 08:45 自动更新</span>
       </p>
     </div>
   </section>

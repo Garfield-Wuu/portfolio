@@ -1,17 +1,141 @@
 @import "tailwindcss";
 
 @theme {
-  --color-dark: #0a0a0f;
-  --color-card: #111118;
+  --color-dark: #050508;
+  --color-card: #0d0d12;
   --color-accent: #00d4ff;
   --color-purple: #a855f7;
+  --font-sans: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
-body {
-  background-color: var(--color-dark);
-  color: #e5e7eb;
+:root {
+  --bg-grid-color: rgba(255,255,255,0.02);
+  --bg-glow-color: rgba(168, 85, 247, 0.1);
+  --glass-border: rgba(255,255,255,0.05);
+  --glass-bg: rgba(13, 13, 18, 0.7);
 }
 
-a:hover {
-  color: var(--color-accent);
+body.light-mode {
+  --color-dark: #f4f5f7;
+  --color-card: #ffffff;
+  --color-accent: #0284c7;
+  --color-purple: #7e22ce;
+  --bg-grid-color: rgba(0,0,0,0.03);
+  --bg-glow-color: rgba(2, 132, 199, 0.08);
+  --glass-border: rgba(0,0,0,0.08);
+  --glass-bg: rgba(255, 255, 255, 0.7);
 }
+
+@layer base {
+  body {
+    background-color: var(--color-dark);
+    color: #e5e7eb;
+    background-image: 
+      radial-gradient(circle at 50% 0%, var(--bg-glow-color) 0%, transparent 50%),
+      linear-gradient(to right, var(--bg-grid-color) 1px, transparent 1px),
+      linear-gradient(to bottom, var(--bg-grid-color) 1px, transparent 1px);
+    background-size: 100% 100%, 40px 40px, 40px 40px;
+    background-position: top center, center top, center top;
+    background-attachment: fixed;
+    font-family: var(--font-sans);
+    transition: background-color 0.5s ease;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+}
+
+@layer components {
+  .glass-card {
+    background-color: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: 0.75rem;
+    transition: all 0.3s ease;
+  }
+  
+  .glass-card:hover {
+    border-color: rgba(var(--color-accent), 0.4);
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px -10px rgba(0, 212, 255, 0.15);
+  }
+  
+  .text-gradient {
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right, var(--color-accent), var(--color-purple));
+  }
+
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg font-medium text-white transition-all;
+    background: linear-gradient(to right, var(--color-accent), var(--color-purple));
+    box-shadow: 0 0 15px rgba(168,85,247,0.3);
+  }
+  
+  .btn-primary:hover {
+    box-shadow: 0 0 25px rgba(0,212,255,0.5);
+    transform: translateY(-2px);
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-lg font-medium transition-all backdrop-blur-sm;
+    background-color: rgba(255,255,255,0.05);
+    border: 1px solid var(--glass-border);
+    color: #d1d5db;
+  }
+  
+  .btn-secondary:hover {
+    background-color: rgba(255,255,255,0.1);
+    color: #ffffff;
+    transform: translateY(-2px);
+  }
+  
+  .reveal {
+    opacity: 0;
+    transform: translateY(30px) scale(0.98);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  }
+  
+  .reveal.active {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .reveal {
+      transition: none;
+      opacity: 1;
+      transform: none;
+    }
+  }
+}
+
+a {
+  @apply transition-colors duration-200;
+}
+
+/* Light mode text overrides */
+body.light-mode {
+  color: #111827;
+}
+body.light-mode .text-white { color: #111827 !important; }
+body.light-mode .text-gray-300 { color: #374151 !important; }
+body.light-mode .text-gray-400 { color: #4b5563 !important; }
+body.light-mode .text-gray-500 { color: #6b7280 !important; }
+body.light-mode .bg-white\/5 { background-color: rgba(0,0,0,0.03) !important; }
+body.light-mode .bg-white\/10 { background-color: rgba(0,0,0,0.06) !important; }
+body.light-mode .border-white\/5 { border-color: rgba(0,0,0,0.1) !important; }
+body.light-mode .border-white\/10 { border-color: rgba(0,0,0,0.15) !important; }
+body.light-mode .border-gray-800 { border-color: rgba(0,0,0,0.1) !important; }
+body.light-mode .border-gray-700 { border-color: rgba(0,0,0,0.15) !important; }
+body.light-mode .bg-dark, body.light-mode .bg-dark\/50 { background-color: rgba(0,0,0,0.04) !important; }
+body.light-mode .hover\:text-white:hover { color: #000000 !important; }
+body.light-mode .glass-card { box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
+body.light-mode .glass-card:hover { border-color: var(--color-accent) !important; box-shadow: 0 10px 30px rgba(2, 132, 199, 0.15); }
+body.light-mode header { background-color: rgba(255,255,255,0.8) !important; border-bottom-color: rgba(0,0,0,0.08) !important; }
+body.light-mode footer { background-color: rgba(255,255,255,0.5) !important; border-top-color: rgba(0,0,0,0.08) !important; }
+body.light-mode .btn-secondary { color: #374151; background-color: rgba(0,0,0,0.03); border-color: rgba(0,0,0,0.1); }
+body.light-mode .btn-secondary:hover { color: #111827; background-color: rgba(0,0,0,0.06); border-color: var(--color-accent); }
