@@ -7,7 +7,8 @@ interface Props {
   description?: string;
   ogTitle?: string;
   ogDescription?: string;
-  page?: 'home' | 'projects' | 'about';
+  page?: 'home' | 'projects' | 'about' | 'research';
+  canonical?: string;
 }
 
 const { 
@@ -15,7 +16,8 @@ const {
   description, 
   ogTitle, 
   ogDescription,
-  page = 'home' 
+  page = 'home',
+  canonical
 } = Astro.props;
 
 // 获取页面级 SEO 配置
@@ -51,7 +53,7 @@ const pageOgDesc = ogDescription || pageConfig.ogDescription;
     <meta name="twitter:image" content={seo.siteUrl + seo.ogImage} />
     
     <!-- Canonical URL -->
-    <link rel="canonical" href={seo.siteUrl} />
+    <link rel="canonical" href={canonical || seo.siteUrl} />
     
     <title>{pageTitle}</title>
   </head>

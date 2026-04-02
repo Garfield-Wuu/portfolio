@@ -8,7 +8,13 @@ const allGithubTags = [...new Set(hotProjects.flatMap(p => p.tags))];
 const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
 ---
 
-<Layout title="研究热点" page="research">
+<Layout 
+  title="研究热点 | Garfield"
+  description="追踪LLM+无人机+机器人领域最新进展：最新论文、GitHub热门项目、行业资讯。数据每日自动更新。"
+  ogTitle="研究热点 | Garfield"
+  ogDescription="LLM+无人机+机器人领域最新研究进展，包含论文、开源项目、行业资讯。每日自动更新。"
+  canonical="https://www.garfield-wu.com/research"
+  page="research">
   <section class="max-w-5xl mx-auto px-6 py-16">
     <div class="flex items-center justify-between mb-4">
       <div>
@@ -251,6 +257,21 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
     -webkit-box-orient: vertical;
     overflow: hidden;
   }
+  
+  /* Search highlight */
+  .search-highlight {
+    background: rgba(0 212 255, 0.3);
+    color: #00d4ff;
+    padding: 0 2px;
+    border-radius: 2px;
+    font-weight: 500;
+  }
+  
+  .search-empty-hint {
+    color: rgb(107 114 128);
+    font-size: 0.75rem;
+    margin-top: 0.25rem;
+  }
 </style>
 
 <script>
@@ -279,8 +300,63 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
     return num || 0;
   }
 
+  // Highlight search terms in text nodes
+  function highlightText(node, query) {
+    if (!query || query.length < 2) return;
+    
+    const walker = document.createTreeWalker(node, NodeFilter.SHOW_TEXT, null, false);
+    const nodesToProcess = [];
+    while (walker.nextNode()) {
+      const text = walker.currentNode.nodeValue;
+      if (text && text.trim() && !walker.currentNode.parentElement?.closest('.content-card')) {
+        // Only process visible text in card titles, summaries, and tags
+        const parent = walker.currentNode.parentElement;
+        if (parent && (parent.classList.contains('text-base') || 
+            parent.classList.contains('text-sm') || 
+            parent.classList.contains('text-xs'))) {
+          nodesToProcess.push(walker.currentNode);
+        }
+      }
+    }
+    
+    nodesToProcess.forEach(textNode => {
+      const text = textNode.nodeValue;
+      const normQuery = normalizeStr(query);
+      const words = normQuery.split(/\s+/).filter(w => w.length >= 2);
+      
+      let modified = text;
+      words.forEach(word => {
+        const regex = new RegExp(`(${word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
+        modified = modified.replace(regex, '<mark class="search-highlight">$1</mark>');
+      });
+      
+      if (modified !== text) {
+        const span = document.createElement('span');
+        span.innerHTML = modified;
+        textNode.parentNode.replaceChild(span, textNode);
+        // Unwrap the <span> but keep the <mark>
+        Array.from(span.childNodes).forEach(child => {
+          textNode.parentNode.insertBefore(child, textNode);
+        });
+        textNode.parentNode.removeChild(textNode);
+      }
+    });
+  }
+
+  // Remove all highlights
+  function removeHighlights() {
+    document.querySelectorAll('mark.search-highlight').forEach(mark => {
+      const parent = mark.parentNode;
+      parent.replaceChild(document.createTextNode(mark.textContent), mark);
+      parent.normalize();
+    });
+  }
+
   function applyFilters() {
     let visibleCount = 0;
+
+    // Remove old highlights first
+    removeHighlights();
 
     // Show/hide sections by type
     contentSections.forEach(section => {
@@ -312,7 +388,13 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
 
       const visible = typeMatch && tagMatch && searchMatch;
       card.classList.toggle('hidden', !visible);
-      if (visible) visibleCount++;
+      if (visible) {
+        visibleCount++;
+        // Apply highlight to visible cards
+        if (searchQuery && searchQuery.length >= 2) {
+          highlightText(card, searchQuery);
+        }
+      }
     });
 
     // Sort

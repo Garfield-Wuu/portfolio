@@ -35,9 +35,20 @@ archivedNews.forEach(n => {
 });
 
 const months = Object.keys(byMonth).sort().reverse();
+
+// SEO
+const archiveTitle = '研究归档 - 历史资讯 | Garfield';
+const archiveDesc = `超过30天的AI/无人机/机器人领域历史资讯归档，共${archivedNews.length}条。按月份组织，方便追溯历史研究动态。`;
+const archiveCanonical = 'https://www.garfield-wu.com/research/archive';
 ---
 
-<Layout title="研究归档 - 历史资讯" page="research">
+<Layout 
+  title={archiveTitle}
+  description={archiveDesc}
+  ogTitle={archiveTitle}
+  ogDescription={archiveDesc}
+  canonical={archiveCanonical}
+  page="research">
   <section class="max-w-5xl mx-auto px-6 py-16">
     <div class="flex items-center justify-between mb-6">
       <div>
