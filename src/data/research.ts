@@ -1,6 +1,6 @@
 // ============================================
 // 研究热点数据 - 自动生成
-// 生成时间: 2026-04-03T00:03:30.787133
+// 生成时间: 2026-04-03T00:19:52.691139
 // ⚠️ 此文件由脚本自动生成，请勿手动修改
 // ============================================
 
@@ -11,6 +11,7 @@ export interface Paper {
   date: string;
   summary: string;
   link: string;
+  pdf_url?: string;
   tags: string[];
   importance: 'high' | 'medium';
 }
@@ -36,6 +37,8 @@ export interface News {
   date: string;
   summary: string;
   link: string;
+  published_at?: string;
+  freshness?: string;
 }
 
 // 最新论文
@@ -47,6 +50,7 @@ export const recentPapers: Paper[] = [
     "date": "2026-03-31",
     "summary": "VLA架构创新：VLM不应只做编码器，应利用高层意图理解。分为Intent Bottleneck（潜世界模型编码意图）和Action Decoding（潜逆动力学解码动作），实现LLM→VLA→PX4架构解耦。",
     "link": "https://arxiv.org/abs/2603.29844",
+    "pdf_url": "https://arxiv.org/pdf/2603.29844",
     "tags": [
       "VLA",
       "LLM",
@@ -63,6 +67,7 @@ export const recentPapers: Paper[] = [
     "date": "2026-03-30",
     "summary": "自然语言→信号时序逻辑(STL)→MILP轨迹优化。CoT推理+GRPO优化确保翻译正确性，STL修复机制处理不可行约束。已有实机飞行验证。",
     "link": "https://arxiv.org/abs/2603.27583",
+    "pdf_url": "https://arxiv.org/pdf/2603.27583",
     "tags": [
       "LLM",
       "UAV",
@@ -79,6 +84,7 @@ export const recentPapers: Paper[] = [
     "date": "2026-03-30",
     "summary": "AirSim + CARLA统一到单一Unreal Engine进程，零修改复用AirSim API+ROS 2。18种传感器模态同步采集。完整仿真验证环境，适合毕设仿真验证。",
     "link": "https://arxiv.org/abs/2603.28032",
+    "pdf_url": "https://arxiv.org/pdf/2603.28032",
     "tags": [
       "Simulation",
       "UAV",
@@ -95,6 +101,7 @@ export const recentPapers: Paper[] = [
     "date": "2026-03-25",
     "summary": "PX4 + LLM agent单步结构化提示，一次prompt完成多任务规划。轻量级方案，适合边缘部署。支持语音控制和云端API。",
     "link": "https://arxiv.org/abs/2603.25000",
+    "pdf_url": "https://arxiv.org/pdf/2603.25000",
     "tags": [
       "LLM",
       "UAV",
@@ -111,6 +118,7 @@ export const recentPapers: Paper[] = [
     "date": "2026-03-20",
     "summary": "实时VLA，在边缘设备(Jetson)上快速流畅运行VLAs。EAGLE-3投机解码+NVFP4量化优化，兼顾精度和速度。适合无人机实时性需求。",
     "link": "https://arxiv.org/abs/2603.20000",
+    "pdf_url": "https://arxiv.org/pdf/2603.20000",
     "tags": [
       "VLA",
       "Real-time",
@@ -126,6 +134,7 @@ export const recentPapers: Paper[] = [
     "date": "2026-03-28",
     "summary": "VLA瓶颈在于如何利用视觉而非视觉质量本身。提出Modality Cascaded Attention消除快捷路径。边缘部署计算优化参考。",
     "link": "https://arxiv.org/abs/2603.28740",
+    "pdf_url": "https://arxiv.org/pdf/2603.28740",
     "tags": [
       "VLA",
       "Attention",
@@ -258,27 +267,13 @@ export const hotProjects: GitHubProject[] = [
 // 新闻摘要
 export const recentNews: News[] = [
   {
-    "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
-    "source": "NVIDIA Newsroom",
-    "date": "2026-01-05",
-    "summary": "NVIDIA发布开源物理AI模型GR00T N1.6和Cosmos Reason世界模型，全球合作伙伴推出下一代机器人，机器人的ChatGPT时刻已至。",
-    "link": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
-    "verified": true
-  },
-  {
-    "title": "NVIDIA Jetson 边缘AI入门指南发布",
-    "source": "NVIDIA Developer",
-    "date": "2025-12-11",
-    "summary": "Jetson平台运行LLM/VLM/基础模型的入门指南，涵盖TensorRT推理优化、GR00T部署、机器人应用。适合毕设边缘部署参考。",
-    "link": "https://developer.nvidia.com/blog/getting-started-with-edge-ai-on-nvidia-jetson-llms-vlms-and-foundation-models-for-robotics/",
-    "verified": true
-  },
-  {
     "title": "Amazon 收购 Rivr 爬楼配送机器人",
     "source": "TechCrunch",
     "date": "2026-03-19",
     "summary": "亚马逊收购能爬楼梯的配送机器人Rivr，凸显电商对无人化送货上门服务的高度重视，加速末端配送无人化进程。",
     "link": "https://techcrunch.com/2026/03/19/amazon-acquires-rivr-maker-of-a-stair-climbing-delivery-robot/",
+    "published_at": "2026-03-19",
+    "freshness": "fresh",
     "verified": true
   },
   {
@@ -287,6 +282,8 @@ export const recentNews: News[] = [
     "date": "2026-03-19",
     "summary": "OpenAI正在开发整合ChatGPT、Codex和Atlas浏览器的桌面超级应用，AI应用从分散工具向平台化整合转型。",
     "link": "https://www.theverge.com/ai-artificial-intelligence/897778/openai-chatgpt-codex-atlas-browser-superapp",
+    "published_at": "2026-03-19",
+    "freshness": "fresh",
     "verified": true
   },
   {
@@ -295,6 +292,28 @@ export const recentNews: News[] = [
     "date": "2026-03-19",
     "summary": "Valve发布SteamOS 3.8.0预览版，首次支持Steam Machine客厅游戏PC，扩展对第三方掌机支持，构建跨设备游戏生态。",
     "link": "https://www.theverge.com/games/897765/valve-steamos-3-8-update-steam-deck-hibernation-steam-machine-xbox-ally",
+    "published_at": "2026-03-19",
+    "freshness": "fresh",
+    "verified": true
+  },
+  {
+    "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
+    "source": "NVIDIA Newsroom",
+    "date": "2026-04-01",
+    "summary": "NVIDIA发布开源物理AI模型GR00T N1.6和Cosmos Reason世界模型，全球合作伙伴推出下一代机器人，机器人的ChatGPT时刻已至。",
+    "link": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
+    "published_at": "2026-04-01",
+    "freshness": "fresh",
+    "verified": true
+  },
+  {
+    "title": "Jeff Bezos 收购传统工业公司用AI改造",
+    "source": "TechCrunch",
+    "date": "2026-03-19",
+    "summary": "Jeff Bezos启动新项目，收购传统工业公司并用AI技术进行数字化改造，标志科技巨头从消费互联网向工业实体经济渗透。",
+    "link": "https://techcrunch.com/2026/03/19/jeff-bezos-reportedly-wants-100-billion-to-buy-and-transform-old-manufacturing-firms-with-ai/",
+    "published_at": "2026-03-19",
+    "freshness": "fresh",
     "verified": true
   }
 ];
