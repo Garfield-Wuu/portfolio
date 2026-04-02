@@ -1,0 +1,52 @@
+---
+import Layout from '../layouts/Layout.astro';
+import { projects } from '../data/projects';
+
+const statusLabels: Record<string, string> = {
+  active: '进行中',
+  completed: '已完成',
+  research: '研究型',
+};
+---
+
+<Layout title="项目" page="projects">
+  <section class="max-w-5xl mx-auto px-6 py-16">
+    <h1 class="text-3xl font-bold mb-4 text-accent">项目作品</h1>
+    <p class="text-gray-400 mb-12">持续更新中，涵盖无人机、机器人、全栈开发等领域。</p>
+
+    <div class="grid md:grid-cols-2 gap-6">
+      {projects.map(project => (
+        <div class="p-6 bg-card rounded-xl border border-gray-800 hover:border-accent transition-all">
+          <div class="flex items-start justify-between mb-2">
+            <h3 class="text-xl font-bold text-white">{project.title}</h3>
+            <span class={`text-xs px-2 py-1 rounded ${
+              project.status === 'active' ? 'bg-green-900/50 text-green-400' :
+              project.status === 'completed' ? 'bg-blue-900/50 text-blue-400' :
+              'bg-purple-900/50 text-purple-400'
+            }`}>
+              {statusLabels[project.status]}
+            </span>
+          </div>
+          <p class="text-gray-400 text-sm mb-4">{project.desc}</p>
+          <div class="flex flex-wrap gap-2 mb-4">
+            {project.tags.map(tag => (
+              <span class="text-xs px-2 py-1 bg-dark rounded text-gray-500">{tag}</span>
+            ))}
+          </div>
+          <div class="flex gap-3">
+            {project.link !== '#' && (
+              <a href={project.link} target="_blank" class="text-sm text-accent hover:underline">
+                访问 →
+              </a>
+            )}
+            {project.github && (
+              <a href={project.github} target="_blank" class="text-sm text-gray-400 hover:text-accent">
+                GitHub ↗
+              </a>
+            )}
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Layout>
