@@ -8,7 +8,7 @@
 </style>
   <link rel="stylesheet" href="../shared-arcade.css">
 </head>
-<body>
+<body data-mobile-pad="ud">
   <h1>Pong</h1>
   <canvas id="pong" width="600" height="400"></canvas>
   <p>Use Up/Down arrows to move.</p>
@@ -91,8 +91,14 @@
   
   function game() { update(); render(); }
   
-  window.addEventListener("keydown", function(e) { if(e.keyCode == 38) upArrow = true; else if(e.keyCode == 40) downArrow = true; });
-  window.addEventListener("keyup", function(e) { if(e.keyCode == 38) upArrow = false; else if(e.keyCode == 40) downArrow = false; });
+  window.addEventListener("keydown", function(e) {
+    if (e.code === 'ArrowUp' || e.key === 'ArrowUp') upArrow = true;
+    else if (e.code === 'ArrowDown' || e.key === 'ArrowDown') downArrow = true;
+  });
+  window.addEventListener("keyup", function(e) {
+    if (e.code === 'ArrowUp' || e.key === 'ArrowUp') upArrow = false;
+    else if (e.code === 'ArrowDown' || e.key === 'ArrowDown') downArrow = false;
+  });
   
   setInterval(game, 1000/50);
 </script>
@@ -110,6 +116,7 @@ if (!window.__game_focus_injected) {
 }
 // --------------------------------------
 </script>
+<script src="../shared-mobile-pad.js"></script>
 
 </body>
 </html>

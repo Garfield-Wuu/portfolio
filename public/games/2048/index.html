@@ -12,6 +12,12 @@
     align-items: center;
     margin-top: 50px;
   }
+  .board-outer {
+    width: min(100vw - 24px, 400px);
+    display: flex;
+    justify-content: center;
+    touch-action: none;
+  }
   #game-board {
     width: 400px;
     height: 400px;
@@ -20,6 +26,13 @@
     position: relative;
     padding: 10px;
     box-sizing: border-box;
+    touch-action: none;
+    transform-origin: top center;
+  }
+  @media (max-width: 440px) {
+    #game-board {
+      transform: scale(calc((100vw - 24px) / 400));
+    }
   }
   .tile {
     width: 85px;
@@ -48,11 +61,13 @@
 </style>
   <link rel="stylesheet" href="../shared-arcade.css">
 </head>
-<body>
+<body data-mobile-pad="dpad">
   <h1>2048</h1>
   <p>Score: <span id="score">0</span></p>
-  <div id="game-board"></div>
-  <p>Use arrow keys to move tiles.</p>
+  <div class="board-outer">
+    <div id="game-board"></div>
+  </div>
+  <p>方向键或滑动棋盘移动方块。</p>
 
 <script>
   const board = document.getElementById('game-board');
@@ -135,11 +150,30 @@
   }
 
   window.addEventListener('keydown', e => {
-    if(e.key === 'ArrowLeft') move('L');
-    if(e.key === 'ArrowRight') move('R');
-    if(e.key === 'ArrowUp') move('U');
-    if(e.key === 'ArrowDown') move('D');
+    if(e.key === 'ArrowLeft' || e.code === 'ArrowLeft') move('L');
+    if(e.key === 'ArrowRight' || e.code === 'ArrowRight') move('R');
+    if(e.key === 'ArrowUp' || e.code === 'ArrowUp') move('U');
+    if(e.key === 'ArrowDown' || e.code === 'ArrowDown') move('D');
   });
+
+  (function swipe2048() {
+    var sx = 0, sy = 0, ok = false;
+    board.addEventListener('touchstart', function (ev) {
+      if (!ev.touches || !ev.touches[0]) return;
+      ok = true;
+      sx = ev.touches[0].clientX;
+      sy = ev.touches[0].clientY;
+    }, { passive: true });
+    board.addEventListener('touchend', function (ev) {
+      if (!ok || !ev.changedTouches || !ev.changedTouches[0]) return;
+      ok = false;
+      var dx = ev.changedTouches[0].clientX - sx;
+      var dy = ev.changedTouches[0].clientY - sy;
+      if (Math.abs(dx) < 28 && Math.abs(dy) < 28) return;
+      if (Math.abs(dx) > Math.abs(dy)) move(dx > 0 ? 'R' : 'L');
+      else move(dy > 0 ? 'D' : 'U');
+    }, { passive: true });
+  })();
 
   init();
 </script>
@@ -157,6 +191,7 @@ if (!window.__game_focus_injected) {
 }
 // --------------------------------------
 </script>
+<script src="../shared-mobile-pad.js"></script>
 
 </body>
 </html>

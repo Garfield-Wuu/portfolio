@@ -5,7 +5,7 @@
 <style>
   body { display: flex; flex-direction: column; align-items: center; font-family: sans-serif; margin-top: 30px; background: transparent; }
   #board { display: grid; grid-template-columns: repeat(10, 30px); gap: 2px; background: transparent; padding: 2px; }
-  .cell { width: 30px; height: 30px; background: transparent; border: 2px solid #fff; border-bottom-color: #888; border-right-color: #888; display: flex; justify-content: center; align-items: center; font-weight: bold; cursor: pointer; user-select: none; }
+  .cell { width: 36px; height: 36px; min-width: 36px; min-height: 36px; background: transparent; border: 2px solid #fff; border-bottom-color: #888; border-right-color: #888; display: flex; justify-content: center; align-items: center; font-weight: bold; cursor: pointer; user-select: none; touch-action: manipulation; }
   .cell.revealed { background: transparent; border: 1px solid #aaa; }
   .cell.mine { background: red; }
 </style>
@@ -13,7 +13,7 @@
 </head>
 <body>
   <h1>Minesweeper</h1>
-  <p>Mines left: <span id="mines">10</span> | Left click = Reveal | Right click = Flag</p>
+  <p>Mines left: <span id="mines">10</span> | 点按揭开 | 长按插旗（电脑可右键）</p>
   <div id="board"></div>
 
 <script>
@@ -34,6 +34,23 @@
         cell.dataset.r = r; cell.dataset.c = c;
         cell.addEventListener('click', handleClick);
         cell.addEventListener('contextmenu', handleRightClick);
+        (function (cEl) {
+          var t = null;
+          cEl.addEventListener('touchstart', function () {
+            t = setTimeout(function () {
+              t = null;
+              cEl.dataset.skipNextTap = '1';
+              setTimeout(function () { delete cEl.dataset.skipNextTap; }, 400);
+              handleRightClick({ preventDefault: function () {}, target: cEl });
+            }, 500);
+          }, { passive: true });
+          cEl.addEventListener('touchend', function () {
+            if (t) { clearTimeout(t); t = null; }
+          });
+          cEl.addEventListener('touchmove', function () {
+            if (t) { clearTimeout(t); t = null; }
+          });
+        })(cell);
         boardEl.appendChild(cell);
         row.push({ isMine: false, revealed: false, flagged: false, el: cell });
       }
@@ -76,7 +93,13 @@
     checkWin();
   }
 
-  function handleClick(e) { reveal(parseInt(e.target.dataset.r), parseInt(e.target.dataset.c)); }
+  function handleClick(e) {
+    if (e.target.dataset.skipNextTap) {
+      delete e.target.dataset.skipNextTap;
+      return;
+    }
+    reveal(parseInt(e.target.dataset.r), parseInt(e.target.dataset.c));
+  }
 
   function handleRightClick(e) {
     e.preventDefault();

@@ -11,7 +11,7 @@
 </style>
   <link rel="stylesheet" href="../shared-arcade.css">
 </head>
-<body>
+<body data-mobile-pad="jump">
   <h2>恐龙快跑</h2>
   <p>按空格或点击跳跃</p>
   <canvas id="gameCanvas" width="600" height="200"></canvas>
@@ -107,8 +107,9 @@
     }
   }
 
-  document.addEventListener('keydown', e => { if (e.code === 'Space') jump(); });
+  document.addEventListener('keydown', e => { if (e.code === 'Space' || e.key === ' ') jump(); });
   canvas.addEventListener('mousedown', jump);
+  canvas.addEventListener('touchstart', function (e) { e.preventDefault(); jump(); }, { passive: false });
 
   setInterval(update, 1000 / 60);
 </script>
@@ -126,6 +127,7 @@ if (!window.__game_focus_injected) {
 }
 // --------------------------------------
 </script>
+<script src="../shared-mobile-pad.js"></script>
 
 </body>
 </html>

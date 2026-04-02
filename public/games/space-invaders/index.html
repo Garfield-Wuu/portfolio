@@ -8,7 +8,7 @@
 </style>
   <link rel="stylesheet" href="../shared-arcade.css">
 </head>
-<body>
+<body data-mobile-pad="lr-fire">
   <h1>Space Invaders</h1>
   <p>Score: <span id="score">0</span></p>
   <canvas id="game" width="600" height="400"></canvas>
@@ -124,13 +124,13 @@
   }
 
   window.addEventListener('keydown', e => {
-    if(e.key === 'ArrowLeft') left = true;
-    if(e.key === 'ArrowRight') right = true;
-    if(e.key === ' ') { bullets.push({ x: player.x + player.w/2 - 2, y: player.y }); }
+    if(e.key === 'ArrowLeft' || e.code === 'ArrowLeft') left = true;
+    if(e.key === 'ArrowRight' || e.code === 'ArrowRight') right = true;
+    if(e.key === ' ' || e.code === 'Space') { bullets.push({ x: player.x + player.w/2 - 2, y: player.y }); }
   });
   window.addEventListener('keyup', e => {
-    if(e.key === 'ArrowLeft') left = false;
-    if(e.key === 'ArrowRight') right = false;
+    if(e.key === 'ArrowLeft' || e.code === 'ArrowLeft') left = false;
+    if(e.key === 'ArrowRight' || e.code === 'ArrowRight') right = false;
   });
 
   initEnemies();
@@ -150,6 +150,7 @@ if (!window.__game_focus_injected) {
 }
 // --------------------------------------
 </script>
+<script src="../shared-mobile-pad.js"></script>
 
 </body>
 </html>

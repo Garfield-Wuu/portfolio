@@ -8,7 +8,7 @@
 </style>
   <link rel="stylesheet" href="../shared-arcade.css">
 </head>
-<body>
+<body data-mobile-pad="dpad">
   <h1>Maze</h1>
   <canvas id="game" width="400" height="400"></canvas>
   <p>Use arrow keys to reach the green square.</p>
@@ -63,10 +63,10 @@
 
   window.addEventListener('keydown', e => {
     let nx = player.x, ny = player.y;
-    if(e.key === 'ArrowUp') ny--;
-    if(e.key === 'ArrowDown') ny++;
-    if(e.key === 'ArrowLeft') nx--;
-    if(e.key === 'ArrowRight') nx++;
+    if(e.key === 'ArrowUp' || e.code === 'ArrowUp') ny--;
+    if(e.key === 'ArrowDown' || e.code === 'ArrowDown') ny++;
+    if(e.key === 'ArrowLeft' || e.code === 'ArrowLeft') nx--;
+    if(e.key === 'ArrowRight' || e.code === 'ArrowRight') nx++;
 
     if(maze[ny][nx] === 0) { player.x = nx; player.y = ny; }
     draw();
@@ -91,6 +91,7 @@ if (!window.__game_focus_injected) {
 }
 // --------------------------------------
 </script>
+<script src="../shared-mobile-pad.js"></script>
 
 </body>
 </html>

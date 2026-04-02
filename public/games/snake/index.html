@@ -8,7 +8,7 @@
 </style>
   <link rel="stylesheet" href="../shared-arcade.css">
 </head>
-<body>
+<body data-mobile-pad="dpad">
   <h1>Snake</h1>
   <p>Score: <span id="score">0</span></p>
   <canvas id="game" width="400" height="400"></canvas>
@@ -86,10 +86,10 @@
   }
 
   document.addEventListener('keydown', function (e) {
-    if (e.which === 37 && snake.dx === 0) { snake.dx = -grid; snake.dy = 0; }
-    else if (e.which === 38 && snake.dy === 0) { snake.dy = -grid; snake.dx = 0; }
-    else if (e.which === 39 && snake.dx === 0) { snake.dx = grid; snake.dy = 0; }
-    else if (e.which === 40 && snake.dy === 0) { snake.dy = grid; snake.dx = 0; }
+    if ((e.key === 'ArrowLeft' || e.code === 'ArrowLeft') && snake.dx === 0) { snake.dx = -grid; snake.dy = 0; }
+    else if ((e.key === 'ArrowUp' || e.code === 'ArrowUp') && snake.dy === 0) { snake.dy = -grid; snake.dx = 0; }
+    else if ((e.key === 'ArrowRight' || e.code === 'ArrowRight') && snake.dx === 0) { snake.dx = grid; snake.dy = 0; }
+    else if ((e.key === 'ArrowDown' || e.code === 'ArrowDown') && snake.dy === 0) { snake.dy = grid; snake.dx = 0; }
   });
 
   requestAnimationFrame(loop);
@@ -108,6 +108,7 @@ if (!window.__game_focus_injected) {
 }
 // --------------------------------------
 </script>
+<script src="../shared-mobile-pad.js"></script>
 
 </body>
 </html>
