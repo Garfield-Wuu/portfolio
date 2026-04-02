@@ -249,6 +249,9 @@ const currentPath = Astro.url.pathname;
       // 1. Mouse Click Trigger
       const triggerBtn = document.getElementById('easter-egg-trigger');
       triggerBtn?.addEventListener('click', () => {
+        // Disable easter egg click trigger on mobile devices
+        if (window.innerWidth <= 768 || 'ontouchstart' in window || navigator.maxTouchPoints > 0) return;
+
         clickCount++;
         clearTimeout(clickTimer);
         
