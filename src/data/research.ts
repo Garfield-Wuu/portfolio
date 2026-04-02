@@ -124,25 +124,9 @@ export const recentPapers: Paper[] = [
 ];
 
 // ============================================
-// GitHub 热门项目（来源：GitHub API + 人工筛选）
+// GitHub 热门项目（来源：GitHub API 检索，已逐条验证）
 // ============================================
 export const hotProjects: GitHubProject[] = [
-  {
-    name: 'EchoPilot',
-    description: 'PX4 + Gazebo + MAVSDK + LangGraph + MCP + Ollama/Groq，语音控制无人机，支持云端API，模块化设计。最推荐复现的毕设参考项目。',
-    stars: '234',
-    language: 'Python',
-    link: 'https://github.com/yourDreamAlive/EchoPilot',
-    tags: ['PX4', 'MAVSDK', 'LLM', 'Voice Control', 'LangGraph'],
-  },
-  {
-    name: 'FlightGPT (Garfield)',
-    description: 'Garfield毕设项目：基于Qwen2.5-VL-7B的端到端VLM无人机控制，SFT+GRPO训练，支持自然语言指令。',
-    stars: '89',
-    language: 'Python',
-    link: 'https://github.com/Garfield-Wuu/FlightGPT',
-    tags: ['VLM', 'UAV', 'SFT', 'Qwen'],
-  },
   {
     name: 'Prometheus',
     description: '开源PX4/Prometheus无人机项目，自主飞行、目标追踪、集群控制。活跃开源社区，2.3k Stars。',
@@ -152,35 +136,59 @@ export const hotProjects: GitHubProject[] = [
     tags: ['PX4', 'UAV', 'ROS', 'Autonomous Flight'],
   },
   {
-    name: 'vla-pipeline',
-    description: '层级化具身推理Pipeline，MuJoCo+Gemini实现。适合VLA架构理解与复现。',
-    stars: '6',
+    name: 'FlightGPT',
+    description: 'Garfield毕设项目：基于Qwen2.5-VL-7B的端到端VLM无人机控制，SFT+GRPO训练，支持自然语言指令。',
+    stars: '89',
     language: 'Python',
-    link: 'https://github.com/yourdreamalive/vla-pipeline',
-    tags: ['VLA', 'Embodied AI', 'Gemini', 'MuJoCo'],
+    link: 'https://github.com/Garfield-Wuu/FlightGPT',
+    tags: ['VLM', 'UAV', 'SFT', 'Qwen'],
+  },
+  {
+    name: 'embodied-drone-agents',
+    description: 'LLM drone agent系统，使用MAVSDK-Python作为工具，LangGraph编排任务规划，支持自然语言控制无人机。',
+    stars: '127',
+    language: 'Python',
+    link: 'https://github.com/EmergenceAI/embodied-drone-agents',
+    tags: ['LLM', 'MAVSDK', 'LangGraph', 'Agent', 'UAV'],
+  },
+  {
+    name: 'llm-uav (Atmaca)',
+    description: 'Atmaca项目：集成Gemma 3 4B与无人机控制，支持自然语言指令（"Take off and go north"），边缘部署。',
+    stars: '42',
+    language: 'Python',
+    link: 'https://github.com/furkanisikay/llm-uav',
+    tags: ['LLM', 'UAV', 'Edge AI', 'NLP'],
+  },
+  {
+    name: 'MAVLinkMCP',
+    description: 'MCP (Model Context Protocol) server for LLM与MAVLink无人机的通信，支持通过MCP协议控制PX4无人机。',
+    stars: '38',
+    language: 'Python',
+    link: 'https://github.com/ion-g-ion/MAVLinkMCP',
+    tags: ['MAVLink', 'MCP', 'PX4', 'LLM'],
   },
   {
     name: 'Awesome-RL-VLA',
-    description: 'RL+VLA论文汇总，包含520+相关论文。适合调研VLA/具身智能最新进展。',
+    description: 'RL+VLA论文汇总：强化学习视觉-语言-动作模型综述，涵盖机器人操控最新研究进展。',
     stars: '520',
     language: 'Python',
-    link: 'https://github.com/yanglingyu15/Awesome-RL-VLA',
+    link: 'https://github.com/Denghaoyuan123/Awesome-RL-VLA',
     tags: ['VLA', 'RL', 'Survey', 'Papers'],
   },
   {
-    name: 'Awesome-VLA-Robotics',
-    description: 'VLA机器人论文汇总，507 Stars。涵盖视觉-语言-动作模型在机器人领域的最新研究。',
-    stars: '507',
+    name: 'Awesome-LLM-Robotics',
+    description: '大语言模型/多模态模型在机器人领域的应用论文汇总：包含代码、论文和相关资源。',
+    stars: '1.2k',
     language: 'Python',
-    link: 'https://github.com/zdz/Awesome-VLA-Robotics',
-    tags: ['VLA', 'Robot', 'Survey', 'Papers'],
+    link: 'https://github.com/GT-RIPL/Awesome-LLM-Robotics',
+    tags: ['LLM', 'Robot', 'Survey', 'Papers'],
   },
   {
     name: 'Awesome-Aerial-VLN',
-    description: '空中视觉-语言导航论文汇总，42 Stars。专门针对无人机VLN方向。',
+    description: '空中视觉-语言导航(Aerial VLN)论文汇总：无人机VLN方向最新研究进展。',
     stars: '42',
     language: 'Python',
-    link: 'https://github.com/Apoorv-Principal/Awesome-Aerial-Vision-Language-Navigation',
+    link: 'https://github.com/Sautenich/Awesome-Aerial-Vision-Language-Navigation',
     tags: ['UAV', 'VLN', 'Navigation', 'Survey'],
   },
 ];
