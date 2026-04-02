@@ -97,6 +97,12 @@ export const pageSeo = {
     ogTitle: '项目作品 - Garfield',
     ogDescription: '涵盖无人机、机器人、全栈开发等领域的项目作品集。',
   },
+  research: {
+    title: '研究热点 - Garfield',
+    description: '追踪 LLM + 无人机 + 机器人领域最新进展：最新论文、GitHub 热门项目、研究趋势。',
+    ogTitle: '研究热点 - Garfield',
+    ogDescription: '每日更新的 LLM + 无人机领域最新研究进展，包括最新论文、开源项目、技术趋势。',
+  },
   about: {
     title: '关于 - Garfield',
     description: '澳门科技大学智能技术硕士生，研究方向为 LLM + 无人机。',
