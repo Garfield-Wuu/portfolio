@@ -8,7 +8,7 @@
 </style>
   <link rel="stylesheet" href="../shared-arcade.css">
 </head>
-<body data-mobile-pad="lr">
+<body data-mobile-pad="none">
   <h1>Breakout</h1>
   <canvas id="myCanvas" width="480" height="320"></canvas>
 <script>
@@ -46,6 +46,27 @@
   
   function keyDownHandler(e) { if(e.key == "Right" || e.key == "ArrowRight") rightPressed = true; else if(e.key == "Left" || e.key == "ArrowLeft") leftPressed = true; }
   function keyUpHandler(e) { if(e.key == "Right" || e.key == "ArrowRight") rightPressed = false; else if(e.key == "Left" || e.key == "ArrowLeft") leftPressed = false; }
+  
+  document.addEventListener("mousemove", mouseMoveHandler, false);
+  canvas.addEventListener("touchmove", touchMoveHandler, {passive: false});
+
+  function mouseMoveHandler(e) {
+      var rect = canvas.getBoundingClientRect();
+      var scaleX = canvas.width / rect.width;
+      var relativeX = (e.clientX - rect.left) * scaleX;
+      if(relativeX > 0 && relativeX < canvas.width) {
+          paddleX = relativeX - paddleWidth/2;
+      }
+  }
+  function touchMoveHandler(e) {
+      e.preventDefault();
+      var rect = canvas.getBoundingClientRect();
+      var scaleX = canvas.width / rect.width;
+      var relativeX = (e.touches[0].clientX - rect.left) * scaleX;
+      if(relativeX > 0 && relativeX < canvas.width) {
+          paddleX = relativeX - paddleWidth/2;
+      }
+  }
   
   function collisionDetection() {
       for(var c=0; c<brickColumnCount; c++) {
@@ -143,7 +164,7 @@
 // --- Game Focus & Scroll Prevention ---
 if (!window.__game_focus_injected) {
   window.__game_focus_injected = true;
-  window.addEventListener('click', () => window.focus());
+  window.addEventListener('click', (e) => { if(e.target.tagName !== 'INPUT' && e.target.tagName !== 'BUTTON') window.focus(); });
   window.addEventListener('keydown', (e) => {
     if(['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) {
       e.preventDefault();

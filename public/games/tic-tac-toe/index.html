@@ -15,18 +15,18 @@
 <body>
   <h1>Tic-Tac-Toe</h1>
   <div class="board" id="board">
-    <div class="cell" onclick="makeMove(0)"></div>
-    <div class="cell" onclick="makeMove(1)"></div>
-    <div class="cell" onclick="makeMove(2)"></div>
-    <div class="cell" onclick="makeMove(3)"></div>
-    <div class="cell" onclick="makeMove(4)"></div>
-    <div class="cell" onclick="makeMove(5)"></div>
-    <div class="cell" onclick="makeMove(6)"></div>
-    <div class="cell" onclick="makeMove(7)"></div>
-    <div class="cell" onclick="makeMove(8)"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
+    <div class="cell"></div>
   </div>
   <div id="message">Player X's turn</div>
-  <button onclick="reset()">Restart</button>
+  <button id="restart-btn">Restart</button>
 
 <script>
   let board = ["", "", "", "", "", "", "", "", ""];
@@ -84,13 +84,32 @@
         cells[i].style.textShadow = "";
     }
   }
+
+  document.querySelectorAll('.cell').forEach((cell, index) => {
+    function handler(e) {
+      if (e.pointerType === 'mouse' && e.button !== 0) return;
+      e.preventDefault();
+      makeMove(index);
+    }
+    cell.addEventListener('click', handler);
+    cell.addEventListener('pointerup', handler);
+  });
+
+  function restartHandler(e) {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    e.preventDefault();
+    reset();
+  }
+  const restartBtn = document.getElementById('restart-btn');
+  restartBtn.addEventListener('click', restartHandler);
+  restartBtn.addEventListener('pointerup', restartHandler);
 </script>
 
 <script>
 // --- Game Focus & Scroll Prevention ---
 if (!window.__game_focus_injected) {
   window.__game_focus_injected = true;
-  window.addEventListener('click', () => window.focus());
+  window.addEventListener('click', (e) => { if(e.target.tagName !== 'INPUT' && e.target.tagName !== 'BUTTON') window.focus(); });
   window.addEventListener('keydown', (e) => {
     if(['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) {
       e.preventDefault();

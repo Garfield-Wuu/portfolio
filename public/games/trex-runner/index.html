@@ -118,7 +118,7 @@
 // --- Game Focus & Scroll Prevention ---
 if (!window.__game_focus_injected) {
   window.__game_focus_injected = true;
-  window.addEventListener('click', () => window.focus());
+  window.addEventListener('click', (e) => { if(e.target.tagName !== 'INPUT' && e.target.tagName !== 'BUTTON') window.focus(); });
   window.addEventListener('keydown', (e) => {
     if(['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) {
       e.preventDefault();

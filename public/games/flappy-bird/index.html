@@ -41,6 +41,7 @@
     text-transform: uppercase;
     transition: all 0.3s ease;
     margin-top: 20px;
+    touch-action: manipulation;
   }
   
   .game-btn:hover {
@@ -60,7 +61,7 @@
     <div id="game-over-screen">
       <h2>SYSTEM CRASH</h2>
       <p style="color: white; margin: 10px 0;">Final Score: <span id="final-score" style="color: #00d4ff; font-size: 20px;">0</span></p>
-      <button class="game-btn" onclick="restartGame()">REBOOT</button>
+      <button class="game-btn" id="reboot-btn">REBOOT</button>
     </div>
   </div>
   
@@ -184,6 +185,16 @@
     gameOverScreen.style.display = 'block';
   }
 
+  document.getElementById('reboot-btn').addEventListener('pointerup', function(e) {
+    if (e.pointerType === 'mouse' && e.button !== 0) return;
+    e.preventDefault();
+    restartGame();
+  });
+  document.getElementById('reboot-btn').addEventListener('click', function(e) {
+    e.preventDefault();
+    restartGame();
+  });
+
   window.restartGame = function() {
     bird.y = 150; 
     bird.velocity = 0; 
@@ -254,7 +265,7 @@
 // --- Game Focus & Scroll Prevention ---
 if (!window.__game_focus_injected) {
   window.__game_focus_injected = true;
-  window.addEventListener('click', () => window.focus());
+  window.addEventListener('click', (e) => { if(e.target.tagName !== 'INPUT' && e.target.tagName !== 'BUTTON') window.focus(); });
   window.addEventListener('keydown', (e) => {
     if(['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) {
       e.preventDefault();
