@@ -1,6 +1,6 @@
 ---
-import Layout from '../layouts/Layout.astro';
-import { recentPapers, hotProjects, trends, recentNews } from '../data/research';
+import Layout from '../../layouts/Layout.astro';
+import { recentPapers, hotProjects, trends, recentNews } from '../../data/research';
 
 // All tags from data
 const allPaperTags = [...new Set(recentPapers.flatMap(p => p.tags))];
