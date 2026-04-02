@@ -1,6 +1,6 @@
 // ============================================
 // 研究热点数据 - 自动生成
-// 生成时间: 2026-04-02T23:53:13.290527
+// 生成时间: 2026-04-03T00:03:30.787133
 // ⚠️ 此文件由脚本自动生成，请勿手动修改
 // ============================================
 
@@ -258,38 +258,43 @@ export const hotProjects: GitHubProject[] = [
 // 新闻摘要
 export const recentNews: News[] = [
   {
-    "title": "Amazon acquires Rivr, maker of a stair-climbing delivery robot",
+    "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
+    "source": "NVIDIA Newsroom",
+    "date": "2026-01-05",
+    "summary": "NVIDIA发布开源物理AI模型GR00T N1.6和Cosmos Reason世界模型，全球合作伙伴推出下一代机器人，机器人的ChatGPT时刻已至。",
+    "link": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
+    "verified": true
+  },
+  {
+    "title": "NVIDIA Jetson 边缘AI入门指南发布",
+    "source": "NVIDIA Developer",
+    "date": "2025-12-11",
+    "summary": "Jetson平台运行LLM/VLM/基础模型的入门指南，涵盖TensorRT推理优化、GR00T部署、机器人应用。适合毕设边缘部署参考。",
+    "link": "https://developer.nvidia.com/blog/getting-started-with-edge-ai-on-nvidia-jetson-llms-vlms-and-foundation-models-for-robotics/",
+    "verified": true
+  },
+  {
+    "title": "Amazon 收购 Rivr 爬楼配送机器人",
+    "source": "TechCrunch",
+    "date": "2026-03-19",
+    "summary": "亚马逊收购能爬楼梯的配送机器人Rivr，凸显电商对无人化送货上门服务的高度重视，加速末端配送无人化进程。",
     "link": "https://techcrunch.com/2026/03/19/amazon-acquires-rivr-maker-of-a-stair-climbing-delivery-robot/",
-    "summary": "亚马逊与贝索斯再度投资无人配送初创公司，凸显电商巨头对无人化送货上门服务的高度重视。",
-    "source": "网络",
     "verified": true
   },
   {
-    "title": "Jeff Bezos reportedly wants $100 billion to buy and transform old manu",
-    "link": "https://techcrunch.com/2026/03/19/jeff-bezos-reportedly-wants-100-billion-to-buy-and-transform-old-manufacturing-firms-with-ai/",
-    "summary": "Jeff Bezos启动新项目，收购传统工业公司并用AI技术进行数字化改造，提升其运营效率。",
-    "source": "网络",
-    "verified": true
-  },
-  {
-    "title": "Employees had to restrain a dancing humanoid robot after it went wild",
-    "link": "https://techcrunch.com/2026/03/19/restaurant-dancing-robot-went-wild-hot-pot-cupertino-haidilao-agibot/",
-    "summary": "Sony WF-1000XM6真无线降噪耳机首次降价，从$329降至$278，与上代$248的常售价差距缩小，使其更值得购买。",
-    "source": "网络",
-    "verified": true
-  },
-  {
-    "title": "Valve’s huge SteamOS 3.8 update adds long-awaited features — and suppo",
-    "link": "https://www.theverge.com/games/897765/valve-steamos-3-8-update-steam-deck-hibernation-steam-machine-xbox-ally",
-    "summary": "Sony WF-1000XM6真无线降噪耳机首次降价，从$329降至$278，与上代$248的常售价差距缩小，使其更值得购买。",
-    "source": "网络",
-    "verified": true
-  },
-  {
-    "title": "OpenAI is planning a desktop ‘superapp’",
+    "title": "OpenAI 正在开发桌面端超级应用",
+    "source": "The Verge",
+    "date": "2026-03-19",
+    "summary": "OpenAI正在开发整合ChatGPT、Codex和Atlas浏览器的桌面超级应用，AI应用从分散工具向平台化整合转型。",
     "link": "https://www.theverge.com/ai-artificial-intelligence/897778/openai-chatgpt-codex-atlas-browser-superapp",
-    "summary": "Sony WF-1000XM6真无线降噪耳机首次降价，从$329降至$278，与上代$248的常售价差距缩小，使其更值得购买。",
-    "source": "网络",
+    "verified": true
+  },
+  {
+    "title": "Valve 发布 SteamOS 3.8 游戏系统更新",
+    "source": "The Verge",
+    "date": "2026-03-19",
+    "summary": "Valve发布SteamOS 3.8.0预览版，首次支持Steam Machine客厅游戏PC，扩展对第三方掌机支持，构建跨设备游戏生态。",
+    "link": "https://www.theverge.com/games/897765/valve-steamos-3-8-update-steam-deck-hibernation-steam-machine-xbox-ally",
     "verified": true
   }
 ];
