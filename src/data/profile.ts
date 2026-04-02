@@ -22,10 +22,10 @@ export const profile = {
   
   // 关于页面详情
   about: {
-    school: '中国地质大学（北京）',
-    schoolEN: 'China University of Geosciences (Beijing)',
+    school: '澳门科技大学',
+    schoolEN: 'Macau University of Science and Technology',
     degree: '智能技术硕士',
-    location: '北京',
+    location: '澳门/珠海',
     research: '大语言模型 + 无人机',
     interests: ['机器人工程', '计算机视觉', '嵌入式系统', '开源贡献'],
   },
@@ -99,7 +99,7 @@ export const pageSeo = {
   },
   about: {
     title: '关于 - Garfield',
-    description: '中国地质大学（北京）智能技术硕士生，研究方向为 LLM + 无人机。',
+    description: '澳门科技大学智能技术硕士生，研究方向为 LLM + 无人机。',
     ogTitle: '关于 Garfield',
     ogDescription: '智能技术硕士生，专注于机器人工程与人工智能交叉领域。',
   },
