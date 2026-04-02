@@ -1,6 +1,6 @@
 // ============================================
 // 研究热点数据 - 自动生成
-// 生成时间: 2026-04-03T00:19:52.691139
+// 生成时间: 2026-04-03T00:32:46.497622
 // ⚠️ 此文件由脚本自动生成，请勿手动修改
 // ============================================
 
@@ -150,7 +150,7 @@ export const hotProjects: GitHubProject[] = [
   {
     "name": "PX4 Autopilot",
     "description": "开源无人机自动驾驶软件，支持多旋翼、固定翼、VTOL等。学术界最流行的无人机研究平台。",
-    "stars": "4.2k",
+    "stars": "11.4k",
     "language": "C++",
     "link": "https://github.com/PX4/PX4-Autopilot",
     "tags": [
@@ -160,12 +160,14 @@ export const hotProjects: GitHubProject[] = [
       "Autonomous Flight",
       "Drone"
     ],
-    "verified": true
+    "verified": true,
+    "stars_last_checked_at": "2026-04-03T00:32:47.100058",
+    "stars_source": "api"
   },
   {
     "name": "Prometheus_PX4",
     "description": "PX4无人机自主飞行解决方案，包含目标追踪、集群控制、SLAM等应用模块。活跃开源社区。",
-    "stars": "1.8k",
+    "stars": "11",
     "language": "C++",
     "link": "https://github.com/amov-lab/Prometheus_PX4",
     "tags": [
@@ -175,12 +177,14 @@ export const hotProjects: GitHubProject[] = [
       "Autonomous Flight",
       "Tracking"
     ],
-    "verified": true
+    "verified": true,
+    "stars_last_checked_at": "2026-04-03T00:32:47.731066",
+    "stars_source": "api"
   },
   {
     "name": "embodied-drone-agents",
     "description": "LLM drone agent系统，使用MAVSDK-Python作为工具，LangGraph编排任务规划，支持自然语言控制无人机。",
-    "stars": "127",
+    "stars": "18",
     "language": "Python",
     "link": "https://github.com/EmergenceAI/embodied-drone-agents",
     "tags": [
@@ -190,12 +194,14 @@ export const hotProjects: GitHubProject[] = [
       "Agent",
       "UAV"
     ],
-    "verified": true
+    "verified": true,
+    "stars_last_checked_at": "2026-04-03T00:32:48.345002",
+    "stars_source": "api"
   },
   {
     "name": "llm-uav (Atmaca)",
     "description": "集成Gemma 3 4B与无人机控制，支持自然语言指令，边缘部署。",
-    "stars": "42",
+    "stars": "0",
     "language": "Python",
     "link": "https://github.com/furkanisikay/llm-uav",
     "tags": [
@@ -204,12 +210,14 @@ export const hotProjects: GitHubProject[] = [
       "Edge AI",
       "NLP"
     ],
-    "verified": true
+    "verified": true,
+    "stars_last_checked_at": "2026-04-03T00:32:48.910965",
+    "stars_source": "api"
   },
   {
     "name": "MAVLinkMCP",
     "description": "MCP (Model Context Protocol) server for LLM与MAVLink无人机的通信，支持通过MCP协议控制PX4无人机。",
-    "stars": "38",
+    "stars": "16",
     "language": "Python",
     "link": "https://github.com/ion-g-ion/MAVLinkMCP",
     "tags": [
@@ -218,12 +226,14 @@ export const hotProjects: GitHubProject[] = [
       "PX4",
       "LLM"
     ],
-    "verified": true
+    "verified": true,
+    "stars_last_checked_at": "2026-04-03T00:32:49.543382",
+    "stars_source": "api"
   },
   {
     "name": "Awesome-RL-VLA",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": "520",
+    "stars": "613",
     "language": "Python",
     "link": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "tags": [
@@ -232,12 +242,14 @@ export const hotProjects: GitHubProject[] = [
       "Survey",
       "Papers"
     ],
-    "verified": true
+    "verified": true,
+    "stars_last_checked_at": "2026-04-03T00:32:50.306304",
+    "stars_source": "api"
   },
   {
     "name": "Awesome-LLM-Robotics",
     "description": "大语言模型/多模态模型在机器人领域的应用论文汇总。",
-    "stars": "1.2k",
+    "stars": "4.3k",
     "language": "Python",
     "link": "https://github.com/GT-RIPL/Awesome-LLM-Robotics",
     "tags": [
@@ -246,12 +258,14 @@ export const hotProjects: GitHubProject[] = [
       "Survey",
       "Papers"
     ],
-    "verified": true
+    "verified": true,
+    "stars_last_checked_at": "2026-04-03T00:32:50.937227",
+    "stars_source": "api"
   },
   {
     "name": "Awesome-Aerial-VLN",
     "description": "空中视觉-语言导航(Aerial VLN)论文汇总：无人机VLN方向最新研究。",
-    "stars": "42",
+    "stars": "46",
     "language": "Python",
     "link": "https://github.com/Sautenich/Awesome-Aerial-Vision-Language-Navigation",
     "tags": [
@@ -260,7 +274,9 @@ export const hotProjects: GitHubProject[] = [
       "Navigation",
       "Survey"
     ],
-    "verified": true
+    "verified": true,
+    "stars_last_checked_at": "2026-04-03T00:32:51.553455",
+    "stars_source": "api"
   }
 ];
 
