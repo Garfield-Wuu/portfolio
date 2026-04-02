@@ -31,24 +31,36 @@
     enemies = [];
     for(let r=0; r<rows; r++) {
       for(let c=0; c<cols; c++) {
-        enemies.push({ x: 50 + c * 50, y: 50 + r * 40, w: 30, h: 20, alive: true });
+        // Adjust width and height to fit emojis, e.g., 40x40
+        enemies.push({ x: 50 + c * 50, y: 50 + r * 40, w: 40, h: 40, alive: true });
       }
     }
   }
 
   function draw() {
     ctx.clearRect(0,0, canvas.width, canvas.height);
-    ctx.fillStyle = '#0f0';
-    ctx.fillRect(player.x, player.y, player.w, player.h);
+    
+    // Player
+    ctx.font = '40px sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('🚀', player.x + player.w/2, player.y + player.h/2);
 
-    ctx.fillStyle = '#fff';
-    bullets.forEach(b => ctx.fillRect(b.x, b.y, 4, 10));
+    // Player Bullets
+    ctx.font = '20px sans-serif';
+    bullets.forEach(b => ctx.fillText('⚡', b.x, b.y));
 
-    ctx.fillStyle = '#f00';
-    enemyBullets.forEach(b => ctx.fillRect(b.x, b.y, 4, 10));
+    // Enemy Bullets
+    ctx.font = '20px sans-serif';
+    enemyBullets.forEach(b => ctx.fillText('🔥', b.x, b.y));
 
-    ctx.fillStyle = '#fff';
-    enemies.forEach(e => { if(e.alive) ctx.fillRect(e.x, e.y, e.w, e.h); });
+    // Enemies
+    ctx.font = '35px sans-serif';
+    enemies.forEach(e => { 
+        if(e.alive) {
+            ctx.fillText('👾', e.x + e.w/2, e.y + e.h/2); 
+        }
+    });
   }
 
   function update() {

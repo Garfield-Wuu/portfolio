@@ -23,8 +23,22 @@
   const com = { x: canvas.width - paddleWidth, y: canvas.height/2 - paddleHeight/2, width: paddleWidth, height: paddleHeight, color: "#00d4ff", score: 0 };
   const ball = { x: canvas.width/2, y: canvas.height/2, radius: 10, speed: 5, velocityX: 5, velocityY: 5, color: "#00d4ff" };
 
-  function drawRect(x, y, w, h, color) { ctx.fillStyle = color; ctx.fillRect(x, y, w, h); }
-  function drawCircle(x, y, r, color) { ctx.fillStyle = color; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI*2, false); ctx.closePath(); ctx.fill(); }
+  function drawRect(x, y, w, h, color) { 
+      ctx.fillStyle = color; 
+      ctx.shadowColor = color;
+      ctx.shadowBlur = 15;
+      ctx.fillRect(x, y, w, h); 
+      ctx.shadowBlur = 0;
+  }
+  function drawCircle(x, y, r, color) { 
+      ctx.font = "25px sans-serif";
+      ctx.textAlign = "center";
+      ctx.textBaseline = "middle";
+      ctx.shadowColor = "#ff0055";
+      ctx.shadowBlur = 10;
+      ctx.fillText("⚽", x, y);
+      ctx.shadowBlur = 0;
+  }
   function drawText(text, x, y, color) { ctx.fillStyle = color; ctx.font = "45px sans-serif"; ctx.fillText(text, x, y); }
   function drawNet() { for(let i = 0; i <= canvas.height; i+=15) { drawRect(canvas.width/2 - 1, i, 2, 10, "#a855f7"); } }
   
