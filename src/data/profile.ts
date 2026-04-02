@@ -18,7 +18,7 @@ export const profile = {
     github: 'https://github.com/Garfield-Wuu',
     bilibili: 'https://space.bilibili.com/30027187',
     csdn: 'https://blog.csdn.net/Garfield_Wu',
-    email: 'wu_garfield@163.com',
+    email: 'mailto:wu_garfield@163.com',
   },
   
   // 关于页面详情

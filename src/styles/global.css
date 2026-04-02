@@ -133,9 +133,10 @@ body.light-mode .border-gray-800 { border-color: rgba(0,0,0,0.1) !important; }
 body.light-mode .border-gray-700 { border-color: rgba(0,0,0,0.15) !important; }
 body.light-mode .bg-dark, body.light-mode .bg-dark\/50 { background-color: rgba(0,0,0,0.04) !important; }
 body.light-mode .hover\:text-white:hover { color: #000000 !important; }
+body.light-mode .text-white { color: #111827 !important; }
 body.light-mode .glass-card { box-shadow: 0 4px 20px rgba(0,0,0,0.03); }
 body.light-mode .glass-card:hover { border-color: var(--color-accent) !important; box-shadow: 0 10px 30px rgba(2, 132, 199, 0.15); }
-body.light-mode header { background-color: rgba(255,255,255,0.8) !important; border-bottom-color: rgba(0,0,0,0.08) !important; }
+body.light-mode header nav { background-color: rgba(255,255,255,0.85) !important; border-color: rgba(0,0,0,0.1) !important; box-shadow: 0 10px 40px rgba(0,0,0,0.05) !important; }
 body.light-mode footer { background-color: rgba(255,255,255,0.5) !important; border-top-color: rgba(0,0,0,0.08) !important; }
 body.light-mode .btn-secondary { color: #374151; background-color: rgba(0,0,0,0.03); border-color: rgba(0,0,0,0.1); }
 body.light-mode .btn-secondary:hover { color: #111827; background-color: rgba(0,0,0,0.06); border-color: var(--color-accent); }
