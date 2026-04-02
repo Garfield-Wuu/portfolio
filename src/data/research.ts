@@ -1,6 +1,6 @@
 // ============================================
 // 研究热点数据 - 自动生成
-// 生成时间: 2026-04-02T23:38:54.060459
+// 生成时间: 2026-04-02T23:53:13.290527
 // ⚠️ 此文件由脚本自动生成，请勿手动修改
 // ============================================
 
@@ -139,30 +139,32 @@ export const recentPapers: Paper[] = [
 // GitHub 热门项目
 export const hotProjects: GitHubProject[] = [
   {
-    "name": "Prometheus",
-    "description": "开源PX4/Prometheus无人机项目，自主飞行、目标追踪、集群控制。活跃开源社区。",
-    "stars": "2.3k",
+    "name": "PX4 Autopilot",
+    "description": "开源无人机自动驾驶软件，支持多旋翼、固定翼、VTOL等。学术界最流行的无人机研究平台。",
+    "stars": "4.2k",
     "language": "C++",
-    "link": "https://github.com/Prometheus-Flightmare/Prometheus",
+    "link": "https://github.com/PX4/PX4-Autopilot",
     "tags": [
       "PX4",
       "UAV",
       "ROS",
-      "Autonomous Flight"
+      "Autonomous Flight",
+      "Drone"
     ],
     "verified": true
   },
   {
-    "name": "FlightGPT",
-    "description": "Garfield毕设项目：基于Qwen2.5-VL-7B的端到端VLM无人机控制，SFT+GRPO训练，支持自然语言指令。",
-    "stars": "89",
-    "language": "Python",
-    "link": "https://github.com/Garfield-Wuu/FlightGPT",
+    "name": "Prometheus_PX4",
+    "description": "PX4无人机自主飞行解决方案，包含目标追踪、集群控制、SLAM等应用模块。活跃开源社区。",
+    "stars": "1.8k",
+    "language": "C++",
+    "link": "https://github.com/amov-lab/Prometheus_PX4",
     "tags": [
-      "VLM",
+      "PX4",
       "UAV",
-      "SFT",
-      "Qwen"
+      "ROS",
+      "Autonomous Flight",
+      "Tracking"
     ],
     "verified": true
   },
