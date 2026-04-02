@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Asteroids</title>
+<style>
+  body { display: flex; flex-direction: column; align-items: center; background: transparent; color: #fff; font-family: sans-serif; margin-top: 20px; }
+  canvas { border: 1px solid #fff; background: transparent; }
+</style>
+  <link rel="stylesheet" href="../shared-arcade.css">
+</head>
+<body>
+  <h1>Asteroids</h1>
+  <p>Score: <span id="score">0</span></p>
+  <canvas id="game" width="600" height="400"></canvas>
+  <p>Left/Right to rotate, Up to thrust, Space to shoot.</p>
+
+<script>
+  const canvas = document.getElementById('game');
+  const ctx = canvas.getContext('2d');
+  
+  let ship = { x: 300, y: 200, a: 0, r: 10, thrusting: false, thrust: {x:0, y:0} };
+  let lasers = [];
+  let roids = [];
+  let score = 0;
+  
+  function createAsteroids() {
+    roids = [];
+    for(let i=0; i<5; i++) {
+      let x, y;
+      do {
+        x = Math.floor(Math.random() * canvas.width);
+        y = Math.floor(Math.random() * canvas.height);
+      } while(Math.dist(ship.x, ship.y, x, y) < 100);
+      roids.push({ x: x, y: y, xv: Math.random()*2-1, yv: Math.random()*2-1, r: 30, a: Math.random() * Math.PI * 2, vert: Math.floor(Math.random()*5+5) });
+    }
+  }
+  
+  Math.dist = function(x1, y1, x2, y2) { return Math.sqrt(Math.pow(x2-x1, 2) + Math.pow(y2-y1, 2)); };
+
+  function drawShip() {
+    ctx.save();
+    ctx.translate(ship.x, ship.y);
+    ctx.rotate(-ship.a + Math.PI/2); // Emoji 🚀 is pointing top-right usually, adjust rotation
+    ctx.font = '30px sans-serif'; 
+    ctx.textAlign = 'center'; 
+    ctx.textBaseline = 'middle'; 
+    ctx.fillText('🚀', 0, 0);
+    
+    // Draw thrust flame
+    if (ship.thrusting) {
+        ctx.font = '20px sans-serif';
+        ctx.fillText('🔥', 0, 20);
+    }
+    ctx.restore();
+  }
+
+  function update() {
+    ctx.clearRect(0,0, canvas.width, canvas.height);
+    
+    if(ship.thrusting) {
+      ship.thrust.x += 0.1 * Math.cos(ship.a);
+      ship.thrust.y -= 0.1 * Math.sin(ship.a);
+    } else {
+      ship.thrust.x -= 0.02 * ship.thrust.x;
+      ship.thrust.y -= 0.02 * ship.thrust.y;
+    }
+    ship.x += ship.thrust.x; ship.y += ship.thrust.y;
+    if(ship.x < 0 - ship.r) ship.x = canvas.width + ship.r;
+    else if(ship.x > canvas.width + ship.r) ship.x = 0 - ship.r;
+    if(ship.y < 0 - ship.r) ship.y = canvas.height + ship.r;
+    else if(ship.y > canvas.height + ship.r) ship.y = 0 - ship.r;
+
+    drawShip();
+
+    for(let i=0; i<lasers.length; i++) {
+      lasers[i].x += lasers[i].xv; lasers[i].y += lasers[i].yv;
+      lasers[i].dist += Math.sqrt(Math.pow(lasers[i].xv, 2) + Math.pow(lasers[i].yv, 2));
+      if(lasers[i].dist > canvas.width) { lasers.splice(i, 1); i--; continue; }
+      ctx.fillStyle = "red"; ctx.beginPath(); ctx.arc(lasers[i].x, lasers[i].y, 2, 0, Math.PI*2); ctx.fill();
+    }
+
+    for(let i=0; i<roids.length; i++) {
+      let roid = roids[i];
+      roid.x += roid.xv; roid.y += roid.yv;
+      if(roid.x < 0 - roid.r) roid.x = canvas.width + roid.r;
+      else if(roid.x > canvas.width + roid.r) roid.x = 0 - roid.r;
+      if(roid.y < 0 - roid.r) roid.y = canvas.height + roid.r;
+      else if(roid.y > canvas.height + roid.r) roid.y = 0 - roid.r;
+
+      ctx.strokeStyle = "slategrey"; ctx.lineWidth = 1.5; ctx.beginPath();
+      for(let j=0; j<roid.vert; j++) {
+        ctx.lineTo(roid.x + roid.r * Math.cos(roid.a + j * Math.PI*2 / roid.vert), roid.y + roid.r * Math.sin(roid.a + j * Math.PI*2 / roid.vert));
+      }
+      ctx.closePath(); 
+      // ctx.stroke(); 
+      ctx.font='30px sans-serif'; 
+      ctx.textAlign='center'; 
+      ctx.textBaseline='middle'; 
+      ctx.fillText('☄️', roid.x, roid.y);
+
+      if(Math.dist(ship.x, ship.y, roid.x, roid.y) < ship.r + roid.r) {
+        alert("Game Over! Score: " + score);
+        ship = { x: 300, y: 200, a: 0, r: 10, thrusting: false, thrust: {x:0, y:0} };
+        score = 0; lasers = []; createAsteroids();
+      }
+
+      for(let j=0; j<lasers.length; j++) {
+        if(Math.dist(roids[i].x, roids[i].y, lasers[j].x, lasers[j].y) < roids[i].r) {
+          score += 10; document.getElementById('score').innerText = score;
+          lasers.splice(j, 1); j--;
+          if(roids[i].r > 15) {
+            roids.push({ x: roids[i].x, y: roids[i].y, xv: Math.random()*2-1, yv: Math.random()*2-1, r: roids[i].r/2, a: 0, vert: 5 });
+            roids.push({ x: roids[i].x, y: roids[i].y, xv: Math.random()*2-1, yv: Math.random()*2-1, r: roids[i].r/2, a: 0, vert: 5 });
+          }
+          roids.splice(i, 1); i--;
+          break;
+        }
+      }
+    }
+    if(roids.length === 0) createAsteroids();
+  }
+
+  window.addEventListener("keydown", e => {
+    if(e.code === "ArrowLeft") ship.a += 0.1;
+    if(e.code === "ArrowRight") ship.a -= 0.1;
+    if(e.code === "ArrowUp") ship.thrusting = true;
+    if(e.code === "Space") {
+      lasers.push({ x: ship.x + 4/3 * ship.r * Math.cos(ship.a), y: ship.y - 4/3 * ship.r * Math.sin(ship.a), xv: 5 * Math.cos(ship.a), yv: -5 * Math.sin(ship.a), dist: 0 });
+    }
+  });
+  window.addEventListener("keyup", e => { if(e.code === "ArrowUp") ship.thrusting = false; });
+
+  createAsteroids();
+  setInterval(update, 1000/60);
+</script>
+
+<script>
+// --- Game Focus & Scroll Prevention ---
+if (!window.__game_focus_injected) {
+  window.__game_focus_injected = true;
+  window.addEventListener('click', () => window.focus());
+  window.addEventListener('keydown', (e) => {
+    if(['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) {
+      e.preventDefault();
+    }
+  });
+}
+// --------------------------------------
+</script>
+
+</body>
+</html>

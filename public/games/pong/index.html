@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pong</title>
+<style>
+  body { display: flex; flex-direction: column; align-items: center; background: transparent; color: #fff; font-family: sans-serif; margin-top: 50px; }
+  canvas { border: 2px solid #fff; background: transparent; }
+</style>
+  <link rel="stylesheet" href="../shared-arcade.css">
+</head>
+<body>
+  <h1>Pong</h1>
+  <canvas id="pong" width="600" height="400"></canvas>
+  <p>Use Up/Down arrows to move.</p>
+<script>
+  const canvas = document.getElementById('pong');
+  const ctx = canvas.getContext('2d');
+  
+  const paddleWidth = 10, paddleHeight = 100;
+  let upArrow = false, downArrow = false;
+
+  const user = { x: 0, y: canvas.height/2 - paddleHeight/2, width: paddleWidth, height: paddleHeight, color: "#00d4ff", score: 0 };
+  const com = { x: canvas.width - paddleWidth, y: canvas.height/2 - paddleHeight/2, width: paddleWidth, height: paddleHeight, color: "#00d4ff", score: 0 };
+  const ball = { x: canvas.width/2, y: canvas.height/2, radius: 10, speed: 5, velocityX: 5, velocityY: 5, color: "#00d4ff" };
+
+  function drawRect(x, y, w, h, color) { ctx.fillStyle = color; ctx.fillRect(x, y, w, h); }
+  function drawCircle(x, y, r, color) { ctx.fillStyle = color; ctx.beginPath(); ctx.arc(x, y, r, 0, Math.PI*2, false); ctx.closePath(); ctx.fill(); }
+  function drawText(text, x, y, color) { ctx.fillStyle = color; ctx.font = "45px sans-serif"; ctx.fillText(text, x, y); }
+  function drawNet() { for(let i = 0; i <= canvas.height; i+=15) { drawRect(canvas.width/2 - 1, i, 2, 10, "#a855f7"); } }
+  
+  function collision(b, p) {
+    p.top = p.y; p.bottom = p.y + p.height; p.left = p.x; p.right = p.x + p.width;
+    b.top = b.y - b.radius; b.bottom = b.y + b.radius; b.left = b.x - b.radius; b.right = b.x + b.radius;
+    return b.right > p.left && b.bottom > p.top && b.left < p.right && b.top < p.bottom;
+  }
+  
+  function resetBall() {
+    ball.x = canvas.width/2; ball.y = canvas.height/2; ball.speed = 5;
+    ball.velocityX = -ball.velocityX;
+  }
+  
+  function update() {
+    if(upArrow && user.y > 0) user.y -= 8;
+    else if(downArrow && user.y < canvas.height - user.height) user.y += 8;
+
+    ball.x += ball.velocityX;
+    ball.y += ball.velocityY;
+
+    com.y += ((ball.y - (com.y + com.height/2))) * 0.1;
+
+    if(ball.y + ball.radius > canvas.height || ball.y - ball.radius < 0) ball.velocityY = -ball.velocityY;
+
+    let player = (ball.x + ball.radius < canvas.width/2) ? user : com;
+    if(collision(ball, player)) {
+      let collidePoint = (ball.y - (player.y + player.height/2));
+      collidePoint = collidePoint / (player.height/2);
+      let angleRad = (Math.PI/4) * collidePoint;
+      let direction = (ball.x + ball.radius < canvas.width/2) ? 1 : -1;
+      ball.velocityX = direction * ball.speed * Math.cos(angleRad);
+      ball.velocityY = ball.speed * Math.sin(angleRad);
+      ball.speed += 0.5;
+    }
+    
+    if(ball.x - ball.radius < 0) { com.score++; resetBall(); }
+    else if(ball.x + ball.radius > canvas.width) { user.score++; resetBall(); }
+  }
+  
+  function render() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    drawText(user.score, canvas.width/4, canvas.height/5, "#a855f7");
+    drawText(com.score, 3*canvas.width/4, canvas.height/5, "#a855f7");
+    drawNet();
+    drawRect(user.x, user.y, user.width, user.height, user.color);
+    drawRect(com.x, com.y, com.width, com.height, com.color);
+    drawCircle(ball.x, ball.y, ball.radius, ball.color);
+  }
+  
+  function game() { update(); render(); }
+  
+  window.addEventListener("keydown", function(e) { if(e.keyCode == 38) upArrow = true; else if(e.keyCode == 40) downArrow = true; });
+  window.addEventListener("keyup", function(e) { if(e.keyCode == 38) upArrow = false; else if(e.keyCode == 40) downArrow = false; });
+  
+  setInterval(game, 1000/50);
+</script>
+
+<script>
+// --- Game Focus & Scroll Prevention ---
+if (!window.__game_focus_injected) {
+  window.__game_focus_injected = true;
+  window.addEventListener('click', () => window.focus());
+  window.addEventListener('keydown', (e) => {
+    if(['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) {
+      e.preventDefault();
+    }
+  });
+}
+// --------------------------------------
+</script>
+
+</body>
+</html>

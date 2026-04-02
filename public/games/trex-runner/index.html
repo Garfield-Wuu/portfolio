@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<title>恐龙快跑</title>
+<style>
+  body { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100vh; background: transparent; margin: 0; font-family: sans-serif; }
+  canvas { border-bottom: 2px solid #333; }
+  h2 { margin-bottom: 10px; color: #555; }
+  p { color: #888; font-size: 14px; }
+</style>
+  <link rel="stylesheet" href="../shared-arcade.css">
+</head>
+<body>
+  <h2>恐龙快跑</h2>
+  <p>按空格或点击跳跃</p>
+  <canvas id="gameCanvas" width="600" height="200"></canvas>
+<script>
+  const canvas = document.getElementById('gameCanvas');
+  const ctx = canvas.getContext('2d');
+
+  let dino = { x: 50, y: 150, width: 40, height: 40, vy: 0, gravity: 0.6, jump: -10, grounded: true };
+  let obstacles = [];
+  let score = 0;
+  let gameOver = false;
+  let frames = 0;
+
+  function draw() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    
+    if (gameOver) {
+      ctx.fillStyle = 'black';
+      ctx.font = '30px Arial';
+      ctx.fillText('游戏结束', 240, 100);
+      ctx.font = '20px Arial';
+      ctx.fillText('点击重新开始', 245, 140);
+      return;
+    }
+
+    // Dino
+    ctx.font = '40px Arial';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    // Draw emoji centered to dino's coordinates
+    ctx.fillText('🦖', dino.x + dino.width/2, dino.y + dino.height/2);
+
+    // Obstacles
+    ctx.font = '30px Arial';
+    obstacles.forEach(o => {
+      ctx.fillText('🌵', o.x + o.width/2, o.y + o.height/2);
+    });
+
+    // Score
+    ctx.fillStyle = '#333';
+    ctx.font = '20px Arial';
+    ctx.fillText('得分: ' + score, 10, 30);
+  }
+
+  function update() {
+    if (gameOver) return;
+
+    // Physics
+    dino.vy += dino.gravity;
+    dino.y += dino.vy;
+    if (dino.y >= 150) {
+      dino.y = 150;
+      dino.vy = 0;
+      dino.grounded = true;
+    }
+
+    // Spawn obstacles
+    if (frames % 100 === 0) {
+      obstacles.push({ x: canvas.width, y: 160, width: 20, height: 30 });
+    }
+
+    // Move obstacles
+    for (let i = 0; i < obstacles.length; i++) {
+      let o = obstacles[i];
+      o.x -= 5;
+      
+      // Collision
+      if (dino.x < o.x + o.width && dino.x + dino.width > o.x && dino.y < o.y + o.height && dino.y + dino.height > o.y) {
+        gameOver = true;
+      }
+      
+      if (o.x + o.width < 0) {
+        obstacles.shift();
+        score++;
+        i--;
+      }
+    }
+
+    frames++;
+    draw();
+  }
+
+  function jump() {
+    if (gameOver) {
+      dino = { x: 50, y: 150, width: 40, height: 40, vy: 0, gravity: 0.6, jump: -10, grounded: true };
+      obstacles = [];
+      score = 0;
+      frames = 0;
+      gameOver = false;
+    } else if (dino.grounded) {
+      dino.vy = dino.jump;
+      dino.grounded = false;
+    }
+  }
+
+  document.addEventListener('keydown', e => { if (e.code === 'Space') jump(); });
+  canvas.addEventListener('mousedown', jump);
+
+  setInterval(update, 1000 / 60);
+</script>
+
+<script>
+// --- Game Focus & Scroll Prevention ---
+if (!window.__game_focus_injected) {
+  window.__game_focus_injected = true;
+  window.addEventListener('click', () => window.focus());
+  window.addEventListener('keydown', (e) => {
+    if(['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) {
+      e.preventDefault();
+    }
+  });
+}
+// --------------------------------------
+</script>
+
+</body>
+</html>

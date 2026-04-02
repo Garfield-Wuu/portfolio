@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Share+Tech+Mono&display=swap');
+
+body {
+  margin: 0 !important;
+  padding: 20px !important;
+  min-height: 100vh !important;
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-family: 'Share Tech Mono', monospace, sans-serif !important;
+  color: #00d4ff !important;
+  background: radial-gradient(circle at center, #0f172a 0%, #020617 100%) !important;
+  background-image: 
+    radial-gradient(circle at center, rgba(168, 85, 247, 0.15) 0%, transparent 60%),
+    linear-gradient(rgba(0, 212, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 212, 255, 0.05) 1px, transparent 1px) !important;
+  background-size: 100% 100%, 40px 40px, 40px 40px !important;
+  background-position: center center !important;
+  box-sizing: border-box;
+}
+
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background: radial-gradient(circle at center, transparent 40%, rgba(0,0,0,0.8) 150%);
+  z-index: 100;
+}
+
+h1, h2 {
+  font-family: 'Press Start 2P', cursive !important;
+  font-size: 2rem !important;
+  margin-top: 0 !important;
+  margin-bottom: 20px !important;
+  text-transform: uppercase;
+  background: linear-gradient(90deg, #00d4ff, #a855f7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 10px rgba(0, 212, 255, 0.5));
+  text-align: center;
+}
+
+p, span, div {
+  text-shadow: 0 0 5px rgba(0, 212, 255, 0.3);
+  z-index: 10;
+}
+
+canvas {
+  box-shadow: 0 0 40px rgba(0, 212, 255, 0.15), inset 0 0 20px rgba(168, 85, 247, 0.1) !important;
+  border: 2px solid rgba(0, 212, 255, 0.4) !important;
+  border-radius: 12px !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(8px) !important;
+  image-rendering: pixelated;
+  /* Add subtle glow to anything drawn on canvas */
+  filter: drop-shadow(0 0 5px rgba(0, 212, 255, 0.5));
+}
+
+/* DOM based games specific overrides */
+#game-board, .board {
+  box-shadow: 0 0 40px rgba(0, 212, 255, 0.15) !important;
+  border: 2px solid rgba(0, 212, 255, 0.4) !important;
+  border-radius: 12px !important;
+  background: rgba(0, 0, 0, 0.4) !important;
+  backdrop-filter: blur(8px) !important;
+}
+
+.cell {
+  border-radius: 6px !important;
+  box-shadow: inset 0 0 10px rgba(0, 212, 255, 0.1) !important;
+  font-family: 'Press Start 2P', cursive !important;
+  color: #a855f7 !important;
+  text-shadow: 0 0 10px #a855f7 !important;
+}
+
+button {
+  background: rgba(0, 212, 255, 0.1) !important;
+  border: 1px solid rgba(0, 212, 255, 0.4) !important;
+  color: #00d4ff !important;
+  padding: 12px 24px !important;
+  font-family: 'Press Start 2P', cursive !important;
+  font-size: 12px !important;
+  border-radius: 6px !important;
+  cursor: pointer !important;
+  text-transform: uppercase !important;
+  transition: all 0.3s ease !important;
+  margin: 15px !important;
+  box-shadow: 0 0 10px rgba(0, 212, 255, 0.1) !important;
+}
+
+button:hover {
+  background: rgba(0, 212, 255, 0.25) !important;
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.4) !important;
+  transform: translateY(-2px) !important;
+}

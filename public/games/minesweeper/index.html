@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Minesweeper</title>
+<style>
+  body { display: flex; flex-direction: column; align-items: center; font-family: sans-serif; margin-top: 30px; background: transparent; }
+  #board { display: grid; grid-template-columns: repeat(10, 30px); gap: 2px; background: transparent; padding: 2px; }
+  .cell { width: 30px; height: 30px; background: transparent; border: 2px solid #fff; border-bottom-color: #888; border-right-color: #888; display: flex; justify-content: center; align-items: center; font-weight: bold; cursor: pointer; user-select: none; }
+  .cell.revealed { background: transparent; border: 1px solid #aaa; }
+  .cell.mine { background: red; }
+</style>
+  <link rel="stylesheet" href="../shared-arcade.css">
+</head>
+<body>
+  <h1>Minesweeper</h1>
+  <p>Mines left: <span id="mines">10</span> | Left click = Reveal | Right click = Flag</p>
+  <div id="board"></div>
+
+<script>
+  const rows = 10, cols = 10, numMines = 10;
+  let board = [], mines = [], gameover = false, flags = 0;
+
+  function init() {
+    const boardEl = document.getElementById('board');
+    boardEl.innerHTML = '';
+    board = []; mines = []; gameover = false; flags = 0;
+    document.getElementById('mines').innerText = numMines;
+
+    for (let r = 0; r < rows; r++) {
+      let row = [];
+      for (let c = 0; c < cols; c++) {
+        let cell = document.createElement('div');
+        cell.className = 'cell';
+        cell.dataset.r = r; cell.dataset.c = c;
+        cell.addEventListener('click', handleClick);
+        cell.addEventListener('contextmenu', handleRightClick);
+        boardEl.appendChild(cell);
+        row.push({ isMine: false, revealed: false, flagged: false, el: cell });
+      }
+      board.push(row);
+    }
+    
+    let placed = 0;
+    while(placed < numMines) {
+      let r = Math.floor(Math.random() * rows), c = Math.floor(Math.random() * cols);
+      if(!board[r][c].isMine) { board[r][c].isMine = true; placed++; }
+    }
+  }
+
+  function countMines(r, c) {
+    let cnt = 0;
+    for(let i=-1; i<=1; i++) {
+      for(let j=-1; j<=1; j++) {
+        if(r+i>=0 && r+i<rows && c+j>=0 && c+j<cols && board[r+i][c+j].isMine) cnt++;
+      }
+    }
+    return cnt;
+  }
+
+  function reveal(r, c) {
+    if(r<0 || r>=rows || c<0 || c>=cols || board[r][c].revealed || board[r][c].flagged || gameover) return;
+    board[r][c].revealed = true;
+    let cell = board[r][c].el;
+    cell.classList.add('revealed');
+    if(board[r][c].isMine) {
+      cell.classList.add('mine'); cell.innerText = '💣'; gameover = true;
+      alert("Game Over!"); init(); return;
+    }
+    let cnt = countMines(r, c);
+    if(cnt > 0) {
+      cell.innerText = cnt;
+      cell.style.color = ['blue','green','red','purple','maroon','turquoise','black','gray'][cnt-1];
+    } else {
+      for(let i=-1; i<=1; i++) for(let j=-1; j<=1; j++) reveal(r+i, c+j);
+    }
+    checkWin();
+  }
+
+  function handleClick(e) { reveal(parseInt(e.target.dataset.r), parseInt(e.target.dataset.c)); }
+
+  function handleRightClick(e) {
+    e.preventDefault();
+    if(gameover) return;
+    let r = parseInt(e.target.dataset.r), c = parseInt(e.target.dataset.c);
+    if(board[r][c].revealed) return;
+    board[r][c].flagged = !board[r][c].flagged;
+    board[r][c].el.innerText = board[r][c].flagged ? '🚩' : '';
+    flags += board[r][c].flagged ? 1 : -1;
+    document.getElementById('mines').innerText = numMines - flags;
+  }
+
+  function checkWin() {
+    let won = true;
+    for(let r=0; r<rows; r++) for(let c=0; c<cols; c++) {
+      if(!board[r][c].isMine && !board[r][c].revealed) won = false;
+    }
+    if(won) { gameover = true; alert("You Win!"); init(); }
+  }
+
+  init();
+</script>
+
+<script>
+// --- Game Focus & Scroll Prevention ---
+if (!window.__game_focus_injected) {
+  window.__game_focus_injected = true;
+  window.addEventListener('click', () => window.focus());
+  window.addEventListener('keydown', (e) => {
+    if(['Space', 'ArrowUp', 'ArrowDown', 'ArrowLeft', 'ArrowRight'].includes(e.code)) {
+      e.preventDefault();
+    }
+  });
+}
+// --------------------------------------
+</script>
+
+</body>
+</html>
