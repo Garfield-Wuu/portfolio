@@ -1,6 +1,6 @@
 // ============================================
 // 研究热点数据 - 自动生成
-// 生成时间: 2026-04-03T12:34:44.213879
+// 生成时间: 2026-04-03T14:00:21.721129
 // ============================================
 
 export interface Paper {
@@ -164,24 +164,25 @@ export const hotProjects: GitHubProject[] = [
       "Drone"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T12:34:44.506603",
+    "stars_last_checked_at": "2026-04-03T14:00:22.512334",
     "stars_source": "api"
   },
   {
-    "name": "Prometheus_PX4",
-    "description": "PX4无人机自主飞行解决方案，包含目标追踪、集群控制、SLAM等应用模块。活跃开源社区。",
-    "stars": "11",
+    "name": "Prometheus (amov-lab)",
+    "description": "PX4无人机自主飞行综合解决方案，包含目标追踪、集群控制、SLAM等30+应用模块。累计3.1k+ stars，活跃开源社区。",
+    "stars": "3.1k",
     "language": "C++",
-    "link": "https://github.com/amov-lab/Prometheus_PX4",
+    "link": "https://github.com/amov-lab/Prometheus",
     "tags": [
       "PX4",
       "UAV",
       "ROS",
       "Autonomous Flight",
-      "Tracking"
+      "Tracking",
+      "Swarm"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T12:34:44.800341",
+    "stars_last_checked_at": "2026-04-03T14:00:23.016176",
     "stars_source": "api"
   },
   {
@@ -198,7 +199,7 @@ export const hotProjects: GitHubProject[] = [
       "UAV"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T12:34:45.057919",
+    "stars_last_checked_at": "2026-04-03T14:00:23.526197",
     "stars_source": "api"
   },
   {
@@ -214,7 +215,7 @@ export const hotProjects: GitHubProject[] = [
       "NLP"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T12:34:45.345986",
+    "stars_last_checked_at": "2026-04-03T14:00:24.038659",
     "stars_source": "api"
   },
   {
@@ -230,13 +231,13 @@ export const hotProjects: GitHubProject[] = [
       "LLM"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T12:34:45.862218",
+    "stars_last_checked_at": "2026-04-03T14:00:24.532621",
     "stars_source": "api"
   },
   {
     "name": "Awesome-RL-VLA",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": "614",
+    "stars": "0",
     "language": "Python",
     "link": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "tags": [
@@ -246,7 +247,7 @@ export const hotProjects: GitHubProject[] = [
       "Papers"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T12:34:46.119104",
+    "stars_last_checked_at": "2026-04-03T14:00:24.734753",
     "stars_source": "api"
   },
   {
@@ -262,7 +263,7 @@ export const hotProjects: GitHubProject[] = [
       "Papers"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T12:34:46.394261",
+    "stars_last_checked_at": "2026-04-03T14:00:24.930738",
     "stars_source": "api"
   },
   {
@@ -278,7 +279,7 @@ export const hotProjects: GitHubProject[] = [
       "Survey"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T12:34:46.615670",
+    "stars_last_checked_at": "2026-04-03T14:00:25.120166",
     "stars_source": "api"
   }
 ];
@@ -286,52 +287,52 @@ export const hotProjects: GitHubProject[] = [
 // 新闻摘要
 export const recentNews: News[] = [
   {
-    "title": "Amazon 收购 Rivr 爬楼配送机器人",
-    "source": "TechCrunch",
-    "date": "2026-03-19",
-    "summary": "亚马逊收购能爬楼梯的配送机器人Rivr，凸显电商对无人化送货上门服务的高度重视，加速末端配送无人化进程。",
-    "link": "https://techcrunch.com/2026/03/19/amazon-acquires-rivr-maker-of-a-stair-climbing-delivery-robot/",
-    "published_at": "2026-03-19",
-    "freshness": "fresh",
-    "verified": true
-  },
-  {
-    "title": "OpenAI 正在开发桌面端超级应用",
-    "source": "The Verge",
-    "date": "2026-03-19",
-    "summary": "OpenAI正在开发整合ChatGPT、Codex和Atlas浏览器的桌面超级应用，AI应用从分散工具向平台化整合转型。",
-    "link": "https://www.theverge.com/ai-artificial-intelligence/897778/openai-chatgpt-codex-atlas-browser-superapp",
-    "published_at": "2026-03-19",
-    "freshness": "fresh",
-    "verified": true
-  },
-  {
-    "title": "Valve 发布 SteamOS 3.8 游戏系统更新",
-    "source": "The Verge",
-    "date": "2026-03-19",
-    "summary": "Valve发布SteamOS 3.8.0预览版，首次支持Steam Machine客厅游戏PC，扩展对第三方掌机支持，构建跨设备游戏生态。",
-    "link": "https://www.theverge.com/games/897765/valve-steamos-3-8-update-steam-deck-hibernation-steam-machine-xbox-ally",
-    "published_at": "2026-03-19",
-    "freshness": "fresh",
-    "verified": true
-  },
-  {
-    "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
-    "source": "NVIDIA Newsroom",
+    "title": "SMASH",
+    "source": "arXiv:2604.01158",
     "date": "2026-04-01",
-    "summary": "NVIDIA发布开源物理AI模型GR00T N1.6和Cosmos Reason世界模型，全球合作伙伴推出下一代机器人，机器人的ChatGPT时刻已至。",
-    "link": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
+    "summary": "arXiv 发布：人形全身技能, egocentric视觉方向最新研究。",
+    "link": "https://arxiv.org/abs/2604.01158",
     "published_at": "2026-04-01",
     "freshness": "fresh",
     "verified": true
   },
   {
-    "title": "Jeff Bezos 收购传统工业公司用AI改造",
-    "source": "TechCrunch",
-    "date": "2026-03-19",
-    "summary": "Jeff Bezos启动新项目，收购传统工业公司并用AI技术进行数字化改造，标志科技巨头从消费互联网向工业实体经济渗透。",
-    "link": "https://techcrunch.com/2026/03/19/jeff-bezos-reportedly-wants-100-billion-to-buy-and-transform-old-manufacturing-firms-with-ai/",
-    "published_at": "2026-03-19",
+    "title": "EgoSim",
+    "source": "arXiv:2604.01001",
+    "date": "2026-04-01",
+    "summary": "arXiv 发布：第一人称世界仿真器, 3D场景一致性方向最新研究。",
+    "link": "https://arxiv.org/abs/2604.01001",
+    "published_at": "2026-04-01",
+    "freshness": "fresh",
+    "verified": true
+  },
+  {
+    "title": "DVGT-2",
+    "source": "arXiv:2604.00813",
+    "date": "2026-04-01",
+    "summary": "arXiv 发布：VGA范式替代VLA, 稠密3D几何方向最新研究。",
+    "link": "https://arxiv.org/abs/2604.00813",
+    "published_at": "2026-04-01",
+    "freshness": "fresh",
+    "verified": true
+  },
+  {
+    "title": "BAT",
+    "source": "arXiv:2604.01064",
+    "date": "2026-04-01",
+    "summary": "arXiv 发布：在线策略切换, 敏捷-稳定平衡方向最新研究。",
+    "link": "https://arxiv.org/abs/2604.01064",
+    "published_at": "2026-04-01",
+    "freshness": "fresh",
+    "verified": true
+  },
+  {
+    "title": "PanoAir",
+    "source": "arXiv:2604.00852",
+    "date": "2026-04-01",
+    "summary": "arXiv 发布：全景VI-SLAM, 嵌入式平台方向最新研究。",
+    "link": "https://arxiv.org/abs/2604.00852",
+    "published_at": "2026-04-01",
     "freshness": "fresh",
     "verified": true
   }
@@ -341,25 +342,30 @@ export const recentNews: News[] = [
 export const trends: Trend[] = [
   {
     "icon": "🤖",
-    "title": "LLM + VLA 双层架构",
-    "description": "LLM做意图理解，VLA做动作执行，分工明确。DIAL架构成为主流范式。"
-  },
-  {
-    "icon": "📡",
-    "title": "NL → STL → 控制",
-    "description": "自然语言先转为时序逻辑(STL)，再生成安全轨迹。CoT+GRPO确保翻译正确性。"
+    "title": "VGA > VLA for 控制",
+    "description": "精确控制任务需要几何优先而非语言优先"
   },
   {
     "icon": "🖥️",
-    "title": "边缘部署优先",
-    "description": "实时VLA、TensorRT-LLM等都在优化边缘推理速度，适合机载计算。"
+    "title": "第一人称仿真",
+    "description": "EgoSim等解决3D一致性问题"
   },
   {
-    "icon": "🎯",
-    "title": "仿真平台统一",
-    "description": "CARLA-Air统一AirSim和CARLA，减少仿真-真机迁移gap。"
+    "icon": "👁️",
+    "title": "全景感知",
+    "description": "PanoAir等突破FoV限制"
+  },
+  {
+    "icon": "🔧",
+    "title": "中间件标准化",
+    "description": "ROS2封装降低VLM集成门槛"
+  },
+  {
+    "icon": "⚡",
+    "title": "边缘部署",
+    "description": "LiPS等轻量级方案适配嵌入式"
   }
 ];
 
 // 元数据
-export const lastUpdated = "2026-04-03T12:34:44.213879";
+export const lastUpdated = "2026-04-03T14:00:21.721129";

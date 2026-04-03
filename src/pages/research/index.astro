@@ -82,7 +82,7 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
 
       <!-- Results count -->
       <div class="text-xs text-gray-500">
-        <span id="results-count">0</span> 条结果
+        <span id="results-count">{recentPapers.length + recentNews.length + hotProjects.length}</span> 条结果
       </div>
     </div>
 
