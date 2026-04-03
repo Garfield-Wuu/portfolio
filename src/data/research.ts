@@ -1,6 +1,6 @@
 // ============================================
 // 研究热点数据 - 自动生成
-// 生成时间: 2026-04-03T17:55:43.309479
+// 生成时间: 2026-04-04T01:21:42.676281
 // ============================================
 
 // P0-2: Paper interface 升级，增加结构化摘要字段
@@ -342,69 +342,95 @@ export const hotProjects: GitHubProject[] = [
 // 新闻摘要（含 why_it_matters）
 export const recentNews: News[] = [
   {
-    "title": "Amazon acquires Rivr, maker of a stair-climbing delivery robot",
-    "link": "https://techcrunch.com/2026/03/19/amazon-acquires-rivr-maker-of-a-stair-climbing-delivery-robot/",
-    "summary": "亚马逊与贝索斯再度投资无人配送初创公司，凸显电商巨头对无人化送货上门服务的高度重视。",
-    "source": "TechCrunch",
-    "date": "2026-03-19",
-    "published_at": "2026-03-19",
+    "title": "SoftAct：力感知跨形体技能迁移框架",
+    "link": "https://soft-act.github.io/",
+    "summary": "2026.04.01 | 来源：arXiv:2604.01224 💡 核心问题：如何将人类演示的力控制技能迁移到软体机器人手？ 💡 解决方案：",
+    "source": "GitHub",
+    "date": "2026-04-01",
+    "published_at": "2026-04-01",
     "verified": false,
-    "why_it_matters": "此举加速推进末端配送无人化进程。亚马逊持续布局无人配送赛道，将促使竞争对手加大相关投入，推动整个物流行业向智能化、自动化转型，预计将加速无人机/配送机器人技术的商业化落地。",
-    "research_axis": "llm",
-    "freshness": "aging",
+    "why_it_matters": null,
+    "research_axis": "robotics",
+    "freshness": "fresh",
     "archived": false
   },
   {
-    "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
-    "source": "NVIDIA Newsroom",
+    "title": "多智能体异构机器人协同规划（MAPPO）",
+    "link": "https://github.com/leggedrobotics/multi_robot_global_planner",
+    "summary": "2026.04.01 | 来源：arXiv:2604.01213 💡 核心问题：外太空探测中，多台具有不同能力的机器人如何高效协同？ 💡 解决方案：",
+    "source": "GitHub",
     "date": "2026-04-01",
-    "summary": "NVIDIA发布开源物理AI模型GR00T N1.6和Cosmos Reason世界模型，全球合作伙伴推出下一代机器人，机器人的ChatGPT时刻已至。",
-    "link": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
     "published_at": "2026-04-01",
-    "freshness": "fresh",
-    "verified": true,
-    "why_it_matters": "开源物理AI+世界模型对机器人仿真和无人机Sim2Real有直接参考价值",
+    "verified": false,
+    "why_it_matters": null,
     "research_axis": "robotics",
-    "_source": "fallback"
+    "freshness": "fresh",
+    "archived": false
   },
   {
-    "title": "Unitree B2-W 四足机器人发布",
-    "source": "Unitree",
-    "date": "2026-03-25",
-    "summary": "宇树科技发布B2-W工业四足机器人，负载30kg，续航4小时，支持复杂地形巡检，配备深度相机和激光雷达。",
-    "link": "https://www.unitree.com.cn/",
-    "published_at": "2026-03-25",
-    "freshness": "fresh",
-    "verified": true,
-    "why_it_matters": "四足机器人硬件迭代，负载和续航大幅提升，工业巡检应用加速落地",
+    "title": "Florence-2 ROS 2 封装：视觉-语言模型进入机器人主流软件栈",
+    "link": "https://github.com/JEDominguezVidal/florence2_ros2_wrapper",
+    "summary": "2026.04.01 | 来源：arXiv:2604.01179 💡 核心创新： - Florence-2 统一了 captioning、OCR、开放词汇检测、定位等多视觉任务",
+    "source": "GitHub",
+    "date": "2026-04-01",
+    "published_at": "2026-04-01",
+    "verified": false,
+    "why_it_matters": null,
     "research_axis": "robotics",
-    "_source": "fallback"
+    "freshness": "fresh",
+    "archived": false
   },
   {
-    "title": "DJI Air 3S 无人机发布",
-    "source": "DJI",
-    "date": "2026-03-28",
-    "summary": "大疆发布Air 3S，配备1英寸主摄+70mm长焦双摄系统，全向避障，支持APAS 5.0，续航48分钟，面向消费级航拍市场。",
-    "link": "https://www.dji.com/cn/air-3s",
-    "published_at": "2026-03-28",
-    "freshness": "fresh",
-    "verified": true,
-    "why_it_matters": "消费级无人机避障和续航持续进化，DJI技术动态",
+    "title": "TypeFly：LLM 驱动的低延迟无人机规划",
+    "link": "https://ieeexplore.ieee.org/document/10970379/",
+    "summary": "2024（论文）| 来源：IEEE Xplore 💡 核心创新：用 MiniSpec 语言 + 运行时压缩 LLM 生成延迟 💡 意义：解决了 LLM token 顺序生成的根本性延迟问题",
+    "source": "IEEE",
+    "date": "2024",
+    "published_at": "2024",
+    "verified": false,
+    "why_it_matters": null,
     "research_axis": "drone",
-    "_source": "fallback"
+    "freshness": "unknown",
+    "archived": false
   },
   {
-    "title": "OpenAI 发布 GPT-4.5 API，扩展上下文窗口",
-    "source": "OpenAI",
-    "date": "2026-04-02",
-    "summary": "OpenAI向开发者开放GPT-4.5 API，上下文窗口扩展至200k tokens，定价下调40%，强化函数调用和结构化输出能力。",
-    "link": "https://openai.com/index/gpt-4-5-launch",
-    "published_at": "2026-04-02",
-    "freshness": "fresh",
-    "verified": true,
-    "why_it_matters": "LLM API成本下降+长上下文对无人机NL指令解析和任务规划直接利好",
+    "title": "ChatFly：自然语言控制 PX4/Gazebo 无人机",
+    "link": "https://github.com/Hub-Tian/UAVs_Meet_LLMs",
+    "summary": "*：将 OpenAI ChatGPT 集成到 PX4/Gazebo 仿真栈",
+    "source": "GitHub",
+    "date": "_2026-04-0",
+    "published_at": "_2026-04-0",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "drone",
+    "freshness": "unknown",
+    "archived": false
+  },
+  {
+    "title": "commaai/openpilot ⭐ 60,508",
+    "link": "https://github.com/commaai/openpilot",
+    "summary": "Python | 自动驾驶操作系统 💡 支撑 300+ 车型的辅助驾驶升级  https://github.com/commaai/openpilot",
+    "source": "GitHub",
+    "date": "_2026-04-0",
+    "published_at": "_2026-04-0",
+    "verified": false,
+    "why_it_matters": null,
     "research_axis": "llm",
-    "_source": "fallback"
+    "freshness": "unknown",
+    "archived": false
+  },
+  {
+    "title": "NVIDIA 发布 Cosmos Reason 2 + GR00T N1.6",
+    "link": "https://github.com/nvidia-cosmos",
+    "summary": "*：NVIDIA 发布新一代 Physical AI 开源模型：\n-",
+    "source": "NVIDIA",
+    "date": "2026-03-16",
+    "published_at": "2026-03-16",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "robotics",
+    "freshness": "aging",
+    "archived": false
   }
 ];
 
@@ -438,4 +464,4 @@ export const trends: Trend[] = [
 ];
 
 // 元数据
-export const lastUpdated = "2026-04-03T17:55:43.309479";
+export const lastUpdated = "2026-04-04T01:21:42.676281";
