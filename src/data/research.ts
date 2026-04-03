@@ -356,6 +356,3 @@ export const trends: Trend[] = [
     "description": "CARLA-Air统一AirSim和CARLA，减少仿真-真机迁移gap。"
   }
 ];
-
-// 归档新
-};
