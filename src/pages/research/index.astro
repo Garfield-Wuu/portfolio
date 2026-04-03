@@ -6,6 +6,14 @@ import { recentPapers, hotProjects, trends, recentNews, lastUpdated } from '../.
 const allPaperTags = [...new Set(recentPapers.flatMap(p => p.tags))];
 const allGithubTags = [...new Set(hotProjects.flatMap(p => p.tags))];
 const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
+
+// Section descriptions (P0-4: 增强首页结构解释性)
+const SECTION_DESCRIPTIONS = {
+  trends: "综合 arXiv 论文 + 行业资讯 + GitHub 项目，判断当前研究风向",
+  news: "来自 TechCrunch / NVIDIA / Unitree / DJI 等的行业动态、产品发布、公司新闻",
+  papers: "来自 arXiv / OpenAlex / ICRA 等的最新学术论文，按相关性排序",
+  github: "与 LLM+无人机+机器人相关的开源工具、项目与框架"
+};
 ---
 
 <Layout 
@@ -33,6 +41,7 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
         <h2 class="text-2xl font-bold text-white">🔥 研究趋势</h2>
         <div class="h-px bg-white/10 flex-1"></div>
       </div>
+      <p class="text-gray-500 text-xs mb-4 -mt-2">💡 {SECTION_DESCRIPTIONS.trends}</p>
       <div class="grid md:grid-cols-2 gap-4">
         {trends.map(trend => (
           <div class="glass-card p-6">
@@ -88,12 +97,13 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
 
     <!-- Content Sections -->
     <div id="content-sections">
-      <!-- News Section -->
+      <!-- News Section (P0-1: 行业资讯，真实新闻/动态/产品发布，非 arXiv 论文) -->
       <div class="content-section" data-type="news">
-        <h2 class="text-xl font-bold mb-4 text-accent flex items-center gap-2">
+        <h2 class="text-xl font-bold mb-1 text-accent flex items-center gap-2">
           📰 最新资讯
           <span class="text-xs font-normal text-gray-500">({recentNews.length})</span>
         </h2>
+        <p class="text-gray-500 text-xs mb-4">💡 {SECTION_DESCRIPTIONS.news}</p>
         <div class="news-list space-y-3 mb-10">
           {recentNews.map((news, idx) => (
             <a href={news.link} target="_blank" rel="noopener noreferrer"
@@ -103,30 +113,48 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
               data-date={news.date}
               data-summary={news.summary.toLowerCase()}>
               <div class="flex items-start justify-between gap-3 mb-2">
-                <h3 class="text-base font-bold text-white group-hover:text-accent transition-colors leading-tight">
-                  {news.title}
-                </h3>
-                {news.freshness === 'fresh' && (
-                  <span class="shrink-0 text-xs px-1.5 py-0.5 rounded bg-green-900/40 text-green-400 border border-green-800">🟢</span>
-                )}
-                {news.freshness === 'aging' && (
-                  <span class="shrink-0 text-xs px-1.5 py-0.5 rounded bg-yellow-900/40 text-yellow-400 border border-yellow-800">🟡</span>
-                )}
+                <div class="flex-1 min-w-0">
+                  <h3 class="text-base font-bold text-white group-hover:text-accent transition-colors leading-tight mb-1">
+                    {news.title}
+                  </h3>
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="text-gray-500 text-xs">{news.source}</span>
+                    {news.research_axis && (
+                      <span class="text-xs px-1.5 py-0.5 rounded bg-blue-900/40 text-blue-400 border border-blue-800">{news.research_axis}</span>
+                    )}
+                    <span class="text-gray-600 text-xs">·</span>
+                    <span class="text-gray-500 text-xs">{news.date}</span>
+                  </div>
+                </div>
+                <div class="flex flex-col items-end gap-1 shrink-0">
+                  {news.freshness === 'fresh' && (
+                    <span class="text-xs px-1.5 py-0.5 rounded bg-green-900/40 text-green-400 border border-green-800">🟢 新</span>
+                  )}
+                  {news.freshness === 'aging' && (
+                    <span class="text-xs px-1.5 py-0.5 rounded bg-yellow-900/40 text-yellow-400 border border-yellow-800">🟡</span>
+                  )}
+                  {news._source === 'fallback' && (
+                    <span class="text-xs px-1 py-0.5 rounded bg-gray-800 text-gray-500 border border-gray-700" title="来自降级数据源">📦</span>
+                  )}
+                </div>
               </div>
-              <p class="text-gray-500 text-xs mb-2">{news.source} · {news.date}</p>
-              <p class="text-gray-400 text-sm line-clamp-2">{news.summary}</p>
-              <p class="mt-2 text-xs text-accent group-hover:underline">阅读原文 →</p>
+              <p class="text-gray-400 text-sm mb-2 line-clamp-2">{news.summary}</p>
+              {news.why_it_matters && (
+                <p class="text-blue-400 text-xs mb-2 italic">→ {news.why_it_matters}</p>
+              )}
+              <p class="text-accent text-xs group-hover:underline">阅读原文 →</p>
             </a>
           ))}
         </div>
       </div>
 
-      <!-- Papers Section -->
+      <!-- Papers Section (P0-2: 学术论文，含结构化摘要) -->
       <div class="content-section" data-type="papers">
-        <h2 class="text-xl font-bold mb-4 text-accent flex items-center gap-2">
+        <h2 class="text-xl font-bold mb-1 text-accent flex items-center gap-2">
           📚 最新论文
           <span class="text-xs font-normal text-gray-500">({recentPapers.length})</span>
         </h2>
+        <p class="text-gray-500 text-xs mb-4">💡 {SECTION_DESCRIPTIONS.papers}</p>
         <div class="papers-list space-y-3 mb-10">
           {recentPapers.map((paper, idx) => (
             <a href={paper.link} target="_blank" rel="noopener noreferrer"
@@ -141,13 +169,41 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
                   <h3 class="text-base font-bold text-white group-hover:text-accent transition-colors leading-tight mb-1">
                     {paper.title}
                   </h3>
-                  <p class="text-gray-500 text-xs">{paper.authors || paper.venue} · {paper.date}</p>
+                  <div class="flex flex-wrap items-center gap-2">
+                    <span class="text-gray-500 text-xs">{paper.authors || paper.venue}</span>
+                    <span class="text-gray-600 text-xs">·</span>
+                    <span class="text-gray-500 text-xs">{paper.date}</span>
+                    {paper.research_axis && (
+                      <span class={`text-xs px-1.5 py-0.5 rounded border ${
+                        paper.research_axis === 'Perception' ? 'bg-purple-900/40 text-purple-400 border-purple-800' :
+                        paper.research_axis === 'Simulation' ? 'bg-cyan-900/40 text-cyan-400 border-cyan-800' :
+                        paper.research_axis === 'VLA' ? 'bg-red-900/40 text-red-400 border-red-800' :
+                        paper.research_axis === 'Edge' ? 'bg-orange-900/40 text-orange-400 border-orange-800' :
+                        'bg-blue-900/40 text-blue-400 border-blue-800'
+                      }`}>{paper.research_axis}</span>
+                    )}
+                  </div>
                 </div>
-                {paper.importance === 'high' && (
-                  <span class="shrink-0 text-xs px-2 py-1 rounded bg-red-900/40 text-red-400 border border-red-800">⭐ 高优先级</span>
-                )}
+                <div class="flex flex-col items-end gap-1 shrink-0">
+                  {paper.importance === 'high' && (
+                    <span class="text-xs px-2 py-1 rounded bg-red-900/40 text-red-400 border border-red-800">⭐</span>
+                  )}
+                </div>
               </div>
-              <p class="text-gray-400 text-sm mb-3 line-clamp-2">{paper.summary}</p>
+              {/* P0-2: 结构化摘要展示 */}
+              <p class="text-gray-400 text-sm mb-2">
+                {paper.summary_structured || paper.summary || paper.method}
+              </p>
+              {/* P0-2: 简短方法+价值行 */}
+              {(paper.method || paper.value) && (
+                <p class="text-gray-500 text-xs mb-2">
+                  {paper.method && <span>⚙️ {paper.method.slice(0, 80)}{paper.method.length > 80 ? '...' : ''}</span>}
+                  {paper.value && <span class="ml-2">💡 {paper.value.slice(0, 60)}{paper.value.length > 60 ? '...' : ''}</span>}
+                </p>
+              )}
+              {paper.why_relevant && paper.why_relevant.length > 5 && (
+                <p class="text-blue-400 text-xs mb-2 italic">→ {paper.why_relevant.slice(0, 80)}{paper.why_relevant.length > 80 ? '...' : ''}</p>
+              )}
               <div class="flex flex-wrap gap-1.5 mb-2">
                 {paper.tags.map(tag => (
                   <span class="text-xs px-1.5 py-0.5 rounded bg-dark text-gray-400 border border-gray-700">{tag}</span>
@@ -159,12 +215,13 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
         </div>
       </div>
 
-      <!-- GitHub Section -->
+      <!-- GitHub Section (P0-3: 含 stars 缓存状态标识) -->
       <div class="content-section" data-type="github">
-        <h2 class="text-xl font-bold mb-4 text-accent flex items-center gap-2">
+        <h2 class="text-xl font-bold mb-1 text-accent flex items-center gap-2">
           ⭐ GitHub 热门项目
           <span class="text-xs font-normal text-gray-500">({hotProjects.length})</span>
         </h2>
+        <p class="text-gray-500 text-xs mb-4">💡 {SECTION_DESCRIPTIONS.github}</p>
         <div class="github-list grid md:grid-cols-2 gap-3 mb-10">
           {hotProjects.map((project, idx) => (
             <a href={project.link} target="_blank" rel="noopener noreferrer"
@@ -177,7 +234,19 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
               data-stars-num={parseFloat(project.stars) || 0}>
               <div class="flex items-start justify-between gap-3 mb-2">
                 <h3 class="text-base font-bold text-white group-hover:text-accent transition-colors">{project.name}</h3>
-                <span class="shrink-0 text-sm px-2 py-1 rounded bg-yellow-900/30 text-yellow-400 border border-yellow-800">★ {project.stars}</span>
+                <div class="flex items-center gap-1 shrink-0">
+                  {/* P0-3: Stars 状态指示器 */}
+                  {project.stars_source === 'api' && (
+                    <span class="text-green-500 text-xs" title="实时 API">●</span>
+                  )}
+                  {project.stars_source === 'cache' && (
+                    <span class="text-blue-400 text-xs" title="新鲜缓存 (<1h)">◐</span>
+                  )}
+                  {project.stars_source === 'stale_cache' && (
+                    <span class="text-yellow-500 text-xs" title="过期缓存 (>1h)">○</span>
+                  )}
+                  <span class="text-sm px-2 py-1 rounded bg-yellow-900/30 text-yellow-400 border border-yellow-800">★ {project.stars}</span>
+                </div>
               </div>
               <p class="text-gray-400 text-sm mb-3 line-clamp-2">{project.description}</p>
               <div class="flex items-center justify-between">
