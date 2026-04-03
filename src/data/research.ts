@@ -1,7 +1,6 @@
 // ============================================
 // 研究热点数据 - 自动生成
-// 生成时间: 2026-04-03T00:32:46.497622
-// ⚠️ 此文件由脚本自动生成，请勿手动修改
+// 生成时间: 2026-04-03T08:45:11.814585
 // ============================================
 
 export interface Paper {
@@ -161,7 +160,7 @@ export const hotProjects: GitHubProject[] = [
       "Drone"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T00:32:47.100058",
+    "stars_last_checked_at": "2026-04-03T08:45:12.424025",
     "stars_source": "api"
   },
   {
@@ -178,7 +177,7 @@ export const hotProjects: GitHubProject[] = [
       "Tracking"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T00:32:47.731066",
+    "stars_last_checked_at": "2026-04-03T08:45:13.004614",
     "stars_source": "api"
   },
   {
@@ -195,7 +194,7 @@ export const hotProjects: GitHubProject[] = [
       "UAV"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T00:32:48.345002",
+    "stars_last_checked_at": "2026-04-03T08:45:13.607768",
     "stars_source": "api"
   },
   {
@@ -211,7 +210,7 @@ export const hotProjects: GitHubProject[] = [
       "NLP"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T00:32:48.910965",
+    "stars_last_checked_at": "2026-04-03T08:45:14.208776",
     "stars_source": "api"
   },
   {
@@ -227,7 +226,7 @@ export const hotProjects: GitHubProject[] = [
       "LLM"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T00:32:49.543382",
+    "stars_last_checked_at": "2026-04-03T08:45:14.765289",
     "stars_source": "api"
   },
   {
@@ -243,7 +242,7 @@ export const hotProjects: GitHubProject[] = [
       "Papers"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T00:32:50.306304",
+    "stars_last_checked_at": "2026-04-03T08:45:15.350190",
     "stars_source": "api"
   },
   {
@@ -259,7 +258,7 @@ export const hotProjects: GitHubProject[] = [
       "Papers"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T00:32:50.937227",
+    "stars_last_checked_at": "2026-04-03T08:45:15.924451",
     "stars_source": "api"
   },
   {
@@ -275,7 +274,7 @@ export const hotProjects: GitHubProject[] = [
       "Survey"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T00:32:51.553455",
+    "stars_last_checked_at": "2026-04-03T08:45:16.544937",
     "stars_source": "api"
   }
 ];
@@ -357,3 +356,6 @@ export const trends: Trend[] = [
     "description": "CARLA-Air统一AirSim和CARLA，减少仿真-真机迁移gap。"
   }
 ];
+
+// 归档新
+};
