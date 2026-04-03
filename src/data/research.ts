@@ -1,6 +1,6 @@
 // ============================================
 // 研究热点数据 - 自动生成
-// 生成时间: 2026-04-03T14:00:21.721129
+// 生成时间: 2026-04-03T14:02:40.985362
 // ============================================
 
 export interface Paper {
@@ -153,7 +153,7 @@ export const hotProjects: GitHubProject[] = [
   {
     "name": "PX4 Autopilot",
     "description": "开源无人机自动驾驶软件，支持多旋翼、固定翼、VTOL等。学术界最流行的无人机研究平台。",
-    "stars": "11.4k",
+    "stars": "0",
     "language": "C++",
     "link": "https://github.com/PX4/PX4-Autopilot",
     "tags": [
@@ -164,13 +164,13 @@ export const hotProjects: GitHubProject[] = [
       "Drone"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:00:22.512334",
+    "stars_last_checked_at": "2026-04-03T14:02:41.205204",
     "stars_source": "api"
   },
   {
     "name": "Prometheus (amov-lab)",
-    "description": "PX4无人机自主飞行综合解决方案，包含目标追踪、集群控制、SLAM等30+应用模块。累计3.1k+ stars，活跃开源社区。",
-    "stars": "3.1k",
+    "description": "PX4无人机自主飞行综合解决方案，包含目标追踪、集群控制、SLAM等30+应用模块。累计3.1k+ stars。",
+    "stars": "0",
     "language": "C++",
     "link": "https://github.com/amov-lab/Prometheus",
     "tags": [
@@ -178,17 +178,16 @@ export const hotProjects: GitHubProject[] = [
       "UAV",
       "ROS",
       "Autonomous Flight",
-      "Tracking",
-      "Swarm"
+      "Tracking"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:00:23.016176",
+    "stars_last_checked_at": "2026-04-03T14:02:41.396872",
     "stars_source": "api"
   },
   {
     "name": "embodied-drone-agents",
     "description": "LLM drone agent系统，使用MAVSDK-Python作为工具，LangGraph编排任务规划，支持自然语言控制无人机。",
-    "stars": "18",
+    "stars": "0",
     "language": "Python",
     "link": "https://github.com/EmergenceAI/embodied-drone-agents",
     "tags": [
@@ -199,7 +198,7 @@ export const hotProjects: GitHubProject[] = [
       "UAV"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:00:23.526197",
+    "stars_last_checked_at": "2026-04-03T14:02:41.593451",
     "stars_source": "api"
   },
   {
@@ -215,13 +214,13 @@ export const hotProjects: GitHubProject[] = [
       "NLP"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:00:24.038659",
+    "stars_last_checked_at": "2026-04-03T14:02:41.809796",
     "stars_source": "api"
   },
   {
     "name": "MAVLinkMCP",
     "description": "MCP (Model Context Protocol) server for LLM与MAVLink无人机的通信，支持通过MCP协议控制PX4无人机。",
-    "stars": "16",
+    "stars": "0",
     "language": "Python",
     "link": "https://github.com/ion-g-ion/MAVLinkMCP",
     "tags": [
@@ -231,7 +230,7 @@ export const hotProjects: GitHubProject[] = [
       "LLM"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:00:24.532621",
+    "stars_last_checked_at": "2026-04-03T14:02:41.995345",
     "stars_source": "api"
   },
   {
@@ -247,7 +246,7 @@ export const hotProjects: GitHubProject[] = [
       "Papers"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:00:24.734753",
+    "stars_last_checked_at": "2026-04-03T14:02:42.193365",
     "stars_source": "api"
   },
   {
@@ -263,7 +262,7 @@ export const hotProjects: GitHubProject[] = [
       "Papers"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:00:24.930738",
+    "stars_last_checked_at": "2026-04-03T14:02:42.377229",
     "stars_source": "api"
   },
   {
@@ -279,7 +278,7 @@ export const hotProjects: GitHubProject[] = [
       "Survey"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:00:25.120166",
+    "stars_last_checked_at": "2026-04-03T14:02:42.564902",
     "stars_source": "api"
   }
 ];
@@ -368,4 +367,4 @@ export const trends: Trend[] = [
 ];
 
 // 元数据
-export const lastUpdated = "2026-04-03T14:00:21.721129";
+export const lastUpdated = "2026-04-03T14:02:40.985362";
