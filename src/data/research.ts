@@ -1,6 +1,6 @@
 // ============================================
 // 研究热点数据 - 自动生成
-// 生成时间: 2026-04-03T14:02:40.985362
+// 生成时间: 2026-04-03T14:04:56.731860
 // ============================================
 
 export interface Paper {
@@ -153,7 +153,7 @@ export const hotProjects: GitHubProject[] = [
   {
     "name": "PX4 Autopilot",
     "description": "开源无人机自动驾驶软件，支持多旋翼、固定翼、VTOL等。学术界最流行的无人机研究平台。",
-    "stars": "0",
+    "stars": "4.2k",
     "language": "C++",
     "link": "https://github.com/PX4/PX4-Autopilot",
     "tags": [
@@ -164,13 +164,12 @@ export const hotProjects: GitHubProject[] = [
       "Drone"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:02:41.205204",
-    "stars_source": "api"
+    "stars_source": "fallback"
   },
   {
     "name": "Prometheus (amov-lab)",
     "description": "PX4无人机自主飞行综合解决方案，包含目标追踪、集群控制、SLAM等30+应用模块。累计3.1k+ stars。",
-    "stars": "0",
+    "stars": "3.1k",
     "language": "C++",
     "link": "https://github.com/amov-lab/Prometheus",
     "tags": [
@@ -181,13 +180,12 @@ export const hotProjects: GitHubProject[] = [
       "Tracking"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:02:41.396872",
-    "stars_source": "api"
+    "stars_source": "fallback"
   },
   {
     "name": "embodied-drone-agents",
     "description": "LLM drone agent系统，使用MAVSDK-Python作为工具，LangGraph编排任务规划，支持自然语言控制无人机。",
-    "stars": "0",
+    "stars": "127",
     "language": "Python",
     "link": "https://github.com/EmergenceAI/embodied-drone-agents",
     "tags": [
@@ -198,13 +196,12 @@ export const hotProjects: GitHubProject[] = [
       "UAV"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:02:41.593451",
-    "stars_source": "api"
+    "stars_source": "fallback"
   },
   {
     "name": "llm-uav (Atmaca)",
     "description": "集成Gemma 3 4B与无人机控制，支持自然语言指令，边缘部署。",
-    "stars": "0",
+    "stars": "42",
     "language": "Python",
     "link": "https://github.com/furkanisikay/llm-uav",
     "tags": [
@@ -214,13 +211,12 @@ export const hotProjects: GitHubProject[] = [
       "NLP"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:02:41.809796",
-    "stars_source": "api"
+    "stars_source": "fallback"
   },
   {
     "name": "MAVLinkMCP",
     "description": "MCP (Model Context Protocol) server for LLM与MAVLink无人机的通信，支持通过MCP协议控制PX4无人机。",
-    "stars": "0",
+    "stars": "38",
     "language": "Python",
     "link": "https://github.com/ion-g-ion/MAVLinkMCP",
     "tags": [
@@ -230,13 +226,12 @@ export const hotProjects: GitHubProject[] = [
       "LLM"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:02:41.995345",
-    "stars_source": "api"
+    "stars_source": "fallback"
   },
   {
     "name": "Awesome-RL-VLA",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": "0",
+    "stars": "520",
     "language": "Python",
     "link": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "tags": [
@@ -246,13 +241,12 @@ export const hotProjects: GitHubProject[] = [
       "Papers"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:02:42.193365",
-    "stars_source": "api"
+    "stars_source": "fallback"
   },
   {
     "name": "Awesome-LLM-Robotics",
     "description": "大语言模型/多模态模型在机器人领域的应用论文汇总。",
-    "stars": "0",
+    "stars": "1.2k",
     "language": "Python",
     "link": "https://github.com/GT-RIPL/Awesome-LLM-Robotics",
     "tags": [
@@ -262,13 +256,12 @@ export const hotProjects: GitHubProject[] = [
       "Papers"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:02:42.377229",
-    "stars_source": "api"
+    "stars_source": "fallback"
   },
   {
     "name": "Awesome-Aerial-VLN",
     "description": "空中视觉-语言导航(Aerial VLN)论文汇总：无人机VLN方向最新研究。",
-    "stars": "0",
+    "stars": "42",
     "language": "Python",
     "link": "https://github.com/Sautenich/Awesome-Aerial-Vision-Language-Navigation",
     "tags": [
@@ -278,8 +271,7 @@ export const hotProjects: GitHubProject[] = [
       "Survey"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T14:02:42.564902",
-    "stars_source": "api"
+    "stars_source": "fallback"
   }
 ];
 
@@ -367,4 +359,4 @@ export const trends: Trend[] = [
 ];
 
 // 元数据
-export const lastUpdated = "2026-04-03T14:02:40.985362";
+export const lastUpdated = "2026-04-03T14:04:56.731860";
