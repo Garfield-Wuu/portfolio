@@ -1,6 +1,6 @@
 // ============================================
 // 研究热点数据 - 自动生成
-// 生成时间: 2026-04-03T08:45:11.814585
+// 生成时间: 2026-04-03T12:34:44.213879
 // ============================================
 
 export interface Paper {
@@ -43,104 +43,108 @@ export interface News {
 // 最新论文
 export const recentPapers: Paper[] = [
   {
-    "title": "DIAL: Decomposing Vision-Language Models into Intent Understanding and Action Decoding",
-    "authors": "Stanford / Berkeley",
-    "venue": "arXiv:2603.29844",
-    "date": "2026-03-31",
-    "summary": "VLA架构创新：VLM不应只做编码器，应利用高层意图理解。分为Intent Bottleneck（潜世界模型编码意图）和Action Decoding（潜逆动力学解码动作），实现LLM→VLA→PX4架构解耦。",
-    "link": "https://arxiv.org/abs/2603.29844",
-    "pdf_url": "https://arxiv.org/pdf/2603.29844",
+    "title": "SMASH",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.01158",
+    "date": "2026-04-01",
+    "summary": "人形全身技能, egocentric视觉。来源：UAV-LLM Scout 持续调研。",
+    "link": "https://arxiv.org/abs/2604.01158",
+    "pdf_url": "https://arxiv.org/pdf/2604.01158",
     "tags": [
-      "VLA",
-      "LLM",
-      "Robot",
-      "Embodied AI",
-      "Intent"
+      "人形全身技能, egocentric视觉"
     ],
     "importance": "high"
   },
   {
-    "title": "LLM-Enabled UAV NL Navigation: Natural Language to Signal Temporal Logic for Autonomous Flight",
-    "authors": "港科大",
-    "venue": "arXiv:2603.27583",
-    "date": "2026-03-30",
-    "summary": "自然语言→信号时序逻辑(STL)→MILP轨迹优化。CoT推理+GRPO优化确保翻译正确性，STL修复机制处理不可行约束。已有实机飞行验证。",
-    "link": "https://arxiv.org/abs/2603.27583",
-    "pdf_url": "https://arxiv.org/pdf/2603.27583",
+    "title": "EgoSim",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.01001",
+    "date": "2026-04-01",
+    "summary": "第一人称世界仿真器, 3D场景一致性。来源：UAV-LLM Scout 持续调研。",
+    "link": "https://arxiv.org/abs/2604.01001",
+    "pdf_url": "https://arxiv.org/pdf/2604.01001",
     "tags": [
-      "LLM",
-      "UAV",
-      "STL",
-      "NLP",
-      "Motion Planning"
+      "第一人称世界仿真器, 3D场景一致性"
     ],
     "importance": "high"
   },
   {
-    "title": "CARLA-Air: Unified Aerial-Ground Simulation Infrastructure",
-    "authors": "ETH Zurich",
-    "venue": "arXiv:2603.28032",
-    "date": "2026-03-30",
-    "summary": "AirSim + CARLA统一到单一Unreal Engine进程，零修改复用AirSim API+ROS 2。18种传感器模态同步采集。完整仿真验证环境，适合毕设仿真验证。",
-    "link": "https://arxiv.org/abs/2603.28032",
-    "pdf_url": "https://arxiv.org/pdf/2603.28032",
+    "title": "DVGT-2",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.00813",
+    "date": "2026-04-01",
+    "summary": "VGA范式替代VLA, 稠密3D几何。来源：UAV-LLM Scout 持续调研。",
+    "link": "https://arxiv.org/abs/2604.00813",
+    "pdf_url": "https://arxiv.org/pdf/2604.00813",
     "tags": [
-      "Simulation",
-      "UAV",
-      "ROS",
-      "CARLA",
-      "Sensor Fusion"
+      "VGA范式替代VLA, 稠密3D几何"
     ],
     "importance": "high"
   },
   {
-    "title": "AeroGen: Agentic Drone Autonomy through Single-Shot Structured Prompting",
-    "authors": "MIT / UC Berkeley",
-    "venue": "arXiv:2603.25000",
-    "date": "2026-03-25",
-    "summary": "PX4 + LLM agent单步结构化提示，一次prompt完成多任务规划。轻量级方案，适合边缘部署。支持语音控制和云端API。",
-    "link": "https://arxiv.org/abs/2603.25000",
-    "pdf_url": "https://arxiv.org/pdf/2603.25000",
+    "title": "BAT",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.01064",
+    "date": "2026-04-01",
+    "summary": "在线策略切换, 敏捷-稳定平衡。来源：UAV-LLM Scout 持续调研。",
+    "link": "https://arxiv.org/abs/2604.01064",
+    "pdf_url": "https://arxiv.org/pdf/2604.01064",
     "tags": [
-      "LLM",
-      "UAV",
-      "PX4",
-      "Agent",
-      "Edge AI"
+      "在线策略切换, 敏捷-稳定平衡"
     ],
     "importance": "high"
   },
   {
-    "title": "Realtime-VLA V2: Learning to Run VLAs Fast, Smooth and Accurate",
-    "authors": "上海AI Lab",
-    "venue": "arXiv:2603.20000",
-    "date": "2026-03-20",
-    "summary": "实时VLA，在边缘设备(Jetson)上快速流畅运行VLAs。EAGLE-3投机解码+NVFP4量化优化，兼顾精度和速度。适合无人机实时性需求。",
-    "link": "https://arxiv.org/abs/2603.20000",
-    "pdf_url": "https://arxiv.org/pdf/2603.20000",
+    "title": "PanoAir",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.00852",
+    "date": "2026-04-01",
+    "summary": "全景VI-SLAM, 嵌入式平台。来源：UAV-LLM Scout 持续调研。",
+    "link": "https://arxiv.org/abs/2604.00852",
+    "pdf_url": "https://arxiv.org/pdf/2604.00852",
     "tags": [
-      "VLA",
-      "Real-time",
-      "Edge AI",
-      "Quantization"
+      "全景VI-SLAM, 嵌入式平台"
     ],
-    "importance": "medium"
+    "importance": "high"
   },
   {
-    "title": "FocusVLA: Visual Attention Optimization for Efficient Vision-Language-Action Models",
-    "authors": "字节跳动",
-    "venue": "arXiv:2603.28740",
+    "title": "Florence-2 ROS2",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.01179",
+    "date": "2026-04-01",
+    "summary": "VLM ROS2中间件封装。来源：UAV-LLM Scout 持续调研。",
+    "link": "https://arxiv.org/abs/2604.01179",
+    "pdf_url": "https://arxiv.org/pdf/2604.01179",
+    "tags": [
+      "VLM ROS2中间件封装"
+    ],
+    "importance": "high"
+  },
+  {
+    "title": "LiPS",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.00634",
+    "date": "2026-04-01",
+    "summary": "轻量级全景分割, 边缘部署。来源：UAV-LLM Scout 持续调研。",
+    "link": "https://arxiv.org/abs/2604.00634",
+    "pdf_url": "https://arxiv.org/pdf/2604.00634",
+    "tags": [
+      "轻量级全景分割, 边缘部署"
+    ],
+    "importance": "high"
+  },
+  {
+    "title": "StreamingVLA",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2603.28565",
     "date": "2026-03-28",
-    "summary": "VLA瓶颈在于如何利用视觉而非视觉质量本身。提出Modality Cascaded Attention消除快捷路径。边缘部署计算优化参考。",
-    "link": "https://arxiv.org/abs/2603.28740",
-    "pdf_url": "https://arxiv.org/pdf/2603.28740",
+    "summary": "Action Flow Matching, 2.4x加速。来源：UAV-LLM Scout 持续调研。",
+    "link": "https://arxiv.org/abs/2603.28565",
+    "pdf_url": "https://arxiv.org/pdf/2603.28565",
     "tags": [
-      "VLA",
-      "Attention",
-      "Edge AI",
-      "Efficiency"
+      "Action Flow Matching, 2.4x加速"
     ],
-    "importance": "medium"
+    "importance": "high"
   }
 ];
 
@@ -160,7 +164,7 @@ export const hotProjects: GitHubProject[] = [
       "Drone"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T08:45:12.424025",
+    "stars_last_checked_at": "2026-04-03T12:34:44.506603",
     "stars_source": "api"
   },
   {
@@ -177,7 +181,7 @@ export const hotProjects: GitHubProject[] = [
       "Tracking"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T08:45:13.004614",
+    "stars_last_checked_at": "2026-04-03T12:34:44.800341",
     "stars_source": "api"
   },
   {
@@ -194,7 +198,7 @@ export const hotProjects: GitHubProject[] = [
       "UAV"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T08:45:13.607768",
+    "stars_last_checked_at": "2026-04-03T12:34:45.057919",
     "stars_source": "api"
   },
   {
@@ -210,7 +214,7 @@ export const hotProjects: GitHubProject[] = [
       "NLP"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T08:45:14.208776",
+    "stars_last_checked_at": "2026-04-03T12:34:45.345986",
     "stars_source": "api"
   },
   {
@@ -226,13 +230,13 @@ export const hotProjects: GitHubProject[] = [
       "LLM"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T08:45:14.765289",
+    "stars_last_checked_at": "2026-04-03T12:34:45.862218",
     "stars_source": "api"
   },
   {
     "name": "Awesome-RL-VLA",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": "613",
+    "stars": "614",
     "language": "Python",
     "link": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "tags": [
@@ -242,13 +246,13 @@ export const hotProjects: GitHubProject[] = [
       "Papers"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T08:45:15.350190",
+    "stars_last_checked_at": "2026-04-03T12:34:46.119104",
     "stars_source": "api"
   },
   {
     "name": "Awesome-LLM-Robotics",
     "description": "大语言模型/多模态模型在机器人领域的应用论文汇总。",
-    "stars": "4.3k",
+    "stars": "0",
     "language": "Python",
     "link": "https://github.com/GT-RIPL/Awesome-LLM-Robotics",
     "tags": [
@@ -258,13 +262,13 @@ export const hotProjects: GitHubProject[] = [
       "Papers"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T08:45:15.924451",
+    "stars_last_checked_at": "2026-04-03T12:34:46.394261",
     "stars_source": "api"
   },
   {
     "name": "Awesome-Aerial-VLN",
     "description": "空中视觉-语言导航(Aerial VLN)论文汇总：无人机VLN方向最新研究。",
-    "stars": "46",
+    "stars": "0",
     "language": "Python",
     "link": "https://github.com/Sautenich/Awesome-Aerial-Vision-Language-Navigation",
     "tags": [
@@ -274,7 +278,7 @@ export const hotProjects: GitHubProject[] = [
       "Survey"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-04-03T08:45:16.544937",
+    "stars_last_checked_at": "2026-04-03T12:34:46.615670",
     "stars_source": "api"
   }
 ];
