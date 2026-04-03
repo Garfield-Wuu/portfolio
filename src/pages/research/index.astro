@@ -1,6 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { recentPapers, hotProjects, trends, recentNews } from '../../data/research';
+import { recentPapers, hotProjects, trends, recentNews, lastUpdated } from '../../data/research';
 
 // All tags from data
 const allPaperTags = [...new Set(recentPapers.flatMap(p => p.tags))];
@@ -20,6 +20,7 @@ const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
       <div>
         <h1 class="text-4xl font-bold text-white mb-2">研究热点</h1>
         <p class="text-gray-400">LLM + 无人机 + 机器人领域 · 每日更新</p>
+        {lastUpdated && <p class="text-gray-500 text-xs mt-1">🕐 数据更新于 {new Date(lastUpdated).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })}</p>}
       </div>
       <a href="/research/archive" class="text-sm px-4 py-2 rounded-lg border border-white/10 text-gray-300 hover:text-white hover:bg-white/5 transition-colors flex items-center gap-2">
         <span>📦</span> 历史归档
