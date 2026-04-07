@@ -1,41 +1,171 @@
-// Auto-generated at 2026-04-06 08:46
-// Do not edit manually
+// ============================================
+// 研究热点数据 - 自动生成
+// 生成时间: 2026-04-07T08:45:07.816376
+// ============================================
 
-export interface ResearchPaper {
+// P0-2: Paper interface 升级，增加结构化摘要字段
+export interface Paper {
   title: string;
-  authors: string;
-  published_at: string;
-  category: string[];
+  authors?: string;
+  venue: string;
+  date: string;
   summary: string;
-  pdf_url: string;
-  arxiv_id: string;
-  github_url?: string;
-  code_url?: string;
-  highlights?: string[];
-  research_axis: string[];
+  link: string;
+  pdf_url?: string;
+  tags: string[];
+  importance: 'high' | 'medium';
+  // === 增强字段（P0-2: 结构化摘要）===
+  problem?: string;           // 研究问题
+  method?: string;             // 核心方法
+  value?: string;              // 主要价值/结果
+  why_relevant?: string;       // 与 Garfield 研究的关系
+  research_axis?: string;     // 所属层级: Perception | VLA | Simulation | Control | Edge | ...
+  summary_structured?: string; // 结构化摘要（problem + method + value 组合）
 }
 
-export interface GithubProject {
+// P0-3: GitHubProject interface 升级，增加 stars 缓存元数据
+export interface GitHubProject {
   name: string;
-  full_name: string;
   description: string;
+  stars: string;
   language: string;
-  stars: number;
-  url: string;
-  homepage: string;
-  research_axis: string[];
+  link: string;
+  tags: string[];
+  // === 增强字段（P0-3: 缓存元数据）===
+  stars_source?: 'api' | 'cache' | 'stale_cache' | 'fallback';
+  stars_last_checked_at?: string;
 }
 
-export interface NewsItem {
+export interface Trend {
   title: string;
-  summary: string;
+  description: string;
+  icon: string;
+}
+
+// P0-1: News interface 升级，增加 why_it_matters 和 research_axis
+export interface News {
+  title: string;
   source: string;
   date: string;
-  url: string;
-  research_axis: string[];
+  summary: string;
+  link: string;
+  published_at?: string;
+  freshness?: string;
+  // === 增强字段（P0-1: 行业资讯语义增强）===
+  why_it_matters?: string;     // 为什么重要（帮助快速判断价值）
+  research_axis?: string;     // 所属领域: llm | robotics | drone | ...
 }
 
-export const papers: ResearchPaper[] = [
+// 最新论文（含结构化摘要）
+export const papers: Paper[] = [
+  {
+    "title": "MV-VDP",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.03181",
+    "date": "2026-04-03",
+    "summary": "多视角视频扩散策略 联合预测多视角热图视频+RGB视频 建模环境3D时空状态。视频生成作为仿真数据代理",
+    "problem": "多视角视频扩散策略, 3D时空感知方向的核心问题与挑战",
+    "method": "多视角视频扩散策略 联合预测多视角热图视频+RGB视频 建模环境3D时空状态",
+    "value": "视频生成作为仿真数据代理",
+    "why_relevant": "视频生成作为仿真数据代理",
+    "research_axis": "VLA",
+    "link": "https://arxiv.org/abs/2604.03181",
+    "pdf_url": "https://arxiv.org/pdf/2604.03181",
+    "tags": [
+      "多视角视频扩散策略, 3D时空感知"
+    ],
+    "importance": "high"
+  },
+  {
+    "title": "The Compression Gap",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.03191",
+    "date": "2026-04-03",
+    "summary": "信息瓶颈理论 离散tokenization限制VLA扩展 连续动作(Diffusion Policy)受益于编码器升级。架构选择指导，优先扩散动作",
+    "problem": "离散Token化限制VLA扩展方向的核心问题与挑战",
+    "method": "信息瓶颈理论 离散tokenization限制VLA扩展 连续动作(Diffusion Policy)受益于编码器升级",
+    "value": "架构选择指导，优先扩散动作",
+    "why_relevant": "架构选择指导，优先扩散动作",
+    "research_axis": "VLA",
+    "link": "https://arxiv.org/abs/2604.03191",
+    "pdf_url": "https://arxiv.org/pdf/2604.03191",
+    "tags": [
+      "离散Token化限制VLA扩展"
+    ],
+    "importance": "high"
+  },
+  {
+    "title": "FSUNav",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.03139",
+    "date": "2026-04-03",
+    "summary": "双脑架构 Cerebellum: DRL通用局部规划器 Cerebrum: VLM三层推理。与ROSClaw/Aerial Agentic AI架构一致",
+    "problem": "双脑架构零样本导航方向的核心问题与挑战",
+    "method": "双脑架构 Cerebellum: DRL通用局部规划器 Cerebrum: VLM三层推理",
+    "value": "与ROSClaw/Aerial Agentic AI架构一致",
+    "why_relevant": "与ROSClaw/Aerial Agentic AI架构一致",
+    "research_axis": "Navigation",
+    "link": "https://arxiv.org/abs/2604.03139",
+    "pdf_url": "https://arxiv.org/pdf/2604.03139",
+    "tags": [
+      "双脑架构零样本导航"
+    ],
+    "importance": "high"
+  },
+  {
+    "title": "Off-Road Nav",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.03096",
+    "date": "2026-04-03",
+    "summary": "LiDAR+单目越野导航栈方向最新研究。",
+    "problem": "LiDAR+单目越野导航栈方向的核心问题与挑战",
+    "method": "LiDAR+单目越野导航栈",
+    "value": "与LLM无人机研究相关",
+    "why_relevant": "与LLM无人机研究相关",
+    "research_axis": "Navigation",
+    "link": "https://arxiv.org/abs/2604.03096",
+    "pdf_url": "https://arxiv.org/pdf/2604.03096",
+    "tags": [
+      "LiDAR+单目越野导航栈"
+    ],
+    "importance": "high"
+  },
+  {
+    "title": "Multi-Robot Exploration",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.03042",
+    "date": "2026-04-03",
+    "summary": "多智能体探索 DP-GMM概率边界优先级 双无人机真实部署，10-14%增益。多机编队理论基础",
+    "problem": "DP-GMM概率边界优先级方向的核心问题与挑战",
+    "method": "多智能体探索 DP-GMM概率边界优先级 双无人机真实部署，10-14%增益",
+    "value": "多机编队理论基础",
+    "why_relevant": "多机编队理论基础",
+    "research_axis": "VLA",
+    "link": "https://arxiv.org/abs/2604.03042",
+    "pdf_url": "https://arxiv.org/pdf/2604.03042",
+    "tags": [
+      "DP-GMM概率边界优先级"
+    ],
+    "importance": "high"
+  },
+  {
+    "title": "SV-VLA",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.02965",
+    "date": "2026-04-02",
+    "summary": "Speculative Verification Heavy VLA宏规划 + Lightweight Verifier闭环监测 仅在必要时触发重规划。PX4 Offboard安全护栏设计",
+    "problem": "Speculative Verification for VLA方向的核心问题与挑战",
+    "method": "Speculative Verification Heavy VLA宏规划 + Lightweight Verifier闭环监测 仅在必要时触发重规划",
+    "value": "PX4 Offboard安全护栏设计",
+    "why_relevant": "PX4 Offboard安全护栏设计",
+    "research_axis": "VLA",
+    "link": "https://arxiv.org/abs/2604.02965",
+    "pdf_url": "https://arxiv.org/pdf/2604.02965",
+    "tags": [
+      "Speculative Verification for VLA"
+    ],
+    "importance": "high"
+  },
   {
     "title": "UAV-Track VLA",
     "authors": "OpenClaw Scout",
@@ -71,252 +201,64 @@ export const papers: ResearchPaper[] = [
       "元认知VLN, VLM查询↓20.7%"
     ],
     "importance": "high"
-  },
-  {
-    "title": "UniDriveVLA",
-    "authors": "OpenClaw Scout",
-    "venue": "arXiv:2604.02190",
-    "date": "2026-04-02",
-    "summary": "MoT专家解耦架构 三个专家: 驾驶理解 + 场景感知 + 动作规划 掩码注意力协调专家间通信。VLA架构设计参考",
-    "problem": "MoT专家解耦, 感知-推理分离方向的核心问题与挑战",
-    "method": "MoT专家解耦架构 三个专家: 驾驶理解 + 场景感知 + 动作规划 掩码注意力协调专家间通信",
-    "value": "VLA架构设计参考",
-    "why_relevant": "VLA架构设计参考",
-    "research_axis": "VLA",
-    "link": "https://arxiv.org/abs/2604.02190",
-    "pdf_url": "https://arxiv.org/pdf/2604.02190",
-    "tags": [
-      "MoT专家解耦, 感知-推理分离"
-    ],
-    "importance": "high"
-  },
-  {
-    "title": "PRO-SPECT",
-    "authors": "OpenClaw Scout",
-    "venue": "arXiv:2604.02109",
-    "date": "2026-04-02",
-    "summary": "UAV-UGV概率安全协同规划方向最新研究。",
-    "problem": "UAV-UGV概率安全协同规划方向的核心问题与挑战",
-    "method": "UAV-UGV概率安全协同规划",
-    "value": "与LLM无人机研究相关",
-    "why_relevant": "与LLM无人机研究相关",
-    "research_axis": "VLA",
-    "link": "https://arxiv.org/abs/2604.02109",
-    "pdf_url": "https://arxiv.org/pdf/2604.02109",
-    "tags": [
-      "UAV-UGV概率安全协同规划"
-    ],
-    "importance": "high"
-  },
-  {
-    "title": "AURA",
-    "authors": "OpenClaw Scout",
-    "venue": "arXiv:2604.01659",
-    "date": "2026-04-01",
-    "summary": "Shared Autonomy 新范式 将城市导航分解为高层人类指令 + 低层AI控制 Spatial-Aware Instruction Encoder 对齐多模态指令与视觉空间。Shared Autonomy模式用于人工监督的无人机控制",
-    "problem": "Shared Autonomy 城市导航方向的核心问题与挑战",
-    "method": "Shared Autonomy 新范式 将城市导航分解为高层人类指令 + 低层AI控制 Spatial-Aware Instruction Encoder 对齐多模态指令与视觉空间",
-    "value": "Shared Autonomy模式用于人工监督的无人机控制",
-    "why_relevant": "Shared Autonomy模式用于人工监督的无人机控制",
-    "research_axis": "Navigation",
-    "link": "https://arxiv.org/abs/2604.01659",
-    "pdf_url": "https://arxiv.org/pdf/2604.01659",
-    "tags": [
-      "Shared Autonomy 城市导航"
-    ],
-    "importance": "high"
-  },
-  {
-    "title": "Tex3D",
-    "authors": "OpenClaw Scout",
-    "venue": "arXiv:2604.01618",
-    "date": "2026-04-01",
-    "summary": "VLA物理对抗攻击 Adversarial 3D textures: 更物理真实、更易部署 FBD (Foreground-Background Decoupling) 实现可微分纹理优化。VLA部署必须考虑输入验证和冗余感知",
-    "problem": "VLA对抗3D纹理攻击方向的核心问题与挑战",
-    "method": "VLA物理对抗攻击 Adversarial 3D textures: 更物理真实、更易部署 FBD (Foreground-Background Decoupling) 实现可微分纹理优化",
-    "value": "VLA部署必须考虑输入验证和冗余感知",
-    "why_relevant": "VLA部署必须考虑输入验证和冗余感知",
-    "research_axis": "VLA",
-    "link": "https://arxiv.org/abs/2604.01618",
-    "pdf_url": "https://arxiv.org/pdf/2604.01618",
-    "tags": [
-      "VLA对抗3D纹理攻击"
-    ],
-    "importance": "high"
-  },
-  {
-    "title": "AnchorVLA",
-    "authors": "OpenClaw Scout",
-    "venue": "arXiv:2604.01567",
-    "date": "2026-04-01",
-    "summary": "锚定扩散高效VLA 扩散起点靠近可行解流形 → 无需大量去噪 截断扩散调度保留多模态动作生成。机载边缘部署的计算效率优化",
-    "problem": "锚定扩散高效移动操作方向的核心问题与挑战",
-    "method": "锚定扩散高效VLA 扩散起点靠近可行解流形 → 无需大量去噪 截断扩散调度保留多模态动作生成",
-    "value": "机载边缘部署的计算效率优化",
-    "why_relevant": "机载边缘部署的计算效率优化",
-    "research_axis": "VLA",
-    "link": "https://arxiv.org/abs/2604.01567",
-    "pdf_url": "https://arxiv.org/pdf/2604.01567",
-    "tags": [
-      "锚定扩散高效移动操作"
-    ],
-    "importance": "high"
-  },
-  {
-    "title": "DriveDreamer-Policy",
-    "authors": "OpenClaw Scout",
-    "venue": "arXiv:2604.01765",
-    "date": "2026-04-01",
-    "summary": "几何 grounding WAM 融合几何信息进入世界-动作联合建模 统一生成 + 规划。无人机仿真数据生成参考",
-    "problem": "几何 grounding 世界动作模型方向的核心问题与挑战",
-    "method": "几何 grounding WAM 融合几何信息进入世界-动作联合建模 统一生成 + 规划",
-    "value": "无人机仿真数据生成参考",
-    "why_relevant": "无人机仿真数据生成参考",
-    "research_axis": "VLA",
-    "link": "https://arxiv.org/abs/2604.01765",
-    "pdf_url": "https://arxiv.org/pdf/2604.01765",
-    "tags": [
-      "几何 grounding 世界动作模型"
-    ],
-    "importance": "high"
   }
 ];
 
-export const githubProjects: GithubProject[] = [
+// 趋势
+export const trends: Trend[] = [
   {
-    "name": "PX4 Autopilot",
-    "description": "开源无人机自动驾驶软件，支持多旋翼、固定翼、VTOL等。学术界最流行的无人机研究平台。",
-    "stars": "11.4k",
-    "language": "C++",
-    "link": "https://github.com/PX4/PX4-Autopilot",
-    "tags": [
-      "PX4",
-      "UAV",
-      "ROS",
-      "Autonomous Flight",
-      "Drone"
-    ],
-    "verified": true,
-    "stars_last_checked_at": "2026-04-06T08:45:09.096462",
-    "stars_source": "api"
+    "icon": "🤖",
+    "title": "统一扩散VLA",
+    "description": "MMaDA-VLA展示单一框架处理多模态的优势"
   },
   {
-    "name": "Prometheus (amov-lab)",
-    "description": "PX4无人机自主飞行综合解决方案，包含目标追踪、集群控制、SLAM等30+应用模块。累计3.1k+ stars。",
-    "stars": "3.1k",
-    "language": "C++",
-    "link": "https://github.com/amov-lab/Prometheus",
-    "tags": [
-      "PX4",
-      "UAV",
-      "ROS",
-      "Autonomous Flight",
-      "Tracking"
-    ],
-    "verified": true,
-    "stars_last_checked_at": "2026-04-06T08:45:10.787619",
-    "stars_source": "api"
+    "icon": "📡",
+    "title": "轻量化微调",
+    "description": "Fast-dVLA等参数空间解耦成为新范式"
   },
   {
-    "name": "embodied-drone-agents",
-    "description": "LLM drone agent系统，使用MAVSDK-Python作为工具，LangGraph编排任务规划，支持自然语言控制无人机。",
-    "stars": "18",
-    "language": "Python",
-    "link": "https://github.com/EmergenceAI/embodied-drone-agents",
-    "tags": [
-      "LLM",
-      "MAVSDK",
-      "LangGraph",
-      "Agent",
-      "UAV"
-    ],
-    "verified": true,
-    "stars_last_checked_at": "2026-04-06T08:45:11.855557",
-    "stars_source": "api"
+    "icon": "🤖",
+    "title": "VLA+WM协同",
+    "description": "VLAW等展示联合训练的价值"
   },
   {
-    "name": "llm-uav (Atmaca)",
-    "description": "集成Gemma 3 4B与无人机控制，支持自然语言指令，边缘部署。",
-    "stars": "0",
-    "language": "Python",
-    "link": "https://github.com/furkanisikay/llm-uav",
-    "tags": [
-      "LLM",
-      "UAV",
-      "Edge AI",
-      "NLP"
-    ],
-    "verified": true,
-    "stars_last_checked_at": "2026-04-06T08:45:12.849715",
-    "stars_source": "api"
-  },
-  {
-    "name": "MAVLinkMCP",
-    "description": "MCP (Model Context Protocol) server for LLM与MAVLink无人机的通信，支持通过MCP协议控制PX4无人机。",
-    "stars": "16",
-    "language": "Python",
-    "link": "https://github.com/ion-g-ion/MAVLinkMCP",
-    "tags": [
-      "MAVLink",
-      "MCP",
-      "PX4",
-      "LLM"
-    ],
-    "verified": true,
-    "stars_last_checked_at": "2026-04-06T08:45:14.095969",
-    "stars_source": "api"
-  },
-  {
-    "name": "Awesome-RL-VLA",
-    "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": "617",
-    "language": "Python",
-    "link": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
-    "tags": [
-      "VLA",
-      "RL",
-      "Survey",
-      "Papers"
-    ],
-    "verified": true,
-    "stars_last_checked_at": "2026-04-06T08:45:15.103125",
-    "stars_source": "api"
-  },
-  {
-    "name": "Awesome-LLM-Robotics",
-    "description": "大语言模型/多模态模型在机器人领域的应用论文汇总。",
-    "stars": "4.3k",
-    "language": "Python",
-    "link": "https://github.com/GT-RIPL/Awesome-LLM-Robotics",
-    "tags": [
-      "LLM",
-      "Robot",
-      "Survey",
-      "Papers"
-    ],
-    "verified": true,
-    "stars_last_checked_at": "2026-04-06T08:45:16.098059",
-    "stars_source": "api"
-  },
-  {
-    "name": "Awesome-Aerial-VLN",
-    "description": "空中视觉-语言导航(Aerial VLN)论文汇总：无人机VLN方向最新研究。",
-    "stars": "47",
-    "language": "Python",
-    "link": "https://github.com/Sautenich/Awesome-Aerial-Vision-Language-Navigation",
-    "tags": [
-      "UAV",
-      "VLN",
-      "Navigation",
-      "Survey"
-    ],
-    "verified": true,
-    "stars_last_checked_at": "2026-04-06T08:45:17.145179",
-    "stars_source": "api"
+    "icon": "📡",
+    "title": "导航工具链完善",
+    "description": "InternNav等提供完整的VLN研究平台"
   }
 ];
 
-export const news: NewsItem[] = [
+// GitHub 项目（含 stars 缓存元数据）
+export const githubProjects: GitHubProject[] = [];
+
+// 新闻
+export const news: News[] = [
+  {
+    "title": "Nature Machine Intelligence: ROS-LLM 框架正式发表",
+    "link": "https://www.nature.com/articles/s42256-026-01186-z",
+    "summary": "2026.03 | 来源：Nature Machine Intelligence ROS-LLM 核心功能： - 让非专业用户用自然语言控制机器人",
+    "source": "网络",
+    "date": "_2026-04-0",
+    "published_at": "_2026-04-0",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "robotics",
+    "freshness": "unknown",
+    "archived": false
+  },
+  {
+    "title": "Embedded World 2026 — Arduino VENTUNO Q 发布",
+    "link": "https://github.com/commaai/openpilot",
+    "summary": "2026.03 | 来源：Arduino 官方 💡 新一代 AI + 机器人 + 执行平台，集成 Edge Impulse 🎯 树莓派替代方案，适合毕设硬件选型",
+    "source": "GitHub",
+    "date": "_2026-04-0",
+    "published_at": "_2026-04-0",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "robotics",
+    "freshness": "unknown",
+    "archived": false
+  },
   {
     "title": "PrismML 发布全球首个商用 1-Bit LLM",
     "link": "https://www.forbes.com/sites/jonmarkman/2026/04/02/prismml-introduces-the-first-commercially-viable-1-bit-llm/",
@@ -331,55 +273,29 @@ export const news: NewsItem[] = [
     "archived": false
   },
   {
-    "title": "自主攻击无人机集群进入俄乌战场",
-    "link": "https://spectrum.ieee.org/autonomous-drone-warfare",
-    "summary": "2026.04（IEEE Spectrum 4月刊）| 来源：IEEE Spectrum 💡 核心内容：   - 乌克兰工程师 Yaroslav Azhnyuk 联合创办 Norda Dynamics",
-    "source": "IEEE",
-    "date": "_2026-04-0",
-    "published_at": "_2026-04-0",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "drone",
-    "freshness": "unknown",
-    "archived": false
-  },
-  {
-    "title": "Embedded World 2026：边缘 AI 全面落地",
-    "link": "https://semiengineering.com/embedded-world-2026-bringing-edge-ai-into-the-real-world/",
-    "summary": "2026.04.03 | 来源：Hackster.io 💡 核心看点：   - 36,000 参观者，1,300 家展商（增长 13%）",
-    "source": "网络",
-    "date": "2026-04-03",
-    "published_at": "2026-04-03",
-    "verified": true,
-    "why_it_matters": null,
-    "research_axis": "robotics",
+    "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
+    "source": "NVIDIA Newsroom",
+    "date": "2026-04-01",
+    "summary": "NVIDIA发布开源物理AI模型GR00T N1.6和Cosmos Reason世界模型，全球合作伙伴推出下一代机器人，机器人的ChatGPT时刻已至。",
+    "link": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
+    "published_at": "2026-04-01",
     "freshness": "fresh",
-    "archived": false
-  },
-  {
-    "title": "AerialVLA：无人机端到端视觉-语言-动作模型",
-    "link": "https://github.com/XuPeng23/AerialVLA",
-    "summary": "arXiv:2603.14363 | 2026.03.15 💡 核心创新：   - Minimalist End-to-End：直接从原始视觉+语言指令→连续控制信号",
-    "source": "GitHub",
-    "date": "_2026-04-0",
-    "published_at": "_2026-04-0",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "drone",
-    "freshness": "unknown",
-    "archived": false
-  },
-  {
-    "title": "Drona Aviation Pluto Drones",
-    "link": "https://github.com/DronaAviation",
-    "summary": "*：模块化可编程无人机，专为机器人和编程教育设计",
-    "source": "GitHub",
-    "date": "_2026-04-0",
-    "published_at": "_2026-04-0",
-    "verified": false,
-    "why_it_matters": null,
+    "verified": true,
+    "why_it_matters": "开源物理AI+世界模型对机器人仿真和无人机Sim2Real有直接参考价值",
     "research_axis": "robotics",
-    "freshness": "unknown",
-    "archived": false
+    "_source": "fallback"
+  },
+  {
+    "title": "Unitree B2-W 四足机器人发布",
+    "source": "Unitree",
+    "date": "2026-03-25",
+    "summary": "宇树科技发布B2-W工业四足机器人，负载30kg，续航4小时，支持复杂地形巡检，配备深度相机和激光雷达。",
+    "link": "https://www.unitree.com.cn/",
+    "published_at": "2026-03-25",
+    "freshness": "fresh",
+    "verified": true,
+    "why_it_matters": "四足机器人硬件迭代，负载和续航大幅提升，工业巡检应用加速落地",
+    "research_axis": "robotics",
+    "_source": "fallback"
   }
 ];
