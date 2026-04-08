@@ -1,6 +1,6 @@
 // ============================================
 // 研究热点数据 - 自动生成
-// 生成时间: 2026-04-07T08:45:07.816376
+// 生成时间: 2026-04-08T08:58:15.825196
 // ============================================
 
 // P0-2: Paper interface 升级，增加结构化摘要字段
@@ -55,9 +55,97 @@ export interface News {
   why_it_matters?: string;     // 为什么重要（帮助快速判断价值）
   research_axis?: string;     // 所属领域: llm | robotics | drone | ...
 }
-
-// 最新论文（含结构化摘要）
 export const papers: Paper[] = [
+  {
+    "title": "Veo-Act",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.04502",
+    "date": "2026-04-04",
+    "summary": "视频生成+层次化VLA Veo-3 作为高层运动规划器 VLA policy 作为低层执行器。分层架构参考 (高层规划 + 低层执行)",
+    "problem": "视频模型+层次化VLA控制方向的核心问题与挑战",
+    "method": "视频生成+层次化VLA Veo-3 作为高层运动规划器 VLA policy 作为低层执行器",
+    "value": "分层架构参考 (高层规划 + 低层执行)",
+    "why_relevant": "分层架构参考 (高层规划 + 低层执行)",
+    "research_axis": "Control",
+    "link": "https://arxiv.org/abs/2604.04502",
+    "pdf_url": "https://arxiv.org/pdf/2604.04502",
+    "tags": [
+      "视频生成+层次化VLA Veo-3 作为高层运动规划器 VL"
+    ],
+    "importance": "high"
+  },
+  {
+    "title": "Adaptive Action Chunking",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.04161",
+    "date": "2026-04-04",
+    "summary": "自适应动作分块 动作熵作为线索自适应确定chunk size 平衡响应性与一致性。PX4 Offboard 动态规划频率优化",
+    "problem": "动作熵自适应分块策略方向的核心问题与挑战",
+    "method": "自适应动作分块 动作熵作为线索自适应确定chunk size 平衡响应性与一致性",
+    "value": "PX4 Offboard 动态规划频率优化",
+    "why_relevant": "PX4 Offboard 动态规划频率优化",
+    "research_axis": "VLA",
+    "link": "https://arxiv.org/abs/2604.04161",
+    "pdf_url": "https://arxiv.org/pdf/2604.04161",
+    "tags": [
+      "自适应动作分块 动作熵作为线索自适应确定chunk size"
+    ],
+    "importance": "high"
+  },
+  {
+    "title": "ROSClaw v2",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.04664",
+    "date": "2026-04-04",
+    "summary": "具身AI操作系统 e-URDF语义-物理拓扑映射 Sim2Real状态对齐。多无人机协同 + PX4仿真集成",
+    "problem": "OS级多智能体协作框架方向的核心问题与挑战",
+    "method": "具身AI操作系统 e-URDF语义-物理拓扑映射 Sim2Real状态对齐",
+    "value": "多无人机协同 + PX4仿真集成",
+    "why_relevant": "多无人机协同 + PX4仿真集成",
+    "research_axis": "VLA",
+    "link": "https://arxiv.org/abs/2604.04664",
+    "pdf_url": "https://arxiv.org/pdf/2604.04664",
+    "tags": [
+      "具身AI操作系统 e-URDF语义-物理拓扑映射 Sim2R"
+    ],
+    "importance": "high"
+  },
+  {
+    "title": "E-VLA",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.04834",
+    "date": "2026-04-04",
+    "summary": "事件相机增强VLA DAVIS346事件相机直接利用运动和结构线索 20 lux暗光: 0%→90%成功率。夜间飞行/高速机动感知增强",
+    "problem": "事件相机增强VLA, 暗光/模糊鲁棒方向的核心问题与挑战",
+    "method": "事件相机增强VLA DAVIS346事件相机直接利用运动和结构线索 20 lux暗光: 0%→90%成功率",
+    "value": "夜间飞行/高速机动感知增强",
+    "why_relevant": "夜间飞行/高速机动感知增强",
+    "research_axis": "VLA",
+    "link": "https://arxiv.org/abs/2604.04834",
+    "pdf_url": "https://arxiv.org/pdf/2604.04834",
+    "tags": [
+      "事件相机增强VLA DAVIS346事件相机直接利用运动和结"
+    ],
+    "importance": "high"
+  },
+  {
+    "title": "VLA-Forget",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.03956",
+    "date": "2026-04-03",
+    "summary": "VLA安全遗忘 移除不安全/隐私敏感行为 三目标: 遗忘效果+感知保持+推理保留。部署后安全更新机制",
+    "problem": "VLA遗忘学习/安全移除方向的核心问题与挑战",
+    "method": "VLA安全遗忘 移除不安全/隐私敏感行为 三目标: 遗忘效果+感知保持+推理保留",
+    "value": "部署后安全更新机制",
+    "why_relevant": "部署后安全更新机制",
+    "research_axis": "VLA",
+    "link": "https://arxiv.org/abs/2604.03956",
+    "pdf_url": "https://arxiv.org/pdf/2604.03956",
+    "tags": [
+      "VLA安全遗忘 移除不安全/隐私敏感行为 三目标: 遗忘效果"
+    ],
+    "importance": "high"
+  },
   {
     "title": "MV-VDP",
     "authors": "OpenClaw Scout",
@@ -72,7 +160,7 @@ export const papers: Paper[] = [
     "link": "https://arxiv.org/abs/2604.03181",
     "pdf_url": "https://arxiv.org/pdf/2604.03181",
     "tags": [
-      "多视角视频扩散策略, 3D时空感知"
+      "多视角视频扩散策略 联合预测多视角热图视频+RGB视频 建模"
     ],
     "importance": "high"
   },
@@ -90,7 +178,7 @@ export const papers: Paper[] = [
     "link": "https://arxiv.org/abs/2604.03191",
     "pdf_url": "https://arxiv.org/pdf/2604.03191",
     "tags": [
-      "离散Token化限制VLA扩展"
+      "信息瓶颈理论 离散tokenization限制VLA扩展 连"
     ],
     "importance": "high"
   },
@@ -108,100 +196,10 @@ export const papers: Paper[] = [
     "link": "https://arxiv.org/abs/2604.03139",
     "pdf_url": "https://arxiv.org/pdf/2604.03139",
     "tags": [
-      "双脑架构零样本导航"
+      "双脑架构 Cerebellum: DRL通用局部规划器 Ce"
     ],
     "importance": "high"
   },
-  {
-    "title": "Off-Road Nav",
-    "authors": "OpenClaw Scout",
-    "venue": "arXiv:2604.03096",
-    "date": "2026-04-03",
-    "summary": "LiDAR+单目越野导航栈方向最新研究。",
-    "problem": "LiDAR+单目越野导航栈方向的核心问题与挑战",
-    "method": "LiDAR+单目越野导航栈",
-    "value": "与LLM无人机研究相关",
-    "why_relevant": "与LLM无人机研究相关",
-    "research_axis": "Navigation",
-    "link": "https://arxiv.org/abs/2604.03096",
-    "pdf_url": "https://arxiv.org/pdf/2604.03096",
-    "tags": [
-      "LiDAR+单目越野导航栈"
-    ],
-    "importance": "high"
-  },
-  {
-    "title": "Multi-Robot Exploration",
-    "authors": "OpenClaw Scout",
-    "venue": "arXiv:2604.03042",
-    "date": "2026-04-03",
-    "summary": "多智能体探索 DP-GMM概率边界优先级 双无人机真实部署，10-14%增益。多机编队理论基础",
-    "problem": "DP-GMM概率边界优先级方向的核心问题与挑战",
-    "method": "多智能体探索 DP-GMM概率边界优先级 双无人机真实部署，10-14%增益",
-    "value": "多机编队理论基础",
-    "why_relevant": "多机编队理论基础",
-    "research_axis": "VLA",
-    "link": "https://arxiv.org/abs/2604.03042",
-    "pdf_url": "https://arxiv.org/pdf/2604.03042",
-    "tags": [
-      "DP-GMM概率边界优先级"
-    ],
-    "importance": "high"
-  },
-  {
-    "title": "SV-VLA",
-    "authors": "OpenClaw Scout",
-    "venue": "arXiv:2604.02965",
-    "date": "2026-04-02",
-    "summary": "Speculative Verification Heavy VLA宏规划 + Lightweight Verifier闭环监测 仅在必要时触发重规划。PX4 Offboard安全护栏设计",
-    "problem": "Speculative Verification for VLA方向的核心问题与挑战",
-    "method": "Speculative Verification Heavy VLA宏规划 + Lightweight Verifier闭环监测 仅在必要时触发重规划",
-    "value": "PX4 Offboard安全护栏设计",
-    "why_relevant": "PX4 Offboard安全护栏设计",
-    "research_axis": "VLA",
-    "link": "https://arxiv.org/abs/2604.02965",
-    "pdf_url": "https://arxiv.org/pdf/2604.02965",
-    "tags": [
-      "Speculative Verification for VLA"
-    ],
-    "importance": "high"
-  },
-  {
-    "title": "UAV-Track VLA",
-    "authors": "OpenClaw Scout",
-    "venue": "arXiv:2604.02241",
-    "date": "2026-04-02",
-    "summary": "π₀.₅架构的无人机跟踪 基于π₀.₅架构，引入时序压缩网络 并行双分支解码器: 空间感知接地头 + Flow Matching动作专家。无人机VLA跟踪完整pipeline",
-    "problem": "VLA无人机跟踪, π₀.₅架构方向的核心问题与挑战",
-    "method": "π₀.₅架构的无人机跟踪 基于π₀.₅架构，引入时序压缩网络 并行双分支解码器: 空间感知接地头 + Flow Matching动作专家",
-    "value": "无人机VLA跟踪完整pipeline",
-    "why_relevant": "无人机VLA跟踪完整pipeline",
-    "research_axis": "VLA",
-    "link": "https://arxiv.org/abs/2604.02241",
-    "pdf_url": "https://arxiv.org/pdf/2604.02241",
-    "tags": [
-      "VLA无人机跟踪, π₀.₅架构"
-    ],
-    "importance": "high"
-  },
-  {
-    "title": "Stop Wandering / MetaNav",
-    "authors": "OpenClaw Scout",
-    "venue": "arXiv:2604.02318",
-    "date": "2026-04-02",
-    "summary": "元认知VLN, VLM查询↓20.7%方向最新研究。",
-    "problem": "元认知VLN, VLM查询↓20.7%方向的核心问题与挑战",
-    "method": "元认知VLN, VLM查询↓20.7%",
-    "value": "与LLM无人机研究相关",
-    "why_relevant": "与LLM无人机研究相关",
-    "research_axis": "VLM",
-    "link": "https://arxiv.org/abs/2604.02318",
-    "pdf_url": "https://arxiv.org/pdf/2604.02318",
-    "tags": [
-      "元认知VLN, VLM查询↓20.7%"
-    ],
-    "importance": "high"
-  }
 ];
 
 // 趋势
@@ -227,7 +225,6 @@ export const trends: Trend[] = [
     "description": "InternNav等提供完整的VLN研究平台"
   }
 ];
-
 // GitHub 项目（含 stars 缓存元数据）
 export const githubProjects: GitHubProject[] = [];
 
@@ -274,28 +271,28 @@ export const news: News[] = [
   },
   {
     "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
+    "link": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
+    "summary": "NVIDIA发布开源物理AI模型GR00T N1.6和Cosmos Reason世界模型，全球合作伙伴推出下一代机器人，机器人的ChatGPT时刻已至。",
     "source": "NVIDIA Newsroom",
     "date": "2026-04-01",
-    "summary": "NVIDIA发布开源物理AI模型GR00T N1.6和Cosmos Reason世界模型，全球合作伙伴推出下一代机器人，机器人的ChatGPT时刻已至。",
-    "link": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
     "published_at": "2026-04-01",
-    "freshness": "fresh",
-    "verified": true,
-    "why_it_matters": "开源物理AI+世界模型对机器人仿真和无人机Sim2Real有直接参考价值",
+    "verified": false,
+    "why_it_matters": null,
     "research_axis": "robotics",
-    "_source": "fallback"
+    "freshness": "fresh",
+    "archived": false
   },
   {
     "title": "Unitree B2-W 四足机器人发布",
+    "link": "https://www.unitree.com.cn/",
+    "summary": "宇树科技发布B2-W工业四足机器人，负载30kg，续航4小时，支持复杂地形巡检，配备深度相机和激光雷达。",
     "source": "Unitree",
     "date": "2026-03-25",
-    "summary": "宇树科技发布B2-W工业四足机器人，负载30kg，续航4小时，支持复杂地形巡检，配备深度相机和激光雷达。",
-    "link": "https://www.unitree.com.cn/",
     "published_at": "2026-03-25",
-    "freshness": "fresh",
-    "verified": true,
-    "why_it_matters": "四足机器人硬件迭代，负载和续航大幅提升，工业巡检应用加速落地",
+    "verified": false,
+    "why_it_matters": null,
     "research_axis": "robotics",
-    "_source": "fallback"
-  }
+    "freshness": "fresh",
+    "archived": false
+  },
 ];
