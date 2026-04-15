@@ -1,5 +1,19 @@
 [
   {
+    "title": "AeroGen：用自然语言\"编程\"无人机",
+    "link": "https://arxiv.org/abs/2603.14236",
+    "summary": "2026.03.15 | 来源：arXiv:2603.14236 💡 核心创新： - 用户说\"在农场巡视并记录异常\"，AeroGen 一次性生成约 40 行 Python 代码",
+    "source": "arXiv",
+    "date": "2026-03-15",
+    "published_at": "2026-03-15",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "drone",
+    "freshness": "stale",
+    "archived": true,
+    "archive_reason": "超过31天"
+  },
+  {
     "title": "Sam Altman got exceptionally testy over Claude Super Bowl ads",
     "link": "https://techcrunch.com/2026/02/04/sam-altman-got-exceptionally-testy-over-claude-super-bowl-ads/",
     "summary": "**\n某公众人物发布长篇抱怨文章，措辞激烈地攻击对手，使用\"不诚实\"和\"威权主义\"等标签化词汇。",
@@ -7,9 +21,25 @@
     "date": "2026-02-04",
     "published_at": "2026-02-04",
     "verified": false,
+    "why_it_matters": null,
+    "research_axis": "llm",
     "freshness": "stale",
     "archived": true,
-    "archive_reason": "超过58天"
+    "archive_reason": "超过59天"
+  },
+  {
+    "title": "SkySim：LLM 控制 30 机无人机蜂群",
+    "link": "https://arxiv.org/abs/2602.01226",
+    "summary": "2026.02.01 | 来源：arXiv:2602.01226 💡 核心创新： - 基于 ROS2 + Gazebo 的仿真环境",
+    "source": "arXiv",
+    "date": "2026-02-01",
+    "published_at": "2026-02-01",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "drone",
+    "freshness": "stale",
+    "archived": true,
+    "archive_reason": "超过73天"
   },
   {
     "title": "边缘AI加速落地",
@@ -19,8 +49,94 @@
     "date": "2026-01-31",
     "published_at": "2026-01-31",
     "verified": false,
+    "why_it_matters": "自动驾驶行业最大单笔融资，推动robotaxi商业化进程加速。",
+    "research_axis": "llm",
     "freshness": "stale",
     "archived": true,
-    "archive_reason": "超过62天"
+    "archive_reason": "超过63天"
+  },
+  {
+    "title": "无人机与机器人框架",
+    "link": "https://github.com/hzxie/DynamicVLA",
+    "summary": "🌤️ ━━━━━━━━━━━━━━━━━━━━━━━━━ 早上好！新的一天开始啦～ 珠海 ❓ 无法自动获取天气 | 请手动查询 wttr.in/珠海",
+    "source": "GitHub",
+    "date": "2026-01-29",
+    "published_at": "2026-01-29",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "robotics",
+    "freshness": "stale",
+    "archived": true,
+    "archive_reason": "超过66天"
+  },
+  {
+    "title": "NVIDIA TensorRT Edge-LLM：C++ 边缘推理框架",
+    "link": "https://github.com/NVIDIA/TensorRT-Edge-LLM",
+    "summary": "*：专为嵌入式平台（Jetson Thor、DRIVE AGX Thor）优化的高性能 LLM/VLM 推理框架\n-",
+    "source": "NVIDIA",
+    "date": "2026-01-22",
+    "published_at": "2026-01-22",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "llm",
+    "freshness": "stale",
+    "archived": true,
+    "archive_reason": "超过76天"
+  },
+  {
+    "title": "🚀 1️⃣ LLM+无人机接口标准化加速",
+    "link": "https://arxiv.org/abs/2601.15486",
+    "summary": "══════════════════════════════════════════════════ 🌤️ ━━━━━━━━━━━━━━━━━━━━━━━━━ 早上好！新的一天开始啦～",
+    "source": "arXiv",
+    "date": "2026-01-21",
+    "published_at": "2026-01-21",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "robotics",
+    "freshness": "stale",
+    "archived": true,
+    "archive_reason": "超过84天"
+  },
+  {
+    "title": "Boston Dynamics × Google DeepMind：Atlas 机器人注入 AI 基因",
+    "link": "https://techcrunch.com/2026/01/05/boston-dynamicss-next-gen-humanoid-robot-will-have-google-deepmind-dna/",
+    "summary": "2026.01.06 | 来源：CES 2026 / TechCrunch 💡 核心合作： - Google DeepMind AI 基础模型将为 Atlas 提供类人推理能力",
+    "source": "TechCrunch",
+    "date": "2026-01-06",
+    "published_at": "2026-01-06",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "robotics",
+    "freshness": "stale",
+    "archived": true,
+    "archive_reason": "超过93天"
+  },
+  {
+    "title": "NVIDIA Isaac GR00T N1：首个开源人形机器人基础模型",
+    "link": "https://developer.nvidia.com/isaac/gr00t",
+    "summary": "2026.01.05 | 来源：NVIDIA GTC 💡 核心创新： - 双系统架构：System 1（快思考，动作反射）+ System 2（慢思考，规划推理）",
+    "source": "NVIDIA",
+    "date": "2026-01-05",
+    "published_at": "2026-01-05",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "robotics",
+    "freshness": "stale",
+    "archived": true,
+    "archive_reason": "超过94天"
+  },
+  {
+    "title": "CognitiveDrone：VLA + 推理模块，认知任务成功率 77.2%",
+    "link": "https://arxiv.org/abs/2503.01378",
+    "summary": "2025.03.03 | 来源：arXiv:2503.01378 💡 核心发现： - 专门针对无人机的 VLA 认知任务基准 CognitiveDroneBench",
+    "source": "arXiv",
+    "date": "2025-03-03",
+    "published_at": "2025-03-03",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "drone",
+    "freshness": "stale",
+    "archived": true,
+    "archive_reason": "超过408天"
   }
 ]
