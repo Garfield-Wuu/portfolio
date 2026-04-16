@@ -1,6 +1,6 @@
 // ============================================
 // 研究热点数据 - 自动生成
-// 生成时间: 2026-04-15T08:45:46.664178
+// 生成时间: 2026-04-16T08:45:07.342321
 // ============================================
 
 // P0-2: Paper interface 升级，增加结构化摘要字段
@@ -58,6 +58,42 @@ export interface News {
 
 // 最新论文（含结构化摘要）
 export const recentPapers: Paper[] = [
+  {
+    "title": "E2E-Fly",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.12916",
+    "date": "2026-04-12",
+    "summary": "端到端四旋翼全栈系统 ⭐⭐⭐⭐⭐ 首个统一可微分物理学习 + 训练 + 验证 + 部署 VisFly仿真器: 6000 FPS, 全可微分动力学。完整的视觉策略训练→PX4部署流程参考！",
+    "problem": "端到端四旋翼训练→部署系统方向的核心问题与挑战",
+    "method": "端到端四旋翼全栈系统 ⭐⭐⭐⭐⭐ 首个统一可微分物理学习 + 训练 + 验证 + 部署 VisFly仿真器: 6000 FPS, 全可微分动力学",
+    "value": "完整的视觉策略训练→PX4部署流程参考！",
+    "why_relevant": "完整的视觉策略训练→PX4部署流程参考！",
+    "research_axis": "VLA",
+    "link": "https://arxiv.org/abs/2604.12916",
+    "pdf_url": "https://arxiv.org/pdf/2604.12916",
+    "tags": [
+      "端到端四旋翼训练→部署系统"
+    ],
+    "importance": "high"
+  },
+  {
+    "title": "VULCAN",
+    "authors": "OpenClaw Scout",
+    "venue": "arXiv:2604.12831",
+    "date": "2026-04-12",
+    "summary": "VLM多智能体火灾救援 ⭐⭐⭐⭐ VLM Global Planner + FMM Local Planner分层架构 Habitat-Matterport3D扩展火灾模拟。VLM规划层 + 多无人机编队协调参考",
+    "problem": "VLM多智能体协同(火灾救援)方向的核心问题与挑战",
+    "method": "VLM多智能体火灾救援 ⭐⭐⭐⭐ VLM Global Planner + FMM Local Planner分层架构 Habitat-Matterport3D扩展火灾模拟",
+    "value": "VLM规划层 + 多无人机编队协调参考",
+    "why_relevant": "VLM规划层 + 多无人机编队协调参考",
+    "research_axis": "VLM",
+    "link": "https://arxiv.org/abs/2604.12831",
+    "pdf_url": "https://arxiv.org/pdf/2604.12831",
+    "tags": [
+      "VLM多智能体协同(火灾救援)"
+    ],
+    "importance": "high"
+  },
   {
     "title": "EagleVision",
     "authors": "OpenClaw Scout",
@@ -165,42 +201,6 @@ export const recentPapers: Paper[] = [
       "机载SLM任务规划"
     ],
     "importance": "high"
-  },
-  {
-    "title": "SafeMind",
-    "authors": "OpenClaw Scout",
-    "venue": "arXiv:2604.09474",
-    "date": "2026-04-09",
-    "summary": "自适应安全控制框架 可微分随机CBF + 元自适应风险校准 200Hz实时控制，12种地形验证。PX4 Offboard安全护栏设计",
-    "problem": "四足自适应安全控制框架方向的核心问题与挑战",
-    "method": "自适应安全控制框架 可微分随机CBF + 元自适应风险校准 200Hz实时控制，12种地形验证",
-    "value": "PX4 Offboard安全护栏设计",
-    "why_relevant": "PX4 Offboard安全护栏设计",
-    "research_axis": "Control",
-    "link": "https://arxiv.org/abs/2604.09474",
-    "pdf_url": "https://arxiv.org/pdf/2604.09474",
-    "tags": [
-      "四足自适应安全控制框架"
-    ],
-    "importance": "high"
-  },
-  {
-    "title": "PhysInOne",
-    "authors": "OpenClaw Scout",
-    "venue": "arXiv:2604.09415",
-    "date": "2026-04-09",
-    "summary": "超大规模物理接地数据集 ⭐⭐⭐⭐⭐ 2M视频 + 153K场景 + 71种物理现象 覆盖力学/光学/流体力学/磁学。VLA/WM训练的物理prior数据源",
-    "problem": "2M物理接地视频数据集方向的核心问题与挑战",
-    "method": "超大规模物理接地数据集 ⭐⭐⭐⭐⭐ 2M视频 + 153K场景 + 71种物理现象 覆盖力学/光学/流体力学/磁学",
-    "value": "VLA/WM训练的物理prior数据源",
-    "why_relevant": "VLA/WM训练的物理prior数据源",
-    "research_axis": "VLA",
-    "link": "https://arxiv.org/abs/2604.09415",
-    "pdf_url": "https://arxiv.org/pdf/2604.09415",
-    "tags": [
-      "2M物理接地视频数据集"
-    ],
-    "importance": "high"
   }
 ];
 
@@ -221,7 +221,7 @@ export const hotProjects: GitHubProject[] = [
     ],
     "verified": true,
     "stars_last_checked_at": "2026-04-15T08:45:47.639542",
-    "stars_source": "api"
+    "stars_source": "stale_cache"
   },
   {
     "name": "Prometheus (amov-lab)",
@@ -238,7 +238,7 @@ export const hotProjects: GitHubProject[] = [
     ],
     "verified": true,
     "stars_last_checked_at": "2026-04-15T08:45:48.569191",
-    "stars_source": "api"
+    "stars_source": "stale_cache"
   },
   {
     "name": "embodied-drone-agents",
@@ -255,7 +255,7 @@ export const hotProjects: GitHubProject[] = [
     ],
     "verified": true,
     "stars_last_checked_at": "2026-04-15T08:45:49.574153",
-    "stars_source": "api"
+    "stars_source": "stale_cache"
   },
   {
     "name": "llm-uav (Atmaca)",
@@ -271,7 +271,7 @@ export const hotProjects: GitHubProject[] = [
     ],
     "verified": true,
     "stars_last_checked_at": "2026-04-15T08:45:50.477394",
-    "stars_source": "api"
+    "stars_source": "stale_cache"
   },
   {
     "name": "MAVLinkMCP",
@@ -287,7 +287,7 @@ export const hotProjects: GitHubProject[] = [
     ],
     "verified": true,
     "stars_last_checked_at": "2026-04-15T08:45:51.404743",
-    "stars_source": "api"
+    "stars_source": "stale_cache"
   },
   {
     "name": "Awesome-RL-VLA",
@@ -303,7 +303,7 @@ export const hotProjects: GitHubProject[] = [
     ],
     "verified": true,
     "stars_last_checked_at": "2026-04-15T08:45:52.389479",
-    "stars_source": "api"
+    "stars_source": "stale_cache"
   },
   {
     "name": "Awesome-LLM-Robotics",
@@ -319,7 +319,7 @@ export const hotProjects: GitHubProject[] = [
     ],
     "verified": true,
     "stars_last_checked_at": "2026-04-15T08:45:53.353033",
-    "stars_source": "api"
+    "stars_source": "stale_cache"
   },
   {
     "name": "Awesome-Aerial-VLN",
@@ -335,12 +335,77 @@ export const hotProjects: GitHubProject[] = [
     ],
     "verified": true,
     "stars_last_checked_at": "2026-04-15T08:45:54.321777",
-    "stars_source": "api"
+    "stars_source": "stale_cache"
   }
 ];
 
 // 新闻摘要（含 why_it_matters）
 export const recentNews: News[] = [
+  {
+    "title": "NVIDIA GTC 2026：Cosmos 3 + Isaac GR00T 更新",
+    "link": "https://blogs.nvidia.com/blog/national-robotics-week-2026/",
+    "summary": "*\n> NVIDIA 在 Physical AI 的布局已经完整：\n> - 仿真（Isaac Sim）→ 训练（Cosmos）→ 部署（GR00T）→ 边缘（Jetson）\n> - 对毕设的启发：可以优先考虑用 Isaac Sim 做仿真验证",
+    "source": "NVIDIA",
+    "date": "_2026-04-1",
+    "published_at": "_2026-04-1",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "robotics",
+    "freshness": "unknown",
+    "archived": false
+  },
+  {
+    "title": "AERO-MPPI：GPU加速的无地图敏捷无人机导航",
+    "link": "https://github.com/XinChen-stars/AERO_MPPI",
+    "summary": "2026.03（ICRA 2026录用） | 来源：arXiv:2509.17340 💡 核心创新： - 全 GPU 加速：用 NVIDIA Warp GPU 内核，实时运行于 Jetson Orin NX",
+    "source": "GitHub",
+    "date": "_2026-04-1",
+    "published_at": "_2026-04-1",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "drone",
+    "freshness": "unknown",
+    "archived": false
+  },
+  {
+    "title": "awesome-humanoid-robot-learning：人形机器人学习论文列表",
+    "link": "https://github.com/YanjieZe/awesome-humanoid-robot-learning",
+    "summary": "持续更新 | 来源：GitHub 💡 收录人形机器人领域的最新论文，包括 2026.03 的 Heracles 工作  https://github.com/YanjieZe/awesome-humanoid-robot-learning",
+    "source": "GitHub",
+    "date": "_2026-04-1",
+    "published_at": "_2026-04-1",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "robotics",
+    "freshness": "unknown",
+    "archived": false
+  },
+  {
+    "title": "open-dronelog ⭐ New!",
+    "link": "https://github.com/arpanghosh8453/open-dronelog",
+    "summary": "Tauri v2 + React + DuckDB | 来源：arpanghosh8453 💡 核心：DJI/Litchi 飞行日志分析仪表盘 🎯 亮点：",
+    "source": "GitHub",
+    "date": "_2026-04-1",
+    "published_at": "_2026-04-1",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "drone",
+    "freshness": "unknown",
+    "archived": false
+  },
+  {
+    "title": "AutoResearchClaw ⭐ Updated v0.4.0",
+    "link": "https://github.com/aiming-lab/AutoResearchClaw",
+    "summary": "Python | 来源：aiming-lab 💡 核心：自主科研自动化工具（idea → paper） 🎯 亮点：",
+    "source": "GitHub",
+    "date": "_2026-04-1",
+    "published_at": "_2026-04-1",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "llm",
+    "freshness": "unknown",
+    "archived": false
+  },
   {
     "title": "Generalist AI GEN-1：机器人「肌肉记忆」实现 99% 成功率",
     "link": "https://roboticsandautomationnews.com/2026/04/11/generalist-ai-unveils-gen-1-model-claiming-breakthrough-in-real-world-robotic-task-performance/100516/",
@@ -353,71 +418,6 @@ export const recentNews: News[] = [
     "research_axis": "robotics",
     "freshness": "fresh",
     "archived": false
-  },
-  {
-    "title": "ardupilot ⭐ (ArduPilot Drone Control)",
-    "link": "https://github.com/ArduPilot/ardupilot",
-    "summary": "嵌入式 / 无人机 💡 核心：全球最流行的开源无人机控制平台 🎯 亮点：",
-    "source": "GitHub",
-    "date": "_2026-04-1",
-    "published_at": "_2026-04-1",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "drone",
-    "freshness": "unknown",
-    "archived": false
-  },
-  {
-    "title": "multi-robot-skill ⭐ (Multi Robot Skill)",
-    "link": "https://github.com/search?q=multi-robot-skill",
-    "summary": "Agent / 多机器人 💡 核心：多机器人协同控制技能  https://github.com/search?q=multi-robot-skill",
-    "source": "GitHub",
-    "date": "_2026-04-1",
-    "published_at": "_2026-04-1",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "robotics",
-    "freshness": "unknown",
-    "archived": false
-  },
-  {
-    "title": "embodied-os ⭐ (Embodied-OS - AI Robot Control System)",
-    "link": "https://github.com/search?q=embodied-os",
-    "summary": "具身智能 / 机器人 💡 核心：AI 机器人控制系统  https://github.com/search?q=embodied-os",
-    "source": "GitHub",
-    "date": "_2026-04-1",
-    "published_at": "_2026-04-1",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "robotics",
-    "freshness": "unknown",
-    "archived": false
-  },
-  {
-    "title": "vision-sandbox ⭐ (Vision Sandbox)",
-    "link": "https://github.com/search?q=vision-sandbox",
-    "summary": "计算机视觉 💡 核心：视觉沙箱，用于视觉算法实验  https://github.com/search?q=vision-sandbox",
-    "source": "GitHub",
-    "date": "_2026-04-1",
-    "published_at": "_2026-04-1",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "llm",
-    "freshness": "unknown",
-    "archived": false
-  },
-  {
-    "title": "computer-vision-expert ⭐ (Computer Vision Expert)",
-    "link": "https://github.com/search?q=computer-vision-expert",
-    "summary": "CV / LLM 💡 核心：计算机视觉专家级 Agent 技能  https://github.com/search?q=computer-vision-expert",
-    "source": "GitHub",
-    "date": "_2026-04-1",
-    "published_at": "_2026-04-1",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "robotics",
-    "freshness": "unknown",
-    "archived": false
   }
 ];
 
@@ -425,25 +425,25 @@ export const recentNews: News[] = [
 export const trends: Trend[] = [
   {
     "icon": "📡",
-    "title": "MCP协议成为热点",
-    "description": "EchoPilot展示MCP作为LLM→物理执行的标准接口"
+    "title": "全栈系统整合",
+    "description": "E2E-Fly等展示训练→部署完整流程成为新范式"
   },
   {
     "icon": "📡",
-    "title": "腾讯入场具身",
-    "description": "HY-Embodied MoT架构 + 大到小蒸馏"
+    "title": "VLM进入多智能体",
+    "description": "从单智能体VLN扩展到多智能体协同"
   },
   {
     "icon": "📡",
-    "title": "数据基础设施",
-    "description": "Mosaico填补Physical AI数据管道空白"
+    "title": "灾难响应机器人",
+    "description": "火灾/搜救成为VLA新战场"
   },
   {
-    "icon": "📡",
-    "title": "arXiv API不稳定",
-    "description": "使用Web搜索作为补充"
+    "icon": "👁️",
+    "title": "Thermal感知",
+    "description": "烟雾环境thermal > RGB视觉成为共识"
   }
 ];
 
 // 元数据
-export const lastUpdated = "2026-04-15T08:45:46.664178";
+export const lastUpdated = "2026-04-16T08:45:07.342321";
