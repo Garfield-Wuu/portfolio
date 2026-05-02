@@ -1,141 +1,61 @@
-// Auto-generated - Do not edit manually
-// Generated at: 2026-05-01 08:45:51
+// Auto-generated research.ts - 研究页面数据
+// Generated: 2026-05-02 08:46
 
-export interface Paper {
-  title: string;
-  authors: string;
-  year: number;
-  venue: string;
-  url: string;
-  pdf: string;
-  github: string;
-  abstract: string;
-  categories: string[];
-  citations?: number;
-  readLevel: 1 | 2 | 3;
-}
+import { ResearchPaper, GitHubProject, NewsItem, TrendsItem } from ../types/research;
 
-export interface GitHubProject {
-  name: string;
-  url: string;
-  description: string;
-  stars: number;
-  language: string;
-  topics: string[];
-}
-
-export interface NewsItem {
-  title: string;
-  summary: string;
-  url: string;
-  source: string;
-  date: string;
-  tags: string[];
-}
-
-export const papers: Paper[] = [
+// ===================== TRENDS =====================
+export const trends: TrendsItem[] = [
   {
-    "title": "DIAL: Decomposing Vision-Language Models into Intent Understanding and Action Decoding",
-    "authors": "Stanford / Berkeley",
-    "venue": "arXiv:2603.29844",
-    "date": "2026-03-31",
-    "summary": "VLA架构创新：VLM不应只做编码器，应利用高层意图理解。分为Intent Bottleneck（潜世界模型编码意图）和Action Decoding（潜逆动力学解码动作），实现LLM→VLA→PX4架构解耦。",
-    "link": "https://arxiv.org/abs/2603.29844",
-    "pdf_url": "https://arxiv.org/pdf/2603.29844",
-    "tags": [
-      "VLA",
-      "LLM",
-      "Robot",
-      "Embodied AI",
-      "Intent"
-    ],
-    "importance": "high"
+    "icon": "📡",
+    "title": "腾讯入局具身基础模型",
+    "description": "Shunyu Yao带队，竞争格局变化"
   },
   {
-    "title": "LLM-Enabled UAV NL Navigation: Natural Language to Signal Temporal Logic for Autonomous Flight",
-    "authors": "港科大",
-    "venue": "arXiv:2603.27583",
-    "date": "2026-03-30",
-    "summary": "自然语言→信号时序逻辑(STL)→MILP轨迹优化。CoT推理+GRPO优化确保翻译正确性，STL修复机制处理不可行约束。已有实机飞行验证。",
-    "link": "https://arxiv.org/abs/2603.27583",
-    "pdf_url": "https://arxiv.org/pdf/2603.27583",
-    "tags": [
-      "LLM",
-      "UAV",
-      "STL",
-      "NLP",
-      "Motion Planning"
-    ],
-    "importance": "high"
+    "icon": "📡",
+    "title": "数据引擎成为核心瓶颈",
+    "description": "模型架构已成熟，数据是下一战场"
   },
   {
-    "title": "CARLA-Air: Unified Aerial-Ground Simulation Infrastructure",
-    "authors": "ETH Zurich",
-    "venue": "arXiv:2603.28032",
-    "date": "2026-03-30",
-    "summary": "AirSim + CARLA统一到单一Unreal Engine进程，零修改复用AirSim API+ROS 2。18种传感器模态同步采集。完整仿真验证环境，适合毕设仿真验证。",
-    "link": "https://arxiv.org/abs/2603.28032",
-    "pdf_url": "https://arxiv.org/pdf/2603.28032",
-    "tags": [
-      "Simulation",
-      "UAV",
-      "ROS",
-      "CARLA",
-      "Sensor Fusion"
-    ],
-    "importance": "high"
+    "icon": "🤖",
+    "title": "边缘VLA高效化",
+    "description": "量化/蒸馏/剪枝技术成为刚需"
   },
   {
-    "title": "AeroGen: Agentic Drone Autonomy through Single-Shot Structured Prompting",
-    "authors": "MIT / UC Berkeley",
-    "venue": "arXiv:2603.25000",
-    "date": "2026-03-25",
-    "summary": "PX4 + LLM agent单步结构化提示，一次prompt完成多任务规划。轻量级方案，适合边缘部署。支持语音控制和云端API。",
-    "link": "https://arxiv.org/abs/2603.25000",
-    "pdf_url": "https://arxiv.org/pdf/2603.25000",
-    "tags": [
-      "LLM",
-      "UAV",
-      "PX4",
-      "Agent",
-      "Edge AI"
-    ],
-    "importance": "high"
-  },
+    "icon": "📡",
+    "title": "平台适配方法论",
+    "description": "Embodiment mismatch的微调解决方案"
+  }
+];
+
+// ===================== PAPERS =====================
+export const papers: ResearchPaper[] = [
   {
-    "title": "Realtime-VLA V2: Learning to Run VLAs Fast, Smooth and Accurate",
-    "authors": "上海AI Lab",
-    "venue": "arXiv:2603.20000",
-    "date": "2026-03-20",
-    "summary": "实时VLA，在边缘设备(Jetson)上快速流畅运行VLAs。EAGLE-3投机解码+NVFP4量化优化，兼顾精度和速度。适合无人机实时性需求。",
-    "link": "https://arxiv.org/abs/2603.20000",
-    "pdf_url": "https://arxiv.org/pdf/2603.20000",
-    "tags": [
-      "VLA",
-      "Real-time",
-      "Edge AI",
-      "Quantization"
-    ],
+    "title": "VLA Data-Centric Survey: Datasets, Benchmarks, and Data Engines",
+    "link": "https://arxiv.org/abs/2604.23001",
+    "summary": "",
+    "tags": [],
+    "source": "OpenClaw Scout",
     "importance": "medium"
   },
   {
-    "title": "FocusVLA: Visual Attention Optimization for Efficient Vision-Language-Action Models",
-    "authors": "字节跳动",
-    "venue": "arXiv:2603.28740",
-    "date": "2026-03-28",
-    "summary": "VLA瓶颈在于如何利用视觉而非视觉质量本身。提出Modality Cascaded Attention消除快捷路径。边缘部署计算优化参考。",
-    "link": "https://arxiv.org/abs/2603.28740",
-    "pdf_url": "https://arxiv.org/pdf/2603.28740",
-    "tags": [
-      "VLA",
-      "Attention",
-      "Edge AI",
-      "Efficiency"
-    ],
+    "title": "Efficient VLA for Embodied Manipulation: A Systematic Survey",
+    "link": "https://arxiv.org/abs/2510.17111",
+    "summary": "",
+    "tags": [],
+    "source": "OpenClaw Scout",
+    "importance": "medium"
+  },
+  {
+    "title": "Bridging Embodiment Gaps: VLA on Soft Robots",
+    "link": "https://arxiv.org/abs/2510.17369",
+    "summary": "",
+    "tags": [],
+    "source": "OpenClaw Scout",
     "importance": "medium"
   }
 ];
 
+// ===================== GITHUB =====================
 export const githubProjects: GitHubProject[] = [
   {
     "name": "PX4 Autopilot",
@@ -151,7 +71,7 @@ export const githubProjects: GitHubProject[] = [
       "Drone"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-05-01T08:45:07.882085",
+    "stars_last_checked_at": "2026-05-02T08:45:13.115813",
     "stars_source": "api"
   },
   {
@@ -168,7 +88,7 @@ export const githubProjects: GitHubProject[] = [
       "Tracking"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-05-01T08:45:08.851506",
+    "stars_last_checked_at": "2026-05-02T08:45:14.034559",
     "stars_source": "api"
   },
   {
@@ -185,7 +105,7 @@ export const githubProjects: GitHubProject[] = [
       "UAV"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-05-01T08:45:09.782694",
+    "stars_last_checked_at": "2026-05-02T08:45:14.953453",
     "stars_source": "api"
   },
   {
@@ -201,7 +121,7 @@ export const githubProjects: GitHubProject[] = [
       "NLP"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-05-01T08:45:10.694997",
+    "stars_last_checked_at": "2026-05-02T08:45:15.856914",
     "stars_source": "api"
   },
   {
@@ -217,13 +137,13 @@ export const githubProjects: GitHubProject[] = [
       "LLM"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-05-01T08:45:11.640002",
+    "stars_last_checked_at": "2026-05-02T08:45:16.775920",
     "stars_source": "api"
   },
   {
     "name": "Awesome-RL-VLA",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": "654",
+    "stars": "656",
     "language": "Python",
     "link": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "tags": [
@@ -233,7 +153,7 @@ export const githubProjects: GitHubProject[] = [
       "Papers"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-05-01T08:45:12.518467",
+    "stars_last_checked_at": "2026-05-02T08:45:17.697664",
     "stars_source": "api"
   },
   {
@@ -249,13 +169,13 @@ export const githubProjects: GitHubProject[] = [
       "Papers"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-05-01T08:45:13.474437",
+    "stars_last_checked_at": "2026-05-02T08:45:18.615039",
     "stars_source": "api"
   },
   {
     "name": "Awesome-Aerial-VLN",
     "description": "空中视觉-语言导航(Aerial VLN)论文汇总：无人机VLN方向最新研究。",
-    "stars": "52",
+    "stars": "53",
     "language": "Python",
     "link": "https://github.com/Sautenich/Awesome-Aerial-Vision-Language-Navigation",
     "tags": [
@@ -265,11 +185,12 @@ export const githubProjects: GitHubProject[] = [
       "Survey"
     ],
     "verified": true,
-    "stars_last_checked_at": "2026-05-01T08:45:14.390829",
+    "stars_last_checked_at": "2026-05-02T08:45:19.534529",
     "stars_source": "api"
   }
 ];
 
+// ===================== NEWS =====================
 export const news: NewsItem[] = [
   {
     "title": "Humanoid Robot 2026 融资潮：Apptronik $935M",
@@ -348,18 +269,7 @@ export const news: NewsItem[] = [
     "research_axis": "robotics",
     "freshness": "unknown",
     "archived": false
-  },
-  {
-    "title": "Ultralytics YOLO 系列 ⭐ 持续热门",
-    "link": "https://github.com/ultralytics/ultralytics",
-    "summary": "*：实时目标检测，YOLO 家族最新版本",
-    "source": "GitHub",
-    "date": "_2026-04-3",
-    "published_at": "_2026-04-3",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "llm",
-    "freshness": "unknown",
-    "archived": false
   }
 ];
+
+export const RESEARCH_LAST_UPDATED = "2026-05-02 08:46";
