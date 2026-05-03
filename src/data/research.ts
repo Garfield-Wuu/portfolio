@@ -1,4 +1,4 @@
-// Auto-generated at 2026-05-03T03:38:31.274535
+// Auto-generated at 2026-05-03T08:47:15.913290
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -105,108 +105,108 @@ export const githubProjects: GitHub[] = [
   {
     "name": "PX4 Autopilot",
     "owner": "PX4",
-    "description": "开源无人机自动驾驶软件，支持多旋翼、固定翼、VTOL等。学术界最流行的无人机研究平台。",
+    "description": "\u5f00\u6e90\u65e0\u4eba\u673a\u81ea\u52a8\u9a7e\u9a76\u8f6f\u4ef6\uff0c\u652f\u6301\u591a\u65cb\u7ffc\u3001\u56fa\u5b9a\u7ffc\u3001VTOL\u7b49\u3002\u5b66\u672f\u754c\u6700\u6d41\u884c\u7684\u65e0\u4eba\u673a\u7814\u7a76\u5e73\u53f0\u3002",
     "stars": 11600,
     "language": "C++",
     "link": "https://github.com/PX4/PX4-Autopilot",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-02T08:45:13.115813",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-03T08:45:49.140674",
+    "stars_source": "api",
   }
   {
     "name": "Prometheus (amov-lab)",
     "owner": "amov-lab",
-    "description": "PX4无人机自主飞行综合解决方案，包含目标追踪、集群控制、SLAM等30+应用模块。累计3.1k+ stars。",
+    "description": "PX4\u65e0\u4eba\u673a\u81ea\u4e3b\u98de\u884c\u7efc\u5408\u89e3\u51b3\u65b9\u6848\uff0c\u5305\u542b\u76ee\u6807\u8ffd\u8e2a\u3001\u96c6\u7fa4\u63a7\u5236\u3001SLAM\u7b4930+\u5e94\u7528\u6a21\u5757\u3002\u7d2f\u8ba13.1k+ stars\u3002",
     "stars": 3100,
     "language": "C++",
     "link": "https://github.com/amov-lab/Prometheus",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-02T08:45:14.034559",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-03T08:45:50.129136",
+    "stars_source": "api",
   }
   {
     "name": "embodied-drone-agents",
     "owner": "EmergenceAI",
-    "description": "LLM drone agent系统，使用MAVSDK-Python作为工具，LangGraph编排任务规划，支持自然语言控制无人机。",
+    "description": "LLM drone agent\u7cfb\u7edf\uff0c\u4f7f\u7528MAVSDK-Python\u4f5c\u4e3a\u5de5\u5177\uff0cLangGraph\u7f16\u6392\u4efb\u52a1\u89c4\u5212\uff0c\u652f\u6301\u81ea\u7136\u8bed\u8a00\u63a7\u5236\u65e0\u4eba\u673a\u3002",
     "stars": 20,
     "language": "Python",
     "link": "https://github.com/EmergenceAI/embodied-drone-agents",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-02T08:45:14.953453",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-03T08:45:51.083910",
+    "stars_source": "api",
   }
   {
     "name": "llm-uav (Atmaca)",
     "owner": "furkanisikay",
-    "description": "集成Gemma 3 4B与无人机控制，支持自然语言指令，边缘部署。",
+    "description": "\u96c6\u6210Gemma 3 4B\u4e0e\u65e0\u4eba\u673a\u63a7\u5236\uff0c\u652f\u6301\u81ea\u7136\u8bed\u8a00\u6307\u4ee4\uff0c\u8fb9\u7f18\u90e8\u7f72\u3002",
     "stars": 0,
     "language": "Python",
     "link": "https://github.com/furkanisikay/llm-uav",
     "tags": ["LLM", "UAV", "Edge AI", "NLP"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-02T08:45:15.856914",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-03T08:45:52.035241",
+    "stars_source": "api",
   }
   {
     "name": "MAVLinkMCP",
     "owner": "ion-g-ion",
-    "description": "MCP (Model Context Protocol) server for LLM与MAVLink无人机的通信，支持通过MCP协议控制PX4无人机。",
+    "description": "MCP (Model Context Protocol) server for LLM\u4e0eMAVLink\u65e0\u4eba\u673a\u7684\u901a\u4fe1\uff0c\u652f\u6301\u901a\u8fc7MCP\u534f\u8bae\u63a7\u5236PX4\u65e0\u4eba\u673a\u3002",
     "stars": 16,
     "language": "Python",
     "link": "https://github.com/ion-g-ion/MAVLinkMCP",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-02T08:45:16.775920",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-03T08:45:52.937583",
+    "stars_source": "api",
   }
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
-    "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 656,
+    "description": "RL+VLA\u8bba\u6587\u6c47\u603b\uff1a\u5f3a\u5316\u5b66\u4e60\u89c6\u89c9-\u8bed\u8a00-\u52a8\u4f5c\u6a21\u578b\u7efc\u8ff0\u3002",
+    "stars": 658,
     "language": "Python",
     "link": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-02T08:45:17.697664",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-03T08:45:53.874125",
+    "stars_source": "api",
   }
   {
     "name": "Awesome-LLM-Robotics",
     "owner": "GT-RIPL",
-    "description": "大语言模型/多模态模型在机器人领域的应用论文汇总。",
+    "description": "\u5927\u8bed\u8a00\u6a21\u578b/\u591a\u6a21\u6001\u6a21\u578b\u5728\u673a\u5668\u4eba\u9886\u57df\u7684\u5e94\u7528\u8bba\u6587\u6c47\u603b\u3002",
     "stars": 4400,
     "language": "Python",
     "link": "https://github.com/GT-RIPL/Awesome-LLM-Robotics",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-02T08:45:18.615039",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-03T08:45:54.775622",
+    "stars_source": "api",
   }
   {
     "name": "Awesome-Aerial-VLN",
     "owner": "Sautenich",
-    "description": "空中视觉-语言导航(Aerial VLN)论文汇总：无人机VLN方向最新研究。",
+    "description": "\u7a7a\u4e2d\u89c6\u89c9-\u8bed\u8a00\u5bfc\u822a(Aerial VLN)\u8bba\u6587\u6c47\u603b\uff1a\u65e0\u4eba\u673aVLN\u65b9\u5411\u6700\u65b0\u7814\u7a76\u3002",
     "stars": 53,
     "language": "Python",
     "link": "https://github.com/Sautenich/Awesome-Aerial-Vision-Language-Navigation",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-02T08:45:19.534529",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-03T08:45:55.692882",
+    "stars_source": "api",
   }
 ];
 
 export const news: News[] = [
   {
-    "title": "Humanoid Robot 2026 融资潮：Apptronik $935M",
+    "title": "Humanoid Robot 2026 \u878d\u8d44\u6f6e\uff1aApptronik $935M",
     "source": "TechCrunch",
     "url": "https://techcrunch.com/2026/02/11/humanoid-robot-startup-apptronik-has-now-raised-935m-at-a-5b-valuation/",
     "date": "_2026-05-0",
-    "summary": "2026.02 | 来源：[TechCrunch](https://techcrunch.com/2026/02/11/humanoid-robot-startup-apptronik-has-now-raised-935m-at-a-5b-valuation/) 💡 关键数据： - Apptronik 估值 $5B+，投资方包括 Google DeepMind",
+    "summary": "2026.02 | \u6765\u6e90\uff1a[TechCrunch](https://techcrunch.com/2026/02/11/humanoid-robot-startup-apptronik-has-now-raised-935m-at-a-5b-valuation/) \ud83d\udca1 \u5173\u952e\u6570\u636e\uff1a - Apptronik \u4f30\u503c $5B+\uff0c\u6295\u8d44\u65b9\u5305\u62ec Google DeepMind",
     "published_at": "_2026-05-0",
     "verified": false,
     "why_it_matters": null,
@@ -215,11 +215,11 @@ export const news: News[] = [
     "archived": false,
   }
   {
-    "title": "SwarmGPT：用 LLMs 控制无人机蜂群编队",
+    "title": "SwarmGPT\uff1a\u7528 LLMs \u63a7\u5236\u65e0\u4eba\u673a\u8702\u7fa4\u7f16\u961f",
     "source": "GitHub",
     "url": "https://utiasdsl.github.io/swarm_GPT/",
     "date": "_2026-05-0",
-    "summary": "2024+ | 来源：[UTIAS DSL Lab](https://utiasdsl.github.io/swarm_GPT/) 💡 核心能力： - LLM 实现多无人机协同任务分解",
+    "summary": "2024+ | \u6765\u6e90\uff1a[UTIAS DSL Lab](https://utiasdsl.github.io/swarm_GPT/) \ud83d\udca1 \u6838\u5fc3\u80fd\u529b\uff1a - LLM \u5b9e\u73b0\u591a\u65e0\u4eba\u673a\u534f\u540c\u4efb\u52a1\u5206\u89e3",
     "published_at": "_2026-05-0",
     "verified": false,
     "why_it_matters": null,
@@ -228,11 +228,11 @@ export const news: News[] = [
     "archived": false,
   }
   {
-    "title": "FM-Planner：Foundation Model 引导的无人机路径规划",
+    "title": "FM-Planner\uff1aFoundation Model \u5f15\u5bfc\u7684\u65e0\u4eba\u673a\u8def\u5f84\u89c4\u5212",
     "source": "GitHub",
     "url": "https://github.com/ntu-icg/fm-planner",
     "date": "_2026-05-0",
-    "summary": "Recent | 来源：[GitHub: NTU-ICG/fm-planner](https://github.com/ntu-icg/fm-planner) 💡 核心方法： - 系统评估了 8 种 LLM 用于无人机路径规划",
+    "summary": "Recent | \u6765\u6e90\uff1a[GitHub: NTU-ICG/fm-planner](https://github.com/ntu-icg/fm-planner) \ud83d\udca1 \u6838\u5fc3\u65b9\u6cd5\uff1a - \u7cfb\u7edf\u8bc4\u4f30\u4e86 8 \u79cd LLM \u7528\u4e8e\u65e0\u4eba\u673a\u8def\u5f84\u89c4\u5212",
     "published_at": "_2026-05-0",
     "verified": false,
     "why_it_matters": null,
@@ -241,11 +241,11 @@ export const news: News[] = [
     "archived": false,
   }
   {
-    "title": "NVIDIA TensorRT Edge-LLM：嵌入式高性能推理",
+    "title": "NVIDIA TensorRT Edge-LLM\uff1a\u5d4c\u5165\u5f0f\u9ad8\u6027\u80fd\u63a8\u7406",
     "source": "NVIDIA",
     "url": "https://developer.nvidia.com/blog/accelerating-llm-and-vlm-inference-for-automotive-and-robotics-with-nvidia-tensorrt-edge-llm/",
     "date": "_2026-05-0",
-    "summary": "2026.01 | 来源：[NVIDIA Blog](https://developer.nvidia.com/blog/accelerating-llm-and-vlm-inference-for-automotive-and-robotics-with-nvidia-tensorrt-edge-llm/) 💡 核心能力： - 开源 C++ 框架，专为边缘设备优化",
+    "summary": "2026.01 | \u6765\u6e90\uff1a[NVIDIA Blog](https://developer.nvidia.com/blog/accelerating-llm-and-vlm-inference-for-automotive-and-robotics-with-nvidia-tensorrt-edge-llm/) \ud83d\udca1 \u6838\u5fc3\u80fd\u529b\uff1a - \u5f00\u6e90 C++ \u6846\u67b6\uff0c\u4e13\u4e3a\u8fb9\u7f18\u8bbe\u5907\u4f18\u5316",
     "published_at": "_2026-05-0",
     "verified": false,
     "why_it_matters": null,
@@ -258,7 +258,7 @@ export const news: News[] = [
     "source": "GitHub",
     "url": "https://github.com/Hub-Tian/UAVs_Meet_LLMs",
     "date": "_2026-05-0",
-    "summary": "*：LLM+无人机论文综述，整理了： - 基于视觉的自主规划（结合 LLMs） - 自然语言控制 PX4/Gazebo - LLM 用于机器人编队 - FM-Planner 等重要工作",
+    "summary": "*\uff1aLLM+\u65e0\u4eba\u673a\u8bba\u6587\u7efc\u8ff0\uff0c\u6574\u7406\u4e86\uff1a\n- \u57fa\u4e8e\u89c6\u89c9\u7684\u81ea\u4e3b\u89c4\u5212\uff08\u7ed3\u5408 LLMs\uff09\n- \u81ea\u7136\u8bed\u8a00\u63a7\u5236 PX4/Gazebo\n- LLM \u7528\u4e8e\u673a\u5668\u4eba\u7f16\u961f\n- FM-Planner \u7b49\u91cd\u8981\u5de5\u4f5c",
     "published_at": "_2026-05-0",
     "verified": false,
     "why_it_matters": null,
@@ -267,11 +267,11 @@ export const news: News[] = [
     "archived": false,
   }
   {
-    "title": "LeRobot (Hugging Face) ⭐ 新上榜！",
+    "title": "LeRobot (Hugging Face) \u2b50 \u65b0\u4e0a\u699c\uff01",
     "source": "GitHub",
     "url": "https://github.com/huggingface/lerobot",
     "date": "_2026-04-3",
-    "summary": "*：开源机器人学习平台，支持多机器人协同",
+    "summary": "*\uff1a\u5f00\u6e90\u673a\u5668\u4eba\u5b66\u4e60\u5e73\u53f0\uff0c\u652f\u6301\u591a\u673a\u5668\u4eba\u534f\u540c",
     "published_at": "_2026-04-3",
     "verified": false,
     "why_it_matters": null,
@@ -282,8 +282,9 @@ export const news: News[] = [
 ];
 
 export const trends: string[] = [
-  {"icon": "🤖", "title": "VLA推理机制进化", "description": "LaST-R1将物理推理+RL统一，推理深度自适应"},
-  {"icon": "📡", "title": "Aerial VLN独立领域化", "description": "首个系统性综述出现，标志着领域成熟"},
-  {"icon": "📡", "title": "计划缓存优化", "description": "AgenticCache证明计划局部性可大幅降低成本"},
-  {"icon": "📡", "title": "人类视频数据利用", "description": "从视频学习成为可扩展数据获取的标准路径"},
+  {"icon": "🤖", "title": "VLA架构持续演进", "description": "从单模型→双系统(Libra-VLA)→潜在推理(LaST-R1)→3D空间(FALCON)"},
+  {"icon": "📡", "title": "世界模型成为核心", "description": "RehearseVLA、MotuBrain、Flying by Inference都依赖世界模型"},
+  {"icon": "📡", "title": "UAV专项研究加速", "description": "FRGS、ARIA、CoT-Route、Flying by Inference四篇UAV论文同时出现"},
+  {"icon": "🤖", "title": "ICLR+CVPR 2026 VLA论文密集", "description": "FALCON(ICLR), RehearseVLA(CVPR), 之前还有X-VLA, MemoryVLA"},
+  {"icon": "📡", "title": "推理范式转变", "description": "从语言链推理(CoT)→潜在空间推理(LaST-R1)"},
 ];
