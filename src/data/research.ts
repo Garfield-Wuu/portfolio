@@ -1,4 +1,4 @@
-// Auto-generated at 2026-05-06T08:46:59.992666
+// Auto-generated at 2026-05-07T08:48:29.331181
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -154,13 +154,13 @@ export const githubProjects: GitHub[] = [
     "name": "PX4 Autopilot",
     "owner": "PX4",
     "description": "开源无人机自动驾驶软件，支持多旋翼、固定翼、VTOL等。学术界最流行的无人机研究平台。",
-    "stars": 11600,
+    "stars": 11700,
     "language": "C++",
     "link": "https://github.com/PX4/PX4-Autopilot",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-05T08:49:34.841109",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-07T08:47:41.175563",
+    "stars_source": "api",
   }
   {
     "name": "Prometheus (amov-lab)",
@@ -171,8 +171,8 @@ export const githubProjects: GitHub[] = [
     "link": "https://github.com/amov-lab/Prometheus",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-05T08:49:35.790968",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-07T08:47:41.927382",
+    "stars_source": "api",
   }
   {
     "name": "embodied-drone-agents",
@@ -183,8 +183,8 @@ export const githubProjects: GitHub[] = [
     "link": "https://github.com/EmergenceAI/embodied-drone-agents",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-05T08:49:36.761584",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-07T08:47:42.688543",
+    "stars_source": "api",
   }
   {
     "name": "llm-uav (Atmaca)",
@@ -195,8 +195,8 @@ export const githubProjects: GitHub[] = [
     "link": "https://github.com/furkanisikay/llm-uav",
     "tags": ["LLM", "UAV", "Edge AI", "NLP"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-05T08:49:37.666114",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-07T08:47:43.372650",
+    "stars_source": "api",
   }
   {
     "name": "MAVLinkMCP",
@@ -207,20 +207,20 @@ export const githubProjects: GitHub[] = [
     "link": "https://github.com/ion-g-ion/MAVLinkMCP",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-05T08:49:38.562618",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-07T08:47:44.064858",
+    "stars_source": "api",
   }
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 663,
+    "stars": 676,
     "language": "Python",
     "link": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-05T08:49:39.472241",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-07T08:47:45.184190",
+    "stars_source": "api",
   }
   {
     "name": "Awesome-LLM-Robotics",
@@ -231,8 +231,8 @@ export const githubProjects: GitHub[] = [
     "link": "https://github.com/GT-RIPL/Awesome-LLM-Robotics",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-05T08:49:40.477080",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-07T08:47:45.897569",
+    "stars_source": "api",
   }
   {
     "name": "Awesome-Aerial-VLN",
@@ -243,8 +243,8 @@ export const githubProjects: GitHub[] = [
     "link": "https://github.com/Sautenich/Awesome-Aerial-Vision-Language-Navigation",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-05T08:49:41.392028",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-07T08:47:46.577312",
+    "stars_source": "api",
   }
 ];
 
@@ -317,9 +317,9 @@ export const news: News[] = [
 ];
 
 export const trends: string[] = [
-  {"icon": "🤖", "title": "UAV VLA专用化加速", "description": "AerialVLA(端到端导航)+LiteVLA-H(机载紧凑) → 两条UAV VLA技术路线"},
-  {"icon": "🤖", "title": "VLA记忆机制成热点", "description": "MemoryVLA(ICLR)+Long-Term Memory → 解决长程任务"},
-  {"icon": "📡", "title": "测试时计算提升决策", "description": "VLA-ATTC(失败率-50%)+Sentinel-VLA(成功率+30%) → 按需推理"},
-  {"icon": "⚡", "title": "实时性优化多路线", "description": "FASTER(10x延迟压缩)+LiteVLA-H(19.74Hz)+双速率调度"},
-  {"icon": "🤖", "title": "视频预训练→VLA", "description": "RynnVLA-001证明人类视频可隐式迁移到机器人"},
+  {"icon": "🤖", "title": "UAV VLA持续升温", "description": "本轮发现3篇直接相关新工作(AerialVLA, GRaD-Nav++, CognitiveDrone)"},
+  {"icon": "📡", "title": "端到端成为主流", "description": "AerialVLA和GRaD-Nav++都采用端到端方案，摆脱模块化依赖"},
+  {"icon": "📡", "title": "3DGS进入UAV训练", "description": "GRaD-Nav++将3D Gaussian Splatting引入无人机导航训练"},
+  {"icon": "🤖", "title": "VLA解耦设计", "description": "DAM-VLA的解耦思路为VLA架构设计提供新方向"},
+  {"icon": "📡", "title": "LLM+多UAV群体", "description": "农业场景的LLM群体优化是新兴方向"},
 ];
