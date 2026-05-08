@@ -1,4 +1,4 @@
-// Auto-generated at 2026-05-07T08:48:29.331181
+// Auto-generated at 2026-05-08T08:47:20.224793
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -160,7 +160,7 @@ export const githubProjects: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
     "stars_last_checked_at": "2026-05-07T08:47:41.175563",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   }
   {
     "name": "Prometheus (amov-lab)",
@@ -172,7 +172,7 @@ export const githubProjects: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
     "stars_last_checked_at": "2026-05-07T08:47:41.927382",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   }
   {
     "name": "embodied-drone-agents",
@@ -184,7 +184,7 @@ export const githubProjects: GitHub[] = [
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
     "stars_last_checked_at": "2026-05-07T08:47:42.688543",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   }
   {
     "name": "llm-uav (Atmaca)",
@@ -196,7 +196,7 @@ export const githubProjects: GitHub[] = [
     "tags": ["LLM", "UAV", "Edge AI", "NLP"],
     "verified": true,
     "stars_last_checked_at": "2026-05-07T08:47:43.372650",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   }
   {
     "name": "MAVLinkMCP",
@@ -208,7 +208,7 @@ export const githubProjects: GitHub[] = [
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-05-07T08:47:44.064858",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   }
   {
     "name": "Awesome-RL-VLA",
@@ -220,7 +220,7 @@ export const githubProjects: GitHub[] = [
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-05-07T08:47:45.184190",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   }
   {
     "name": "Awesome-LLM-Robotics",
@@ -232,7 +232,7 @@ export const githubProjects: GitHub[] = [
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-05-07T08:47:45.897569",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   }
   {
     "name": "Awesome-Aerial-VLN",
@@ -244,7 +244,7 @@ export const githubProjects: GitHub[] = [
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-05-07T08:47:46.577312",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   }
 ];
 
@@ -317,9 +317,9 @@ export const news: News[] = [
 ];
 
 export const trends: string[] = [
-  {"icon": "🤖", "title": "UAV VLA持续升温", "description": "本轮发现3篇直接相关新工作(AerialVLA, GRaD-Nav++, CognitiveDrone)"},
-  {"icon": "📡", "title": "端到端成为主流", "description": "AerialVLA和GRaD-Nav++都采用端到端方案，摆脱模块化依赖"},
-  {"icon": "📡", "title": "3DGS进入UAV训练", "description": "GRaD-Nav++将3D Gaussian Splatting引入无人机导航训练"},
-  {"icon": "🤖", "title": "VLA解耦设计", "description": "DAM-VLA的解耦思路为VLA架构设计提供新方向"},
-  {"icon": "📡", "title": "LLM+多UAV群体", "description": "农业场景的LLM群体优化是新兴方向"},
+  {"icon": "📡", "title": "世界模型崛起", "description": "WMPO用世界模型替代真实环境，Goal-VLA用VLM作为世界模型"},
+  {"icon": "📡", "title": "混合架构主流化", "description": "Xiaomi-Robotics-0的\"大脑小脑\"MoT成为新范式"},
+  {"icon": "📡", "title": "零样本能力", "description": "Goal-VLA证明VLM可以直接零样本操控"},
+  {"icon": "📡", "title": "后训练流程开源", "description": "小米开源完整后训练，降低微调门槛"},
+  {"icon": "🤖", "title": "ICLR 2026 VLA爆发", "description": "WMPO、Interleave-VLA、Vlaser等多篇VLA论文被接收"},
 ];
