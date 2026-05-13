@@ -1,4 +1,4 @@
-// Auto-generated at 2026-05-12T08:49:05.855106
+// Auto-generated at 2026-05-13T08:56:32.724553
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -101,7 +101,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-12T08:47:55.520068",
+    "stars_last_checked_at": "2026-05-13T08:50:41.642978",
     "stars_source": "api",
   },
   {
@@ -113,7 +113,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-12T08:47:59.349953",
+    "stars_last_checked_at": "2026-05-13T08:50:42.374278",
     "stars_source": "api",
   },
   {
@@ -125,7 +125,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-12T08:48:03.059678",
+    "stars_last_checked_at": "2026-05-13T08:50:43.105913",
     "stars_source": "api",
   },
   {
@@ -137,7 +137,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "UAV", "Edge AI", "NLP"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-12T08:48:06.509195",
+    "stars_last_checked_at": "2026-05-13T08:50:43.837466",
     "stars_source": "api",
   },
   {
@@ -149,19 +149,19 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-12T08:48:10.648335",
+    "stars_last_checked_at": "2026-05-13T08:50:44.540691",
     "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 687,
+    "stars": 690,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-12T08:48:14.149805",
+    "stars_last_checked_at": "2026-05-13T08:50:45.232473",
     "stars_source": "api",
   },
   {
@@ -173,7 +173,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-12T08:48:17.248686",
+    "stars_last_checked_at": "2026-05-13T08:50:45.947135",
     "stars_source": "api",
   },
   {
@@ -185,7 +185,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-12T08:48:21.266781",
+    "stars_last_checked_at": "2026-05-13T08:50:46.647214",
     "stars_source": "api",
   },
 ];
@@ -218,19 +218,6 @@ export const news: News[] = [
     "archived": false,
   },
   {
-    "title": "高度相关！",
-    "source": "GitHub",
-    "url": "https://github.com/Hmbown/DeepSeek-TUI",
-    "date": "2026-05-04",
-    "summary": "AI 从\"帮你想\"进入\"帮你花钱\"，Agentic Commerce 元年\n⭐ 对你的价值：未来无人机服务可接入 Agent 支付体系（如自动订购配件）",
-    "published_at": "2026-05-04",
-    "verified": false,
-    "why_it_matters": "AI 从\"帮你想\"进入\"帮你花钱\"，Agentic Commerce 元年",
-    "research_axis": "robotics",
-    "freshness": "aging",
-    "archived": false,
-  },
-  {
     "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
     "source": "NVIDIA Newsroom",
     "url": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
@@ -254,33 +241,45 @@ export const news: News[] = [
     "research_axis": "robotics",
     "freshness": "fresh",
   },
+  {
+    "title": "DJI Air 3S 无人机发布",
+    "source": "DJI",
+    "url": "https://www.dji.com/cn/air-3s",
+    "date": "2026-03-28",
+    "summary": "大疆发布Air 3S，配备1英寸主摄+70mm长焦双摄系统，全向避障，支持APAS 5.0，续航48分钟，面向消费级航拍市场。",
+    "published_at": "2026-03-28",
+    "verified": true,
+    "why_it_matters": "消费级无人机避障和续航持续进化，DJI技术动态",
+    "research_axis": "drone",
+    "freshness": "fresh",
+  },
 ];
 
 export const trends: Trend[] = [
   {
     "icon": "🤖",
-    "title": "VLA效率优化成为新焦点",
-    "description": "Compressor-VLA(视觉压缩)、HY-Embodied(MoT架构)都关注效率",
+    "title": "RL+CoT成为VLA推理新范式",
+    "description": "RobotxR1和VLA-R1都展示了RL+CoT的强大组合",
+  },
+  {
+    "icon": "📡",
+    "title": "具身基础模型分化",
+    "description": "腾讯MoT架构实现2B端侧 vs 32B云端的双轨策略",
   },
   {
     "icon": "🤖",
-    "title": "意图推理进入VLA",
-    "description": "IntentionVLA将隐式意图理解引入VLA，使人机交互更自然",
+    "title": "视觉思维链兴起",
+    "description": "CoT-VLA开创\"先想图再做动作\"的新范式",
   },
   {
     "icon": "📡",
-    "title": "中国科技企业全面布局",
-    "description": "腾讯(HY-Embodied)、理想(Compressor/AVA-VLA)、小米(Robotics-0)、小鹏(第二代VLA)",
+    "title": "运行时增强方案",
+    "description": "BYOVLA展示了不改模型也能提升性能的思路",
   },
   {
     "icon": "📡",
-    "title": "UAV-VLN领域快速发展",
-    "description": "UAV-VLN(端到端)、NeLV(管线)、OpenUAV(平台)三种范式并存",
-  },
-  {
-    "icon": "⚡",
-    "title": "边缘部署受重视",
-    "description": "HY-Embodied MoT-2B、VLAPicking 4-bit、Conversational Flight Ollama都支持边缘",
+    "title": "数据引擎自动化",
+    "description": "VLA-R1的CoT数据引擎代表数据标注自动化的方向",
   },
 ];
 
@@ -288,5 +287,5 @@ export const stats = {
   papersCount: 4,
   githubCount: 8,
   newsCount: 5,
-  exportTime: "2026-05-12T08:47:49.309296",
+  exportTime: "2026-05-13T08:50:40.897770",
 };
