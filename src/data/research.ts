@@ -1,4 +1,4 @@
-// Auto-generated at 2026-05-13T08:56:32.724553
+// Auto-generated at 2026-05-14T08:47:52.681177
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -94,31 +94,31 @@ export const papers: Paper[] = [
 export const githubRepos: GitHub[] = [
   {
     "name": "PX4 Autopilot",
-    "owner": "PX4",
+    "owner": "",
     "description": "开源无人机自动驾驶软件，支持多旋翼、固定翼、VTOL等。学术界最流行的无人机研究平台。",
-    "stars": 11700,
+    "stars": 117000,
     "url": "https://github.com/PX4/PX4-Autopilot",
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
     "stars_last_checked_at": "2026-05-13T08:50:41.642978",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Prometheus (amov-lab)",
-    "owner": "amov-lab",
+    "owner": "",
     "description": "PX4无人机自主飞行综合解决方案，包含目标追踪、集群控制、SLAM等30+应用模块。累计3.1k+ stars。",
-    "stars": 3100,
+    "stars": 31000,
     "url": "https://github.com/amov-lab/Prometheus",
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
     "stars_last_checked_at": "2026-05-13T08:50:42.374278",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "embodied-drone-agents",
-    "owner": "EmergenceAI",
+    "owner": "",
     "description": "LLM drone agent系统，使用MAVSDK-Python作为工具，LangGraph编排任务规划，支持自然语言控制无人机。",
     "stars": 20,
     "url": "https://github.com/EmergenceAI/embodied-drone-agents",
@@ -126,11 +126,11 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
     "stars_last_checked_at": "2026-05-13T08:50:43.105913",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "llm-uav (Atmaca)",
-    "owner": "furkanisikay",
+    "owner": "",
     "description": "集成Gemma 3 4B与无人机控制，支持自然语言指令，边缘部署。",
     "stars": 0,
     "url": "https://github.com/furkanisikay/llm-uav",
@@ -138,11 +138,11 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "UAV", "Edge AI", "NLP"],
     "verified": true,
     "stars_last_checked_at": "2026-05-13T08:50:43.837466",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "MAVLinkMCP",
-    "owner": "ion-g-ion",
+    "owner": "",
     "description": "MCP (Model Context Protocol) server for LLM与MAVLink无人机的通信，支持通过MCP协议控制PX4无人机。",
     "stars": 16,
     "url": "https://github.com/ion-g-ion/MAVLinkMCP",
@@ -150,11 +150,11 @@ export const githubRepos: GitHub[] = [
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-05-13T08:50:44.540691",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-RL-VLA",
-    "owner": "Denghaoyuan123",
+    "owner": "",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
     "stars": 690,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
@@ -162,23 +162,23 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-05-13T08:50:45.232473",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-LLM-Robotics",
-    "owner": "GT-RIPL",
+    "owner": "",
     "description": "大语言模型/多模态模型在机器人领域的应用论文汇总。",
-    "stars": 4400,
+    "stars": 44000,
     "url": "https://github.com/GT-RIPL/Awesome-LLM-Robotics",
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-05-13T08:50:45.947135",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-Aerial-VLN",
-    "owner": "Sautenich",
+    "owner": "",
     "description": "空中视觉-语言导航(Aerial VLN)论文汇总：无人机VLN方向最新研究。",
     "stars": 53,
     "url": "https://github.com/Sautenich/Awesome-Aerial-Vision-Language-Navigation",
@@ -186,11 +186,24 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-05-13T08:50:46.647214",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
 ];
 
 export const news: News[] = [
+  {
+    "title": "1️⃣ VLA 技术路线之争白热化",
+    "source": "网络",
+    "url": "https://m.zol.com.cn/article/11804476.html",
+    "date": "2026-05-13",
+    "summary": "*：蚂蚁集团孵化企业灵波科技开源 VLA 模型真机后训练工具链",
+    "published_at": "2026-05-13",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "robotics",
+    "freshness": "fresh",
+    "archived": false,
+  },
   {
     "title": "鹿明机器人",
     "source": "网络",
@@ -241,45 +254,33 @@ export const news: News[] = [
     "research_axis": "robotics",
     "freshness": "fresh",
   },
-  {
-    "title": "DJI Air 3S 无人机发布",
-    "source": "DJI",
-    "url": "https://www.dji.com/cn/air-3s",
-    "date": "2026-03-28",
-    "summary": "大疆发布Air 3S，配备1英寸主摄+70mm长焦双摄系统，全向避障，支持APAS 5.0，续航48分钟，面向消费级航拍市场。",
-    "published_at": "2026-03-28",
-    "verified": true,
-    "why_it_matters": "消费级无人机避障和续航持续进化，DJI技术动态",
-    "research_axis": "drone",
-    "freshness": "fresh",
-  },
 ];
 
 export const trends: Trend[] = [
   {
-    "icon": "🤖",
-    "title": "RL+CoT成为VLA推理新范式",
-    "description": "RobotxR1和VLA-R1都展示了RL+CoT的强大组合",
+    "icon": "📡",
+    "title": "LLM+UAV闭环系统成熟",
+    "description": "SRDrone展示了LLM在UAV任务规划中的闭环自优化能力",
   },
   {
     "icon": "📡",
-    "title": "具身基础模型分化",
-    "description": "腾讯MoT架构实现2B端侧 vs 32B云端的双轨策略",
-  },
-  {
-    "icon": "🤖",
-    "title": "视觉思维链兴起",
-    "description": "CoT-VLA开创\"先想图再做动作\"的新范式",
+    "title": "动作空间推理兴起",
+    "description": "ACoT-VLA开创性地将思维链从语言/视觉空间下沉到动作空间",
   },
   {
     "icon": "📡",
-    "title": "运行时增强方案",
-    "description": "BYOVLA展示了不改模型也能提升性能的思路",
+    "title": "物体中心世界模型",
+    "description": "Goal-VLA提出与机器人形态无关的世界模型新范式",
   },
   {
     "icon": "📡",
-    "title": "数据引擎自动化",
-    "description": "VLA-R1的CoT数据引擎代表数据标注自动化的方向",
+    "title": "导航扩散策略",
+    "description": "NavDP证明扩散模型在导航任务中的Sim-to-Real迁移能力",
+  },
+  {
+    "icon": "📡",
+    "title": "ICRA/CVPR 2026具身智能全面爆发",
+    "description": "本轮5个资源中4个来自2026顶会",
   },
 ];
 
@@ -287,5 +288,5 @@ export const stats = {
   papersCount: 4,
   githubCount: 8,
   newsCount: 5,
-  exportTime: "2026-05-13T08:50:40.897770",
+  exportTime: "2026-05-14T08:47:52.681177",
 };
