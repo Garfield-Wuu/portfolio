@@ -1,4 +1,4 @@
-// Auto-generated at 2026-05-18T08:57:01
+// Auto-generated at 2026-05-19T08:47:36.277929
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -132,7 +132,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
     "stars_last_checked_at": "2026-05-18T08:55:51.223696",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Prometheus (amov-lab)",
@@ -144,7 +144,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
     "stars_last_checked_at": "2026-05-18T08:55:51.972044",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "embodied-drone-agents",
@@ -156,7 +156,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
     "stars_last_checked_at": "2026-05-18T08:55:52.678318",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "llm-uav (Atmaca)",
@@ -168,7 +168,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "UAV", "Edge AI", "NLP"],
     "verified": true,
     "stars_last_checked_at": "2026-05-18T08:55:53.426590",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "MAVLinkMCP",
@@ -180,7 +180,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-05-18T08:55:54.116386",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-RL-VLA",
@@ -192,7 +192,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-05-18T08:55:54.831800",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-LLM-Robotics",
@@ -204,7 +204,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-05-18T08:55:55.562531",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-Aerial-VLN",
@@ -216,7 +216,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-05-18T08:55:56.278597",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
 ];
 
@@ -228,9 +228,11 @@ export const news: News[] = [
     "date": "2026-05-13",
     "summary": "🌤️ ━━━━━━━━━━━━━━━━━━━━━━━━━ 早上好！新的一天开始啦～ 珠海 ⛈️ 暴雨黄色+雷雨大风黄色预警生效 | 25-26°C | 强降雨持续",
     "published_at": "2026-05-13",
+    "verified": false,
     "why_it_matters": "造车新势力转型具身智能，商业化路径清晰",
     "research_axis": "robotics",
     "freshness": "fresh",
+    "archived": false,
   },
   {
     "title": "1️⃣ VLA 技术路线之争白热化",
@@ -239,20 +241,11 @@ export const news: News[] = [
     "date": "2026-05-13",
     "summary": "*：蚂蚁集团孵化企业灵波科技开源 VLA 模型真机后训练工具链",
     "published_at": "2026-05-13",
+    "verified": false,
     "why_it_matters": null,
     "research_axis": "robotics",
     "freshness": "fresh",
-  },
-  {
-    "title": "鹿明机器人",
-    "source": "网络",
-    "url": "https://cloud.tencent.com.cn/developer/article/2639045",
-    "date": "2026-05-11",
-    "summary": "证明机器人精细操作能力已接近工业级标准\n⭐ 对你的价值：参考其感知-决策-执行闭环架构",
-    "published_at": "2026-05-11",
-    "why_it_matters": "证明机器人精细操作能力已接近工业级标准",
-    "research_axis": "robotics",
-    "freshness": "fresh",
+    "archived": false,
   },
   {
     "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
@@ -302,3 +295,10 @@ export const trends: Trend[] = [
     "description": "CARLA-Air统一AirSim和CARLA，减少仿真-真机迁移gap。",
   },
 ];
+
+export const stats = {
+  papersCount: 6,
+  githubCount: 8,
+  newsCount: 4,
+  exportTime: "2026-05-19T08:46:01.429574",
+};
