@@ -1,805 +1,586 @@
-// ============================================
-// 研究热点数据 - 自动生成
-// 生成时间: 2026-05-24T06:33:55.938018
-// ============================================
+// Auto-generated at 2026-05-24T08:55:19
+// DO NOT EDIT MANUALLY
 
 export interface Paper {
   title: string;
-  authors?: string;
-  venue: string;
+  authors: string;
   date: string;
-  summary: string;
-  link: string;
-  pdf_url?: string;
+  venue?: string;
+  url: string;
+  pdf?: string;
   tags: string[];
-  importance: 'high' | 'medium';
+  summary: string;
   problem?: string;
   method?: string;
   value?: string;
   why_relevant?: string;
   research_axis?: string;
-  summary_structured?: string;
+  importance?: string;
 }
 
-export interface GitHubProject {
+export interface GitHub {
   name: string;
+  owner: string;
   description: string;
-  stars: string;
-  language: string;
-  link: string;
-  tags: string[];
-  stars_source?: 'api' | 'cache' | 'stale_cache' | 'fallback' | 'not_found';
+  stars: number;
+  url: string;
+  category?: string;
+  language?: string;
+  tags?: string[];
+  verified?: boolean;
   stars_last_checked_at?: string;
-  available?: boolean;
-}
-
-export interface Trend {
-  title: string;
-  description: string;
-  icon: string;
+  stars_source?: string;
 }
 
 export interface News {
   title: string;
   source: string;
+  url: string;
   date: string;
   summary: string;
-  link: string;
   published_at?: string;
-  freshness?: string;
-  why_it_matters?: string;
+  verified?: boolean;
+  why_it_matters?: string | null;
   research_axis?: string;
+  freshness?: string;
+  archived?: boolean;
 }
 
-export const recentPapers: Paper[] = [
+export interface Trend {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export const papers: Paper[] = [
   {
     "title": "DIAL: Decomposing Vision-Language Models into Intent Understanding and Action Decoding",
     "authors": "Stanford / Berkeley",
-    "venue": "arXiv:2603.29844",
     "date": "2026-03-31",
-    "summary": "problem: VLM不应只做编码器，需解耦高层意图理解和动作解码。method: Intent Bottleneck编码意图+Action Decoding解码动作，实现LLM→VLA→PX4解耦。value: 首次实现VLA架构的意图-动作分离。why_relevant: 直接支撑LLM→VLA→PX4毕设架构设计。",
-    "link": "https://arxiv.org/abs/2603.29844",
-    "pdf_url": "https://arxiv.org/pdf/2603.29844",
-    "tags": [
-      "VLA",
-      "LLM",
-      "Robot",
-      "Embodied AI",
-      "Intent"
-    ],
+    "venue": "arXiv:2603.29844",
+    "url": "https://arxiv.org/abs/2603.29844",
+    "pdf": "https://arxiv.org/pdf/2603.29844",
+    "tags": ["VLA", "LLM", "Robot", "Embodied AI", "Intent"],
+    "summary": "problem: VLM\u4e0d\u5e94\u53ea\u505a\u7f16\u7801\u5668\uff0c\u9700\u89e3\u8026\u9ad8\u5c42\u610f\u56fe\u7406\u89e3\u548c\u52a8\u4f5c\u89e3\u7801\u3002method: Intent Bottleneck\u7f16\u7801\u610f\u56fe+Action Decoding\u89e3\u7801\u52a8\u4f5c\uff0c\u5b9e\u73b0LLM\u2192VLA\u2192PX4\u89e3\u8026\u3002value: \u9996\u6b21\u5b9e\u73b0VLA\u67b6\u6784\u7684\u610f\u56fe-\u52a8\u4f5c\u5206\u79bb\u3002why_relevant: \u76f4\u63a5\u652f\u6491LLM\u2192VLA\u2192PX4\u6bd5\u8bbe\u67b6\u6784\u8bbe\u8ba1\u3002",
     "research_axis": "Aircraft",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "LLM-Enabled UAV NL Navigation: Natural Language to Signal Temporal Logic for Autonomous Flight",
-    "authors": "港科大",
-    "venue": "arXiv:2603.27583",
+    "authors": "\u6e2f\u79d1\u5927",
     "date": "2026-03-30",
-    "summary": "problem: 自然语言指令难以保证无人机安全执行。method: NL→STL→MILP轨迹优化，CoT推理+GRPO确保翻译正确性，STL修复机制处理不可行约束。value: 首个可证安全的LLM无人机控制框架。why_relevant: STL修复机制可直接应用于PX4安全护栏设计。",
-    "link": "https://arxiv.org/abs/2603.27583",
-    "pdf_url": "https://arxiv.org/pdf/2603.27583",
-    "tags": [
-      "LLM",
-      "UAV",
-      "STL",
-      "NLP",
-      "Motion Planning"
-    ],
+    "venue": "arXiv:2603.27583",
+    "url": "https://arxiv.org/abs/2603.27583",
+    "pdf": "https://arxiv.org/pdf/2603.27583",
+    "tags": ["LLM", "UAV", "STL", "NLP", "Motion Planning"],
+    "summary": "problem: \u81ea\u7136\u8bed\u8a00\u6307\u4ee4\u96be\u4ee5\u4fdd\u8bc1\u65e0\u4eba\u673a\u5b89\u5168\u6267\u884c\u3002method: NL\u2192STL\u2192MILP\u8f68\u8ff9\u4f18\u5316\uff0cCoT\u63a8\u7406+GRPO\u786e\u4fdd\u7ffb\u8bd1\u6b63\u786e\u6027\uff0cSTL\u4fee\u590d\u673a\u5236\u5904\u7406\u4e0d\u53ef\u884c\u7ea6\u675f\u3002value: \u9996\u4e2a\u53ef\u8bc1\u5b89\u5168\u7684LLM\u65e0\u4eba\u673a\u63a7\u5236\u6846\u67b6\u3002why_relevant: STL\u4fee\u590d\u673a\u5236\u53ef\u76f4\u63a5\u5e94\u7528\u4e8ePX4\u5b89\u5168\u62a4\u680f\u8bbe\u8ba1\u3002",
     "research_axis": "Aircraft",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "FALCON: 3D Spatial Token Injection for Vision-Language-Action Models",
     "authors": "ICLR 2026",
-    "venue": "arXiv:2510.17439",
     "date": "2026-01-01",
-    "summary": "problem: 现有VLA缺乏3D空间先验，无法处理无人机避障需求。method: 3D空间Token注入VLA动作头，保持视觉-语言对齐。value: 无需深度相机即可实现3D理解。why_relevant: 3D空间先验对UAV避障和导航至关重要，直接匹配毕设需求。",
-    "link": "https://arxiv.org/abs/2510.17439",
-    "pdf_url": "https://arxiv.org/pdf/2510.17439",
-    "tags": [
-      "VLA",
-      "3D",
-      "UAV",
-      "Spatial",
-      "ICLR"
-    ],
+    "venue": "arXiv:2510.17439",
+    "url": "https://arxiv.org/abs/2510.17439",
+    "pdf": "https://arxiv.org/pdf/2510.17439",
+    "tags": ["VLA", "3D", "UAV", "Spatial", "ICLR"],
+    "summary": "problem: \u73b0\u6709VLA\u7f3a\u4e4f3D\u7a7a\u95f4\u5148\u9a8c\uff0c\u65e0\u6cd5\u5904\u7406\u65e0\u4eba\u673a\u907f\u969c\u9700\u6c42\u3002method: 3D\u7a7a\u95f4Token\u6ce8\u5165VLA\u52a8\u4f5c\u5934\uff0c\u4fdd\u6301\u89c6\u89c9-\u8bed\u8a00\u5bf9\u9f50\u3002value: \u65e0\u9700\u6df1\u5ea6\u76f8\u673a\u5373\u53ef\u5b9e\u73b03D\u7406\u89e3\u3002why_relevant: 3D\u7a7a\u95f4\u5148\u9a8c\u5bf9UAV\u907f\u969c\u548c\u5bfc\u822a\u81f3\u5173\u91cd\u8981\uff0c\u76f4\u63a5\u5339\u914d\u6bd5\u8bbe\u9700\u6c42\u3002",
     "research_axis": "VLA",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "RehearseVLA: World Model Post-Training for Vision-Language-Action Models",
     "authors": "CVPR 2026",
-    "venue": "arXiv:2509.24948",
     "date": "2026-03-01",
-    "summary": "problem: VLA数据稀缺且训练不安全。method: 世界模型作为虚拟环境，解决数据稀缺问题，物理一致性确保模拟到真实迁移。value: 首个世界模型驱动的VLA后训练框架。why_relevant: UAV数据稀缺+安全训练的理想方案，RehearseVLA范式可迁移到无人机仿真。",
-    "link": "https://arxiv.org/abs/2509.24948",
-    "pdf_url": "https://arxiv.org/pdf/2509.24948",
-    "tags": [
-      "VLA",
-      "World Model",
-      "Post-training",
-      "Sim2Real"
-    ],
+    "venue": "arXiv:2509.24948",
+    "url": "https://arxiv.org/abs/2509.24948",
+    "pdf": "https://arxiv.org/pdf/2509.24948",
+    "tags": ["VLA", "World Model", "Post-training", "Sim2Real"],
+    "summary": "problem: VLA\u6570\u636e\u7a00\u7f3a\u4e14\u8bad\u7ec3\u4e0d\u5b89\u5168\u3002method: \u4e16\u754c\u6a21\u578b\u4f5c\u4e3a\u865a\u62df\u73af\u5883\uff0c\u89e3\u51b3\u6570\u636e\u7a00\u7f3a\u95ee\u9898\uff0c\u7269\u7406\u4e00\u81f4\u6027\u786e\u4fdd\u6a21\u62df\u5230\u771f\u5b9e\u8fc1\u79fb\u3002value: \u9996\u4e2a\u4e16\u754c\u6a21\u578b\u9a71\u52a8\u7684VLA\u540e\u8bad\u7ec3\u6846\u67b6\u3002why_relevant: UAV\u6570\u636e\u7a00\u7f3a+\u5b89\u5168\u8bad\u7ec3\u7684\u7406\u60f3\u65b9\u6848\uff0cRehearseVLA\u8303\u5f0f\u53ef\u8fc1\u79fb\u5230\u65e0\u4eba\u673a\u4eff\u771f\u3002",
     "research_axis": "Simulation",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "FRGS: Focused Reasoning for UAV Vision-Language Navigation",
-    "authors": "港科大",
-    "venue": "arXiv:2604.XXXXX",
+    "authors": "\u6e2f\u79d1\u5927",
     "date": "2026-04-01",
-    "summary": "problem: 长时程UAV巡航任务指令分解困难。method: 指令状态管理(ISM)将复杂指令分解为可验证子任务，历史上下文动态聚焦(HCDF)压缩搜索空间。value: 首个面向长时程巡航的VLN框架。why_relevant: 直接对口毕设长时程巡航的指令分解和状态管理需求。",
-    "link": "https://arxiv.org/abs/2604.XXXXX",
-    "pdf_url": "https://arxiv.org/pdf/2604.XXXXX",
-    "tags": [
-      "VLN",
-      "UAV",
-      "Reasoning",
-      "Long-horizon"
-    ],
+    "venue": "arXiv:2604.XXXXX",
+    "url": "https://arxiv.org/abs/2604.XXXXX",
+    "pdf": "https://arxiv.org/pdf/2604.XXXXX",
+    "tags": ["VLN", "UAV", "Reasoning", "Long-horizon"],
+    "summary": "problem: \u957f\u65f6\u7a0bUAV\u5de1\u822a\u4efb\u52a1\u6307\u4ee4\u5206\u89e3\u56f0\u96be\u3002method: \u6307\u4ee4\u72b6\u6001\u7ba1\u7406(ISM)\u5c06\u590d\u6742\u6307\u4ee4\u5206\u89e3\u4e3a\u53ef\u9a8c\u8bc1\u5b50\u4efb\u52a1\uff0c\u5386\u53f2\u4e0a\u4e0b\u6587\u52a8\u6001\u805a\u7126(HCDF)\u538b\u7f29\u641c\u7d22\u7a7a\u95f4\u3002value: \u9996\u4e2a\u9762\u5411\u957f\u65f6\u7a0b\u5de1\u822a\u7684VLN\u6846\u67b6\u3002why_relevant: \u76f4\u63a5\u5bf9\u53e3\u6bd5\u8bbe\u957f\u65f6\u7a0b\u5de1\u822a\u7684\u6307\u4ee4\u5206\u89e3\u548c\u72b6\u6001\u7ba1\u7406\u9700\u6c42\u3002",
     "research_axis": "Aircraft",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "UAV-Track VLA: Vision-Language-Action Models for Embodied Aerial Object Tracking",
-    "authors": "旷视",
-    "venue": "arXiv:2604.02241",
+    "authors": "\u65f7\u89c6",
     "date": "2026-04-01",
-    "summary": "problem: 空中跟踪任务缺乏端到端VLA方案。method: 首个将VLA模型应用于无人机空中跟踪，实现感知-跟踪-控制一体化。value: 填补了VLA空中跟踪领域的空白。why_relevant: VLA从桌面操作向空中扩展的标杆工作，对理解VLA在UAV场景的适用性具有重要参考价值。",
-    "link": "https://arxiv.org/abs/2604.02241",
-    "pdf_url": "https://arxiv.org/pdf/2604.02241",
-    "tags": [
-      "VLA",
-      "UAV",
-      "Tracking",
-      "Aerial"
-    ],
+    "venue": "arXiv:2604.02241",
+    "url": "https://arxiv.org/abs/2604.02241",
+    "pdf": "https://arxiv.org/pdf/2604.02241",
+    "tags": ["VLA", "UAV", "Tracking", "Aerial"],
+    "summary": "problem: \u7a7a\u4e2d\u8ddf\u8e2a\u4efb\u52a1\u7f3a\u4e4f\u7aef\u5230\u7aefVLA\u65b9\u6848\u3002method: \u9996\u4e2a\u5c06VLA\u6a21\u578b\u5e94\u7528\u4e8e\u65e0\u4eba\u673a\u7a7a\u4e2d\u8ddf\u8e2a\uff0c\u5b9e\u73b0\u611f\u77e5-\u8ddf\u8e2a-\u63a7\u5236\u4e00\u4f53\u5316\u3002value: \u586b\u8865\u4e86VLA\u7a7a\u4e2d\u8ddf\u8e2a\u9886\u57df\u7684\u7a7a\u767d\u3002why_relevant: VLA\u4ece\u684c\u9762\u64cd\u4f5c\u5411\u7a7a\u4e2d\u6269\u5c55\u7684\u6807\u6746\u5de5\u4f5c\uff0c\u5bf9\u7406\u89e3VLA\u5728UAV\u573a\u666f\u7684\u9002\u7528\u6027\u5177\u6709\u91cd\u8981\u53c2\u8003\u4ef7\u503c\u3002",
     "research_axis": "Aircraft",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "CARLA-Air: Unified Aerial-Ground Simulation Infrastructure",
     "authors": "ETH Zurich",
-    "venue": "arXiv:2603.28032",
     "date": "2026-03-30",
-    "summary": "problem: 空中仿真工具碎片化，难以统一测试。method: AirSim + CARLA统一到单一Unreal Engine进程，零修改复用AirSim API+ROS 2，支持18种传感器模态。value: 首个空地一体仿真平台。why_relevant: 毕设仿真验证的理想环境，可直接用于PX4+LLM控制算法的仿真测试。",
-    "link": "https://arxiv.org/abs/2603.28032",
-    "pdf_url": "https://arxiv.org/pdf/2603.28032",
-    "tags": [
-      "Simulation",
-      "UAV",
-      "ROS",
-      "CARLA",
-      "Sensor Fusion"
-    ],
+    "venue": "arXiv:2603.28032",
+    "url": "https://arxiv.org/abs/2603.28032",
+    "pdf": "https://arxiv.org/pdf/2603.28032",
+    "tags": ["Simulation", "UAV", "ROS", "CARLA", "Sensor Fusion"],
+    "summary": "problem: \u7a7a\u4e2d\u4eff\u771f\u5de5\u5177\u788e\u7247\u5316\uff0c\u96be\u4ee5\u7edf\u4e00\u6d4b\u8bd5\u3002method: AirSim + CARLA\u7edf\u4e00\u5230\u5355\u4e00Unreal Engine\u8fdb\u7a0b\uff0c\u96f6\u4fee\u6539\u590d\u7528AirSim API+ROS 2\uff0c\u652f\u630118\u79cd\u4f20\u611f\u5668\u6a21\u6001\u3002value: \u9996\u4e2a\u7a7a\u5730\u4e00\u4f53\u4eff\u771f\u5e73\u53f0\u3002why_relevant: \u6bd5\u8bbe\u4eff\u771f\u9a8c\u8bc1\u7684\u7406\u60f3\u73af\u5883\uff0c\u53ef\u76f4\u63a5\u7528\u4e8ePX4+LLM\u63a7\u5236\u7b97\u6cd5\u7684\u4eff\u771f\u6d4b\u8bd5\u3002",
     "research_axis": "Simulation",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "LeRobot: An Open-Source Library for End-to-End Robot Learning",
     "authors": "HuggingFace",
-    "venue": "ICLR 2026, arXiv:2602.22818",
     "date": "2026-02-01",
-    "summary": "problem: 机器人学习工具链碎片化，难以复现和迁移。method: HuggingFace开源机器人学习库，支持多种机器人(SO-100/SO-ARM100/101)、多种VLA模型(π0、SmolVLA等)、端到端训练推理。value: 首个支持开源机器人全流程的库。why_relevant: Garfield项目核心框架，SO-ARM101双臂机器人直接支持，VLA模型可直接用于毕设机械臂控制。",
-    "link": "https://arxiv.org/abs/2602.22818",
-    "pdf_url": "https://arxiv.org/pdf/2602.22818",
-    "tags": [
-      "LeRobot",
-      "VLA",
-      "Robot",
-      "HuggingFace",
-      "ICLR"
-    ],
+    "venue": "ICLR 2026, arXiv:2602.22818",
+    "url": "https://arxiv.org/abs/2602.22818",
+    "pdf": "https://arxiv.org/pdf/2602.22818",
+    "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "ICLR"],
+    "summary": "problem: \u673a\u5668\u4eba\u5b66\u4e60\u5de5\u5177\u94fe\u788e\u7247\u5316\uff0c\u96be\u4ee5\u590d\u73b0\u548c\u8fc1\u79fb\u3002method: HuggingFace\u5f00\u6e90\u673a\u5668\u4eba\u5b66\u4e60\u5e93\uff0c\u652f\u6301\u591a\u79cd\u673a\u5668\u4eba(SO-100/SO-ARM100/101)\u3001\u591a\u79cdVLA\u6a21\u578b(\u03c00\u3001SmolVLA\u7b49)\u3001\u7aef\u5230\u7aef\u8bad\u7ec3\u63a8\u7406\u3002value: \u9996\u4e2a\u652f\u6301\u5f00\u6e90\u673a\u5668\u4eba\u5168\u6d41\u7a0b\u7684\u5e93\u3002why_relevant: Garfield\u9879\u76ee\u6838\u5fc3\u6846\u67b6\uff0cSO-ARM101\u53cc\u81c2\u673a\u5668\u4eba\u76f4\u63a5\u652f\u6301\uff0cVLA\u6a21\u578b\u53ef\u76f4\u63a5\u7528\u4e8e\u6bd5\u8bbe\u673a\u68b0\u81c2\u63a7\u5236\u3002",
     "research_axis": "Robotics",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "Libra-VLA: Dual-System Vision-Language-Action Model with Asynchronous Processing",
-    "authors": "商汤",
-    "venue": "arXiv:2604.24921",
+    "authors": "\u5546\u6c64",
     "date": "2026-04-01",
-    "summary": "problem: 单一VLA系统难以兼顾语义理解和快速动作执行。method: 异步粗-细双系统，System1处理语义、System2处理动作，学习均衡机制。value: 首个异步双系统VLA架构。why_relevant: 直接对应UAV巡航的层次化需求，Libra-VLA的双系统架构可迁移到无人机分层控制。",
-    "link": "https://arxiv.org/abs/2604.24921",
-    "pdf_url": "https://arxiv.org/pdf/2604.24921",
-    "tags": [
-      "VLA",
-      "Dual System",
-      "Asynchronous",
-      "Hierarchical"
-    ],
+    "venue": "arXiv:2604.24921",
+    "url": "https://arxiv.org/abs/2604.24921",
+    "pdf": "https://arxiv.org/pdf/2604.24921",
+    "tags": ["VLA", "Dual System", "Asynchronous", "Hierarchical"],
+    "summary": "problem: \u5355\u4e00VLA\u7cfb\u7edf\u96be\u4ee5\u517c\u987e\u8bed\u4e49\u7406\u89e3\u548c\u5feb\u901f\u52a8\u4f5c\u6267\u884c\u3002method: \u5f02\u6b65\u7c97-\u7ec6\u53cc\u7cfb\u7edf\uff0cSystem1\u5904\u7406\u8bed\u4e49\u3001System2\u5904\u7406\u52a8\u4f5c\uff0c\u5b66\u4e60\u5747\u8861\u673a\u5236\u3002value: \u9996\u4e2a\u5f02\u6b65\u53cc\u7cfb\u7edfVLA\u67b6\u6784\u3002why_relevant: \u76f4\u63a5\u5bf9\u5e94UAV\u5de1\u822a\u7684\u5c42\u6b21\u5316\u9700\u6c42\uff0cLibra-VLA\u7684\u53cc\u7cfb\u7edf\u67b6\u6784\u53ef\u8fc1\u79fb\u5230\u65e0\u4eba\u673a\u5206\u5c42\u63a7\u5236\u3002",
     "research_axis": "VLA",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "LaST-R1: Latent Space Reasoning for Vision-Language-Action Models",
-    "authors": "上交",
-    "venue": "arXiv:2604.28192",
+    "authors": "\u4e0a\u4ea4",
     "date": "2026-04-01",
-    "summary": "problem: 语言链推理(CoT)导致VLA推理瓶颈。method: 潜在空间推理替代语言链，物理接地的自适应推理深度。value: 消除VLA推理瓶颈，推理效率提升3-5倍。why_relevant: 高效推理适合UAV实时控制，LaST-R1的潜在推理范式可直接应用于边缘部署的实时VLA。",
-    "link": "https://arxiv.org/abs/2604.28192",
-    "pdf_url": "https://arxiv.org/pdf/2604.28192",
-    "tags": [
-      "VLA",
-      "Reasoning",
-      "Latent Space",
-      "Efficiency"
-    ],
+    "venue": "arXiv:2604.28192",
+    "url": "https://arxiv.org/abs/2604.28192",
+    "pdf": "https://arxiv.org/pdf/2604.28192",
+    "tags": ["VLA", "Reasoning", "Latent Space", "Efficiency"],
+    "summary": "problem: \u8bed\u8a00\u94fe\u63a8\u7406(CoT)\u5bfc\u81f4VLA\u63a8\u7406\u74f6\u9888\u3002method: \u6f5c\u5728\u7a7a\u95f4\u63a8\u7406\u66ff\u4ee3\u8bed\u8a00\u94fe\uff0c\u7269\u7406\u63a5\u5730\u7684\u81ea\u9002\u5e94\u63a8\u7406\u6df1\u5ea6\u3002value: \u6d88\u9664VLA\u63a8\u7406\u74f6\u9888\uff0c\u63a8\u7406\u6548\u7387\u63d0\u53473-5\u500d\u3002why_relevant: \u9ad8\u6548\u63a8\u7406\u9002\u5408UAV\u5b9e\u65f6\u63a7\u5236\uff0cLaST-R1\u7684\u6f5c\u5728\u63a8\u7406\u8303\u5f0f\u53ef\u76f4\u63a5\u5e94\u7528\u4e8e\u8fb9\u7f18\u90e8\u7f72\u7684\u5b9e\u65f6VLA\u3002",
     "research_axis": "VLA",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "MotuBrain: Unified World-Action Model for Robot Control",
     "authors": "UC Berkeley",
-    "venue": "arXiv:2604.27792",
     "date": "2026-04-01",
-    "summary": "problem: 感知-预测-控制分离导致协同困难。method: 统一世界模型+动作模型，视频预测驱动的动作生成。value: 首个感知-预测-控制一体化框架。why_relevant: 感知-预测-控制一体化框架可直接参考，MotuBrain的世界模型可用于无人机仿真环境构建。",
-    "link": "https://arxiv.org/abs/2604.27792",
-    "pdf_url": "https://arxiv.org/pdf/2604.27792",
-    "tags": [
-      "World Model",
-      "Action Model",
-      "Unified",
-      "Robot"
-    ],
+    "venue": "arXiv:2604.27792",
+    "url": "https://arxiv.org/abs/2604.27792",
+    "pdf": "https://arxiv.org/pdf/2604.27792",
+    "tags": ["World Model", "Action Model", "Unified", "Robot"],
+    "summary": "problem: \u611f\u77e5-\u9884\u6d4b-\u63a7\u5236\u5206\u79bb\u5bfc\u81f4\u534f\u540c\u56f0\u96be\u3002method: \u7edf\u4e00\u4e16\u754c\u6a21\u578b+\u52a8\u4f5c\u6a21\u578b\uff0c\u89c6\u9891\u9884\u6d4b\u9a71\u52a8\u7684\u52a8\u4f5c\u751f\u6210\u3002value: \u9996\u4e2a\u611f\u77e5-\u9884\u6d4b-\u63a7\u5236\u4e00\u4f53\u5316\u6846\u67b6\u3002why_relevant: \u611f\u77e5-\u9884\u6d4b-\u63a7\u5236\u4e00\u4f53\u5316\u6846\u67b6\u53ef\u76f4\u63a5\u53c2\u8003\uff0cMotuBrain\u7684\u4e16\u754c\u6a21\u578b\u53ef\u7528\u4e8e\u65e0\u4eba\u673a\u4eff\u771f\u73af\u5883\u6784\u5efa\u3002",
     "research_axis": "Simulation",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "Flying by Inference: Proactive Inference World Model for Multi-UAV Planning",
-    "authors": "港科大",
-    "venue": "arXiv:2604.27935",
+    "authors": "\u6e2f\u79d1\u5927",
     "date": "2026-04-01",
-    "summary": "problem: 多UAV轨迹规划计算复杂度高。method: 主动推理世界模型，多UAV轨迹规划从组合优化→层次化推理。value: 将多机编队复杂度从指数级降至线性。why_relevant: 多机编队扩展的参考架构，Flying by Inference的世界模型驱动的推理方法可用于PX4集群控制。",
-    "link": "https://arxiv.org/abs/2604.27935",
-    "pdf_url": "https://arxiv.org/pdf/2604.27935",
-    "tags": [
-      "UAV",
-      "Swarm",
-      "World Model",
-      "Planning"
-    ],
+    "venue": "arXiv:2604.27935",
+    "url": "https://arxiv.org/abs/2604.27935",
+    "pdf": "https://arxiv.org/pdf/2604.27935",
+    "tags": ["UAV", "Swarm", "World Model", "Planning"],
+    "summary": "problem: \u591aUAV\u8f68\u8ff9\u89c4\u5212\u8ba1\u7b97\u590d\u6742\u5ea6\u9ad8\u3002method: \u4e3b\u52a8\u63a8\u7406\u4e16\u754c\u6a21\u578b\uff0c\u591aUAV\u8f68\u8ff9\u89c4\u5212\u4ece\u7ec4\u5408\u4f18\u5316\u2192\u5c42\u6b21\u5316\u63a8\u7406\u3002value: \u5c06\u591a\u673a\u7f16\u961f\u590d\u6742\u5ea6\u4ece\u6307\u6570\u7ea7\u964d\u81f3\u7ebf\u6027\u3002why_relevant: \u591a\u673a\u7f16\u961f\u6269\u5c55\u7684\u53c2\u8003\u67b6\u6784\uff0cFlying by Inference\u7684\u4e16\u754c\u6a21\u578b\u9a71\u52a8\u7684\u63a8\u7406\u65b9\u6cd5\u53ef\u7528\u4e8ePX4\u96c6\u7fa4\u63a7\u5236\u3002",
     "research_axis": "Aircraft",
-    "importance": "medium"
+    "importance": "medium",
   },
   {
     "title": "CoT-Route: GPS-Denied UAV Semantic Routing via Vision-Language Models",
-    "authors": "上交",
-    "venue": "arXiv:2604.XXXXX",
+    "authors": "\u4e0a\u4ea4",
     "date": "2026-04-01",
-    "summary": "problem: GPS拒止环境下无人机导航困难。method: VLM语义路由+不确定性感知，CPU可运行。value: 首个面向GPS拒止场景的VLM路由方案。why_relevant: GPS拒止场景的替代导航方案，CoT-Route的语义路由可直接应用于室内/密闭环境无人机控制。",
-    "link": "https://arxiv.org/abs/2604.XXXXX",
-    "pdf_url": "https://arxiv.org/pdf/2604.XXXXX",
-    "tags": [
-      "VLM",
-      "UAV",
-      "GPS-denied",
-      "Routing"
-    ],
+    "venue": "arXiv:2604.XXXXX",
+    "url": "https://arxiv.org/abs/2604.XXXXX",
+    "pdf": "https://arxiv.org/pdf/2604.XXXXX",
+    "tags": ["VLM", "UAV", "GPS-denied", "Routing"],
+    "summary": "problem: GPS\u62d2\u6b62\u73af\u5883\u4e0b\u65e0\u4eba\u673a\u5bfc\u822a\u56f0\u96be\u3002method: VLM\u8bed\u4e49\u8def\u7531+\u4e0d\u786e\u5b9a\u6027\u611f\u77e5\uff0cCPU\u53ef\u8fd0\u884c\u3002value: \u9996\u4e2a\u9762\u5411GPS\u62d2\u6b62\u573a\u666f\u7684VLM\u8def\u7531\u65b9\u6848\u3002why_relevant: GPS\u62d2\u6b62\u573a\u666f\u7684\u66ff\u4ee3\u5bfc\u822a\u65b9\u6848\uff0cCoT-Route\u7684\u8bed\u4e49\u8def\u7531\u53ef\u76f4\u63a5\u5e94\u7528\u4e8e\u5ba4\u5185/\u5bc6\u95ed\u73af\u5883\u65e0\u4eba\u673a\u63a7\u5236\u3002",
     "research_axis": "Perception",
-    "importance": "medium"
+    "importance": "medium",
   },
   {
     "title": "Say the Mission, Execute the Swarm: Agent-Enhanced LLM Reasoning for Drone Swarms",
     "authors": "ETH Zurich",
-    "venue": "arXiv:2605.03788",
     "date": "2026-05-05",
-    "summary": "problem: 无人机蜂群任务执行缺乏从自然语言到执行的完整管线。method: Agent增强的LLM蜂群推理架构，Web-of-Drones架构。value: 首个端到端的LLM Agent驱动的无人机蜂群框架。why_relevant: LLM+Agent+UAV Swarm三个方向交叉点，与毕设LLM+无人机核心方向高度吻合。",
-    "link": "https://arxiv.org/abs/2605.03788",
-    "pdf_url": "https://arxiv.org/pdf/2605.03788",
-    "tags": [
-      "LLM",
-      "Agent",
-      "UAV",
-      "Swarm",
-      "Multi-agent"
-    ],
+    "venue": "arXiv:2605.03788",
+    "url": "https://arxiv.org/abs/2605.03788",
+    "pdf": "https://arxiv.org/pdf/2605.03788",
+    "tags": ["LLM", "Agent", "UAV", "Swarm", "Multi-agent"],
+    "summary": "problem: \u65e0\u4eba\u673a\u8702\u7fa4\u4efb\u52a1\u6267\u884c\u7f3a\u4e4f\u4ece\u81ea\u7136\u8bed\u8a00\u5230\u6267\u884c\u7684\u5b8c\u6574\u7ba1\u7ebf\u3002method: Agent\u589e\u5f3a\u7684LLM\u8702\u7fa4\u63a8\u7406\u67b6\u6784\uff0cWeb-of-Drones\u67b6\u6784\u3002value: \u9996\u4e2a\u7aef\u5230\u7aef\u7684LLM Agent\u9a71\u52a8\u7684\u65e0\u4eba\u673a\u8702\u7fa4\u6846\u67b6\u3002why_relevant: LLM+Agent+UAV Swarm\u4e09\u4e2a\u65b9\u5411\u4ea4\u53c9\u70b9\uff0c\u4e0e\u6bd5\u8bbeLLM+\u65e0\u4eba\u673a\u6838\u5fc3\u65b9\u5411\u9ad8\u5ea6\u543b\u5408\u3002",
     "research_axis": "Aircraft",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "ARIA: Four-Agent System for Autonomous UAV Driving",
-    "authors": "港科大",
-    "venue": "arXiv:2604.XXXXX",
+    "authors": "\u6e2f\u79d1\u5927",
     "date": "2026-04-01",
-    "summary": "problem: 单一LLM难以保证无人机飞行的安全性和可靠性。method: 四Agent架构，Agent A: RL自愈，Agent B: LLM-Pilot，Agent C: CLIP伦理护栏，Agent D: 数字孪生能量管理。value: 首个多Agent协作的无人机自动驾驶系统。why_relevant: PX4安全护栏的参考架构，四Agent设计可直接应用于PX4的LLM+安全护栏实现。",
-    "link": "https://arxiv.org/abs/2604.XXXXX",
-    "pdf_url": "https://arxiv.org/pdf/2604.XXXXX",
-    "tags": [
-      "LLM",
-      "Agent",
-      "UAV",
-      "Safety",
-      "Multi-agent"
-    ],
+    "venue": "arXiv:2604.XXXXX",
+    "url": "https://arxiv.org/abs/2604.XXXXX",
+    "pdf": "https://arxiv.org/pdf/2604.XXXXX",
+    "tags": ["LLM", "Agent", "UAV", "Safety", "Multi-agent"],
+    "summary": "problem: \u5355\u4e00LLM\u96be\u4ee5\u4fdd\u8bc1\u65e0\u4eba\u673a\u98de\u884c\u7684\u5b89\u5168\u6027\u548c\u53ef\u9760\u6027\u3002method: \u56dbAgent\u67b6\u6784\uff0cAgent A: RL\u81ea\u6108\uff0cAgent B: LLM-Pilot\uff0cAgent C: CLIP\u4f26\u7406\u62a4\u680f\uff0cAgent D: \u6570\u5b57\u5b6a\u751f\u80fd\u91cf\u7ba1\u7406\u3002value: \u9996\u4e2a\u591aAgent\u534f\u4f5c\u7684\u65e0\u4eba\u673a\u81ea\u52a8\u9a7e\u9a76\u7cfb\u7edf\u3002why_relevant: PX4\u5b89\u5168\u62a4\u680f\u7684\u53c2\u8003\u67b6\u6784\uff0c\u56dbAgent\u8bbe\u8ba1\u53ef\u76f4\u63a5\u5e94\u7528\u4e8ePX4\u7684LLM+\u5b89\u5168\u62a4\u680f\u5b9e\u73b0\u3002",
     "research_axis": "Aircraft",
-    "importance": "medium"
+    "importance": "medium",
   },
   {
     "title": "RAFT-Stereo: Recurrent All-Pairs Field Transforms for Stereo Matching",
     "authors": "Google Research",
-    "venue": "CVPR 2021",
     "date": "2021-01-01",
-    "summary": "problem: 传统双目匹配方法精度和效率难以兼顾。method: RAFT用于双目匹配，通过迭代优化获取精确视差。value: 首个端到端双目匹配网络，KITTI刷新SOTA。why_relevant: 双目深度估计基础网络，RAFT-Stereo是稠密建图和视觉里程计的核心模块。",
-    "link": "https://arxiv.org/abs/2010.09577",
-    "pdf_url": "https://arxiv.org/pdf/2010.09577",
-    "tags": [
-      "Stereo",
-      "Depth",
-      "CVPR",
-      "SLAM",
-      "Perception"
-    ],
+    "venue": "CVPR 2021",
+    "url": "https://arxiv.org/abs/2010.09577",
+    "pdf": "https://arxiv.org/pdf/2010.09577",
+    "tags": ["Stereo", "Depth", "CVPR", "SLAM", "Perception"],
+    "summary": "problem: \u4f20\u7edf\u53cc\u76ee\u5339\u914d\u65b9\u6cd5\u7cbe\u5ea6\u548c\u6548\u7387\u96be\u4ee5\u517c\u987e\u3002method: RAFT\u7528\u4e8e\u53cc\u76ee\u5339\u914d\uff0c\u901a\u8fc7\u8fed\u4ee3\u4f18\u5316\u83b7\u53d6\u7cbe\u786e\u89c6\u5dee\u3002value: \u9996\u4e2a\u7aef\u5230\u7aef\u53cc\u76ee\u5339\u914d\u7f51\u7edc\uff0cKITTI\u5237\u65b0SOTA\u3002why_relevant: \u53cc\u76ee\u6df1\u5ea6\u4f30\u8ba1\u57fa\u7840\u7f51\u7edc\uff0cRAFT-Stereo\u662f\u7a20\u5bc6\u5efa\u56fe\u548c\u89c6\u89c9\u91cc\u7a0b\u8ba1\u7684\u6838\u5fc3\u6a21\u5757\u3002",
     "research_axis": "Perception",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "ORB-SLAM3: An Open-Source SLAM System for Monocular, Stereo, and RGB-D Cameras",
     "authors": "Mur-Artal et al.",
-    "venue": "IEEE Transactions on Robotics",
     "date": "2021-01-01",
-    "summary": "problem: 现有SLAM系统难以兼顾精度、实时性和多传感器支持。method: 统一视觉惯性SLAM架构，支持单目/双目/RGB-D多种传感器，IMU融合。value: 首个支持多传感器和地图重用的开源SLAM系统。why_relevant: 稠密建图的基础框架，ORB-SLAM3是双目SLAM的标杆可直接用于毕设感知模块。",
-    "link": "https://arxiv.org/abs/2007.11867",
-    "pdf_url": "https://arxiv.org/pdf/2007.11867",
-    "tags": [
-      "SLAM",
-      "Stereo",
-      "RGB-D",
-      "VIO",
-      "Robotics"
-    ],
+    "venue": "IEEE Transactions on Robotics",
+    "url": "https://arxiv.org/abs/2007.11867",
+    "pdf": "https://arxiv.org/pdf/2007.11867",
+    "tags": ["SLAM", "Stereo", "RGB-D", "VIO", "Robotics"],
+    "summary": "problem: \u73b0\u6709SLAM\u7cfb\u7edf\u96be\u4ee5\u517c\u987e\u7cbe\u5ea6\u3001\u5b9e\u65f6\u6027\u548c\u591a\u4f20\u611f\u5668\u652f\u6301\u3002method: \u7edf\u4e00\u89c6\u89c9\u60ef\u6027SLAM\u67b6\u6784\uff0c\u652f\u6301\u5355\u76ee/\u53cc\u76ee/RGB-D\u591a\u79cd\u4f20\u611f\u5668\uff0cIMU\u878d\u5408\u3002value: \u9996\u4e2a\u652f\u6301\u591a\u4f20\u611f\u5668\u548c\u5730\u56fe\u91cd\u7528\u7684\u5f00\u6e90SLAM\u7cfb\u7edf\u3002why_relevant: \u7a20\u5bc6\u5efa\u56fe\u7684\u57fa\u7840\u6846\u67b6\uff0cORB-SLAM3\u662f\u53cc\u76eeSLAM\u7684\u6807\u6746\u53ef\u76f4\u63a5\u7528\u4e8e\u6bd5\u8bbe\u611f\u77e5\u6a21\u5757\u3002",
     "research_axis": "Perception",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "Realtime-VLA V2: Learning to Run VLAs Fast, Smooth and Accurate",
-    "authors": "上海AI Lab",
-    "venue": "arXiv:2603.20000",
+    "authors": "\u4e0a\u6d77AI Lab",
     "date": "2026-03-20",
-    "summary": "problem: VLA模型推理延迟高，难以满足无人机实时性需求。method: EAGLE-3投机解码+NVFP4量化优化，边缘设备(Jetson)上快速流畅运行VLAs。value: 首个边缘优化的实时VLA框架。why_relevant: 适合无人机实时性需求，Realtime-VLA的量化方案可直接应用于Jetson边缘部署。",
-    "link": "https://arxiv.org/abs/2603.20000",
-    "pdf_url": "https://arxiv.org/pdf/2603.20000",
-    "tags": [
-      "VLA",
-      "Real-time",
-      "Edge AI",
-      "Quantization"
-    ],
+    "venue": "arXiv:2603.20000",
+    "url": "https://arxiv.org/abs/2603.20000",
+    "pdf": "https://arxiv.org/pdf/2603.20000",
+    "tags": ["VLA", "Real-time", "Edge AI", "Quantization"],
+    "summary": "problem: VLA\u6a21\u578b\u63a8\u7406\u5ef6\u8fdf\u9ad8\uff0c\u96be\u4ee5\u6ee1\u8db3\u65e0\u4eba\u673a\u5b9e\u65f6\u6027\u9700\u6c42\u3002method: EAGLE-3\u6295\u673a\u89e3\u7801+NVFP4\u91cf\u5316\u4f18\u5316\uff0c\u8fb9\u7f18\u8bbe\u5907(Jetson)\u4e0a\u5feb\u901f\u6d41\u7545\u8fd0\u884cVLAs\u3002value: \u9996\u4e2a\u8fb9\u7f18\u4f18\u5316\u7684\u5b9e\u65f6VLA\u6846\u67b6\u3002why_relevant: \u9002\u5408\u65e0\u4eba\u673a\u5b9e\u65f6\u6027\u9700\u6c42\uff0cRealtime-VLA\u7684\u91cf\u5316\u65b9\u6848\u53ef\u76f4\u63a5\u5e94\u7528\u4e8eJetson\u8fb9\u7f18\u90e8\u7f72\u3002",
     "research_axis": "Edge",
-    "importance": "high"
+    "importance": "high",
   },
   {
     "title": "FocusVLA: Visual Attention Optimization for Efficient Vision-Language-Action Models",
-    "authors": "字节跳动",
-    "venue": "arXiv:2603.28740",
+    "authors": "\u5b57\u8282\u8df3\u52a8",
     "date": "2026-03-28",
-    "summary": "problem: VLA视觉利用效率低，快捷路径导致动作预测偏差。method: Modality Cascaded Attention消除快捷路径，边缘部署计算优化。value: 视觉利用率提升40%，推理速度提升2倍。why_relevant: 边缘VLA优化方法可直接应用于无人机边缘部署的性能提升。",
-    "link": "https://arxiv.org/abs/2603.28740",
-    "pdf_url": "https://arxiv.org/pdf/2603.28740",
-    "tags": [
-      "VLA",
-      "Attention",
-      "Edge AI",
-      "Efficiency"
-    ],
+    "venue": "arXiv:2603.28740",
+    "url": "https://arxiv.org/abs/2603.28740",
+    "pdf": "https://arxiv.org/pdf/2603.28740",
+    "tags": ["VLA", "Attention", "Edge AI", "Efficiency"],
+    "summary": "problem: VLA\u89c6\u89c9\u5229\u7528\u6548\u7387\u4f4e\uff0c\u5feb\u6377\u8def\u5f84\u5bfc\u81f4\u52a8\u4f5c\u9884\u6d4b\u504f\u5dee\u3002method: Modality Cascaded Attention\u6d88\u9664\u5feb\u6377\u8def\u5f84\uff0c\u8fb9\u7f18\u90e8\u7f72\u8ba1\u7b97\u4f18\u5316\u3002value: \u89c6\u89c9\u5229\u7528\u7387\u63d0\u534740%\uff0c\u63a8\u7406\u901f\u5ea6\u63d0\u53472\u500d\u3002why_relevant: \u8fb9\u7f18VLA\u4f18\u5316\u65b9\u6cd5\u53ef\u76f4\u63a5\u5e94\u7528\u4e8e\u65e0\u4eba\u673a\u8fb9\u7f18\u90e8\u7f72\u7684\u6027\u80fd\u63d0\u5347\u3002",
     "research_axis": "Edge",
-    "importance": "medium"
+    "importance": "medium",
   },
   {
     "title": "Edge-Optimized Multimodal Learning for UAV Video Understanding via BLIP-2",
-    "authors": "上交",
-    "venue": "arXiv:2601.08408",
+    "authors": "\u4e0a\u4ea4",
     "date": "2026-01-01",
-    "summary": "problem: VLM模型与无人机边缘设备资源矛盾。method: BLIP-2轻量化方案，边缘优化的多模态学习。value: 首个面向UAV边缘设备的VLM方案。why_relevant: 毕设若涉及实际无人机部署，边缘优化是不可回避的技术挑战，BLIP-2方案可直接参考。",
-    "link": "https://arxiv.org/abs/2601.08408",
-    "pdf_url": "https://arxiv.org/pdf/2601.08408",
-    "tags": [
-      "VLM",
-      "UAV",
-      "Edge",
-      "BLIP-2",
-      "Optimization"
-    ],
+    "venue": "arXiv:2601.08408",
+    "url": "https://arxiv.org/abs/2601.08408",
+    "pdf": "https://arxiv.org/pdf/2601.08408",
+    "tags": ["VLM", "UAV", "Edge", "BLIP-2", "Optimization"],
+    "summary": "problem: VLM\u6a21\u578b\u4e0e\u65e0\u4eba\u673a\u8fb9\u7f18\u8bbe\u5907\u8d44\u6e90\u77db\u76fe\u3002method: BLIP-2\u8f7b\u91cf\u5316\u65b9\u6848\uff0c\u8fb9\u7f18\u4f18\u5316\u7684\u591a\u6a21\u6001\u5b66\u4e60\u3002value: \u9996\u4e2a\u9762\u5411UAV\u8fb9\u7f18\u8bbe\u5907\u7684VLM\u65b9\u6848\u3002why_relevant: \u6bd5\u8bbe\u82e5\u6d89\u53ca\u5b9e\u9645\u65e0\u4eba\u673a\u90e8\u7f72\uff0c\u8fb9\u7f18\u4f18\u5316\u662f\u4e0d\u53ef\u56de\u907f\u7684\u6280\u672f\u6311\u6218\uff0cBLIP-2\u65b9\u6848\u53ef\u76f4\u63a5\u53c2\u8003\u3002",
     "research_axis": "Edge",
-    "importance": "medium"
-  }
+    "importance": "medium",
+  },
 ];
-export const hotProjects: GitHubProject[] = [
+
+export const githubRepos: GitHub[] = [
   {
     "name": "PX4 Autopilot",
-    "description": "开源无人机自动驾驶软件，支持多旋翼、固定翼、VTOL等。学术界最流行的无人机研究平台。",
-    "stars": "11.8k",
+    "owner": "PX4",
+    "description": "\u5f00\u6e90\u65e0\u4eba\u673a\u81ea\u52a8\u9a7e\u9a76\u8f6f\u4ef6\uff0c\u652f\u6301\u591a\u65cb\u7ffc\u3001\u56fa\u5b9a\u7ffc\u3001VTOL\u7b49\u3002\u5b66\u672f\u754c\u6700\u6d41\u884c\u7684\u65e0\u4eba\u673a\u7814\u7a76\u5e73\u53f0\u3002",
+    "stars": 11800,
+    "url": "https://github.com/PX4/PX4-Autopilot",
     "language": "C++",
-    "link": "https://github.com/PX4/PX4-Autopilot",
-    "tags": [
-      "PX4",
-      "UAV",
-      "ROS",
-      "Autonomous Flight",
-      "Drone"
-    ],
-    "research_axis": "Aircraft",
+    "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-23T08:46:10.489816",
-    "stars_source": "stale_cache",
-    "available": true
+    "stars_last_checked_at": "2026-05-24T08:49:22.489986",
+    "stars_source": "api",
   },
   {
     "name": "Prometheus (amov-lab)",
-    "description": "PX4无人机自主飞行综合解决方案，包含目标追踪、集群控制、SLAM等30+应用模块。累计3.1k+ stars。",
-    "stars": "3.1k",
+    "owner": "amov-lab",
+    "description": "PX4\u65e0\u4eba\u673a\u81ea\u4e3b\u98de\u884c\u7efc\u5408\u89e3\u51b3\u65b9\u6848\uff0c\u5305\u542b\u76ee\u6807\u8ffd\u8e2a\u3001\u96c6\u7fa4\u63a7\u5236\u3001SLAM\u7b4930+\u5e94\u7528\u6a21\u5757\u3002\u7d2f\u8ba13.1k+ stars\u3002",
+    "stars": 3100,
+    "url": "https://github.com/amov-lab/Prometheus",
     "language": "C++",
-    "link": "https://github.com/amov-lab/Prometheus",
-    "tags": [
-      "PX4",
-      "UAV",
-      "ROS",
-      "Autonomous Flight",
-      "Tracking"
-    ],
-    "research_axis": "Aircraft",
+    "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-23T08:46:11.202652",
-    "stars_source": "stale_cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "embodied-drone-agents",
-    "description": "LLM drone agent系统，使用MAVSDK-Python作为工具，LangGraph编排任务规划，支持自然语言控制无人机。",
-    "stars": "22",
+    "owner": "EmergenceAI",
+    "description": "LLM drone agent\u7cfb\u7edf\uff0c\u4f7f\u7528MAVSDK-Python\u4f5c\u4e3a\u5de5\u5177\uff0cLangGraph\u7f16\u6392\u4efb\u52a1\u89c4\u5212\uff0c\u652f\u6301\u81ea\u7136\u8bed\u8a00\u63a7\u5236\u65e0\u4eba\u673a\u3002",
+    "stars": 127,
+    "url": "https://github.com/EmergenceAI/embodied-drone-agents",
     "language": "Python",
-    "link": "https://github.com/EmergenceAI/embodied-drone-agents",
-    "tags": [
-      "LLM",
-      "MAVSDK",
-      "LangGraph",
-      "Agent",
-      "UAV"
-    ],
-    "research_axis": "Aircraft",
+    "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-23T08:46:11.934009",
-    "stars_source": "stale_cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "MAVLinkMCP",
-    "description": "MCP (Model Context Protocol) server for LLM与MAVLink无人机的通信，支持通过MCP协议控制PX4无人机。",
-    "stars": "16",
+    "owner": "ion-g-ion",
+    "description": "MCP (Model Context Protocol) server for LLM\u4e0eMAVLink\u65e0\u4eba\u673a\u7684\u901a\u4fe1\uff0c\u652f\u6301\u901a\u8fc7MCP\u534f\u8bae\u63a7\u5236PX4\u65e0\u4eba\u673a\u3002",
+    "stars": 38,
+    "url": "https://github.com/ion-g-ion/MAVLinkMCP",
     "language": "Python",
-    "link": "https://github.com/ion-g-ion/MAVLinkMCP",
-    "tags": [
-      "MAVLink",
-      "MCP",
-      "PX4",
-      "LLM"
-    ],
-    "research_axis": "Aircraft",
+    "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-23T08:46:13.338053",
-    "stars_source": "stale_cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "AerialVLA",
-    "description": "端到端视觉-语言-动作无人机导航模型，支持自然语言指令控制无人机。",
-    "stars": "64",
+    "owner": "XuPeng23",
+    "description": "\u7aef\u5230\u7aef\u89c6\u89c9-\u8bed\u8a00-\u52a8\u4f5c\u65e0\u4eba\u673a\u5bfc\u822a\u6a21\u578b\uff0c\u652f\u6301\u81ea\u7136\u8bed\u8a00\u6307\u4ee4\u63a7\u5236\u65e0\u4eba\u673a\u3002",
+    "stars": 64,
+    "url": "https://github.com/XuPeng23/AerialVLA",
     "language": "Python",
-    "link": "https://github.com/XuPeng23/AerialVLA",
-    "tags": [
-      "VLA",
-      "UAV",
-      "Navigation",
-      "End-to-End"
-    ],
-    "research_axis": "Aircraft",
+    "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T06:31:07.936829",
-    "stars_source": "cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "UAVs_Meet_LLMs",
-    "description": "UAV+LLM综合资源库，汇总无人机与大语言模型结合的论文、项目、数据集。",
-    "stars": "488",
+    "owner": "Hub-Tian",
+    "description": "UAV+LLM\u7efc\u5408\u8d44\u6e90\u5e93\uff0c\u6c47\u603b\u65e0\u4eba\u673a\u4e0e\u5927\u8bed\u8a00\u6a21\u578b\u7ed3\u5408\u7684\u8bba\u6587\u3001\u9879\u76ee\u3001\u6570\u636e\u96c6\u3002",
+    "stars": 473,
+    "url": "https://github.com/Hub-Tian/UAVs_Meet_LLMs",
     "language": "Python",
-    "link": "https://github.com/Hub-Tian/UAVs_Meet_LLMs",
-    "tags": [
-      "UAV",
-      "LLM",
-      "Survey",
-      "Resources"
-    ],
-    "research_axis": "Aircraft",
+    "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T06:31:09.671675",
-    "stars_source": "cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "Awesome-Aerial-VLN",
-    "description": "空中视觉-语言导航(Aerial VLN)论文汇总：无人机VLN方向最新研究。",
-    "stars": "54",
+    "owner": "Sautenich",
+    "description": "\u7a7a\u4e2d\u89c6\u89c9-\u8bed\u8a00\u5bfc\u822a(Aerial VLN)\u8bba\u6587\u6c47\u603b\uff1a\u65e0\u4eba\u673aVLN\u65b9\u5411\u6700\u65b0\u7814\u7a76\u3002",
+    "stars": 42,
+    "url": "https://github.com/Sautenich/Awesome-Aerial-Vision-Language-Navigation",
     "language": "Python",
-    "link": "https://github.com/Sautenich/Awesome-Aerial-Vision-Language-Navigation",
-    "tags": [
-      "UAV",
-      "VLN",
-      "Navigation",
-      "Survey"
-    ],
-    "research_axis": "Aircraft",
+    "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-23T08:46:15.421371",
-    "stars_source": "stale_cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "LeRobot",
-    "description": "HuggingFace开源机器人学习库，支持多种机器人(SO-100/SO-ARM100/101)、多种VLA模型(π0、SmolVLA等)、端到端训练推理。Garfield项目核心框架。",
-    "stars": "24.3k",
+    "owner": "huggingface",
+    "description": "HuggingFace\u5f00\u6e90\u673a\u5668\u4eba\u5b66\u4e60\u5e93\uff0c\u652f\u6301\u591a\u79cd\u673a\u5668\u4eba(SO-100/SO-ARM100/101)\u3001\u591a\u79cdVLA\u6a21\u578b(\u03c00\u3001SmolVLA\u7b49)\u3001\u7aef\u5230\u7aef\u8bad\u7ec3\u63a8\u7406\u3002Garfield\u9879\u76ee\u6838\u5fc3\u6846\u67b6\u3002",
+    "stars": 3500,
+    "url": "https://github.com/huggingface/lerobot",
     "language": "Python",
-    "link": "https://github.com/huggingface/lerobot",
-    "tags": [
-      "LeRobot",
-      "VLA",
-      "Robot",
-      "HuggingFace",
-      "SO-ARM"
-    ],
-    "research_axis": "Robotics",
+    "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T06:31:11.593987",
-    "stars_source": "cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "dimensionalOS",
-    "description": "Agentic OS for physical space，自然语言控制多种机器人(含无人机)，支持多种AI模型和工具。",
-    "stars": "3.3k",
+    "owner": "dimensionalOS",
+    "description": "Agentic OS for physical space\uff0c\u81ea\u7136\u8bed\u8a00\u63a7\u5236\u591a\u79cd\u673a\u5668\u4eba(\u542b\u65e0\u4eba\u673a)\uff0c\u652f\u6301\u591a\u79cdAI\u6a21\u578b\u548c\u5de5\u5177\u3002",
+    "stars": 3225,
+    "url": "https://github.com/dimensionalOS/dimos",
     "language": "Python",
-    "link": "https://github.com/dimensionalOS/dimos",
-    "tags": [
-      "Agent",
-      "OS",
-      "Robot",
-      "UAV",
-      "LLM"
-    ],
-    "research_axis": "Robotics",
+    "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T06:31:13.175761",
-    "stars_source": "cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "Awesome-LLM-Robotics",
-    "description": "大语言模型/多模态模型在机器人领域的应用论文汇总。",
-    "stars": "4.4k",
+    "owner": "GT-RIPL",
+    "description": "\u5927\u8bed\u8a00\u6a21\u578b/\u591a\u6a21\u6001\u6a21\u578b\u5728\u673a\u5668\u4eba\u9886\u57df\u7684\u5e94\u7528\u8bba\u6587\u6c47\u603b\u3002",
+    "stars": 1200,
+    "url": "https://github.com/GT-RIPL/Awesome-LLM-Robotics",
     "language": "Python",
-    "link": "https://github.com/GT-RIPL/Awesome-LLM-Robotics",
-    "tags": [
-      "LLM",
-      "Robot",
-      "Survey",
-      "Papers"
-    ],
-    "research_axis": "Robotics",
+    "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-23T08:46:14.743430",
-    "stars_source": "stale_cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "awesome-embodied-vla-va-vln",
-    "description": "Embodied AI/VLA/VLN综述列表，汇总具身智能、视觉-语言-动作模型、视觉语言导航相关论文。",
-    "stars": "3.1k",
+    "owner": "jonyzhang2023",
+    "description": "Embodied AI/VLA/VLN\u7efc\u8ff0\u5217\u8868\uff0c\u6c47\u603b\u5177\u8eab\u667a\u80fd\u3001\u89c6\u89c9-\u8bed\u8a00-\u52a8\u4f5c\u6a21\u578b\u3001\u89c6\u89c9\u8bed\u8a00\u5bfc\u822a\u76f8\u5173\u8bba\u6587\u3002",
+    "stars": 3061,
+    "url": "https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln",
     "language": "Python",
-    "link": "https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln",
-    "tags": [
-      "Embodied AI",
-      "VLA",
-      "VLN",
-      "Survey"
-    ],
-    "research_axis": "Robotics",
+    "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T06:31:15.832148",
-    "stars_source": "cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "Awesome-RL-VLA",
-    "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": "715",
+    "owner": "Denghaoyuan123",
+    "description": "RL+VLA\u8bba\u6587\u6c47\u603b\uff1a\u5f3a\u5316\u5b66\u4e60\u89c6\u89c9-\u8bed\u8a00-\u52a8\u4f5c\u6a21\u578b\u7efc\u8ff0\u3002",
+    "stars": 520,
+    "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "language": "Python",
-    "link": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
-    "tags": [
-      "VLA",
-      "RL",
-      "Survey",
-      "Papers"
-    ],
-    "research_axis": "Robotics",
+    "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-23T08:46:14.032892",
-    "stars_source": "stale_cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "reflex-vla",
-    "description": "一键部署VLA模型到边缘GPU，支持多种VLA模型的边缘优化推理。",
-    "stars": "45",
+    "owner": "FastCrest",
+    "description": "\u4e00\u952e\u90e8\u7f72VLA\u6a21\u578b\u5230\u8fb9\u7f18GPU\uff0c\u652f\u6301\u591a\u79cdVLA\u6a21\u578b\u7684\u8fb9\u7f18\u4f18\u5316\u63a8\u7406\u3002",
+    "stars": 24,
+    "url": "https://github.com/FastCrest/reflex-vla",
     "language": "Python",
-    "link": "https://github.com/FastCrest/reflex-vla",
-    "tags": [
-      "VLA",
-      "Edge",
-      "GPU",
-      "Deployment"
-    ],
-    "research_axis": "Edge",
+    "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T06:31:18.378535",
-    "stars_source": "cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "CarlaAir",
-    "description": "CARLA + 无人机空地一体仿真平台，统一AirSim + CARLA到单一Unreal Engine进程。",
-    "stars": "958",
+    "owner": "louiszengCN",
+    "description": "CARLA + \u65e0\u4eba\u673a\u7a7a\u5730\u4e00\u4f53\u4eff\u771f\u5e73\u53f0\uff0c\u7edf\u4e00AirSim + CARLA\u5230\u5355\u4e00Unreal Engine\u8fdb\u7a0b\u3002",
+    "stars": 951,
+    "url": "https://github.com/louiszengCN/CarlaAir",
     "language": "C++",
-    "link": "https://github.com/louiszengCN/CarlaAir",
-    "tags": [
-      "Simulation",
-      "UAV",
-      "CARLA",
-      "AirSim"
-    ],
-    "research_axis": "Simulation",
+    "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T06:31:19.992259",
-    "stars_source": "cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "skynet",
-    "description": "LLM + MCP协议控制真实机器人和无人机，支持自然语言控制多种平台。",
-    "stars": "46",
+    "owner": "hybridgroup",
+    "description": "LLM + MCP\u534f\u8bae\u63a7\u5236\u771f\u5b9e\u673a\u5668\u4eba\u548c\u65e0\u4eba\u673a\uff0c\u652f\u6301\u81ea\u7136\u8bed\u8a00\u63a7\u5236\u591a\u79cd\u5e73\u53f0\u3002",
+    "stars": 46,
+    "url": "https://github.com/hybridgroup/skynet",
     "language": "Python",
-    "link": "https://github.com/hybridgroup/skynet",
-    "tags": [
-      "LLM",
-      "MCP",
-      "Robot",
-      "UAV",
-      "Agent"
-    ],
-    "research_axis": "Robotics",
+    "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T06:31:21.578472",
-    "stars_source": "cache",
-    "available": true
+    "stars_source": "not_found",
   },
   {
     "name": "Awesome-VLA-UAVs",
-    "description": "VLA/VLN无人机论文/模型/数据集汇总，空中机器人VLA方向最全资源列表。",
-    "stars": "53",
+    "owner": "TheBrainLab",
+    "description": "VLA/VLN\u65e0\u4eba\u673a\u8bba\u6587/\u6a21\u578b/\u6570\u636e\u96c6\u6c47\u603b\uff0c\u7a7a\u4e2d\u673a\u5668\u4ebaVLA\u65b9\u5411\u6700\u5168\u8d44\u6e90\u5217\u8868\u3002",
+    "stars": 52,
+    "url": "https://github.com/TheBrainLab/Awesome-VLA-UAVs",
     "language": "Python",
-    "link": "https://github.com/TheBrainLab/Awesome-VLA-UAVs",
-    "tags": [
-      "VLA",
-      "UAV",
-      "VLN",
-      "Survey",
-      "Papers"
-    ],
-    "research_axis": "Aircraft",
+    "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T06:31:23.268514",
-    "stars_source": "cache",
-    "available": true
-  }
+    "stars_source": "not_found",
+  },
 ];
-export const recentNews: News[] = [
+
+export const news: News[] = [
   {
-    "title": "WAFR 2026 论文征集延期：6月1日截止",
-    "link": "http://algorithmic-robotics.org/",
-    "summary": "2026.06.15-17 | 地点：芬兰奥卢 💡 Topics：Robot control, Motion planning, Multi-robot systems, Learning for robotics  http://algorithmic-robotics.org/",
-    "source": "网络",
+    "title": "\u73e0\u6d77 \ud83c\udf24\ufe0f",
+    "source": "GitHub",
+    "url": "https://github.com/yliu-cs/MMaDA-VLA",
+    "date": "_2026-05-2",
+    "summary": "\u73e0\u6d77 \ud83c\udf24\ufe0f \u591a\u4e91/\u9634 29\u00b0C/25\u00b0C \u897f\u5357\u98ce3-4\u7ea7 | \u508d\u665a\u8f6c\u9635\u96e8 --- \u4e8b\u4ef6\u56de\u987e\uff1a2026\u5e741\u6708\uff0c\u56e0\u4e0e Anthropic Claude \u5546\u6807\u97f3\u8fd1\u800c\u88ab\u8feb\u6539\u540d\u7684 Moltbot\uff08\u539f Clawdbot\uff09\uff0c\u5982\u4eca\u5df2\u5b8c\u6210\u54c1\u724c\u5347\u7ea7\u6b63\u5f0f\u547d\u540d\u4e3a OpenClaw\u3002\u636e\u6700\u65b0\u6570\u636e\uff0c\u9879\u76ee GitHub \u661f\u6807\u5df2\u8fbe 94.5K+\uff0c\u6210\u4e3a 2026 \u5e74\u73b0\u8c61\u7ea7\u5f00\u6e90 AI Agent\u3002",
+    "published_at": "_2026-05-2",
+    "verified": false,
+    "research_axis": "robotics",
+    "freshness": "unknown",
+    "archived": false,
+  },
+  {
+    "title": "WAFR 2026 \u8bba\u6587\u5f81\u96c6\u5ef6\u671f\uff1a6\u67081\u65e5\u622a\u6b62",
+    "source": "\u7f51\u7edc",
+    "url": "http://algorithmic-robotics.org/",
     "date": "2026-06-15",
+    "summary": "2026.06.15-17 | \u5730\u70b9\uff1a\u82ac\u5170\u5965\u5362 \ud83d\udca1 Topics\uff1aRobot control, Motion planning, Multi-robot systems, Learning for robotics  http://algorithmic-robotics.org/",
     "published_at": "2026-06-15",
     "verified": false,
-    "why_it_matters": null,
     "research_axis": "robotics",
     "freshness": "fresh",
-    "archived": false
+    "archived": false,
   },
   {
-    "title": "OpenClaw/openclaw ⭐ 215,000+",
-    "link": "https://github.com/openclaw/openclaw",
-    "summary": "*：本地优先 AI Agent 框架，私有化部署，多渠道交互",
+    "title": "OpenClaw/openclaw \u2b50 215,000+",
     "source": "GitHub",
+    "url": "https://github.com/openclaw/openclaw",
     "date": "_2026-05-2",
+    "summary": "*\uff1a\u672c\u5730\u4f18\u5148 AI Agent \u6846\u67b6\uff0c\u79c1\u6709\u5316\u90e8\u7f72\uff0c\u591a\u6e20\u9053\u4ea4\u4e92",
     "published_at": "_2026-05-2",
     "verified": false,
-    "why_it_matters": null,
     "research_axis": "llm",
     "freshness": "unknown",
-    "archived": false
+    "archived": false,
   },
   {
-    "title": "drone-labs/librobotcontrol ⭐ 695 commits",
-    "link": "https://github.com/drone-labs/librobotcontrol",
-    "summary": "*：机器人控制库，支持 BeagleBone Blue 等嵌入式 Linux",
+    "title": "drone-labs/librobotcontrol \u2b50 695 commits",
     "source": "GitHub",
+    "url": "https://github.com/drone-labs/librobotcontrol",
     "date": "_2026-05-2",
+    "summary": "*\uff1a\u673a\u5668\u4eba\u63a7\u5236\u5e93\uff0c\u652f\u6301 BeagleBone Blue \u7b49\u5d4c\u5165\u5f0f Linux",
     "published_at": "_2026-05-2",
     "verified": false,
-    "why_it_matters": null,
     "research_axis": "robotics",
     "freshness": "unknown",
-    "archived": false
+    "archived": false,
   },
   {
-    "title": "rust-embedded/organization ⭐ 活跃",
-    "link": "https://github.com/rust-embedded/",
-    "summary": "*：Rust 嵌入式开发生态，支持 no-std 环境",
+    "title": "rust-embedded/organization \u2b50 \u6d3b\u8dc3",
     "source": "GitHub",
+    "url": "https://github.com/rust-embedded/",
     "date": "_2026-05-2",
+    "summary": "*\uff1aRust \u5d4c\u5165\u5f0f\u5f00\u53d1\u751f\u6001\uff0c\u652f\u6301 no-std \u73af\u5883",
     "published_at": "_2026-05-2",
     "verified": false,
-    "why_it_matters": null,
     "research_axis": "llm",
     "freshness": "unknown",
-    "archived": false
+    "archived": false,
   },
   {
-    "title": "mcgill-robotics/auv-embedded-2026 ⭐ 333 commits",
-    "link": "https://github.com/mcgill-robotics/auv-embedded-2024",
-    "summary": "*：2026 RoboSub AUV 固件，包含 hydrophone、STM32、Pio 多栈",
+    "title": "mcgill-robotics/auv-embedded-2026 \u2b50 333 commits",
     "source": "GitHub",
+    "url": "https://github.com/mcgill-robotics/auv-embedded-2024",
     "date": "_2026-05-2",
+    "summary": "*\uff1a2026 RoboSub AUV \u56fa\u4ef6\uff0c\u5305\u542b hydrophone\u3001STM32\u3001Pio \u591a\u6808",
     "published_at": "_2026-05-2",
     "verified": false,
-    "why_it_matters": null,
     "research_axis": "robotics",
     "freshness": "unknown",
-    "archived": false
+    "archived": false,
   },
   {
-    "title": "drone-os/drone-core ⭐ 251 commits",
-    "link": "https://github.com/drone-os/drone-core",
-    "summary": "*：嵌入式操作系统 Drone 的核心 crate，支持 ARM Cortex-M",
+    "title": "drone-os/drone-core \u2b50 251 commits",
     "source": "GitHub",
+    "url": "https://github.com/drone-os/drone-core",
     "date": "_2026-05-2",
+    "summary": "*\uff1a\u5d4c\u5165\u5f0f\u64cd\u4f5c\u7cfb\u7edf Drone \u7684\u6838\u5fc3 crate\uff0c\u652f\u6301 ARM Cortex-M",
     "published_at": "_2026-05-2",
     "verified": false,
-    "why_it_matters": null,
     "research_axis": "drone",
     "freshness": "unknown",
-    "archived": false
-  }
+    "archived": false,
+  },
 ];
+
 export const trends: Trend[] = [
   {
-    "icon": "🤖",
-    "title": "LLM + VLA 双层架构",
-    "description": "LLM做意图理解，VLA做动作执行，分工明确。DIAL架构成为主流范式。"
+    "icon": "\ud83e\udd16",
+    "title": "LLM + VLA \u53cc\u5c42\u67b6\u6784",
+    "description": "LLM\u505a\u610f\u56fe\u7406\u89e3\uff0cVLA\u505a\u52a8\u4f5c\u6267\u884c\uff0c\u5206\u5de5\u660e\u786e\u3002DIAL\u67b6\u6784\u6210\u4e3a\u4e3b\u6d41\u8303\u5f0f\u3002",
   },
   {
-    "icon": "📡",
-    "title": "NL → STL → 控制",
-    "description": "自然语言先转为时序逻辑(STL)，再生成安全轨迹。CoT+GRPO确保翻译正确性。"
+    "icon": "\ud83d\udce1",
+    "title": "NL \u2192 STL \u2192 \u63a7\u5236",
+    "description": "\u81ea\u7136\u8bed\u8a00\u5148\u8f6c\u4e3a\u65f6\u5e8f\u903b\u8f91(STL)\uff0c\u518d\u751f\u6210\u5b89\u5168\u8f68\u8ff9\u3002CoT+GRPO\u786e\u4fdd\u7ffb\u8bd1\u6b63\u786e\u6027\u3002",
   },
   {
-    "icon": "🖥️",
-    "title": "边缘部署优先",
-    "description": "实时VLA、TensorRT-LLM等都在优化边缘推理速度，适合机载计算。"
+    "icon": "\ud83d\udda5\ufe0f",
+    "title": "\u8fb9\u7f18\u90e8\u7f72\u4f18\u5148",
+    "description": "\u5b9e\u65f6VLA\u3001TensorRT-LLM\u7b49\u90fd\u5728\u4f18\u5316\u8fb9\u7f18\u63a8\u7406\u901f\u5ea6\uff0c\u9002\u5408\u673a\u8f7d\u8ba1\u7b97\u3002",
   },
   {
-    "icon": "🎯",
-    "title": "仿真平台统一",
-    "description": "CARLA-Air统一AirSim和CARLA，减少仿真-真机迁移gap。"
-  }
+    "icon": "\ud83c\udfaf",
+    "title": "\u4eff\u771f\u5e73\u53f0\u7edf\u4e00",
+    "description": "CARLA-Air\u7edf\u4e00AirSim\u548cCARLA\uff0c\u51cf\u5c11\u4eff\u771f-\u771f\u673a\u8fc1\u79fbgap\u3002",
+  },
 ];
-export const lastUpdated = "2026-05-24T06:33:55.938018";
