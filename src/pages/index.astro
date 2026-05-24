@@ -2,15 +2,15 @@
 import Layout from '../layouts/Layout.astro';
 import { profile } from '../data/profile';
 import { projects } from '../data/projects';
-import { recentNews, recentPapers } from '../data/research';
+import { papers, news } from '../data/research';
 
 // 取前3个项目展示在首页
 const featuredProjects = projects.slice(0, 3);
 
 // 最近研究动态：取最近3条论文和新闻
 const recentResearch = [
-  ...recentPapers.slice(0, 3).map(p => ({ type: 'paper', ...p })),
-  ...recentNews.slice(0, 3).map(n => ({ type: 'news', ...n }))
+  ...papers.slice(0, 3).map(p => ({ type: 'paper', ...p })),
+  ...news.slice(0, 3).map(n => ({ type: 'news', ...n }))
 ].sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime()).slice(0, 3);
 ---
 

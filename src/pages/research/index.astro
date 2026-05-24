@@ -1,10 +1,10 @@
 ---
 import Layout from '../../layouts/Layout.astro';
-import { recentPapers, hotProjects, trends, recentNews, lastUpdated } from '../../data/research';
+import { papers, githubRepos, trends, news } from '../../data/research';
 
 // All tags from data
-const allPaperTags = [...new Set(recentPapers.flatMap(p => p.tags))];
-const allGithubTags = [...new Set(hotProjects.flatMap(p => p.tags))];
+const allPaperTags = [...new Set(papers.flatMap(p => p.tags))];
+const allGithubTags = [...new Set(githubRepos.flatMap(p => p.tags))];
 const allTags = [...new Set([...allPaperTags, ...allGithubTags])].sort();
 
 // Section descriptions (P0-4: 增强首页结构解释性)
@@ -28,7 +28,6 @@ const SECTION_DESCRIPTIONS = {
       <div>
         <h1 class="text-4xl font-bold text-white mb-2">研究热点</h1>
         <p class="text-gray-400">LLM + 无人机 + 机器人领域 · 每日更新</p>
-        {lastUpdated && <p class="text-gray-500 text-xs mt-1">🕐 数据更新于 {new Date(lastUpdated).toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai', year: 'numeric', month: '2-digit', day: '2-digit', hour: '2-digit', minute: '2-digit' })}</p>}
       </div>
       <a href="/research/archive" class="text-sm px-4 py-2 rounded-lg border border-white/10 text-gray-300 hover:text-white hover:bg-white/5 transition-colors flex items-center gap-2">
         <span>📦</span> 历史归档
@@ -102,7 +101,7 @@ const SECTION_DESCRIPTIONS = {
 
       <!-- Results count -->
       <div class="text-xs text-gray-500">
-        <span id="results-count">{recentPapers.length + recentNews.length + hotProjects.length}</span> 条结果
+        <span id="results-count">{papers.length + news.length + githubRepos.length}</span> 条结果
       </div>
     </div>
 
@@ -112,11 +111,11 @@ const SECTION_DESCRIPTIONS = {
       <div class="content-section" data-type="news">
         <h2 class="text-xl font-bold mb-1 text-accent flex items-center gap-2">
           📰 最新资讯
-          <span class="text-xs font-normal text-gray-500">({recentNews.length})</span>
+          <span class="text-xs font-normal text-gray-500">({news.length})</span>
         </h2>
         <p class="text-gray-500 text-xs mb-4">💡 {SECTION_DESCRIPTIONS.news}</p>
         <div class="news-list space-y-3 mb-10">
-          {recentNews.map((news, idx) => (
+          {news.map((news, idx) => (
             <a href={news.link} target="_blank" rel="noopener noreferrer"
               class="content-card block glass-card p-6 group"
               data-title={news.title.toLowerCase()}
@@ -163,11 +162,11 @@ const SECTION_DESCRIPTIONS = {
       <div class="content-section" data-type="papers">
         <h2 class="text-xl font-bold mb-1 text-accent flex items-center gap-2">
           📚 最新论文
-          <span class="text-xs font-normal text-gray-500">({recentPapers.length})</span>
+          <span class="text-xs font-normal text-gray-500">({papers.length})</span>
         </h2>
         <p class="text-gray-500 text-xs mb-4">💡 {SECTION_DESCRIPTIONS.papers}</p>
         <div class="papers-list space-y-3 mb-10">
-          {recentPapers.map((paper, idx) => (
+          {papers.map((paper, idx) => (
             <a href={paper.link} target="_blank" rel="noopener noreferrer"
               class="content-card block glass-card p-6 group"
               data-title={paper.title.toLowerCase()}
@@ -231,11 +230,11 @@ const SECTION_DESCRIPTIONS = {
       <div class="content-section" data-type="github">
         <h2 class="text-xl font-bold mb-1 text-accent flex items-center gap-2">
           ⭐ GitHub 热门项目
-          <span class="text-xs font-normal text-gray-500">({hotProjects.length})</span>
+          <span class="text-xs font-normal text-gray-500">({githubRepos.length})</span>
         </h2>
         <p class="text-gray-500 text-xs mb-4">💡 {SECTION_DESCRIPTIONS.github}</p>
         <div class="github-list grid md:grid-cols-2 gap-3 mb-10">
-          {hotProjects.map((project, idx) => (
+          {githubRepos.map((project, idx) => (
             <a href={project.link} target="_blank" rel="noopener noreferrer"
               class="content-card block glass-card p-6 group"
               data-title={project.name.toLowerCase()}
