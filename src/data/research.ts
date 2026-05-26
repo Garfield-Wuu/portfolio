@@ -1,4 +1,4 @@
-// Auto-generated at 2026-05-25T08:46:57.118953
+// Auto-generated at 2026-05-26T08:46:30.659536
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -305,20 +305,20 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T08:49:22.489986",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-26T08:45:40.260314",
+    "stars_source": "api",
   },
   {
     "name": "Prometheus (amov-lab)",
     "owner": "amov-lab",
     "description": "PX4无人机自主飞行综合解决方案，包含目标追踪、集群控制、SLAM等30+应用模块。累计3.1k+ stars。",
-    "stars": 3100,
+    "stars": 3200,
     "url": "https://github.com/amov-lab/Prometheus",
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T12:19:29.788071",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-26T08:45:42.013987",
+    "stars_source": "api",
   },
   {
     "name": "embodied-drone-agents",
@@ -329,8 +329,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T12:19:31.727874",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-26T08:45:43.487176",
+    "stars_source": "api",
   },
   {
     "name": "MAVLinkMCP",
@@ -341,8 +341,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T12:19:33.546829",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-26T08:45:45.191064",
+    "stars_source": "api",
   },
   {
     "name": "AerialVLA",
@@ -354,7 +354,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
     "stars_last_checked_at": "2026-05-25T08:46:11.961772",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "UAVs_Meet_LLMs",
@@ -366,7 +366,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
     "stars_last_checked_at": "2026-05-25T08:46:13.696139",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-Aerial-VLN",
@@ -377,8 +377,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T12:19:37.356240",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-26T08:45:48.739089",
+    "stars_source": "api",
   },
   {
     "name": "LeRobot",
@@ -390,7 +390,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
     "stars_last_checked_at": "2026-05-25T08:46:16.403658",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "dimensionalOS",
@@ -402,7 +402,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-05-25T08:46:18.034984",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-LLM-Robotics",
@@ -413,8 +413,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T12:19:40.779869",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-26T08:45:52.142681",
+    "stars_source": "api",
   },
   {
     "name": "awesome-embodied-vla-va-vln",
@@ -426,19 +426,19 @@ export const githubRepos: GitHub[] = [
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-05-25T08:46:20.615609",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 719,
+    "stars": 724,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-05-24T12:19:43.346968",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-05-26T08:45:54.677378",
+    "stars_source": "api",
   },
   {
     "name": "reflex-vla",
@@ -450,7 +450,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
     "stars_last_checked_at": "2026-05-25T08:46:23.050721",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "CarlaAir",
@@ -462,7 +462,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
     "stars_last_checked_at": "2026-05-25T08:46:24.633791",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "skynet",
@@ -474,7 +474,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
     "stars_last_checked_at": "2026-05-25T08:46:26.234562",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-VLA-UAVs",
@@ -486,11 +486,24 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-05-25T08:46:27.818953",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
 ];
 
 export const news: News[] = [
+  {
+    "title": "lerobot-deployment",
+    "source": "GitHub",
+    "url": "https://github.com/AdamLouis123456/rl_ardrone",
+    "date": "2026-05-23",
+    "summary": "AI 行业正式进入双寡头时代，中小模型公司生存空间收窄\n⭐ 对你的价值：Claude 系列 API 是毕设开发的优质选择，关注其 Agent 能力",
+    "published_at": "2026-05-23",
+    "verified": false,
+    "why_it_matters": "AI 行业正式进入双寡头时代，中小模型公司生存空间收窄",
+    "research_axis": "Robotics",
+    "freshness": "fresh",
+    "archived": false,
+  },
   {
     "title": "AeroScene：无人机仿真场景的「生成式革命」",
     "source": "GitHub",
@@ -597,6 +610,6 @@ export const trends: Trend[] = [
 export const stats = {
   papersCount: 20,
   githubCount: 16,
-  newsCount: 6,
-  exportTime: "2026-05-25T08:46:06.281287",
+  newsCount: 7,
+  exportTime: "2026-05-26T08:45:38.675218",
 };
