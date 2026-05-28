@@ -1,4 +1,4 @@
-// Auto-generated at 2026-05-27T08:52:55.644307
+// Auto-generated at 2026-05-28T08:54:07.800940
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -388,12 +388,13 @@ export const githubRepos: GitHub[] = [
     "name": "dimensionalOS",
     "owner": "dimensionalOS",
     "description": "Agentic OS for physical space，自然语言控制多种机器人(含无人机)，支持多种AI模型和工具。",
-    "stars": 3225,
+    "stars": 3400,
     "url": "https://github.com/dimensionalOS/dimos",
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_source": "not_found",
+    "stars_last_checked_at": "2026-05-28T08:49:08.211951",
+    "stars_source": "api",
   },
   {
     "name": "Awesome-LLM-Robotics",
@@ -475,19 +476,6 @@ export const githubRepos: GitHub[] = [
 ];
 
 export const news: News[] = [
-  {
-    "title": "lerobot-deployment",
-    "source": "网络",
-    "url": "https://www.sse.com.cn",
-    "date": "2026-05-26",
-    "summary": "• 高速推理对无人机实时指令解析至关重要（低延迟 = 更安全的飞行控制）\n  • 国产大模型 ARR 爆发式增长，2026 年有望出现 ARR 2000 亿美元级大模型公司\n  • 智谱、MiniMax 纳入恒生科技指数，国产 AI 获国际资本认可\n⭐ 对你的价值：GLM 系列可作为毕设 LLM 后端选项，高速 API 适合实时无人机控制场景",
-    "published_at": "2026-05-26",
-    "verified": false,
-    "why_it_matters": "• 高速推理对无人机实时指令解析至关重要（低延迟 = 更安全的飞行控制）",
-    "research_axis": "Robotics",
-    "freshness": "fresh",
-    "archived": false,
-  },
   {
     "title": "AeroScene：无人机仿真场景的「生成式革命」",
     "source": "GitHub",
@@ -581,6 +569,6 @@ export const trends: Trend[] = [
 export const stats = {
   papersCount: 20,
   githubCount: 16,
-  newsCount: 6,
-  exportTime: "2026-05-27T08:47:43.902947",
+  newsCount: 5,
+  exportTime: "2026-05-28T08:47:46.458687",
 };
