@@ -1,4 +1,4 @@
-// Auto-generated at 2026-06-08T08:46:23.707548
+// Auto-generated at 2026-06-09T08:51:26.876937
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -305,7 +305,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:24.614387",
+    "stars_last_checked_at": "2026-06-09T08:49:56.757714",
     "stars_source": "api",
   },
   {
@@ -317,7 +317,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:26.295186",
+    "stars_last_checked_at": "2026-06-09T08:49:58.511108",
     "stars_source": "api",
   },
   {
@@ -329,7 +329,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:27.946267",
+    "stars_last_checked_at": "2026-06-09T08:50:00.175292",
     "stars_source": "api",
   },
   {
@@ -341,19 +341,19 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:29.599743",
+    "stars_last_checked_at": "2026-06-09T08:50:01.847644",
     "stars_source": "api",
   },
   {
     "name": "AerialVLA",
     "owner": "XuPeng23",
     "description": "端到端视觉-语言-动作无人机导航模型，支持自然语言指令控制无人机。",
-    "stars": 70,
+    "stars": 72,
     "url": "https://github.com/XuPeng23/AerialVLA",
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:31.226820",
+    "stars_last_checked_at": "2026-06-09T08:50:03.576919",
     "stars_source": "api",
   },
   {
@@ -365,7 +365,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:32.833258",
+    "stars_last_checked_at": "2026-06-09T08:50:05.212877",
     "stars_source": "api",
   },
   {
@@ -377,7 +377,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:34.557001",
+    "stars_last_checked_at": "2026-06-09T08:50:06.699365",
     "stars_source": "api",
   },
   {
@@ -389,7 +389,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:35.992227",
+    "stars_last_checked_at": "2026-06-09T08:50:08.302859",
     "stars_source": "api",
   },
   {
@@ -401,7 +401,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:37.507423",
+    "stars_last_checked_at": "2026-06-09T08:50:09.835362",
     "stars_source": "api",
   },
   {
@@ -413,7 +413,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:39.080841",
+    "stars_last_checked_at": "2026-06-09T08:50:11.500853",
     "stars_source": "api",
   },
   {
@@ -425,7 +425,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:40.712478",
+    "stars_last_checked_at": "2026-06-09T08:50:13.192518",
     "stars_source": "api",
   },
   {
@@ -437,7 +437,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:42.194993",
+    "stars_last_checked_at": "2026-06-09T08:50:14.808866",
     "stars_source": "api",
   },
   {
@@ -449,19 +449,19 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:44.178635",
+    "stars_last_checked_at": "2026-06-09T08:50:16.859310",
     "stars_source": "api",
   },
   {
     "name": "CarlaAir",
     "owner": "louiszengCN",
     "description": "CARLA + 无人机空地一体仿真平台，统一AirSim + CARLA到单一Unreal Engine进程。",
-    "stars": 982,
+    "stars": 984,
     "url": "https://github.com/louiszengCN/CarlaAir",
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:45.746870",
+    "stars_last_checked_at": "2026-06-09T08:50:18.494202",
     "stars_source": "api",
   },
   {
@@ -473,8 +473,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:47.275962",
-    "stars_source": "api",
+    "stars_source": "not_found",
   },
   {
     "name": "Awesome-VLA-UAVs",
@@ -485,12 +484,25 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-08T08:45:49.065534",
+    "stars_last_checked_at": "2026-06-09T08:50:27.372209",
     "stars_source": "api",
   },
 ];
 
 export const news: News[] = [
+  {
+    "title": "NVIDIA Cosmos 3 + Coalition 联盟成立",
+    "source": "NVIDIA",
+    "url": "https://blogs.nvidia.cn/blog/nvidia-launches-cosmos-3-the-op](https://blogs.nvidia.cn/blog/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai/",
+    "date": "_2026-06-0",
+    "summary": "> 📄 完整 PDF：`reports/daily_briefing/briefing_2026-06-09.pdf` 🌧️ 27-30℃ · 小雨转阴 · 东南风 2 级 · 湿度 85% · 空气优 - NVIDIA Cosmos 3 + Coalition 联盟成立：全球首款全开放全模态物理 AI 基础模型。混合 Transformer 架构在生成视频/动作前先做对象交互、运动、时空",
+    "published_at": "_2026-06-0",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "Robotics",
+    "freshness": "unknown",
+    "archived": false,
+  },
   {
     "title": "arXiv:2606.05979",
     "source": "网络",
@@ -524,19 +536,6 @@ export const news: News[] = [
     "date": "_2026-06-0",
     "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-06-04.pdf`（2.24MB，A4 单页两栏） 珠海：晴 32°C 湿度 75% 东北风 15km/h（高温炎热，注意防暑补水） 1. 机器流量首次超过人类 — Cloudflare Radar 显示全球 HTML 请求中机器人占 57.5%，JSON 流量已达 33.1% 居首",
     "published_at": "_2026-06-0",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "Robotics",
-    "freshness": "unknown",
-    "archived": false,
-  },
-  {
-    "title": "本期由 cron 优雅降级模式生成",
-    "source": "网络",
-    "url": "https://so.html5.qq.com/page/real/search_news?docid=70000021_3706a1b7d0963352",
-    "date": "_2026-05-3",
-    "summary": "> ⚠️ 本期由 cron 优雅降级模式生成：v3 流水线的 `execute_code` 与 `terminal` 在本 cron 会话被安全策略拦截，HTML/PDF 渲染、邮件、Telegram、Discord、去重索引追加均未执行。本 Markdown 是唯一交付物，详见文末\"未完成步骤清单\"。 ═══════════════════════════════════════════",
-    "published_at": "_2026-05-3",
     "verified": false,
     "why_it_matters": null,
     "research_axis": "Robotics",
@@ -584,5 +583,5 @@ export const stats = {
   papersCount: 20,
   githubCount: 16,
   newsCount: 5,
-  exportTime: "2026-06-08T08:45:23.006723",
+  exportTime: "2026-06-09T08:49:55.097543",
 };
