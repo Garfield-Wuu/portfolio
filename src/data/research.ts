@@ -1,4 +1,4 @@
-// Auto-generated at 2026-06-13T08:52:22.529191
+// Auto-generated at 2026-06-14T08:55:57.180378
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -476,11 +476,11 @@ export const githubRepos: GitHub[] = [
 
 export const news: News[] = [
   {
-    "title": "1. 智源「悟界」双发",
+    "title": "世界模型成为机器人「新底座」",
     "source": "网络",
-    "url": "https://www.163.com/dy/article/KV5MSD830550WHYR.html",
+    "url": "https://36kr.com/p/3482984281906057",
     "date": "_2026-06-1",
-    "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-06-13.pdf` > 📧 已发送：wu_garfield@163.com (AgentMail message_id 已确认) 珠海 小雨转中雨 27-31°C 东风 2 级 · 暴雨黄色预警生效",
+    "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-06-14.pdf` 阵雨 30°C · 湿度 75% · 东北风 26 km/h 1. 世界模型成为机器人「新底座」：阿里 RynnBrain、智源双世界模型、谷歌新一代机器人模型本周密集发布。从「预测 Token」走向「预测世界状态」。",
     "published_at": "_2026-06-1",
     "verified": false,
     "why_it_matters": null,
@@ -489,11 +489,11 @@ export const news: News[] = [
     "archived": false,
   },
   {
-    "title": "对你的价值",
+    "title": "1. 智源「悟界」双发",
     "source": "网络",
-    "url": "https://36kr.com/p/3482984281906057",
+    "url": "https://www.163.com/dy/article/KV5MSD830550WHYR.html",
     "date": "_2026-06-1",
-    "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-06-12.pdf` 珠海：Light rain shower +27°C 79% ←15km/h - [谷歌发布机器人「大脑」SOTA 模型，跨物种学习](https://36kr.com/p/3482984281906057)",
+    "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-06-13.pdf` > 📧 已发送：wu_garfield@163.com (AgentMail message_id 已确认) 珠海 小雨转中雨 27-31°C 东风 2 级 · 暴雨黄色预警生效",
     "published_at": "_2026-06-1",
     "verified": false,
     "why_it_matters": null,
@@ -553,19 +553,6 @@ export const news: News[] = [
     "freshness": "unknown",
     "archived": false,
   },
-  {
-    "title": "1. NVIDIA 物理 AI 全栈出击",
-    "source": "NVIDIA",
-    "url": "https://blogs.nvidia.cn/blog/nvidia-launches-cosmos-3-the-open-frontier-foundation-model-for-physical-ai/",
-    "date": "_2026-06-0",
-    "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-06-06.pdf` > 📧 已发送至：wu_garfield@163.com 珠海：局部阵雨 31°C 湿度75% 东北风11km/h（出行注意防雨）",
-    "published_at": "_2026-06-0",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "Robotics",
-    "freshness": "unknown",
-    "archived": false,
-  },
 ];
 
 export const trends: Trend[] = [
@@ -594,6 +581,6 @@ export const trends: Trend[] = [
 export const stats = {
   papersCount: 20,
   githubCount: 16,
-  newsCount: 7,
-  exportTime: "2026-06-13T08:46:09.140643",
+  newsCount: 6,
+  exportTime: "2026-06-14T08:48:44.604925",
 };
