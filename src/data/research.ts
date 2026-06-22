@@ -1,4 +1,4 @@
-// Auto-generated at 2026-06-21T08:47:34.971905
+// Auto-generated at 2026-06-22T08:48:58.684975
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -305,7 +305,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:45:45.136810",
+    "stars_last_checked_at": "2026-06-22T08:47:28.080276",
     "stars_source": "api",
   },
   {
@@ -317,7 +317,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:45:46.878020",
+    "stars_last_checked_at": "2026-06-22T08:47:29.909698",
     "stars_source": "api",
   },
   {
@@ -329,7 +329,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:45:48.688627",
+    "stars_last_checked_at": "2026-06-22T08:47:31.581316",
     "stars_source": "api",
   },
   {
@@ -341,7 +341,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:45:50.359001",
+    "stars_last_checked_at": "2026-06-22T08:47:33.153649",
     "stars_source": "api",
   },
   {
@@ -353,7 +353,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:45:52.340210",
+    "stars_last_checked_at": "2026-06-22T08:47:35.153367",
     "stars_source": "api",
   },
   {
@@ -365,7 +365,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:45:53.922163",
+    "stars_last_checked_at": "2026-06-22T08:47:36.843128",
     "stars_source": "api",
   },
   {
@@ -377,19 +377,19 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:45:55.642842",
+    "stars_last_checked_at": "2026-06-22T08:47:38.463425",
     "stars_source": "api",
   },
   {
     "name": "LeRobot",
     "owner": "huggingface",
     "description": "HuggingFace开源机器人学习库，支持多种机器人(SO-100/SO-ARM100/101)、多种VLA模型(π0、SmolVLA等)、端到端训练推理。Garfield项目核心框架。",
-    "stars": 25100,
+    "stars": 25200,
     "url": "https://github.com/huggingface/lerobot",
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:45:57.264143",
+    "stars_last_checked_at": "2026-06-22T08:47:40.051356",
     "stars_source": "api",
   },
   {
@@ -401,7 +401,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:45:58.872523",
+    "stars_last_checked_at": "2026-06-22T08:47:41.639566",
     "stars_source": "api",
   },
   {
@@ -413,7 +413,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:46:00.457226",
+    "stars_last_checked_at": "2026-06-22T08:47:43.464826",
     "stars_source": "api",
   },
   {
@@ -425,19 +425,19 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:46:02.115544",
+    "stars_last_checked_at": "2026-06-22T08:47:45.049114",
     "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 749,
+    "stars": 754,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:46:03.664878",
+    "stars_last_checked_at": "2026-06-22T08:47:46.587005",
     "stars_source": "api",
   },
   {
@@ -449,7 +449,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:46:05.720085",
+    "stars_last_checked_at": "2026-06-22T08:47:48.516855",
     "stars_source": "api",
   },
   {
@@ -461,7 +461,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:46:07.491582",
+    "stars_last_checked_at": "2026-06-22T08:47:50.279752",
     "stars_source": "api",
   },
   {
@@ -473,7 +473,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:46:09.195203",
+    "stars_last_checked_at": "2026-06-22T08:47:51.923355",
     "stars_source": "api",
   },
   {
@@ -485,12 +485,25 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-06-21T08:46:10.828500",
+    "stars_last_checked_at": "2026-06-22T08:47:53.548981",
     "stars_source": "api",
   },
 ];
 
 export const news: News[] = [
+  {
+    "title": "银河通用发布人形机器人全身控制大模型 AstraBrain-WBC 0.5（人形小脑GPT时刻）",
+    "source": "网络",
+    "url": "https://www.163.com/dy/article/KVRTBVIB0511AQHO.html",
+    "date": "_2026-06-2",
+    "summary": "> 📄 完整 PDF：`reports/daily_briefing/briefing_2026-06-22.pdf` 珠海：多云  +30°C 70% ↗18km/h - 银河通用发布人形机器人全身控制大模型 AstraBrain-WBC 0.5（人形小脑GPT时刻） — 网易/机器之心",
+    "published_at": "_2026-06-2",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "Robotics",
+    "freshness": "unknown",
+    "archived": false,
+  },
   {
     "title": "对你的价值",
     "source": "网络",
@@ -530,18 +543,6 @@ export const news: News[] = [
     "freshness": "unknown",
     "archived": false,
   },
-  {
-    "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
-    "source": "NVIDIA Newsroom",
-    "url": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
-    "date": "2026-04-01",
-    "summary": "NVIDIA发布开源物理AI模型GR00T N1.6和Cosmos Reason世界模型，全球合作伙伴推出下一代机器人，机器人的ChatGPT时刻已至。",
-    "published_at": "2026-04-01",
-    "verified": true,
-    "why_it_matters": "开源物理AI+世界模型对机器人仿真和无人机Sim2Real有直接参考价值",
-    "research_axis": "Robotics",
-    "freshness": "fresh",
-  },
 ];
 
 export const trends: Trend[] = [
@@ -571,5 +572,5 @@ export const stats = {
   papersCount: 20,
   githubCount: 16,
   newsCount: 4,
-  exportTime: "2026-06-21T08:45:43.489301",
+  exportTime: "2026-06-22T08:47:26.397127",
 };
