@@ -1,4 +1,4 @@
-// Auto-generated at 2026-06-24T08:59:13.567070
+// Auto-generated at 2026-06-25T08:46:52.438929
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -306,7 +306,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:53:15.830289",
-    "stars_source": "cache",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Prometheus (amov-lab)",
@@ -318,7 +318,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:55:22.872032",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "embodied-drone-agents",
@@ -330,7 +330,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:55:25.762240",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "MAVLinkMCP",
@@ -342,7 +342,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:55:28.860379",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "AerialVLA",
@@ -354,7 +354,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:55:32.182681",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "UAVs_Meet_LLMs",
@@ -366,7 +366,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:55:35.059086",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-Aerial-VLN",
@@ -378,7 +378,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:55:37.957137",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "LeRobot",
@@ -390,7 +390,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:55:40.713289",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "dimensionalOS",
@@ -402,7 +402,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:55:43.444363",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-LLM-Robotics",
@@ -414,7 +414,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:55:46.233264",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "awesome-embodied-vla-va-vln",
@@ -426,7 +426,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:55:48.986660",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-RL-VLA",
@@ -438,7 +438,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:55:51.776633",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "reflex-vla",
@@ -450,7 +450,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:55:55.213552",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "CarlaAir",
@@ -462,7 +462,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:55:58.193842",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "skynet",
@@ -474,7 +474,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:56:00.969046",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-VLA-UAVs",
@@ -486,11 +486,24 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-06-24T08:56:03.941551",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
 ];
 
 export const news: News[] = [
+  {
+    "title": "1X World Model 上线 NEO",
+    "source": "网络",
+    "url": "https://www.36kr.com/p/3638621438414215",
+    "date": "_2026-06-2",
+    "summary": "> 📄 完整 PDF：`reports/daily_briefing/briefing_2026-06-25.pdf` > 邮件 message_id: `<0100019efc3a1955-abf0ec19-...>` 珠海：局部多云 +31°C 75% ↗16km/h",
+    "published_at": "_2026-06-2",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "Robotics",
+    "freshness": "unknown",
+    "archived": false,
+  },
   {
     "title": "具身智能「量产元年」",
     "source": "网络",
@@ -543,18 +556,6 @@ export const news: News[] = [
     "freshness": "unknown",
     "archived": false,
   },
-  {
-    "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
-    "source": "NVIDIA Newsroom",
-    "url": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
-    "date": "2026-04-01",
-    "summary": "NVIDIA发布开源物理AI模型GR00T N1.6和Cosmos Reason世界模型，全球合作伙伴推出下一代机器人，机器人的ChatGPT时刻已至。",
-    "published_at": "2026-04-01",
-    "verified": true,
-    "why_it_matters": "开源物理AI+世界模型对机器人仿真和无人机Sim2Real有直接参考价值",
-    "research_axis": "Robotics",
-    "freshness": "fresh",
-  },
 ];
 
 export const trends: Trend[] = [
@@ -584,5 +585,5 @@ export const stats = {
   papersCount: 20,
   githubCount: 16,
   newsCount: 5,
-  exportTime: "2026-06-24T08:55:18.604884",
+  exportTime: "2026-06-25T08:45:36.100434",
 };
