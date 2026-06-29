@@ -1,4 +1,4 @@
-// Auto-generated at 2026-06-28T08:46:57.314463
+// Auto-generated at 2026-06-29T08:46:08.148551
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -306,7 +306,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:45:53.293972",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Prometheus (amov-lab)",
@@ -318,7 +318,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:45:54.928593",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "embodied-drone-agents",
@@ -330,7 +330,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:45:56.796247",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "MAVLinkMCP",
@@ -342,7 +342,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:45:58.496717",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "AerialVLA",
@@ -354,7 +354,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:46:00.404288",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "UAVs_Meet_LLMs",
@@ -366,7 +366,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:46:02.495360",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-Aerial-VLN",
@@ -378,7 +378,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:46:04.469735",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "LeRobot",
@@ -390,7 +390,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:46:06.481615",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "dimensionalOS",
@@ -402,7 +402,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:46:08.207074",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-LLM-Robotics",
@@ -414,7 +414,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:46:09.791400",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "awesome-embodied-vla-va-vln",
@@ -426,7 +426,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:46:11.527951",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-RL-VLA",
@@ -438,7 +438,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:46:13.100399",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "reflex-vla",
@@ -450,7 +450,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:46:15.243182",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "CarlaAir",
@@ -462,7 +462,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:46:16.926245",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "skynet",
@@ -474,7 +474,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:46:18.825980",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-VLA-UAVs",
@@ -486,11 +486,24 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-06-28T08:46:20.601326",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
 ];
 
 export const news: News[] = [
+  {
+    "title": "VLA 安全成为新焦点",
+    "source": "网络",
+    "url": "https://cloud.tencent.com/developer/article/2326866",
+    "date": "_2026-06-2",
+    "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-06-29.pdf` > 📧 邮件已送达 wu_garfield@163.com 珠海 · 局部阵雨 28°C  湿度84%  风速 ↖ 12km/h",
+    "published_at": "_2026-06-2",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "Robotics",
+    "freshness": "unknown",
+    "archived": false,
+  },
   {
     "title": "VLA 进入「可靠性收敛期」",
     "source": "网络",
@@ -556,19 +569,6 @@ export const news: News[] = [
     "freshness": "unknown",
     "archived": false,
   },
-  {
-    "title": "银河通用发布人形机器人全身控制大模型 AstraBrain-WBC 0.5（人形小脑GPT时刻）",
-    "source": "网络",
-    "url": "https://www.163.com/dy/article/KVRTBVIB0511AQHO.html",
-    "date": "_2026-06-2",
-    "summary": "> 📄 完整 PDF：`reports/daily_briefing/briefing_2026-06-22.pdf` 珠海：多云  +30°C 70% ↗18km/h - 银河通用发布人形机器人全身控制大模型 AstraBrain-WBC 0.5（人形小脑GPT时刻） — 网易/机器之心",
-    "published_at": "_2026-06-2",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "Robotics",
-    "freshness": "unknown",
-    "archived": false,
-  },
 ];
 
 export const trends: Trend[] = [
@@ -598,5 +598,5 @@ export const stats = {
   papersCount: 20,
   githubCount: 16,
   newsCount: 6,
-  exportTime: "2026-06-28T08:45:51.339646",
+  exportTime: "2026-06-29T08:45:22.367394",
 };
