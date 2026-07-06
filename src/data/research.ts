@@ -1,4 +1,4 @@
-// Auto-generated at 2026-07-05T08:49:28.309920
+// Auto-generated at 2026-07-06T08:51:56.208488
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -193,8 +193,8 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-03T08:45:38.015596",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-07-06T08:48:24.210780",
+    "stars_source": "api",
   },
   {
     "name": "Prometheus (amov-lab)",
@@ -205,7 +205,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-05T08:46:00.958820",
+    "stars_last_checked_at": "2026-07-06T08:48:26.985790",
     "stars_source": "api",
   },
   {
@@ -217,7 +217,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-05T08:46:03.696995",
+    "stars_last_checked_at": "2026-07-06T08:48:29.932214",
     "stars_source": "api",
   },
   {
@@ -229,7 +229,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-05T08:46:06.455256",
+    "stars_last_checked_at": "2026-07-06T08:48:32.783964",
     "stars_source": "api",
   },
   {
@@ -241,7 +241,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-05T08:46:09.551864",
+    "stars_last_checked_at": "2026-07-06T08:48:35.684726",
     "stars_source": "api",
   },
   {
@@ -253,7 +253,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-05T08:46:12.259328",
+    "stars_last_checked_at": "2026-07-06T08:48:38.327979",
     "stars_source": "api",
   },
   {
@@ -266,7 +266,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-07-05T08:46:15.072030",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "LeRobot",
@@ -277,7 +277,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-05T08:46:17.741918",
+    "stars_last_checked_at": "2026-07-06T08:48:47.957779",
     "stars_source": "api",
   },
   {
@@ -289,7 +289,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-05T08:46:20.520098",
+    "stars_last_checked_at": "2026-07-06T08:48:50.654601",
     "stars_source": "api",
   },
   {
@@ -301,7 +301,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-05T08:46:23.191597",
+    "stars_last_checked_at": "2026-07-06T08:48:53.460401",
     "stars_source": "api",
   },
   {
@@ -313,20 +313,19 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-05T08:46:25.955783",
+    "stars_last_checked_at": "2026-07-06T08:48:56.201399",
     "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 770,
+    "stars": 520,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-05T08:46:31.805016",
-    "stars_source": "api",
+    "stars_source": "not_found",
   },
   {
     "name": "reflex-vla",
@@ -337,7 +336,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-05T08:46:34.859552",
+    "stars_last_checked_at": "2026-07-06T08:49:09.491612",
     "stars_source": "api",
   },
   {
@@ -349,7 +348,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-05T08:46:37.754479",
+    "stars_last_checked_at": "2026-07-06T08:49:12.201092",
     "stars_source": "api",
   },
   {
@@ -362,7 +361,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
     "stars_last_checked_at": "2026-07-05T08:46:40.520783",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-VLA-UAVs",
@@ -373,7 +372,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-05T08:46:43.345873",
+    "stars_last_checked_at": "2026-07-06T08:49:24.508490",
     "stars_source": "api",
   },
 ];
@@ -381,10 +380,10 @@ export const githubRepos: GitHub[] = [
 export const news: News[] = [
   {
     "title": "自变量发布跨模态具身动作分词器 X-Tokenizer，多模态对齐 +13.5%",
-    "source": "达摩 AI",
+    "source": "达摩AI",
     "url": "http://damoai.com.cn/archives/16732",
     "date": "2026-07-05",
-    "summary": "动作 tokenizer 让长程任务性能提升 8.25%，具身模型 tokenization 成新热点，跨模态对齐提升 13.5%。",
+    "summary": "动作 tokenizer 让长程任务性能提升 8.25%，多模态对齐提升 13.5%，具身模型 tokenization 成为新热点方向。",
     "research_axis": "Robotics",
   },
   {
@@ -392,15 +391,15 @@ export const news: News[] = [
     "source": "网易",
     "url": "https://www.163.com/dy/article/L0NI4D5C0511C4AA.html",
     "date": "2026-07-04",
-    "summary": "万亿市值的智谱首次开源具身智能模型及 1000 小时机器人数据集，覆盖动作、推理、预训练，加速具身大模型社区发展。",
+    "summary": "万亿市值的智谱首次开源具身智能模型，并同步放出 1000 小时机器人数据集，覆盖动作、推理与预训练全流程。",
     "research_axis": "Robotics",
   },
   {
-    "title": "库萨科技发布全模态具身模型 Kusa Omni-CTS 与专用操作系统 Kusa OS",
+    "title": "库萨科技发布全模态具身模型 Kusa Omni-CTS 与操作系统 Kusa OS",
     "source": "36氪",
     "url": "https://36kr.com/p/3876735615758341",
     "date": "2026-07-03",
-    "summary": "库萨科技发布全模态具身模型 Kusa Omni-CTS 与专用操作系统 Kusa OS，助力城市服务机器人从“执行者”变为“思考者”。",
+    "summary": "库萨科技发布全模态具身模型 Kusa Omni-CTS 与专用操作系统 Kusa OS，助力城市服务机器人从执行者升级为会思考的智能体。",
     "research_axis": "Robotics",
   },
   {
@@ -408,24 +407,16 @@ export const news: News[] = [
     "source": "中证网",
     "url": "https://www.cs.com.cn/ssgs/01/2026/06/30/detail_2026063010021451.html",
     "date": "2026-07-01",
-    "summary": "6月30日发布，1.6万亿参数 MoE，原生 1M 上下文，OpenRouter 全球总调用量前三；采用零计算专家机制、ScMoE 架构，全流程国产算力。",
+    "summary": "6月30日发布，1.6万亿参数 MoE，原生 1M 上下文，OpenRouter 全球总调用量前三；采用零计算专家机制与 ScMoE 架构，全流程国产算力训练。",
     "research_axis": "VLA",
   },
   {
-    "title": "星源智发布全球首个具身交互世界模型 ω-EVA：世界模型首次进入行动决策闭环",
+    "title": "星源智发布全球首个具身交互世界模型 ω-EVA：世界模型进入行动决策闭环",
     "source": "腾讯新闻",
     "url": "https://news.qq.com/rain/a/20260616A000NF00",
     "date": "2026-06-30",
-    "summary": "星源智 ω-EVA、RoboScience Visics 同期发布，世界模型首次进入行动决策闭环，具身智能体开始主动建模、预测、行动。",
+    "summary": "星源智 ω-EVA 与 RoboScience Visics 同期发布，世界模型首次进入行动决策闭环，具身智能体开始主动建模、预测与行动。",
     "research_axis": "Simulation",
-  },
-  {
-    "title": "国内「异构智能体」三合一突破：无人机+机器狗+机械臂大模型协作",
-    "source": "腾讯云",
-    "url": "https://cloud.tencent.com/developer/article/2326866",
-    "date": "2026-06-29",
-    "summary": "国内团队让无人机+机器狗+机械臂在大模型协调下自主协作，是异构多智能体落地的里程碑案例。",
-    "research_axis": "Robotics",
   },
 ];
 
@@ -460,6 +451,6 @@ export const trends: Trend[] = [
 export const stats = {
   papersCount: 8,
   githubCount: 16,
-  newsCount: 6,
-  exportTime: "2026-07-05T08:45:51.175965",
+  newsCount: 5,
+  exportTime: "2026-07-06T08:48:21.488337",
 };
