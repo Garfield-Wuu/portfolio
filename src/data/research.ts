@@ -1,4 +1,4 @@
-// Auto-generated at 2026-07-14T08:46:31.802453
+// Auto-generated at 2026-07-15T08:46:38.455187
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -194,7 +194,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:45:39.885131",
+    "stars_last_checked_at": "2026-07-15T08:45:48.442188",
     "stars_source": "api",
   },
   {
@@ -207,7 +207,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:45:41.499743",
+    "stars_last_checked_at": "2026-07-15T08:45:50.174098",
     "stars_source": "api",
   },
   {
@@ -220,7 +220,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:45:43.042178",
+    "stars_last_checked_at": "2026-07-15T08:45:51.904537",
     "stars_source": "api",
   },
   {
@@ -233,7 +233,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:45:44.795568",
+    "stars_last_checked_at": "2026-07-15T08:45:53.567045",
     "stars_source": "api",
   },
   {
@@ -246,7 +246,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:45:46.687147",
+    "stars_last_checked_at": "2026-07-15T08:45:55.499627",
     "stars_source": "api",
   },
   {
@@ -259,7 +259,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:45:48.348720",
+    "stars_last_checked_at": "2026-07-15T08:45:57.118523",
     "stars_source": "api",
   },
   {
@@ -272,7 +272,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:45:50.029642",
+    "stars_last_checked_at": "2026-07-15T08:45:58.542662",
     "stars_source": "api",
   },
   {
@@ -285,7 +285,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:45:51.495684",
+    "stars_last_checked_at": "2026-07-15T08:45:59.995625",
     "stars_source": "api",
   },
   {
@@ -298,7 +298,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:45:53.070762",
+    "stars_last_checked_at": "2026-07-15T08:46:01.526297",
     "stars_source": "api",
   },
   {
@@ -311,7 +311,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:45:54.619875",
+    "stars_last_checked_at": "2026-07-15T08:46:03.082708",
     "stars_source": "api",
   },
   {
@@ -324,20 +324,20 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:45:56.181023",
+    "stars_last_checked_at": "2026-07-15T08:46:04.670181",
     "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 779,
+    "stars": 782,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "category": "Robotics",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:45:57.555638",
+    "stars_last_checked_at": "2026-07-15T08:46:06.258679",
     "stars_source": "api",
   },
   {
@@ -350,7 +350,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:45:59.585651",
+    "stars_last_checked_at": "2026-07-15T08:46:08.241324",
     "stars_source": "api",
   },
   {
@@ -363,7 +363,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:46:01.138373",
+    "stars_last_checked_at": "2026-07-15T08:46:09.823184",
     "stars_source": "api",
   },
   {
@@ -376,7 +376,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:46:02.558451",
+    "stars_last_checked_at": "2026-07-15T08:46:11.378890",
     "stars_source": "api",
   },
   {
@@ -389,12 +389,25 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-14T08:46:04.117082",
+    "stars_last_checked_at": "2026-07-15T08:46:13.056081",
     "stars_source": "api",
   }
 ];
 
 export const news: News[] = [
+  {
+    "title": "具身智能进入「具身原生」阶段",
+    "source": "网络",
+    "url": "https://news.aibase.com/zh/news/29517",
+    "date": "_2026-07-1",
+    "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-07-15.pdf` 今日多云转大雨，局地暴雨风险，气温 27-30℃，湿度 89%，注意防暑与雷雨防御 - 具身智能进入「具身原生」阶段 — 蚂蚁灵波四天连发六款模型，LingBot-VA2.0 首个具身原生预训练模型，单卡150Hz实时推理，从「数字世界嫁接」转向「物理世界原生设计」",
+    "published_at": "_2026-07-1",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "Robotics",
+    "freshness": "unknown",
+    "archived": false,
+  },
   {
     "title": "人形机器人'iPhone时刻'到来",
     "source": "网络",
@@ -442,18 +455,6 @@ export const news: News[] = [
     "verified": true,
     "why_it_matters": "消费级无人机避障和续航持续进化，DJI技术动态",
     "research_axis": "Aircraft",
-    "freshness": "fresh",
-  },
-  {
-    "title": "OpenAI 发布 GPT-4.5 API，扩展上下文窗口",
-    "source": "OpenAI",
-    "url": "https://openai.com/index/gpt-4-5-launch",
-    "date": "2026-04-02",
-    "summary": "OpenAI向开发者开放GPT-4.5 API，上下文窗口扩展至200k tokens，定价下调40%，强化函数调用和结构化输出能力。",
-    "published_at": "2026-04-02",
-    "verified": true,
-    "why_it_matters": "LLM API成本下降+长上下文对无人机NL指令解析和任务规划直接利好",
-    "research_axis": "VLA",
     "freshness": "fresh",
   }
 ];
