@@ -1,4 +1,4 @@
-// Auto-generated at 2026-07-15T08:46:38.455187
+// Auto-generated at 2026-07-16T08:45:57.847744
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -195,7 +195,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:45:48.442188",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Prometheus (amov-lab)",
@@ -208,7 +208,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:45:50.174098",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "embodied-drone-agents",
@@ -221,7 +221,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:45:51.904537",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "MAVLinkMCP",
@@ -234,7 +234,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:45:53.567045",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "AerialVLA",
@@ -247,7 +247,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:45:55.499627",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "UAVs_Meet_LLMs",
@@ -260,7 +260,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:45:57.118523",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-Aerial-VLN",
@@ -273,7 +273,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:45:58.542662",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "LeRobot",
@@ -286,7 +286,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:45:59.995625",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "dimensionalOS",
@@ -299,7 +299,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:46:01.526297",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-LLM-Robotics",
@@ -312,7 +312,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:46:03.082708",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "awesome-embodied-vla-va-vln",
@@ -325,7 +325,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:46:04.670181",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-RL-VLA",
@@ -338,7 +338,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:46:06.258679",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "reflex-vla",
@@ -351,7 +351,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:46:08.241324",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "CarlaAir",
@@ -364,7 +364,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:46:09.823184",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "skynet",
@@ -377,7 +377,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:46:11.378890",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-VLA-UAVs",
@@ -390,7 +390,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-07-15T08:46:13.056081",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   }
 ];
 
@@ -402,19 +402,6 @@ export const news: News[] = [
     "date": "_2026-07-1",
     "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-07-15.pdf` 今日多云转大雨，局地暴雨风险，气温 27-30℃，湿度 89%，注意防暑与雷雨防御 - 具身智能进入「具身原生」阶段 — 蚂蚁灵波四天连发六款模型，LingBot-VA2.0 首个具身原生预训练模型，单卡150Hz实时推理，从「数字世界嫁接」转向「物理世界原生设计」",
     "published_at": "_2026-07-1",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "Robotics",
-    "freshness": "unknown",
-    "archived": false,
-  },
-  {
-    "title": "人形机器人'iPhone时刻'到来",
-    "source": "网络",
-    "url": "https://www.36kr.com/p/3886462577094915",
-    "date": "_2026-07-0",
-    "summary": "> 📄 完整PDF版本：`reports/daily_briefing/briefing_2026-07-09.pdf` 珠海 小雨转多云 | 25°C-30°C | 湿度89% | 南风微风 早晨有小雨,白天转多云,湿度较高",
-    "published_at": "_2026-07-0",
     "verified": false,
     "why_it_matters": null,
     "research_axis": "Robotics",
@@ -455,6 +442,18 @@ export const news: News[] = [
     "verified": true,
     "why_it_matters": "消费级无人机避障和续航持续进化，DJI技术动态",
     "research_axis": "Aircraft",
+    "freshness": "fresh",
+  },
+  {
+    "title": "OpenAI 发布 GPT-4.5 API，扩展上下文窗口",
+    "source": "OpenAI",
+    "url": "https://openai.com/index/gpt-4-5-launch",
+    "date": "2026-04-02",
+    "summary": "OpenAI向开发者开放GPT-4.5 API，上下文窗口扩展至200k tokens，定价下调40%，强化函数调用和结构化输出能力。",
+    "published_at": "2026-04-02",
+    "verified": true,
+    "why_it_matters": "LLM API成本下降+长上下文对无人机NL指令解析和任务规划直接利好",
+    "research_axis": "VLA",
     "freshness": "fresh",
   }
 ];
