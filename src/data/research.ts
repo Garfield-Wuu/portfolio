@@ -1,4 +1,4 @@
-// Auto-generated at 2026-07-17T08:46:53.301347
+// Auto-generated at 2026-07-18T08:47:45.928161
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -193,7 +193,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:04.474246",
+    "stars_last_checked_at": "2026-07-18T08:46:09.766789",
     "stars_source": "api",
   },
   {
@@ -205,19 +205,19 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:06.069728",
+    "stars_last_checked_at": "2026-07-18T08:46:12.751562",
     "stars_source": "api",
   },
   {
     "name": "embodied-drone-agents",
     "owner": "EmergenceAI",
     "description": "LLM drone agent系统，使用MAVSDK-Python作为工具，LangGraph编排任务规划，支持自然语言控制无人机。",
-    "stars": 23,
+    "stars": 24,
     "url": "https://github.com/EmergenceAI/embodied-drone-agents",
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:07.683943",
+    "stars_last_checked_at": "2026-07-18T08:46:15.562036",
     "stars_source": "api",
   },
   {
@@ -229,7 +229,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:09.398455",
+    "stars_last_checked_at": "2026-07-18T08:46:18.382458",
     "stars_source": "api",
   },
   {
@@ -241,7 +241,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:11.456466",
+    "stars_last_checked_at": "2026-07-18T08:46:21.571235",
     "stars_source": "api",
   },
   {
@@ -253,7 +253,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:12.873042",
+    "stars_last_checked_at": "2026-07-18T08:46:24.420850",
     "stars_source": "api",
   },
   {
@@ -265,7 +265,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:14.426734",
+    "stars_last_checked_at": "2026-07-18T08:46:27.140972",
     "stars_source": "api",
   },
   {
@@ -277,7 +277,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:15.987150",
+    "stars_last_checked_at": "2026-07-18T08:46:29.855798",
     "stars_source": "api",
   },
   {
@@ -289,7 +289,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:17.582582",
+    "stars_last_checked_at": "2026-07-18T08:46:32.614688",
     "stars_source": "api",
   },
   {
@@ -301,7 +301,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:19.016805",
+    "stars_last_checked_at": "2026-07-18T08:46:35.388071",
     "stars_source": "api",
   },
   {
@@ -313,19 +313,19 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:20.661383",
+    "stars_last_checked_at": "2026-07-18T08:46:38.232741",
     "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 793,
+    "stars": 794,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:22.131069",
+    "stars_last_checked_at": "2026-07-18T08:46:40.854412",
     "stars_source": "api",
   },
   {
@@ -337,7 +337,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:23.976049",
+    "stars_last_checked_at": "2026-07-18T08:46:43.985715",
     "stars_source": "api",
   },
   {
@@ -349,7 +349,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:25.647725",
+    "stars_last_checked_at": "2026-07-18T08:46:46.890826",
     "stars_source": "api",
   },
   {
@@ -361,7 +361,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:27.215761",
+    "stars_last_checked_at": "2026-07-18T08:46:49.670774",
     "stars_source": "api",
   },
   {
@@ -373,7 +373,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-17T08:46:28.769043",
+    "stars_last_checked_at": "2026-07-18T08:46:52.497492",
     "stars_source": "api",
   },
 ];
@@ -474,5 +474,5 @@ export const stats = {
   papersCount: 8,
   githubCount: 16,
   newsCount: 5,
-  exportTime: "2026-07-17T08:46:02.889399",
+  exportTime: "2026-07-18T08:46:06.928509",
 };
