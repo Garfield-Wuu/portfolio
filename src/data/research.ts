@@ -1,4 +1,4 @@
-// Auto-generated at 2026-07-21T08:47:29.788855
+// Auto-generated at 2026-07-22T08:46:23.460255
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -180,7 +180,7 @@ export const papers: Paper[] = [
     "why_relevant": "与LLM无人机研究相关",
     "research_axis": "VLA",
     "importance": "high",
-  },
+  }
 ];
 
 export const githubRepos: GitHub[] = [
@@ -190,11 +190,12 @@ export const githubRepos: GitHub[] = [
     "description": "开源无人机自动驾驶软件，支持多旋翼、固定翼、VTOL等。学术界最流行的无人机研究平台。",
     "stars": 12200,
     "url": "https://github.com/PX4/PX4-Autopilot",
+    "category": "Aircraft",
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:45:57.879508",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Prometheus (amov-lab)",
@@ -202,11 +203,12 @@ export const githubRepos: GitHub[] = [
     "description": "PX4无人机自主飞行综合解决方案，包含目标追踪、集群控制、SLAM等30+应用模块。累计3.1k+ stars。",
     "stars": 3200,
     "url": "https://github.com/amov-lab/Prometheus",
+    "category": "Aircraft",
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:00.849340",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "embodied-drone-agents",
@@ -214,11 +216,12 @@ export const githubRepos: GitHub[] = [
     "description": "LLM drone agent系统，使用MAVSDK-Python作为工具，LangGraph编排任务规划，支持自然语言控制无人机。",
     "stars": 24,
     "url": "https://github.com/EmergenceAI/embodied-drone-agents",
+    "category": "Aircraft",
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:03.653583",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "MAVLinkMCP",
@@ -226,11 +229,12 @@ export const githubRepos: GitHub[] = [
     "description": "MCP (Model Context Protocol) server for LLM与MAVLink无人机的通信，支持通过MCP协议控制PX4无人机。",
     "stars": 21,
     "url": "https://github.com/ion-g-ion/MAVLinkMCP",
+    "category": "Aircraft",
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:06.432713",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "AerialVLA",
@@ -238,11 +242,12 @@ export const githubRepos: GitHub[] = [
     "description": "端到端视觉-语言-动作无人机导航模型，支持自然语言指令控制无人机。",
     "stars": 0,
     "url": "https://github.com/XuPeng23/AerialVLA",
+    "category": "Aircraft",
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:09.448363",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "UAVs_Meet_LLMs",
@@ -250,11 +255,12 @@ export const githubRepos: GitHub[] = [
     "description": "UAV+LLM综合资源库，汇总无人机与大语言模型结合的论文、项目、数据集。",
     "stars": 501,
     "url": "https://github.com/Hub-Tian/UAVs_Meet_LLMs",
+    "category": "Aircraft",
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:12.328489",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-Aerial-VLN",
@@ -262,11 +268,12 @@ export const githubRepos: GitHub[] = [
     "description": "空中视觉-语言导航(Aerial VLN)论文汇总：无人机VLN方向最新研究。",
     "stars": 61,
     "url": "https://github.com/Sautenich/Awesome-Aerial-Vision-Language-Navigation",
+    "category": "Aircraft",
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:15.203505",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "LeRobot",
@@ -274,11 +281,12 @@ export const githubRepos: GitHub[] = [
     "description": "HuggingFace开源机器人学习库，支持多种机器人(SO-100/SO-ARM100/101)、多种VLA模型(π0、SmolVLA等)、端到端训练推理。Garfield项目核心框架。",
     "stars": 26000,
     "url": "https://github.com/huggingface/lerobot",
+    "category": "Robotics",
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:17.959530",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "dimensionalOS",
@@ -286,11 +294,12 @@ export const githubRepos: GitHub[] = [
     "description": "Agentic OS for physical space，自然语言控制多种机器人(含无人机)，支持多种AI模型和工具。",
     "stars": 3700,
     "url": "https://github.com/dimensionalOS/dimos",
+    "category": "Robotics",
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:20.720264",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-LLM-Robotics",
@@ -298,11 +307,12 @@ export const githubRepos: GitHub[] = [
     "description": "大语言模型/多模态模型在机器人领域的应用论文汇总。",
     "stars": 4400,
     "url": "https://github.com/GT-RIPL/Awesome-LLM-Robotics",
+    "category": "Robotics",
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:23.578296",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "awesome-embodied-vla-va-vln",
@@ -310,11 +320,12 @@ export const githubRepos: GitHub[] = [
     "description": "Embodied AI/VLA/VLN综述列表，汇总具身智能、视觉-语言-动作模型、视觉语言导航相关论文。",
     "stars": 3400,
     "url": "https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln",
+    "category": "Robotics",
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:26.373023",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-RL-VLA",
@@ -322,11 +333,12 @@ export const githubRepos: GitHub[] = [
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
     "stars": 800,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
+    "category": "Robotics",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:29.166176",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "reflex-vla",
@@ -334,11 +346,12 @@ export const githubRepos: GitHub[] = [
     "description": "一键部署VLA模型到边缘GPU，支持多种VLA模型的边缘优化推理。",
     "stars": 0,
     "url": "https://github.com/FastCrest/reflex-vla",
+    "category": "Edge",
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:32.320342",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "CarlaAir",
@@ -346,11 +359,12 @@ export const githubRepos: GitHub[] = [
     "description": "CARLA + 无人机空地一体仿真平台，统一AirSim + CARLA到单一Unreal Engine进程。",
     "stars": 1000,
     "url": "https://github.com/louiszengCN/CarlaAir",
+    "category": "Simulation",
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:35.095038",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "skynet",
@@ -358,11 +372,12 @@ export const githubRepos: GitHub[] = [
     "description": "LLM + MCP协议控制真实机器人和无人机，支持自然语言控制多种平台。",
     "stars": 57,
     "url": "https://github.com/hybridgroup/skynet",
+    "category": "Robotics",
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:37.880825",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-VLA-UAVs",
@@ -370,28 +385,16 @@ export const githubRepos: GitHub[] = [
     "description": "VLA/VLN无人机论文/模型/数据集汇总，空中机器人VLA方向最全资源列表。",
     "stars": 62,
     "url": "https://github.com/TheBrainLab/Awesome-VLA-UAVs",
+    "category": "Aircraft",
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-07-21T08:46:40.810272",
-    "stars_source": "api",
-  },
+    "stars_source": "stale_cache",
+  }
 ];
 
 export const news: News[] = [
-  {
-    "title": "具身智能进入「具身原生」阶段",
-    "source": "网络",
-    "url": "https://news.aibase.com/zh/news/29517",
-    "date": "_2026-07-1",
-    "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-07-15.pdf` 今日多云转大雨，局地暴雨风险，气温 27-30℃，湿度 89%，注意防暑与雷雨防御 - 具身智能进入「具身原生」阶段 — 蚂蚁灵波四天连发六款模型，LingBot-VA2.0 首个具身原生预训练模型，单卡150Hz实时推理，从「数字世界嫁接」转向「物理世界原生设计」",
-    "published_at": "_2026-07-1",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "Robotics",
-    "freshness": "unknown",
-    "archived": false,
-  },
   {
     "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
     "source": "NVIDIA Newsroom",
@@ -440,39 +443,44 @@ export const news: News[] = [
     "research_axis": "VLA",
     "freshness": "fresh",
   },
+  {
+    "title": "Anthropic Claude 4 Sonnet 支持 1M token 上下文",
+    "source": "Anthropic",
+    "url": "https://www.anthropic.com/news/claude-4",
+    "date": "2026-04-01",
+    "summary": "Anthropic发布Claude 4系列，上下文窗口提升至100万tokens，Agent能力显著增强，支持复杂多步骤任务编排。",
+    "published_at": "2026-04-01",
+    "verified": true,
+    "why_it_matters": "超长上下文对无人机任务历史记忆和长程规划有价值",
+    "research_axis": "VLA",
+    "freshness": "fresh",
+  }
 ];
 
 export const trends: Trend[] = [
   {
     "icon": "🤖",
     "title": "VGA > VLA for 控制",
-    "description": "精确控制任务需要几何优先而非语言优先",
+    "description": "几何感知优于语言抽象，稠密3D几何提升控制精度"
   },
   {
     "icon": "🖥️",
     "title": "第一人称仿真",
-    "description": "EgoSim等解决3D一致性问题",
+    "description": "EgoSim / Habitat 3D 场景一致性生成交互数据"
   },
   {
     "icon": "👁️",
     "title": "全景感知",
-    "description": "PanoAir等突破FoV限制",
+    "description": "360°全景视觉提升无人机空间理解能力"
   },
   {
     "icon": "🔧",
     "title": "中间件标准化",
-    "description": "ROS2封装降低VLM集成门槛",
+    "description": "MAVLink/ROS2标准协议 + MCP统一LLM接入"
   },
   {
     "icon": "⚡",
     "title": "边缘部署",
-    "description": "LiPS等轻量级方案适配嵌入式",
-  },
+    "description": "VLA模型边缘优化推理，降低延迟满足实时控制"
+  }
 ];
-
-export const stats = {
-  papersCount: 8,
-  githubCount: 16,
-  newsCount: 5,
-  exportTime: "2026-07-21T08:45:55.030441",
-};
