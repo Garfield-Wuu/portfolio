@@ -1,4 +1,4 @@
-// Auto-generated at 2026-07-23T08:46:59.941485
+// Auto-generated at 2026-07-24T08:59:50.564304
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -194,7 +194,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:45:57.619009",
+    "stars_last_checked_at": "2026-07-24T08:53:48.069076",
     "stars_source": "api",
   },
   {
@@ -207,7 +207,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:45:59.395598",
+    "stars_last_checked_at": "2026-07-24T08:53:49.673370",
     "stars_source": "api",
   },
   {
@@ -220,7 +220,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:00.998867",
+    "stars_last_checked_at": "2026-07-24T08:53:51.186551",
     "stars_source": "api",
   },
   {
@@ -233,7 +233,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:02.626979",
+    "stars_last_checked_at": "2026-07-24T08:53:52.674586",
     "stars_source": "api",
   },
   {
@@ -246,7 +246,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:04.484663",
+    "stars_last_checked_at": "2026-07-24T08:53:55.255222",
     "stars_source": "api",
   },
   {
@@ -259,7 +259,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:07.323115",
+    "stars_last_checked_at": "2026-07-24T08:53:57.326075",
     "stars_source": "api",
   },
   {
@@ -272,20 +272,20 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:08.932242",
+    "stars_last_checked_at": "2026-07-24T08:53:58.938275",
     "stars_source": "api",
   },
   {
     "name": "LeRobot",
     "owner": "huggingface",
     "description": "HuggingFace开源机器人学习库，支持多种机器人(SO-100/SO-ARM100/101)、多种VLA模型(π0、SmolVLA等)、端到端训练推理。Garfield项目核心框架。",
-    "stars": 26000,
+    "stars": 26100,
     "url": "https://github.com/huggingface/lerobot",
     "category": "Robotics",
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:10.424228",
+    "stars_last_checked_at": "2026-07-24T08:54:00.882042",
     "stars_source": "api",
   },
   {
@@ -298,7 +298,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:12.088131",
+    "stars_last_checked_at": "2026-07-24T08:54:02.841249",
     "stars_source": "api",
   },
   {
@@ -311,7 +311,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:13.575829",
+    "stars_last_checked_at": "2026-07-24T08:54:04.444750",
     "stars_source": "api",
   },
   {
@@ -324,20 +324,20 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:15.134105",
+    "stars_last_checked_at": "2026-07-24T08:54:06.197794",
     "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 803,
+    "stars": 804,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "category": "Robotics",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:16.648912",
+    "stars_last_checked_at": "2026-07-24T08:54:08.617976",
     "stars_source": "api",
   },
   {
@@ -350,7 +350,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:18.515428",
+    "stars_last_checked_at": "2026-07-24T08:54:10.847835",
     "stars_source": "api",
   },
   {
@@ -363,7 +363,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:20.234072",
+    "stars_last_checked_at": "2026-07-24T08:54:12.642840",
     "stars_source": "api",
   },
   {
@@ -376,7 +376,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:21.805948",
+    "stars_last_checked_at": "2026-07-24T08:54:14.602725",
     "stars_source": "api",
   },
   {
@@ -389,12 +389,25 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-23T08:46:23.512658",
+    "stars_last_checked_at": "2026-07-24T08:54:16.111513",
     "stars_source": "api",
   }
 ];
 
 export const news: News[] = [
+  {
+    "title": "对你的价值",
+    "source": "网络",
+    "url": "https://www.0405.net/news/3417885.html",
+    "date": "_2026-07-2",
+    "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-07-24.pdf` 珠海 小雨，当前 29.6℃，最高 32.5℃/最低 26.1℃，湿度 74% - [宇树科技发布 UnifoLM-OminiA-0.3 全模态交互理解模型，具身智能进入「全模态」竞赛。](https://www.0405.net/news/3417885.html) —",
+    "published_at": "_2026-07-2",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "Robotics",
+    "freshness": "unknown",
+    "archived": false,
+  },
   {
     "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
     "source": "NVIDIA Newsroom",
@@ -440,18 +453,6 @@ export const news: News[] = [
     "published_at": "2026-04-02",
     "verified": true,
     "why_it_matters": "LLM API成本下降+长上下文对无人机NL指令解析和任务规划直接利好",
-    "research_axis": "VLA",
-    "freshness": "fresh",
-  },
-  {
-    "title": "Anthropic Claude 4 Sonnet 支持 1M token 上下文",
-    "source": "Anthropic",
-    "url": "https://www.anthropic.com/news/claude-4",
-    "date": "2026-04-01",
-    "summary": "Anthropic发布Claude 4系列，上下文窗口提升至100万tokens，Agent能力显著增强，支持复杂多步骤任务编排。",
-    "published_at": "2026-04-01",
-    "verified": true,
-    "why_it_matters": "超长上下文对无人机任务历史记忆和长程规划有价值",
     "research_axis": "VLA",
     "freshness": "fresh",
   }
