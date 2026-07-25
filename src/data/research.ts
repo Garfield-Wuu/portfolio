@@ -1,4 +1,4 @@
-// Auto-generated at 2026-07-24T08:59:50.564304
+// Auto-generated at 2026-07-25T09:03:47.899858
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -194,7 +194,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:53:48.069076",
+    "stars_last_checked_at": "2026-07-25T08:57:52.836157",
     "stars_source": "api",
   },
   {
@@ -207,7 +207,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:53:49.673370",
+    "stars_last_checked_at": "2026-07-25T08:57:54.818793",
     "stars_source": "api",
   },
   {
@@ -220,7 +220,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:53:51.186551",
+    "stars_last_checked_at": "2026-07-25T08:57:56.468506",
     "stars_source": "api",
   },
   {
@@ -233,7 +233,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:53:52.674586",
+    "stars_last_checked_at": "2026-07-25T08:57:58.016099",
     "stars_source": "api",
   },
   {
@@ -246,20 +246,20 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:53:55.255222",
+    "stars_last_checked_at": "2026-07-25T08:57:59.862488",
     "stars_source": "api",
   },
   {
     "name": "UAVs_Meet_LLMs",
     "owner": "Hub-Tian",
     "description": "UAV+LLM综合资源库，汇总无人机与大语言模型结合的论文、项目、数据集。",
-    "stars": 501,
+    "stars": 502,
     "url": "https://github.com/Hub-Tian/UAVs_Meet_LLMs",
     "category": "Aircraft",
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:53:57.326075",
+    "stars_last_checked_at": "2026-07-25T08:58:01.363465",
     "stars_source": "api",
   },
   {
@@ -272,7 +272,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:53:58.938275",
+    "stars_last_checked_at": "2026-07-25T08:58:02.837721",
     "stars_source": "api",
   },
   {
@@ -285,7 +285,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:54:00.882042",
+    "stars_last_checked_at": "2026-07-25T08:58:05.107278",
     "stars_source": "api",
   },
   {
@@ -298,7 +298,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:54:02.841249",
+    "stars_last_checked_at": "2026-07-25T08:58:06.603638",
     "stars_source": "api",
   },
   {
@@ -311,7 +311,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:54:04.444750",
+    "stars_last_checked_at": "2026-07-25T08:58:08.268022",
     "stars_source": "api",
   },
   {
@@ -324,20 +324,20 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:54:06.197794",
+    "stars_last_checked_at": "2026-07-25T08:58:09.787846",
     "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 804,
+    "stars": 806,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "category": "Robotics",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:54:08.617976",
+    "stars_last_checked_at": "2026-07-25T08:58:12.233952",
     "stars_source": "api",
   },
   {
@@ -350,7 +350,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:54:10.847835",
+    "stars_last_checked_at": "2026-07-25T08:58:14.241664",
     "stars_source": "api",
   },
   {
@@ -363,7 +363,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:54:12.642840",
+    "stars_last_checked_at": "2026-07-25T08:58:16.232481",
     "stars_source": "api",
   },
   {
@@ -376,7 +376,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:54:14.602725",
+    "stars_last_checked_at": "2026-07-25T08:58:18.190332",
     "stars_source": "api",
   },
   {
@@ -389,7 +389,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-24T08:54:16.111513",
+    "stars_last_checked_at": "2026-07-25T08:58:19.829388",
     "stars_source": "api",
   }
 ];
