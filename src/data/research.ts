@@ -1,4 +1,4 @@
-// Auto-generated at 2026-07-25T09:03:47.899858
+// Auto-generated at 2026-07-27T08:53:22.285485
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -188,13 +188,13 @@ export const githubRepos: GitHub[] = [
     "name": "PX4 Autopilot",
     "owner": "PX4",
     "description": "开源无人机自动驾驶软件，支持多旋翼、固定翼、VTOL等。学术界最流行的无人机研究平台。",
-    "stars": 12200,
+    "stars": 12300,
     "url": "https://github.com/PX4/PX4-Autopilot",
     "category": "Aircraft",
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:57:52.836157",
+    "stars_last_checked_at": "2026-07-27T08:52:26.395814",
     "stars_source": "api",
   },
   {
@@ -207,7 +207,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:57:54.818793",
+    "stars_last_checked_at": "2026-07-27T08:52:28.036555",
     "stars_source": "api",
   },
   {
@@ -220,7 +220,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:57:56.468506",
+    "stars_last_checked_at": "2026-07-27T08:52:29.562798",
     "stars_source": "api",
   },
   {
@@ -233,7 +233,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:57:58.016099",
+    "stars_last_checked_at": "2026-07-27T08:52:31.095483",
     "stars_source": "api",
   },
   {
@@ -246,7 +246,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:57:59.862488",
+    "stars_last_checked_at": "2026-07-27T08:52:33.104009",
     "stars_source": "api",
   },
   {
@@ -259,7 +259,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:58:01.363465",
+    "stars_last_checked_at": "2026-07-27T08:52:34.996756",
     "stars_source": "api",
   },
   {
@@ -272,7 +272,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:58:02.837721",
+    "stars_last_checked_at": "2026-07-27T08:52:36.559223",
     "stars_source": "api",
   },
   {
@@ -285,7 +285,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:58:05.107278",
+    "stars_last_checked_at": "2026-07-27T08:52:38.239005",
     "stars_source": "api",
   },
   {
@@ -298,7 +298,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:58:06.603638",
+    "stars_last_checked_at": "2026-07-27T08:52:40.118424",
     "stars_source": "api",
   },
   {
@@ -311,7 +311,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:58:08.268022",
+    "stars_last_checked_at": "2026-07-27T08:52:41.569399",
     "stars_source": "api",
   },
   {
@@ -324,7 +324,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:58:09.787846",
+    "stars_last_checked_at": "2026-07-27T08:52:43.144316",
     "stars_source": "api",
   },
   {
@@ -337,7 +337,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:58:12.233952",
+    "stars_last_checked_at": "2026-07-27T08:52:44.935094",
     "stars_source": "api",
   },
   {
@@ -350,20 +350,20 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:58:14.241664",
+    "stars_last_checked_at": "2026-07-27T08:52:47.287224",
     "stars_source": "api",
   },
   {
     "name": "CarlaAir",
     "owner": "louiszengCN",
     "description": "CARLA + 无人机空地一体仿真平台，统一AirSim + CARLA到单一Unreal Engine进程。",
-    "stars": 1000,
+    "stars": 1100,
     "url": "https://github.com/louiszengCN/CarlaAir",
     "category": "Simulation",
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:58:16.232481",
+    "stars_last_checked_at": "2026-07-27T08:52:49.116158",
     "stars_source": "api",
   },
   {
@@ -376,7 +376,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:58:18.190332",
+    "stars_last_checked_at": "2026-07-27T08:52:50.777100",
     "stars_source": "api",
   },
   {
@@ -389,7 +389,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-25T08:58:19.829388",
+    "stars_last_checked_at": "2026-07-27T08:52:52.817217",
     "stars_source": "api",
   }
 ];
