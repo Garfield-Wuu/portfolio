@@ -1,4 +1,4 @@
-// Auto-generated at 2026-07-29T08:49:31.584089
+// Auto-generated at 2026-07-30T08:49:23.964725
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -193,7 +193,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:28.120391",
+    "stars_last_checked_at": "2026-07-30T08:48:23.939931",
     "stars_source": "api",
   },
   {
@@ -205,7 +205,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:29.700966",
+    "stars_last_checked_at": "2026-07-30T08:48:25.561831",
     "stars_source": "api",
   },
   {
@@ -217,7 +217,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:31.300833",
+    "stars_last_checked_at": "2026-07-30T08:48:27.194220",
     "stars_source": "api",
   },
   {
@@ -229,7 +229,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:32.859381",
+    "stars_last_checked_at": "2026-07-30T08:48:28.669723",
     "stars_source": "api",
   },
   {
@@ -241,7 +241,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:34.733132",
+    "stars_last_checked_at": "2026-07-30T08:48:30.398529",
     "stars_source": "api",
   },
   {
@@ -253,7 +253,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:36.650303",
+    "stars_last_checked_at": "2026-07-30T08:48:31.967271",
     "stars_source": "api",
   },
   {
@@ -265,7 +265,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:38.203266",
+    "stars_last_checked_at": "2026-07-30T08:48:33.413498",
     "stars_source": "api",
   },
   {
@@ -277,7 +277,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:39.740035",
+    "stars_last_checked_at": "2026-07-30T08:48:34.845184",
     "stars_source": "api",
   },
   {
@@ -289,7 +289,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:41.808322",
+    "stars_last_checked_at": "2026-07-30T08:48:36.351624",
     "stars_source": "api",
   },
   {
@@ -301,7 +301,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:43.297398",
+    "stars_last_checked_at": "2026-07-30T08:48:37.818410",
     "stars_source": "api",
   },
   {
@@ -313,19 +313,19 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:45.076085",
+    "stars_last_checked_at": "2026-07-30T08:48:39.487887",
     "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 808,
+    "stars": 809,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:46.614507",
+    "stars_last_checked_at": "2026-07-30T08:48:41.012870",
     "stars_source": "api",
   },
   {
@@ -337,7 +337,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:49.063554",
+    "stars_last_checked_at": "2026-07-30T08:48:42.861037",
     "stars_source": "api",
   },
   {
@@ -349,7 +349,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:51.167566",
+    "stars_last_checked_at": "2026-07-30T08:48:44.377970",
     "stars_source": "api",
   },
   {
@@ -361,7 +361,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:52.781245",
+    "stars_last_checked_at": "2026-07-30T08:48:45.888223",
     "stars_source": "api",
   },
   {
@@ -373,18 +373,18 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-07-29T08:45:55.296055",
+    "stars_last_checked_at": "2026-07-30T08:48:47.426108",
     "stars_source": "api",
   },
 ];
 
 export const news: News[] = [
   {
-    "title": "宇树科技发布 UnifoLM-OminiA-0.3 全模态交互理解模型",
-    "source": "45看点",
+    "title": "对你的价值",
+    "source": "网络",
     "url": "https://www.0405.net/news/3417885.html",
-    "date": "2026-07-22",
-    "summary": "7月22日，宇树科技正式推出人形机器人通用智能模型 UnifoLM-OminiA-0.3，支持视觉、语言等多模态交互理解，可统筹家居服务、康养照护等多样化场景，使机器人完成从环境感知、任务理解到自主执行的完整闭环，具身智能进入「全模态」竞赛。",
+    "date": "_2026-07-2",
+    "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-07-24.pdf` 珠海 小雨，当前 29.6℃，最高 32.5℃/最低 26.1℃，湿度 74% - [宇树科技发布 UnifoLM-OminiA-0.3 全模态交互理解模型，具身智能进入「全模态」竞赛。](https://www.0405.net/news/3417885.html) —",
     "published_at": "_2026-07-2",
     "verified": false,
     "why_it_matters": null,
@@ -474,5 +474,5 @@ export const stats = {
   papersCount: 8,
   githubCount: 16,
   newsCount: 5,
-  exportTime: "2026-07-29T08:45:26.496107",
+  exportTime: "2026-07-30T08:48:22.310412",
 };
