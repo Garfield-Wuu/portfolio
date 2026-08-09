@@ -1,4 +1,4 @@
-// Auto-generated at 2026-08-08T08:46:59.371136
+// Auto-generated at 2026-08-09T08:52:45.995774
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -306,7 +306,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:32.325627",
+    "stars_last_checked_at": "2026-08-09T08:45:51.868756",
     "stars_source": "api",
   },
   {
@@ -319,7 +319,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:34.885285",
+    "stars_last_checked_at": "2026-08-09T08:45:53.475706",
     "stars_source": "api",
   },
   {
@@ -332,7 +332,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:36.378683",
+    "stars_last_checked_at": "2026-08-09T08:45:55.926545",
     "stars_source": "api",
   },
   {
@@ -345,7 +345,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:38.695455",
+    "stars_last_checked_at": "2026-08-09T08:45:57.652526",
     "stars_source": "api",
   },
   {
@@ -358,7 +358,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:40.556538",
+    "stars_last_checked_at": "2026-08-09T08:45:59.631133",
     "stars_source": "api",
   },
   {
@@ -371,7 +371,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:42.529896",
+    "stars_last_checked_at": "2026-08-09T08:46:01.750181",
     "stars_source": "api",
   },
   {
@@ -384,7 +384,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:43.963219",
+    "stars_last_checked_at": "2026-08-09T08:46:03.759772",
     "stars_source": "api",
   },
   {
@@ -397,7 +397,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:45.483474",
+    "stars_last_checked_at": "2026-08-09T08:46:05.398152",
     "stars_source": "api",
   },
   {
@@ -410,7 +410,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:47.167389",
+    "stars_last_checked_at": "2026-08-09T08:46:06.926945",
     "stars_source": "api",
   },
   {
@@ -423,7 +423,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:48.773770",
+    "stars_last_checked_at": "2026-08-09T08:46:09.382114",
     "stars_source": "api",
   },
   {
@@ -436,20 +436,20 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:51.005513",
+    "stars_last_checked_at": "2026-08-09T08:46:11.186835",
     "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 819,
+    "stars": 820,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "category": "Robotics",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:52.622282",
+    "stars_last_checked_at": "2026-08-09T08:46:12.804066",
     "stars_source": "api",
   },
   {
@@ -462,7 +462,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:55.370879",
+    "stars_last_checked_at": "2026-08-09T08:46:16.208961",
     "stars_source": "api",
   },
   {
@@ -475,7 +475,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:57.315138",
+    "stars_last_checked_at": "2026-08-09T08:46:18.061785",
     "stars_source": "api",
   },
   {
@@ -488,7 +488,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:45:59.860770",
+    "stars_last_checked_at": "2026-08-09T08:46:19.733777",
     "stars_source": "api",
   },
   {
@@ -501,12 +501,25 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-08T08:46:02.353863",
+    "stars_last_checked_at": "2026-08-09T08:46:21.716650",
     "stars_source": "api",
   }
 ];
 
 export const news: News[] = [
+  {
+    "title": "OpenAI 桌面端 ChatGPT 上线语音交互功能，可语音操控电脑执行多步骤任务",
+    "source": "网络",
+    "url": "https://www.cnfin.com/hg-lb/detail/20260806/4451846_1.html",
+    "date": "_2026-08-0",
+    "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-08-09.pdf` 🌤️ - [中国金融信息网：低空经济从\"能飞\"到\"合规飞\"：新法落地首月，低空基建有望提速...](https://www.cnfin.com/hg-lb/detail/20260806/4451846_1.html)",
+    "published_at": "_2026-08-0",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "Robotics",
+    "freshness": "unknown",
+    "archived": false,
+  },
   {
     "title": "智元机器人量产突破10000台，领先特斯拉Optimus",
     "source": "网络",
@@ -555,18 +568,6 @@ export const news: News[] = [
     "verified": true,
     "why_it_matters": "四足机器人硬件迭代，负载和续航大幅提升，工业巡检应用加速落地",
     "research_axis": "Robotics",
-    "freshness": "fresh",
-  },
-  {
-    "title": "DJI Air 3S 无人机发布",
-    "source": "DJI",
-    "url": "https://www.dji.com/cn/air-3s",
-    "date": "2026-03-28",
-    "summary": "大疆发布Air 3S，配备1英寸主摄+70mm长焦双摄系统，全向避障，支持APAS 5.0，续航48分钟，面向消费级航拍市场。",
-    "published_at": "2026-03-28",
-    "verified": true,
-    "why_it_matters": "消费级无人机避障和续航持续进化，DJI技术动态",
-    "research_axis": "Aircraft",
     "freshness": "fresh",
   }
 ];
