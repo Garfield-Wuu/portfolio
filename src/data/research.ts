@@ -1,4 +1,4 @@
-// Auto-generated at 2026-08-10T08:47:25.343936
+// Auto-generated at 2026-08-17T08:47:36.528678
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -306,7 +306,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:45:58.608574",
+    "stars_last_checked_at": "2026-08-17T08:45:39.658932",
     "stars_source": "api",
   },
   {
@@ -319,7 +319,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:00.372697",
+    "stars_last_checked_at": "2026-08-17T08:45:42.616051",
     "stars_source": "api",
   },
   {
@@ -332,7 +332,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:02.935906",
+    "stars_last_checked_at": "2026-08-17T08:45:46.296137",
     "stars_source": "api",
   },
   {
@@ -345,7 +345,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:04.557416",
+    "stars_last_checked_at": "2026-08-17T08:45:48.993712",
     "stars_source": "api",
   },
   {
@@ -358,20 +358,20 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:07.323431",
+    "stars_last_checked_at": "2026-08-17T08:45:52.552911",
     "stars_source": "api",
   },
   {
     "name": "UAVs_Meet_LLMs",
     "owner": "Hub-Tian",
     "description": "UAV+LLM综合资源库，汇总无人机与大语言模型结合的论文、项目、数据集。",
-    "stars": 504,
+    "stars": 505,
     "url": "https://github.com/Hub-Tian/UAVs_Meet_LLMs",
     "category": "Aircraft",
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:09.014602",
+    "stars_last_checked_at": "2026-08-17T08:45:55.237975",
     "stars_source": "api",
   },
   {
@@ -384,20 +384,20 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:10.679985",
+    "stars_last_checked_at": "2026-08-17T08:45:57.985422",
     "stars_source": "api",
   },
   {
     "name": "LeRobot",
     "owner": "huggingface",
     "description": "HuggingFace开源机器人学习库，支持多种机器人(SO-100/SO-ARM100/101)、多种VLA模型(π0、SmolVLA等)、端到端训练推理。Garfield项目核心框架。",
-    "stars": 26500,
+    "stars": 26700,
     "url": "https://github.com/huggingface/lerobot",
     "category": "Robotics",
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:13.479600",
+    "stars_last_checked_at": "2026-08-17T08:46:00.965417",
     "stars_source": "api",
   },
   {
@@ -410,46 +410,46 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:15.316730",
+    "stars_last_checked_at": "2026-08-17T08:46:04.120230",
     "stars_source": "api",
   },
   {
     "name": "Awesome-LLM-Robotics",
     "owner": "GT-RIPL",
     "description": "大语言模型/多模态模型在机器人领域的应用论文汇总。",
-    "stars": 4400,
+    "stars": 4500,
     "url": "https://github.com/GT-RIPL/Awesome-LLM-Robotics",
     "category": "Robotics",
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:17.009293",
+    "stars_last_checked_at": "2026-08-17T08:46:06.851530",
     "stars_source": "api",
   },
   {
     "name": "awesome-embodied-vla-va-vln",
     "owner": "jonyzhang2023",
     "description": "Embodied AI/VLA/VLN综述列表，汇总具身智能、视觉-语言-动作模型、视觉语言导航相关论文。",
-    "stars": 3400,
+    "stars": 3500,
     "url": "https://github.com/jonyzhang2023/awesome-embodied-vla-va-vln",
     "category": "Robotics",
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:18.757055",
+    "stars_last_checked_at": "2026-08-17T08:46:09.606640",
     "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 821,
+    "stars": 827,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "category": "Robotics",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:21.285639",
+    "stars_last_checked_at": "2026-08-17T08:46:12.226727",
     "stars_source": "api",
   },
   {
@@ -462,7 +462,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:24.464956",
+    "stars_last_checked_at": "2026-08-17T08:46:15.427804",
     "stars_source": "api",
   },
   {
@@ -475,7 +475,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:26.378327",
+    "stars_last_checked_at": "2026-08-17T08:46:18.202182",
     "stars_source": "api",
   },
   {
@@ -488,7 +488,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:29.012409",
+    "stars_last_checked_at": "2026-08-17T08:46:21.341287",
     "stars_source": "api",
   },
   {
@@ -501,12 +501,25 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-10T08:46:31.665472",
+    "stars_last_checked_at": "2026-08-17T08:46:24.200024",
     "stars_source": "api",
   }
 ];
 
 export const news: News[] = [
+  {
+    "title": "智元机器人上半年出货量全球第一 | 低空经济纳入央企产业焕新行动 | 北大联合推出ω-0世界动作模型",
+    "source": "网络",
+    "url": "https://finance.sina.com.cn/roll/2026-08-12/doc-ininaezf6772614.shtml",
+    "date": "_2026-08-1",
+    "summary": "> 智元机器人上半年出货量全球第一 | 低空经济纳入央企产业焕新行动 | 北大联合推出ω-0世界动作模型 ════════════════════════════════════════════ 珠海： 雷阵雨，26°~32°C，风力1-3级",
+    "published_at": "_2026-08-1",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "Robotics",
+    "freshness": "unknown",
+    "archived": false,
+  },
   {
     "title": "本期数据受限说明",
     "source": "网络",
@@ -558,18 +571,6 @@ export const news: News[] = [
     "research_axis": "Robotics",
     "freshness": "unknown",
     "archived": false,
-  },
-  {
-    "title": "NVIDIA GR00T N1.6 + Cosmos Reason 2 发布",
-    "source": "NVIDIA Newsroom",
-    "url": "https://nvidianews.nvidia.com/news/nvidia-releases-new-physical-ai-models-as-global-partners-unveil-next-generation-robots",
-    "date": "2026-04-01",
-    "summary": "NVIDIA发布开源物理AI模型GR00T N1.6和Cosmos Reason世界模型，全球合作伙伴推出下一代机器人，机器人的ChatGPT时刻已至。",
-    "published_at": "2026-04-01",
-    "verified": true,
-    "why_it_matters": "开源物理AI+世界模型对机器人仿真和无人机Sim2Real有直接参考价值",
-    "research_axis": "Robotics",
-    "freshness": "fresh",
   }
 ];
 
