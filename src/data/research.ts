@@ -1,4 +1,4 @@
-// Auto-generated at 2026-08-17T08:47:36.528678
+// Auto-generated at 2026-08-18T08:55:26.225729
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -306,7 +306,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:45:39.658932",
+    "stars_last_checked_at": "2026-08-18T08:46:11.620000",
     "stars_source": "api",
   },
   {
@@ -319,7 +319,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:45:42.616051",
+    "stars_last_checked_at": "2026-08-18T08:46:14.807830",
     "stars_source": "api",
   },
   {
@@ -332,7 +332,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:45:46.296137",
+    "stars_last_checked_at": "2026-08-18T08:46:17.405786",
     "stars_source": "api",
   },
   {
@@ -345,7 +345,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:45:48.993712",
+    "stars_last_checked_at": "2026-08-18T08:46:18.976841",
     "stars_source": "api",
   },
   {
@@ -358,20 +358,20 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:45:52.552911",
+    "stars_last_checked_at": "2026-08-18T08:46:20.750275",
     "stars_source": "api",
   },
   {
     "name": "UAVs_Meet_LLMs",
     "owner": "Hub-Tian",
     "description": "UAV+LLM综合资源库，汇总无人机与大语言模型结合的论文、项目、数据集。",
-    "stars": 505,
+    "stars": 506,
     "url": "https://github.com/Hub-Tian/UAVs_Meet_LLMs",
     "category": "Aircraft",
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:45:55.237975",
+    "stars_last_checked_at": "2026-08-18T08:46:22.330727",
     "stars_source": "api",
   },
   {
@@ -384,7 +384,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:45:57.985422",
+    "stars_last_checked_at": "2026-08-18T08:46:23.808618",
     "stars_source": "api",
   },
   {
@@ -397,7 +397,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:46:00.965417",
+    "stars_last_checked_at": "2026-08-18T08:46:25.404848",
     "stars_source": "api",
   },
   {
@@ -410,7 +410,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:46:04.120230",
+    "stars_last_checked_at": "2026-08-18T08:46:27.495350",
     "stars_source": "api",
   },
   {
@@ -423,7 +423,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:46:06.851530",
+    "stars_last_checked_at": "2026-08-18T08:46:29.069972",
     "stars_source": "api",
   },
   {
@@ -436,20 +436,20 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:46:09.606640",
+    "stars_last_checked_at": "2026-08-18T08:46:30.760434",
     "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 827,
+    "stars": 830,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "category": "Robotics",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:46:12.226727",
+    "stars_last_checked_at": "2026-08-18T08:46:32.401273",
     "stars_source": "api",
   },
   {
@@ -462,7 +462,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:46:15.427804",
+    "stars_last_checked_at": "2026-08-18T08:46:34.310927",
     "stars_source": "api",
   },
   {
@@ -475,7 +475,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:46:18.202182",
+    "stars_last_checked_at": "2026-08-18T08:46:36.135863",
     "stars_source": "api",
   },
   {
@@ -488,7 +488,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:46:21.341287",
+    "stars_last_checked_at": "2026-08-18T08:46:37.934714",
     "stars_source": "api",
   },
   {
@@ -501,12 +501,25 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-17T08:46:24.200024",
+    "stars_last_checked_at": "2026-08-18T08:46:39.602308",
     "stars_source": "api",
   }
 ];
 
 export const news: News[] = [
+  {
+    "title": "对你的价值",
+    "source": "网络",
+    "url": "https://finance.sina.com.cn/jjxw/2026-08-11/doc-inimwyqv4464650.shtml",
+    "date": "_2026-08-1",
+    "summary": "> 完整 PDF：`reports/daily_briefing/briefing_2026-08-18.pdf` 珠海 雷阵雨，当前 26.8°C，今日 25.7~29.8°C，湿度 94%，风速 10.3 km/h，降水概率 100%。 - [具身智能资本化加速：宇树启动申购、智元冲刺港股](https://finance.sina.com.cn/jjxw/2026-08-11/doc-ini",
+    "published_at": "_2026-08-1",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "Robotics",
+    "freshness": "unknown",
+    "archived": false,
+  },
   {
     "title": "智元机器人上半年出货量全球第一 | 低空经济纳入央企产业焕新行动 | 北大联合推出ω-0世界动作模型",
     "source": "网络",
