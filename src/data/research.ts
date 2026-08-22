@@ -1,4 +1,4 @@
-// Auto-generated at 2026-08-21T09:10:35.980458
+// Auto-generated at 2026-08-22T08:56:16.893281
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -306,7 +306,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:03:37.901704",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Prometheus (amov-lab)",
@@ -318,7 +318,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:03:41.360780",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "embodied-drone-agents",
@@ -330,7 +330,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:03:44.777070",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "MAVLinkMCP",
@@ -342,7 +342,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:03:49.306570",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "AerialVLA",
@@ -354,7 +354,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:03:53.305713",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "UAVs_Meet_LLMs",
@@ -366,7 +366,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:03:56.830580",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-Aerial-VLN",
@@ -378,7 +378,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:04:00.679552",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "LeRobot",
@@ -390,7 +390,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:04:04.961684",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "dimensionalOS",
@@ -402,7 +402,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:04:08.168854",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-LLM-Robotics",
@@ -414,7 +414,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:04:11.963451",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "awesome-embodied-vla-va-vln",
@@ -426,7 +426,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:04:15.641466",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-RL-VLA",
@@ -438,7 +438,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:04:19.076621",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "reflex-vla",
@@ -450,7 +450,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:04:22.772757",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "CarlaAir",
@@ -462,7 +462,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:04:25.709818",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "skynet",
@@ -474,7 +474,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:04:28.577910",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-VLA-UAVs",
@@ -486,18 +486,34 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-08-21T09:04:33.063512",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
 ];
 
 export const news: News[] = [
   {
-    "title": "世界模型成为具身智能新标配",
+    "title": "人形机器人从「炫技」转向「干活」，量产与场景成为新分水岭",
+    "source": "中国证券报",
+    "url": "https://www.cs.com.cn/ssgs/cj2020/2026/08/21/detail_2026082110032823.html",
+    "date": "2026-08-22",
+    "summary": "WRC 2026 展厅里舞蹈空翻明显减少，分拣、仓储、洗衣等真实作业场景成为主角。上半年中国出货量占全球 97%，其中工业与商业应用超总量 70%。行业共识：单点炫技已无价值，能否进入陌生环境、快速学会新任务才是门槛。",
+    "research_axis": "robotics",
+  },
+  {
+    "title": "宇树科技 8/19 登陆科创板，成 A 股「人形机器人第一股」",
+    "source": "凤凰网财经",
+    "url": "https://finance.ifeng.com/c/8vizHJhH1qq",
+    "date": "2026-08-21",
+    "summary": "发行价 150.80 元/股，发行后市值约 610 亿元，募资净额 59.17 亿元（超募约 17.15 亿）；网上有效申购 978.46 万户创科创板新高，中签率 0.018% 创新低。DeepSeek 获战略配售约 1.41 亿元，锁定 36 个月，募资约 20 亿元投向具身大模型研发。",
+    "research_axis": "robotics",
+  },
+  {
+    "title": "世界模型成为具身智能新标配：从「脑海推演」到「现实执行」",
     "source": "新浪财经",
     "url": "https://finance.sina.com.cn/tech/it/2026-08-19/doc-ininwawr9310822.shtml",
     "date": "2026-08-20",
-    "summary": "WRC 2026 现场，大晓机器人「开悟」世界模型 3.1 与配套环境式数采方案同台亮相，主打「脑海中推演，现实中执行」；arXiv 侧 τ0-VLA 等分层机器人基座模型同样把世界模型作为规划层。产业与学术在同一周收敛到「世界模型 → 动作策略」的双层架构。",
-    "research_axis": "VLA",
+    "summary": "WRC 2026 现场，大晓机器人「开悟」世界模型 3.1 与配套环境式数采方案同台亮相；arXiv 侧 τ0-VLA 等分层机器人基座模型同样把世界模型作为规划层。产业与学术在同一周收敛到「世界模型 → 动作策略」的双层架构。",
+    "research_axis": "vla",
   },
   {
     "title": "人形机器人进入「资本 + 产能」双验证期",
@@ -505,47 +521,31 @@ export const news: News[] = [
     "url": "https://finance.sina.com.cn/jjxw/2026-08-18/doc-inintatv7412922.shtml",
     "date": "2026-08-19",
     "summary": "宇树科技 8/19 登陆科创板，发行价 150.80 元、市值约 610 亿元，发行 PE 219 倍 vs 行业均值 38.56 倍。同期累计下线约 18000 台双足人形，杭州 G1 产线月产 200 台、Q4 目标 500 台/月。叙事已从样机演示切到出货量与产能爬坡。",
-    "research_axis": "Robotics",
+    "research_axis": "robotics",
   },
   {
     "title": "具身智能资本化加速：宇树启动申购、智元冲刺港股",
     "source": "新浪财经",
     "url": "https://finance.sina.com.cn/jjxw/2026-08-11/doc-inimwyqv4464650.shtml",
     "date": "2026-08-18",
-    "summary": "赛道从「烧钱讲故事」转向盈利验证，投资人明显更看落地订单与毛利，而非 demo 视频。宇树启动申购、智元冲刺港股，两家头部企业同期进入资本市场检验阶段。",
-    "research_axis": "Robotics",
+    "summary": "赛道从「烧钱讲故事」转向盈利验证，投资人明显更看落地订单与毛利，而非 demo 视频。同期 VLA 技术路线分岔为端到端、分层世界模型、类脑三条路径并行。",
+    "research_axis": "robotics",
   },
   {
-    "title": "智元机器人2026上半年出货量全球第一，占44%市场份额",
+    "title": "智元机器人 2026 上半年出货量全球第一，占据 44% 市场份额",
     "source": "新浪财经",
     "url": "https://finance.sina.com.cn/roll/2026-08-12/doc-ininaezf6772614.shtml",
     "date": "2026-08-17",
-    "summary": "Smart Analytics Global 数据显示，2026 年上半年全球人形机器人出货约 1.91 万台，是上年同期 5100 台的三倍多。智元机器人以 8400 台出货量（44% 份额）超越宇树科技（5900 台，31%），成为全球第一，两家中国企业合计占全球约四分之三出货量。",
-    "research_axis": "Robotics",
+    "summary": "Smart Analytics Global 数据显示，2026 上半年全球人形机器人出货约 1.91 万台，是上年同期 5100 台的三倍多。智元以 8400 台（44% 份额）超越宇树（5900 台，31%）成为全球第一，两家中国企业合计占全球约四分之三出货量。",
+    "research_axis": "robotics",
   },
   {
-    "title": "宇树科技登陆科创板，募资61亿元85%投向研发",
+    "title": "宇树科技启动申购：发行价 150.8 元，发行市值 610 亿元",
     "source": "央视财经",
     "url": "https://finance.cctv.com/2026/08/07/ARTIyGei7enbQ5vSEpmMyg5Y260807.shtml",
     "date": "2026-08-10",
-    "summary": "国内首个实现规模化盈利的人形机器人企业登陆资本市场，为整个具身智能行业树立清晰的估值坐标。募资 61 亿元，其中 85% 投向研发，重点布局智能机器人大模型（「大脑」层面），产业从「硬件本体」向「智能系统」跃迁。",
-    "research_axis": "Robotics",
-  },
-  {
-    "title": "低空经济从「能飞」到「合规飞」：新法落地首月，低空基建有望提速",
-    "source": "中国金融信息网",
-    "url": "https://www.cnfin.com/hg-lb/detail/20260806/4451846_1.html",
-    "date": "2026-08-09",
-    "summary": "新《民用航空法》7/1 施行满月，8/7 民航局等三部门印发《民用航空发展十五五规划》，国家发改委发布低空保险实施意见。全行业注册无人机 328.7 万架、产业链规模 1.5 万亿元；上位法补齐后瓶颈转向空域审批与基建。",
-    "research_axis": "Aircraft",
-  },
-  {
-    "title": "智元机器人量产突破10000台，领先特斯拉Optimus",
-    "source": "36氪",
-    "url": "https://www.36kr.com/p/3740987466399753",
-    "date": "2026-08-08",
-    "summary": "智元机器人宣布累计量产交付突破 10000 台，进度领先特斯拉 Optimus，成为人形机器人赛道首个跨过万台量产门槛的厂商，标志行业从样机验证进入规模化制造阶段。",
-    "research_axis": "Robotics",
+    "summary": "2025 年人形机器人出货量全球第一（550 台纯人形，市占率 32.4%），四足机器人累计销量超 3.3 万台，核心零部件自研自产率超 90%。募资 61 亿元中 85% 投向研发，重点布局机器人大模型「大脑」层。",
+    "research_axis": "robotics",
   },
 ];
 
@@ -576,5 +576,5 @@ export const stats = {
   papersCount: 20,
   githubCount: 16,
   newsCount: 7,
-  exportTime: "2026-08-21T09:03:34.236541",
+  exportTime: "2026-08-22T08:46:17.906044",
 };
