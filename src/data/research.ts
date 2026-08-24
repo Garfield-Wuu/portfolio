@@ -1,4 +1,4 @@
-// Auto-generated at 2026-08-23T08:48:18.048969
+// Auto-generated at 2026-08-24T08:48:38.960384
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -305,7 +305,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:45:50.369464",
+    "stars_last_checked_at": "2026-08-24T08:46:19.255041",
     "stars_source": "api",
   },
   {
@@ -317,7 +317,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:45:53.979769",
+    "stars_last_checked_at": "2026-08-24T08:46:23.008606",
     "stars_source": "api",
   },
   {
@@ -329,7 +329,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:45:58.002857",
+    "stars_last_checked_at": "2026-08-24T08:46:30.427779",
     "stars_source": "api",
   },
   {
@@ -341,7 +341,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:46:01.702733",
+    "stars_last_checked_at": "2026-08-24T08:46:36.597044",
     "stars_source": "api",
   },
   {
@@ -353,7 +353,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:46:05.641105",
+    "stars_last_checked_at": "2026-08-24T08:46:41.277110",
     "stars_source": "api",
   },
   {
@@ -365,7 +365,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:46:09.291765",
+    "stars_last_checked_at": "2026-08-24T08:46:45.740150",
     "stars_source": "api",
   },
   {
@@ -377,32 +377,32 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:46:12.938194",
+    "stars_last_checked_at": "2026-08-24T08:46:50.218999",
     "stars_source": "api",
   },
   {
     "name": "LeRobot",
     "owner": "huggingface",
     "description": "HuggingFace开源机器人学习库，支持多种机器人(SO-100/SO-ARM100/101)、多种VLA模型(π0、SmolVLA等)、端到端训练推理。Garfield项目核心框架。",
-    "stars": 26800,
+    "stars": 26900,
     "url": "https://github.com/huggingface/lerobot",
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-21T09:04:04.961684",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-08-24T08:46:54.371898",
+    "stars_source": "api",
   },
   {
     "name": "dimensionalOS",
     "owner": "dimensionalOS",
     "description": "Agentic OS for physical space，自然语言控制多种机器人(含无人机)，支持多种AI模型和工具。",
-    "stars": 4300,
+    "stars": 4400,
     "url": "https://github.com/dimensionalOS/dimos",
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-21T09:04:08.168854",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-08-24T08:46:57.851469",
+    "stars_source": "api",
   },
   {
     "name": "Awesome-LLM-Robotics",
@@ -413,7 +413,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:46:31.555447",
+    "stars_last_checked_at": "2026-08-24T08:47:01.304662",
     "stars_source": "api",
   },
   {
@@ -425,19 +425,19 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:46:34.614904",
+    "stars_last_checked_at": "2026-08-24T08:47:05.483976",
     "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 835,
+    "stars": 837,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:46:37.320971",
+    "stars_last_checked_at": "2026-08-24T08:47:08.717518",
     "stars_source": "api",
   },
   {
@@ -449,7 +449,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:46:41.001633",
+    "stars_last_checked_at": "2026-08-24T08:47:12.611534",
     "stars_source": "api",
   },
   {
@@ -461,7 +461,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:46:44.208039",
+    "stars_last_checked_at": "2026-08-24T08:47:16.146334",
     "stars_source": "api",
   },
   {
@@ -473,7 +473,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:46:47.403974",
+    "stars_last_checked_at": "2026-08-24T08:47:20.177441",
     "stars_source": "api",
   },
   {
@@ -485,12 +485,25 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-08-23T08:46:51.072768",
+    "stars_last_checked_at": "2026-08-24T08:47:23.704177",
     "stars_source": "api",
   },
 ];
 
 export const news: News[] = [
+  {
+    "title": "硬件同质化，价值向上游迁移",
+    "source": "网络",
+    "url": "https://www.readaitime.com/news/2026-08-19/z22imb6m",
+    "date": "_2026-08-2",
+    "summary": "> 📄 完整 PDF 版本：`reports/daily_briefing/briefing_2026-08-24.pdf` > 🗓️ 2026年8月24日 星期一 | AI · 机器人 · 无人机 · 具身智能 珠海：多云转阴，27-32℃，北风，湿度82%",
+    "published_at": "_2026-08-2",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "Robotics",
+    "freshness": "unknown",
+    "archived": false,
+  },
   {
     "title": "人形机器人：",
     "source": "网络",
@@ -569,19 +582,6 @@ export const news: News[] = [
     "freshness": "unknown",
     "archived": false,
   },
-  {
-    "title": "智元机器人上半年出货量全球第一 | 低空经济纳入央企产业焕新行动 | 北大联合推出ω-0世界动作模型",
-    "source": "网络",
-    "url": "https://finance.sina.com.cn/roll/2026-08-12/doc-ininaezf6772614.shtml",
-    "date": "_2026-08-1",
-    "summary": "> 智元机器人上半年出货量全球第一 | 低空经济纳入央企产业焕新行动 | 北大联合推出ω-0世界动作模型 ════════════════════════════════════════════ 珠海： 雷阵雨，26°~32°C，风力1-3级",
-    "published_at": "_2026-08-1",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "Robotics",
-    "freshness": "unknown",
-    "archived": false,
-  },
 ];
 
 export const trends: Trend[] = [
@@ -611,5 +611,5 @@ export const stats = {
   papersCount: 20,
   githubCount: 16,
   newsCount: 7,
-  exportTime: "2026-08-23T08:45:47.166186",
+  exportTime: "2026-08-24T08:46:15.560308",
 };
