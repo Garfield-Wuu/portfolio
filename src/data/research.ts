@@ -1,4 +1,4 @@
-// Auto-generated at 2026-08-25T08:54:18.374729
+// Auto-generated at 2026-08-26T08:50:23.495109
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -307,7 +307,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:47:11.894193",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Prometheus (amov-lab)",
@@ -320,7 +320,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:47:14.713754",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "embodied-drone-agents",
@@ -333,7 +333,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:47:18.594503",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "MAVLinkMCP",
@@ -346,7 +346,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:47:22.754934",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "AerialVLA",
@@ -359,7 +359,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:47:27.076032",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "UAVs_Meet_LLMs",
@@ -372,7 +372,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:47:30.921153",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-Aerial-VLN",
@@ -385,7 +385,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:47:34.664872",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "LeRobot",
@@ -398,7 +398,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:47:38.348111",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "dimensionalOS",
@@ -411,7 +411,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:47:42.147376",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-LLM-Robotics",
@@ -424,7 +424,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:47:45.308846",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "awesome-embodied-vla-va-vln",
@@ -437,7 +437,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:47:48.744841",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-RL-VLA",
@@ -450,7 +450,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:47:52.685849",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "reflex-vla",
@@ -463,7 +463,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:47:56.382109",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "CarlaAir",
@@ -476,7 +476,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:48:00.252508",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "skynet",
@@ -489,7 +489,7 @@ export const githubRepos: GitHub[] = [
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:48:04.569203",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   },
   {
     "name": "Awesome-VLA-UAVs",
@@ -502,11 +502,24 @@ export const githubRepos: GitHub[] = [
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
     "stars_last_checked_at": "2026-08-25T08:48:08.031206",
-    "stars_source": "api",
+    "stars_source": "stale_cache",
   }
 ];
 
 export const news: News[] = [
+  {
+    "title": "人形机器人从「估值狂欢」转向「算明账」",
+    "source": "网络",
+    "url": "https://finance.sina.cn/tech/2026-08-25/detail-inippvuh9577553.d.html",
+    "date": "_2026-08-2",
+    "summary": "> 完整 PDF：`reports/daily_briefing/briefing_2026-08-26.pdf` 珠海 · 多云转雷阵雨 · 当前 28.9°C（26.1–31.4°C）· 湿度 85% · 风速 12.7 km/h - 人形机器人从「估值狂欢」转向「算明账」 — 半年出货已超 4 万台，行业焦点从融资额转向单台成本、良率与真实工厂订单，媒体开始追问量产爆发的实际距离。",
+    "published_at": "_2026-08-2",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "Robotics",
+    "freshness": "unknown",
+    "archived": false,
+  },
   {
     "title": "世界模型成为具身智能的新标配",
     "source": "网络",
@@ -579,19 +592,6 @@ export const news: News[] = [
     "date": "_2026-08-2",
     "summary": "> 📄 完整 PDF：`reports/daily_briefing/briefing_2026-08-20.pdf`（4 页） 细雨，当前 27.7℃ · 今日雷阵雨 26.3–30.3℃ · 湿度 85% · 风速 16.2 km/h WRC 2026 现场，大晓机器人「开悟」世界模型 3.1 与配套环境式数采方案同台亮相，主打「脑海中推演，现实中执行」；arXiv 侧 τ0-VLA 等分层机",
     "published_at": "_2026-08-2",
-    "verified": false,
-    "why_it_matters": null,
-    "research_axis": "Robotics",
-    "freshness": "unknown",
-    "archived": false,
-  },
-  {
-    "title": "对你的价值",
-    "source": "网络",
-    "url": "https://finance.sina.com.cn/jjxw/2026-08-18/doc-inintatv7412922.shtml",
-    "date": "_2026-08-1",
-    "summary": "> 📄 完整 PDF：`reports/daily_briefing/briefing_2026-08-19.pdf`（5 页） 珠海：阵雨转雷阵雨　27–31℃　湿度 84%　西南风 3-4 级 · 午后雷雨概率高，外出带伞（wttr.in + 中国天气网） 宇树科技今日（8/19）登陆科创板，发行价 150.80 元、市值约 610 亿元，发行 PE 219 倍 vs 行业均值 38.56 倍",
-    "published_at": "_2026-08-1",
     "verified": false,
     "why_it_matters": null,
     "research_axis": "Robotics",
