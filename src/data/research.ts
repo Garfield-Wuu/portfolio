@@ -1,4 +1,4 @@
-// Auto-generated at 2026-09-04T08:52:26.677579
+// Auto-generated at 2026-09-05T08:52:46.912789
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -305,7 +305,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:45:39.419122",
+    "stars_last_checked_at": "2026-09-05T08:46:08.019082",
     "stars_source": "api",
   },
   {
@@ -317,7 +317,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:45:41.005807",
+    "stars_last_checked_at": "2026-09-05T08:46:09.624813",
     "stars_source": "api",
   },
   {
@@ -329,7 +329,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:45:42.618200",
+    "stars_last_checked_at": "2026-09-05T08:46:11.199950",
     "stars_source": "api",
   },
   {
@@ -341,7 +341,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:45:43.986565",
+    "stars_last_checked_at": "2026-09-05T08:46:12.743692",
     "stars_source": "api",
   },
   {
@@ -353,7 +353,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:45:45.673960",
+    "stars_last_checked_at": "2026-09-05T08:46:14.542979",
     "stars_source": "api",
   },
   {
@@ -365,7 +365,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:45:47.153359",
+    "stars_last_checked_at": "2026-09-05T08:46:16.216585",
     "stars_source": "api",
   },
   {
@@ -377,7 +377,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:45:48.606903",
+    "stars_last_checked_at": "2026-09-05T08:46:17.886807",
     "stars_source": "api",
   },
   {
@@ -389,7 +389,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:45:50.142107",
+    "stars_last_checked_at": "2026-09-05T08:46:19.304868",
     "stars_source": "api",
   },
   {
@@ -401,7 +401,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:45:51.667134",
+    "stars_last_checked_at": "2026-09-05T08:46:20.862041",
     "stars_source": "api",
   },
   {
@@ -413,8 +413,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-03T08:48:13.290879",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-05T08:46:22.341018",
+    "stars_source": "api",
   },
   {
     "name": "awesome-embodied-vla-va-vln",
@@ -425,19 +425,19 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:45:54.084159",
+    "stars_last_checked_at": "2026-09-05T08:46:23.788800",
     "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
     "owner": "Denghaoyuan123",
     "description": "RL+VLA论文汇总：强化学习视觉-语言-动作模型综述。",
-    "stars": 845,
+    "stars": 846,
     "url": "https://github.com/Denghaoyuan123/Awesome-RL-VLA",
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:45:55.431252",
+    "stars_last_checked_at": "2026-09-05T08:46:25.328174",
     "stars_source": "api",
   },
   {
@@ -449,7 +449,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:45:57.514374",
+    "stars_last_checked_at": "2026-09-05T08:46:27.225899",
     "stars_source": "api",
   },
   {
@@ -461,7 +461,7 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:45:59.088388",
+    "stars_last_checked_at": "2026-09-05T08:46:28.855467",
     "stars_source": "api",
   },
   {
@@ -473,7 +473,7 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:46:00.514232",
+    "stars_last_checked_at": "2026-09-05T08:46:30.207654",
     "stars_source": "api",
   },
   {
@@ -485,22 +485,34 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-04T08:46:02.107142",
+    "stars_last_checked_at": "2026-09-05T08:46:31.726281",
     "stars_source": "api",
   },
 ];
 
 export const news: News[] = [
   {
+    "title": "人形机器人从「能动」转向「能算账」",
+    "source": "澎湃新闻",
+    "url": "https://www.thepaper.cn/newsDetail_forward_33771493",
+    "date": "2026-09-05",
+    "summary": "上半年全球出货 1.91 万台、同比增超 270%，中国造占 97%（智元 8400 台、宇树 5900 台，两家吃掉全球四分之三）。但同期宇树市值缩水近半、优必选仍亏 3.39 亿元。产业叙事正从运动能力炫技切换到量产交付与毛利，优必选把竞争焦点直接定义为「拼大脑、拼体系化能力」。",
+    "published_at": "2026-09-05",
+    "verified": false,
+    "research_axis": "Robotics",
+    "freshness": "fresh",
+    "archived": false,
+  },
+  {
     "title": "世界模型从「生成好看视频」转向「给策略当预演器」",
     "source": "雷峰网",
     "url": "https://www.leiphone.com/category/academic/LF4mbUTko5bRYDky.html",
     "date": "2026-09-04",
     "summary": "李飞飞 World Labs 的 Atlas 打通「真实照片→3D 空间→机器人传感器视图→可变仿真」；TrAct 用视觉轨迹当世界模型与动作之间的翻译层，LIBERO-INTEGRAL 上 55% vs π0.5 的 27%。世界模型的价值锚点已经从视觉保真度移到下游任务成功率。",
-    "published_at": "_2026-09-0",
+    "published_at": "2026-09-04",
     "verified": false,
     "research_axis": "Simulation",
-    "freshness": "unknown",
+    "freshness": "fresh",
     "archived": false,
   },
   {
@@ -509,22 +521,22 @@ export const news: News[] = [
     "url": "https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html",
     "date": "2026-09-03",
     "summary": "The Information / CNBC 报道，英伟达以 129 亿美元现金加股票收购 Hugging Face，另含 10 亿美元员工留任包（合计约 140 亿）。相比 2023 年 8 月 D 轮 45 亿美元估值近 3 倍。算力供应商直接拿下开放权重模型的分发入口。",
-    "published_at": "_2026-09-0",
+    "published_at": "2026-09-03",
     "verified": false,
     "research_axis": "VLA",
-    "freshness": "unknown",
+    "freshness": "fresh",
     "archived": false,
   },
   {
     "title": "小鹏机器人业务首轮融资超 9 亿美元",
-    "source": "小鹏汽车",
+    "source": "小鹏汽车官网",
     "url": "https://www.xiaopeng.com/news/company_news/5585.html",
     "date": "2026-08-29",
-    "summary": "小鹏汽车官网宣布机器人业务首轮融资超 9 亿美元。资本把估值锚打在「量产执行」而非「技术叙事」：同期宇树市值 609.93 亿、智元以 44% 份额登顶出货榜、Optimus 数百台零部件实单落地。",
-    "published_at": "_2026-08-2",
+    "summary": "小鹏汽车官网披露机器人业务首轮融资超 9 亿美元。资本把估值锚打在「量产执行」而非「技术叙事」——同期宇树 609.93 亿市值、智元 44% 份额登顶、Optimus 数百台零部件实单。",
+    "published_at": "2026-08-29",
     "verified": false,
     "research_axis": "Robotics",
-    "freshness": "unknown",
+    "freshness": "fresh",
     "archived": false,
   },
   {
@@ -532,11 +544,11 @@ export const news: News[] = [
     "source": "xix.ai",
     "url": "https://xix.ai/zh/ainews/zhiyuan-launches-go2-embodied-large-model-setting-new-robot-performance-benchmark.html",
     "date": "2026-08-28",
-    "summary": "智元发布 GO-2 具身大模型，树立机器人性能新基准，主打通用操作能力。国内具身基座模型的迭代节奏已压到季度级。",
-    "published_at": "_2026-08-2",
+    "summary": "树立机器人性能新基准，主打通用操作能力。国内具身基座模型的迭代节奏已压到季度级。",
+    "published_at": "2026-08-28",
     "verified": false,
     "research_axis": "VLA",
-    "freshness": "unknown",
+    "freshness": "aging",
     "archived": false,
   },
   {
@@ -545,22 +557,10 @@ export const news: News[] = [
     "url": "https://finance.sina.cn/tech/2026-08-25/detail-inippvuh9577553.d.html",
     "date": "2026-08-26",
     "summary": "半年出货已超 4 万台，行业焦点从融资额转向单台成本、良率与真实工厂订单，媒体开始追问量产爆发的实际距离。",
-    "published_at": "_2026-08-2",
+    "published_at": "2026-08-26",
     "verified": false,
     "research_axis": "Robotics",
-    "freshness": "unknown",
-    "archived": false,
-  },
-  {
-    "title": "世界模型成为具身智能的新标配",
-    "source": "OFweek 机器人网",
-    "url": "https://robot.ofweek.com/2026-08/ART-8321205-8420-30698894.html",
-    "date": "2026-08-25",
-    "summary": "WRC 2026 上北京人形 Pelican-Unify 把视觉理解/任务规划/动作执行/世界预测统一到一个端到端表征空间；擎朗 KOM 3.0 是首个融合潜空间世界模型的服务业 VLA；大晓开悟 3.1 执行前生成 3-5 条候选轨迹再打分选优。范式已从 next-token 转向 next-state。",
-    "published_at": "_2026-08-2",
-    "verified": false,
-    "research_axis": "Simulation",
-    "freshness": "unknown",
+    "freshness": "aging",
     "archived": false,
   },
 ];
@@ -592,5 +592,5 @@ export const stats = {
   papersCount: 20,
   githubCount: 16,
   newsCount: 6,
-  exportTime: "2026-09-04T08:45:37.964565",
+  exportTime: "2026-09-05T08:46:06.546569",
 };
