@@ -1,4 +1,4 @@
-// Auto-generated at 2026-09-06T08:50:27.400774
+// Auto-generated at 2026-09-07T08:53:49.351183
 // DO NOT EDIT MANUALLY
 
 export interface Paper {
@@ -300,14 +300,14 @@ export const githubRepos: GitHub[] = [
     "name": "PX4 Autopilot",
     "owner": "PX4",
     "description": "开源无人机自动驾驶软件，支持多旋翼、固定翼、VTOL等。学术界最流行的无人机研究平台。",
-    "stars": 12500,
+    "stars": 12600,
     "url": "https://github.com/PX4/PX4-Autopilot",
     "category": "Aircraft",
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Drone"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:08.019082",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:03.312192",
+    "stars_source": "api",
   },
   {
     "name": "Prometheus (amov-lab)",
@@ -319,8 +319,8 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["PX4", "UAV", "ROS", "Autonomous Flight", "Tracking"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:09.624813",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:04.900505",
+    "stars_source": "api",
   },
   {
     "name": "embodied-drone-agents",
@@ -332,8 +332,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MAVSDK", "LangGraph", "Agent", "UAV"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:11.199950",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:06.471197",
+    "stars_source": "api",
   },
   {
     "name": "MAVLinkMCP",
@@ -345,8 +345,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["MAVLink", "MCP", "PX4", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:12.743692",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:07.950837",
+    "stars_source": "api",
   },
   {
     "name": "AerialVLA",
@@ -358,8 +358,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "Navigation", "End-to-End"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:14.542979",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:09.744920",
+    "stars_source": "api",
   },
   {
     "name": "UAVs_Meet_LLMs",
@@ -371,8 +371,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "LLM", "Survey", "Resources"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:16.216585",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:12.356037",
+    "stars_source": "api",
   },
   {
     "name": "Awesome-Aerial-VLN",
@@ -384,21 +384,21 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["UAV", "VLN", "Navigation", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:17.886807",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:13.763924",
+    "stars_source": "api",
   },
   {
     "name": "LeRobot",
     "owner": "huggingface",
     "description": "HuggingFace开源机器人学习库，支持多种机器人(SO-100/SO-ARM100/101)、多种VLA模型(π0、SmolVLA等)、端到端训练推理。Garfield项目核心框架。",
-    "stars": 27200,
+    "stars": 27300,
     "url": "https://github.com/huggingface/lerobot",
     "category": "Robotics",
     "language": "Python",
     "tags": ["LeRobot", "VLA", "Robot", "HuggingFace", "SO-ARM"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:19.304868",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:15.115489",
+    "stars_source": "api",
   },
   {
     "name": "dimensionalOS",
@@ -410,8 +410,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Agent", "OS", "Robot", "UAV", "LLM"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:20.862041",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:16.851996",
+    "stars_source": "api",
   },
   {
     "name": "Awesome-LLM-Robotics",
@@ -423,8 +423,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "Robot", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:22.341018",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:18.239771",
+    "stars_source": "api",
   },
   {
     "name": "awesome-embodied-vla-va-vln",
@@ -436,8 +436,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["Embodied AI", "VLA", "VLN", "Survey"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:23.788800",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:19.762670",
+    "stars_source": "api",
   },
   {
     "name": "Awesome-RL-VLA",
@@ -449,8 +449,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "RL", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:25.328174",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:21.134710",
+    "stars_source": "api",
   },
   {
     "name": "reflex-vla",
@@ -462,8 +462,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "Edge", "GPU", "Deployment"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:27.225899",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:22.919568",
+    "stars_source": "api",
   },
   {
     "name": "CarlaAir",
@@ -475,8 +475,8 @@ export const githubRepos: GitHub[] = [
     "language": "C++",
     "tags": ["Simulation", "UAV", "CARLA", "AirSim"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:28.855467",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:24.725419",
+    "stars_source": "api",
   },
   {
     "name": "skynet",
@@ -488,8 +488,8 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["LLM", "MCP", "Robot", "UAV", "Agent"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:30.207654",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:26.165015",
+    "stars_source": "api",
   },
   {
     "name": "Awesome-VLA-UAVs",
@@ -501,12 +501,25 @@ export const githubRepos: GitHub[] = [
     "language": "Python",
     "tags": ["VLA", "UAV", "VLN", "Survey", "Papers"],
     "verified": true,
-    "stars_last_checked_at": "2026-09-05T08:46:31.726281",
-    "stars_source": "stale_cache",
+    "stars_last_checked_at": "2026-09-07T08:46:27.538000",
+    "stars_source": "api",
   }
 ];
 
 export const news: News[] = [
+  {
+    "title": "OpenAI 发布 GPT-6 Astra",
+    "source": "网络",
+    "url": "https://finance.eastmoney.com/a/202609033864098974.html",
+    "date": "_2026-09-0",
+    "summary": "> 📄 完整 PDF：`reports/daily_briefing/briefing_2026-09-07.pdf`（4 页，557 KB） > ✉️ 已投递 wu_garfield@163.com（AgentMail，带 PDF 附件） 珠海：霾（Smog），实测 27°C / 体感 30°C，湿度 80%，东风 9km/h。能见度低且湿热，户外无人机试飞注意视距与镜头起雾。",
+    "published_at": "_2026-09-0",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "Robotics",
+    "freshness": "unknown",
+    "archived": false,
+  },
   {
     "title": "[OpenAI GPT-6 Astra 登顶 Code Arena WebDev 榜首，领先 Claude Fable 5.1 达 35 分](https://x.com/testingcatalog/status/2096350628054176240)",
     "source": "网络",
