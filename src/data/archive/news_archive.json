@@ -1,5 +1,19 @@
 [
   {
+    "title": "全球人形机器人 97% 中国制造，智元+宇树占约 75%",
+    "link": "https://www.thepaper.cn/newsDetail_forward_33771493",
+    "summary": "全球人形机器人 97% 中国制造，智元+宇树占约 75%（08-14）",
+    "source": "thepaper.cn",
+    "date": "2026-08-14",
+    "published_at": "2026-08-14",
+    "verified": false,
+    "why_it_matters": null,
+    "research_axis": "Robotics",
+    "freshness": "stale",
+    "archived": true,
+    "archive_reason": "超过31天"
+  },
+  {
     "title": "AeroGen：单次结构化提示词生成无人机控制程序",
     "link": "https://arxiv.org/abs/2603.14236",
     "summary": "*：解决 LLM 生成无人机代码的可靠性问题",
